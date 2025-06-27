@@ -1,0 +1,283 @@
+.cbChatBoxTop {
+    display: flex;
+    flex-direction: column;
+    height: 80%;
+    scroll-behavior: smooth;
+}
+
+.convBarContainerTopLeft {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.convBarConvName {
+    display: flex;
+    flex-wrap: nowrap;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    overflow: hidden;
+}
+
+.cbUnreadCntBadge {
+    align-items: center;
+    border-radius: 9px;
+    color: white;
+    display: flex;
+    font-size: 12px;
+    height: 18px;
+    justify-content: center;
+    min-width: 18px;
+    margin: 0 10px;
+}
+
+.cbUnreadCntBadge.masculine {
+    background-color: #4a76fd;
+}
+
+.cbUnreadCntBadge.feminine {
+    background-color: #e639af;
+}
+
+.cbUnreadCntBadge.ruby {
+    background-color: #850014;
+}
+
+.cbUnreadCntBadge.orange {
+    background-color: #ff8303;
+}
+
+.cbUnreadCntBadge.sun {
+    background-color: #ffe700;
+}
+
+.cbUnreadCntBadge.emerald {
+    background-color: #50c878;
+}
+
+.cbUnreadCntBadge.blue {
+    background-color: #098de9;
+}
+
+.cbUnreadCntBadge.indigo {
+    background-color: #30307e;
+}
+
+.cbUnreadCntBadge.violet {
+    background-color: #8a2be2;
+}
+
+.cbUnreadCntBadge.rainbow {
+    background: -webkit-linear-gradient(left, #850014 , #ff8303, #ffe700, #50c878, #098de9, #30307e, #8a2be2); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, #850014 , #ff8303, #ffe700, #50c878, #098de9, #30307e, #8a2be2); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, #850014 , #ff8303, #ffe700, #50c878, #098de9, #30307e, #8a2be2); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, #850014 , #ff8303, #ffe700, #50c878, #098de9, #30307e, #8a2be2); /* Standard syntax (must be last) */
+}
+
+.cbUnreadCntBadge.silver {
+    background: -webkit-linear-gradient(left, #dadada , #8e8e8e, #dadada); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, #dadada , #8e8e8e, #dadada); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, #dadada , #8e8e8e, #dadada); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, #dadada , #8e8e8e, #dadada); /* Standard syntax (must be last) */
+}
+
+.cbUnreadCntBadge.gold {
+    background: -webkit-linear-gradient(left, #ab781d , #eed264, #ab781d); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, #ab781d , #eed264, #ab781d); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, #ab781d , #eed264, #ab781d); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, #ab781d , #eed264, #ab781d); /* Standard syntax (must be last) */
+}
+
+.cbUnreadCntBadge.platinum {
+    background: -webkit-linear-gradient(left, #d3e9f6, #6b8c95, #566167, #8e8e8e, #6d606a,  #af9499, #dadada); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, #d3e9f6, #6b8c95, #566167, #8e8e8e, #6d606a,  #af9499, #dadada); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, #d3e9f6, #6b8c95, #566167, #8e8e8e, #6d606a,  #af9499, #dadada); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, #d3e9f6, #6b8c95, #566167, #8e8e8e, #6d606a,  #af9499, #dadada); /* Standard syntax (must be last) */
+}
+
+.cbUnreadCntBadge.gray {
+    background-color: #aeb4b7;
+}
+
+.cbChatBoxTop.conversation {
+    display: flex;
+    flex-direction: column-reverse;
+    scroll-behavior: smooth; 
+    overflow-y: scroll;
+    overflow-x: hidden;
+    height: 80%;
+    padding-right: 10px;
+}
+
+.cbChatBoxFeed {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 100%;
+}
+
+.cbFeedConnectTFLogo {
+    width: 50px;
+    margin: 0 calc(50% - 25px);
+    margin-bottom: 20px;
+}
+
+.chatBoxSearch {
+    border: none;
+    height: 36px;
+    padding: 0 10px;
+}
+
+.chatBoxSearch::placeholder {
+    color: #858585;
+}
+
+.chatBoxSearch:focus {
+    outline: none;
+}
+
+.chatBoxSearchResultsContainer {
+    overflow-y: scroll;
+    height: 100%;
+}
+
+.convChatBoxBottom {
+    position: relative;
+}
+
+.convChatTextEditor {
+    height: 80px;
+}
+
+.convChatTextEditor.ebOpen {
+    top: -250px;
+    padding-top: 250px;
+    overflow-y: hidden;
+}
+
+.convChatTextEditor.ebClose{
+    overflow-y: auto;
+}
+
+.convChatControlPanel {
+    position: absolute;
+    top: 90px;
+    width: 280px;
+}
+
+.convChatControlPanelLeft {
+    display: flex;
+    flex-direction: row;
+}
+
+.chatBoxEmojiPickerContainer {
+    background-color: white;
+    position: absolute;
+    bottom: 116px;
+    /*height: 400px !important;*/
+    width: 300px;
+    transition: height 325ms cubic-bezier(0.43,-0.35, 0.14, 1.35);
+}
+
+.chatBoxPNGIcon {
+    display: flex;
+    flex-shrink: 0;
+    flex-grow: 0;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 20px;
+    width: 20px;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+.chatBoxPNGIcon.disabled {
+    opacity: .3;
+}
+
+.cbMentionsContainer {
+    position: absolute;
+    width: 300px;
+    bottom: 116px;
+    left: 0px;
+    transition: height 325ms cubic-bezier(0.43,-0.35, 0.14, 1.35);
+    overflow: hidden;
+}
+
+.cbMentionsContainerBackgroundTheme {
+    position: absolute;
+    display: flex;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    margin-top: 5px;
+    background-size: cover;
+    background-repeat: repeat;
+    -webkit-filter: blur(2px);
+    -moz-filter: blur(2px);
+    -o-filter: blur(2px);
+    -ms-filter: blur(2px);
+    filter: blur(2px);
+    position: absolute;
+    opacity: 0.75;
+}
+
+.cbMentionsContainerBackgroundTheme.rainbow {
+    background: -webkit-linear-gradient(left, #850014, #ff8303, #ffe700, #50c878, #098de9, #30307e, #8a2be2); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, #850014, #ff8303, #ffe700, #50c878, #098de9, #30307e, #8a2be2); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, #850014, #ff8303, #ffe700, #50c878, #098de9, #30307e, #8a2be2); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, #850014, #ff8303, #ffe700, #50c878, #098de9, #30307e, #8a2be2); /* Standard syntax (must be last) */
+}
+
+.cbMentionsContainerBackgroundTheme.silver {
+    background: -webkit-linear-gradient(left, #dadada, #8e8e8e, #dadada); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, #dadada, #8e8e8e, #dadada); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, #dadada, #8e8e8e, #dadada); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, #dadada, #8e8e8e, #dadada); /* Standard syntax (must be last) */
+}
+
+.cbMentionsContainerBackgroundTheme.gold {
+    background: -webkit-linear-gradient(left, #ab781d, #eed264, #ab781d); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, #ab781d, #eed264, #ab781d); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, #ab781d, #eed264, #ab781d); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, #ab781d, #eed264, #ab781d); /* Standard syntax (must be last) */
+}
+
+.cbMentionsContainerBackgroundTheme.platinum {
+    background: -webkit-linear-gradient(left, #d3e9f6, #6b8c95, #566167, #8e8e8e, #6d606a, #af9499, #dadada); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, #d3e9f6, #6b8c95, #566167, #8e8e8e, #6d606a, #af9499, #dadada); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, #d3e9f6, #6b8c95, #566167, #8e8e8e, #6d606a, #af9499, #dadada); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, #d3e9f6, #6b8c95, #566167, #8e8e8e, #6d606a, #af9499, #dadada); /* Standard syntax (must be last) */
+}
+
+.cbMentionsListContainer {
+    position: absolute;
+    display: flex;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    margin-top: 5px;
+    background-color: white;
+}
+
+.mentionsPopupList {
+    height: 100%;
+}
+
+.convChatBtnDiamondText {
+    background: -webkit-linear-gradient(left, #ab781d, #eed264, #ab781d); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, #ab781d, #eed264, #ab781d); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, #ab781d, #eed264, #ab781d); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, #ab781d, #eed264, #ab781d); /* Standard syntax (must be last) */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.chatBoxHashtagEditor {
+    position: absolute;
+    bottom: 116px;
+    width: 100%;
+    height: 358px;
+    background-color: white;
+    transition: height 325ms cubic-bezier(0.43,-0.35, 0.14, 1.35);
+}

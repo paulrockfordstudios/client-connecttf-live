@@ -1,0 +1,532 @@
+/* ------ Color Palette - Variables ------ */
+
+html {
+
+
+    /* ----- Color Samples ------ */
+
+
+    /* ---- Constitutional ---- */
+
+
+    /* --- Shades --- */
+
+    --black: black;
+    --white: white;
+
+    /* - Gray - */
+
+    /* Saturated */
+    --gray-sat-lgt: #c6cacc;
+    --gray-sat-brt: #aeb4b7;
+    --gray-sat-drk: #7a7e80;
+    /* Pastel */
+    --gray-pas-lgt: #e7e8e9;
+    --gray-pas-brt: #e4e6e7;
+    --gray-pas-drk: #cecfd0;
+
+
+    /* --- Colors --- */
+
+    /* -- Energy -- */
+
+    /* - Masculine - */
+
+    /* Saturated */
+    --masculine-sat-lgt: #809ffe;
+    --masculine-sat-brt: #4a76fd;
+    --masculine-sat-drk: #3453b2;
+    /* Pastel */
+    --masculine-pas-lgt: #dce4fe;
+    --masculine-pas-brt: #c8d6fe;
+    --masculine-pas-drk: #c3cbe5;
+
+    /* - Feminine - */
+
+    /* Saturated */
+    --feminine-sat-lgt: #ed74c7;
+    --feminine-sat-brt: #e639af;
+    --feminine-sat-drk: #a1287b;
+    /* Pastel */
+    --feminine-pas-lgt: #fde4f1;
+    --feminine-pas-brt: #fde1ef;
+    --feminine-pas-drk: #e4cbd8;
+
+    /* -- Spectrum -- */
+
+    /* - Ruby - */
+
+    /* Saturated */
+    --ruby-sat-lgt: #a94c5a;
+    --ruby-sat-brt: #850014;
+    --ruby-sat-drk: #5d000e;
+    /* Pastel */
+    --ruby-pas-lgt: #d8afb5;
+    --ruby-pas-brt: #d4a6ad;
+    --ruby-pas-drk: #bf969c;
+
+    /* - Orange - */
+
+    /* Saturated */
+    --orange-sat-lgt: #ffa84e;
+    --orange-sat-brt: #ff8303;
+    --orange-sat-drk: #b35c02;
+    /* Pastel */
+    --orange-pas-lgt: #ffdeba;
+    --orange-pas-brt: #ffdab3;
+    --orange-pas-drk: #e6c5a1;
+
+    /* - Sun - */
+
+    /* Saturated */
+    --sun-sat-lgt: #ffee4c;
+    --sun-sat-brt: #ffe700;
+    --sun-sat-drk: #b3a200;
+    /* Pastel */
+    --sun-pas-lgt: #fffac5;
+    --sun-pas-brt: #fff9bf;
+    --sun-pas-drk: #e6e1ac;
+
+    /* - Emerald - */
+
+    /* Saturated */
+    --emerald-sat-lgt: #84d8a0;
+    --emerald-sat-brt: #50c878;
+    --emerald-sat-drk: #388c54;
+    /* Pastel */
+    --emerald-pas-lgt: #cff0da;
+    --emerald-pas-brt: #caeed6;
+    --emerald-pas-drk: #b6d7c1;
+
+    /* - Blue - */
+
+    /* Saturated */
+    --blue-sat-lgt: #52aff0;
+    --blue-sat-brt: #098de9;
+    --blue-sat-drk: #0663a4;
+    /* Pastel */
+    --blue-pas-lgt: #d3eafb;
+    --blue-pas-brt: #cee8fb;
+    --blue-pas-drk: #bad1e2;
+
+    /* - Indigo - */
+
+    /* Saturated */
+    --indigo-sat-lgt: #6e6ea4;
+    --indigo-sat-brt: #30307e;
+    --indigo-sat-drk: #222258;
+    /* Pastel */
+    --indigo-pas-lgt: #c1c1d8;
+    --indigo-pas-brt: #babad4;
+    --indigo-pas-drk: #a8a8bf;
+
+    /* - Violet - */
+
+    /* Saturated */
+    --violet-sat-lgt: #ad6aeb;
+    --violet-sat-brt: #8a2be2;
+    --violet-sat-drk: #611e9f;
+    /* Pastel */
+    --violet-pas-lgt: #dfc5f7;
+    --violet-pas-brt: #dcbff6;
+    --violet-pas-drk: #c6acde;
+
+
+    /* ---- Auxiliary ---- */
+
+
+    /* --- Shades --- */
+
+    /* - Alto (Silver (0,2), Platinum (6))- */
+
+    /* Saturated */
+    --alto-sat-lgt: #e5e5e5;
+    --alto-sat-brt: #dadada;
+    --alto-sat-drk: #999999;
+    /* Pastel */
+    --alto-pas-lgt: #f5f5f5;
+    --alto-pas-brt: #f4f4f4;
+    --alto-pas-drk: #dcdcdc;
+
+    /* - SilverBase (Silver (1), Platinum (3)) - */
+
+    /* Saturated */
+    --silverBase-sat-lgt: #b0b0b0;
+    --silverBase-sat-brt: #8e8e8e;
+    --silverBase-sat-drk: #646464;
+    /* Pastel */
+    --silverBase-pas-lgt: #e0e0e0;
+    --silverBase-pas-brt: #dddddd;
+    --silverBase-pas-drk: #c7c7c7;
+
+    
+    /* --- Colors --- */
+
+    /* -- Gradient -- */
+
+    /* - Tia Maria (Rainbow (extra)(0.5)) - */
+
+    /* Saturated */
+    --tiaMaria-sat-lgt: #d47a54;
+    --tiaMaria-sat-brt: #c2420b;
+    --tiaMaria-sat-drk: #882e08;
+
+    /* - Gumbo (Platinum (extra)(0.5) - */
+
+    /* Saturated */
+    --gumbo-sat-lgt: #a2b8be;
+    --gumbo-sat-brt: #7a9aa3;
+    --gumbo-sat-drk: #566c72;
+
+    /* - Mandalay (Gold (0,2)) - */
+
+    /* Saturated */
+    --mandalay-sat-lgt: #c4a060;
+    --mandalay-sat-brt: #ab781d;
+    --mandalay-sat-drk: #785414;
+    /* Pastel */
+    --mandalay-pas-lgt: #e8dac2;
+    --mandalay-pas-brt: #e6d6bb;
+    --mandalay-pas-drk: #cfc1a9;
+
+    /* - Confetti (Gold (1)) - */
+
+    /* Saturated */
+    --confetti-sat-lgt: #f3df92;
+    --confetti-sat-brt: #eed264;
+    --confetti-sat-drk: #a79346;
+    /* Pastel */
+    --confetti-pas-lgt: #faf2d5;
+    --confetti-pas-brt: #faf1d0;
+    --confetti-pas-drk: #e1d9bc;
+
+    /* - Link Water (Platinum (0)) - */
+
+    /* Saturated */
+    --linkWater-sat-lgt: #e0f0f9;
+    --linkWater-sat-brt: #d3e9f6;
+    --linkWater-sat-drk: #94a4ad;
+    /* Pastel */
+    --linkWater-pas-lgt: #f3f9fc;
+    --linkWater-pas-brt: #f2f8fc;
+    --linkWater-pas-drk: #dae0e3;
+
+    /* - Juniper (Platinum (1)) - */
+
+    /* Saturated */
+    --juniper-sat-lgt: #97aeb5;
+    --juniper-sat-brt: #6b8c95;
+    --juniper-sat-drk: #4b6269;
+    /* Pastel */
+    --juniper-pas-lgt: #d6dfe2;
+    --juniper-pas-brt: #d2dcdf;
+    --juniper-pas-drk: #bdc6c9;
+
+    /* - Shuttle Gray (Platinum (2)) - */
+
+    /* Saturated */
+    --shuttleGray-sat-lgt: #889094;
+    --shuttleGray-sat-brt: #566167;
+    --shuttleGray-sat-drk: #3c4448;
+    /* Pastel */
+    --shuttleGray-pas-lgt: #d1d4d6;
+    --shuttleGray-pas-brt: #cccfd1;
+    --shuttleGray-pas-drk: #b8bbbd;
+
+    /* - Old Lavender (Platinum (4)) - */
+
+    /* Saturated */
+    --oldLavender-sat-lgt: #998f96;
+    --oldLavender-sat-brt: #6d606a;
+    --oldLavender-sat-drk: #4d434a;
+    /* Pastel */
+    --oldLavender-pas-lgt: #d7d4d6;
+    --oldLavender-pas-brt: #d3cfd2;
+    --oldLavender-pas-drk: #bebbbd;
+    
+    /* - Del Rio (Platinum (5)) - */
+
+    /* Saturated */
+    --delRio-sat-lgt: #c7b4b7;
+    --delRio-sat-brt: #af9499;
+    --delRio-sat-drk: #7b686b;
+    /* Pastel */
+    --delRio-pas-lgt: #e9e2e3;
+    --delRio-pas-brt: #e7dfe0;
+    --delRio-pas-drk: #d0c9ca;
+
+
+    /* --- Colors --- */
+
+    /* -- Alternate -- */
+
+    /* - faceBook - */
+
+    --anchorBlue: #0000ff;
+
+    --anchorPurple: #800080;
+
+    --anchorRed: #ff0000;
+
+    /* - faceBook - */
+
+    /* Saturated */
+    --facebook-sat-lgt: #5294ff;
+    --facebook-sat-brt: #0866ff;
+    --facebook-sat-drk: #0648b3;
+    /* Pastel */
+    --facebook-pas-lgt: #bcd6ff;
+    --facebook-pas-brt: #b4d1ff;
+    --facebook-pas-drk: #a2bce5;
+
+
+
+
+    /* ----- Gradients ----- */
+
+
+    /* -- Higher Order (main) -- */
+
+
+    /* - Rainbow - */
+
+    /*-Gradient 1-*/
+
+    /* Saturated */
+
+    /*light*/
+    --rainbow-g1-sat-lgt-safari: -webkit-linear-gradient(right, var(--ruby-sat-lgt), var(--orange-sat-lgt), var(--sun-sat-lgt), var(--emerald-sat-lgt), var(--blue-sat-lgt), var(--indigo-sat-lgt), var(--violet-sat-lgt)); /* For Safari 5.1 to 6.0 */
+    --rainbow-g1-sat-lgt-opera: -o-linear-gradient(right, var(--ruby-sat-lgt), var(--orange-sat-lgt), var(--sun-sat-lgt), var(--emerald-sat-lgt), var(--blue-sat-lgt), var(--indigo-sat-lgt), var(--violet-sat-lgt)); /* For Opera 11.1 to 12.0 */
+    --rainbow-g1-sat-lgt-firefox: -moz-linear-gradient(right, var(--ruby-sat-lgt), var(--orange-sat-lgt), var(--sun-sat-lgt), var(--emerald-sat-lgt), var(--blue-sat-lgt), var(--indigo-sat-lgt), var(--violet-sat-lgt)); /* For Firefox 3.6 to 15 */
+    --rainbow-g1-sat-lgt-standard: linear-gradient(to right, var(--ruby-sat-lgt), var(--orange-sat-lgt), var(--sun-sat-lgt), var(--emerald-sat-lgt), var(--blue-sat-lgt), var(--indigo-sat-lgt), var(--violet-sat-lgt)); /* Standard syntax (must be last) */
+    /*bright*/
+    --rainbow-g1-sat-brt-safari: -webkit-linear-gradient(right, var(--ruby-sat-brt), var(--orange-sat-brt), var(--sun-sat-brt), var(--emerald-sat-brt), var(--blue-sat-brt), var(--indigo-sat-brt), var(--violet-sat-brt)); /* For Safari 5.1 to 6.0 */
+    --rainbow-g1-sat-brt-opera: -o-linear-gradient(right, var(--ruby-sat-brt), var(--orange-sat-brt), var(--sun-sat-brt), var(--emerald-sat-brt), var(--blue-sat-brt), var(--indigo-sat-brt), var(--violet-sat-brt)); /* For Opera 11.1 to 12.0 */
+    --rainbow-g1-sat-brt-firefox: -moz-linear-gradient(right, var(--ruby-sat-brt), var(--orange-sat-brt), var(--sun-sat-brt), var(--emerald-sat-brt), var(--blue-sat-brt), var(--indigo-sat-brt), var(--violet-sat-brt)); /* For Firefox 3.6 to 15 */
+    --rainbow-g1-sat-brt-standard: linear-gradient(to right, var(--ruby-sat-brt), var(--orange-sat-brt), var(--sun-sat-brt), var(--emerald-sat-brt), var(--blue-sat-brt), var(--indigo-sat-brt), var(--violet-sat-brt)); /* Standard syntax (must be last) */
+    /*dark*/
+    --rainbow-g1-sat-drk-safari: -webkit-linear-gradient(right, var(--ruby-sat-drk), var(--orange-sat-drk), var(--sun-sat-drk), var(--emerald-sat-drk), var(--blue-sat-drk), var(--indigo-sat-drk), var(--violet-sat-drk)); /* For Safari 5.1 to 6.0 */
+    --rainbow-g1-sat-drk-opera: -o-linear-gradient(right, var(--ruby-sat-drk), var(--orange-sat-drk), var(--sun-sat-drk), var(--emerald-sat-drk), var(--blue-sat-drk), var(--indigo-sat-drk), var(--violet-sat-drk)); /* For Opera 11.1 to 12.0 */
+    --rainbow-g1-sat-drk-firefox: -moz-linear-gradient(right, var(--ruby-sat-drk), var(--orange-sat-drk), var(--sun-sat-drk), var(--emerald-sat-drk), var(--blue-sat-drk), var(--indigo-sat-drk), var(--violet-sat-drk)); /* For Firefox 3.6 to 15 */
+    --rainbow-g1-sat-drk-standard: linear-gradient(to right, var(--ruby-sat-drk), var(--orange-sat-drk), var(--sun-sat-drk), var(--emerald-sat-drk), var(--blue-sat-drk), var(--indigo-sat-drk), var(--violet-sat-drk)); /* Standard syntax (must be last) */
+
+    /* Pastel */
+
+    /*light*/
+    --rainbow-g1-pas-lgt-safari: -webkit-linear-gradient(right, var(--ruby-pas-lgt), var(--orange-pas-lgt), var(--sun-pas-lgt), var(--emerald-pas-lgt), var(--blue-pas-lgt), var(--indigo-pas-lgt), var(--violet-pas-lgt)); /* For Safari 5.1 to 6.0 */
+    --rainbow-g1-pas-lgt-opera: -o-linear-gradient(right, var(--ruby-pas-lgt), var(--orange-pas-lgt), var(--sun-pas-lgt), var(--emerald-pas-lgt), var(--blue-pas-lgt), var(--indigo-pas-lgt), var(--violet-pas-lgt)); /* For Opera 11.1 to 12.0 */
+    --rainbow-g1-pas-lgt-firefox: -moz-linear-gradient(right, var(--ruby-pas-lgt), var(--orange-pas-lgt), var(--sun-pas-lgt), var(--emerald-pas-lgt), var(--blue-pas-lgt), var(--indigo-pas-lgt), var(--violet-pas-lgt)); /* For Firefox 3.6 to 15 */
+    --rainbow-g1-pas-lgt-standard: linear-gradient(to right, var(--ruby-pas-lgt), var(--orange-pas-lgt), var(--sun-pas-lgt), var(--emerald-pas-lgt), var(--blue-pas-lgt), var(--indigo-pas-lgt), var(--violet-pas-lgt)); /* Standard syntax (must be last) */
+    /*bright*/
+    --rainbow-g1-pas-brt-safari: -webkit-linear-gradient(right, var(--ruby-pas-brt), var(--orange-pas-brt), var(--sun-pas-brt), var(--emerald-pas-brt), var(--blue-pas-brt), var(--indigo-pas-brt), var(--violet-pas-brt)); /* For Safari 5.1 to 6.0 */
+    --rainbow-g1-pas-brt-opera: -o-linear-gradient(right, var(--ruby-pas-brt), var(--orange-pas-brt), var(--sun-pas-brt), var(--emerald-pas-brt), var(--blue-pas-brt), var(--indigo-pas-brt), var(--violet-pas-brt)); /* For Opera 11.1 to 12.0 */
+    --rainbow-g1-pas-brt-firefox: -moz-linear-gradient(right, var(--ruby-pas-brt), var(--orange-pas-brt), var(--sun-pas-brt), var(--emerald-pas-brt), var(--blue-pas-brt), var(--indigo-pas-brt), var(--violet-pas-brt)); /* For Firefox 3.6 to 15 */
+    --rainbow-g1-pas-brt-standard: linear-gradient(to right, var(--ruby-pas-brt), var(--orange-pas-brt), var(--sun-pas-brt), var(--emerald-pas-brt), var(--blue-pas-brt), var(--indigo-pas-brt), var(--violet-pas-brt)); /* Standard syntax (must be last) */
+    /*dark*/
+    --rainbow-g1-pas-drk-safari: -webkit-linear-gradient(right, var(--ruby-pas-drk), var(--orange-pas-drk), var(--sun-pas-drk), var(--emerald-pas-drk), var(--blue-pas-drk), var(--indigo-pas-drk), var(--violet-pas-drk)); /* For Safari 5.1 to 6.0 */
+    --rainbow-g1-pas-drk-opera: -o-linear-gradient(right, var(--ruby-pas-drk), var(--orange-pas-drk), var(--sun-pas-drk), var(--emerald-pas-drk), var(--blue-pas-drk), var(--indigo-pas-drk), var(--violet-pas-drk)); /* For Opera 11.1 to 12.0 */
+    --rainbow-g1-pas-drk-firefox: -moz-linear-gradient(right, var(--ruby-pas-drk), var(--orange-pas-drk), var(--sun-pas-drk), var(--emerald-pas-drk), var(--blue-pas-drk), var(--indigo-pas-drk), var(--violet-pas-drk)); /* For Firefox 3.6 to 15 */
+    --rainbow-g1-pas-drk-standard: linear-gradient(to right, var(--ruby-pas-drk), var(--orange-pas-drk), var(--sun-pas-drk), var(--emerald-pas-drk), var(--blue-pas-drk), var(--indigo-pas-drk), var(--violet-pas-drk)); /* Standard syntax (must be last) */
+
+    /* - Silver - */
+
+    /*-Gradient 1-*/
+
+    /* Saturated */
+
+    /*light*/
+    --silver-g1-sat-lgt-safari: -webkit-linear-gradient(left, var(--alto-sat-lgt), var(--silverBase-sat-lgt), var(--alto-sat-lgt)); /* For Safari 5.1 to 6.0 */
+    --silver-g1-sat-lgt-opera: -o-linear-gradient(right, var(--alto-sat-lgt), var(--silverBase-sat-lgt), var(--alto-sat-lgt)); /* For Opera 11.1 to 12.0 */
+    --silver-g1-sat-lgt-firefox: -moz-linear-gradient(right, var(--alto-sat-lgt), var(--silverBase-sat-lgt), var(--alto-sat-lgt)); /* For Firefox 3.6 to 15 */
+    --silver-g1-sat-lgt-standard: linear-gradient(to left, var(--alto-sat-lgt), var(--silverBase-sat-lgt), var(--alto-sat-lgt)); /* Standard syntax (must be last) */
+    /*bright*/
+    --silver-g1-sat-brt-safari: -webkit-linear-gradient(left, var(--alto-sat-brt), var(--silverBase-sat-brt), var(--alto-sat-brt)); /* For Safari 5.1 to 6.0 */
+    --silver-g1-sat-brt-opera: -o-linear-gradient(right, var(--alto-sat-brt), var(--silverBase-sat-brt), var(--alto-sat-brt)); /* For Opera 11.1 to 12.0 */
+    --silver-g1-sat-brt-firefox: -moz-linear-gradient(right, var(--alto-sat-brt), var(--silverBase-sat-brt), var(--alto-sat-brt)); /* For Firefox 3.6 to 15 */
+    --silver-g1-sat-brt-standard: linear-gradient(to left, var(--alto-sat-brt), var(--silverBase-sat-brt), var(--alto-sat-brt)); /* Standard syntax (must be last) */
+    /*dark*/
+    --silver-g1-sat-drk-safari: -webkit-linear-gradient(left, var(--alto-sat-drk), var(--silverBase-sat-drk), var(--alto-sat-drk)); /* For Safari 5.1 to 6.0 */
+    --silver-g1-sat-drk-opera: -o-linear-gradient(right, var(--alto-sat-drk), var(--silverBase-sat-drk), var(--alto-sat-drk)); /* For Opera 11.1 to 12.0 */
+    --silver-g1-sat-drk-firefox: -moz-linear-gradient(right, var(--alto-sat-drk), var(--silverBase-sat-drk), var(--alto-sat-drk)); /* For Firefox 3.6 to 15 */
+    --silver-g1-sat-drk-standard: linear-gradient(to left, var(--alto-sat-drk), var(--silverBase-sat-drk), var(--alto-sat-drk)); /* Standard syntax (must be last) */
+
+    /* Pastel */
+
+    /*light*/
+    --silver-g1-pas-lgt-safari: -webkit-linear-gradient(left, var(--alto-pas-lgt), var(--silverBase-pas-lgt), var(--alto-pas-lgt)); /* For Safari 5.1 to 6.0 */
+    --silver-g1-pas-lgt-opera: -o-linear-gradient(right, var(--alto-pas-lgt), var(--silverBase-pas-lgt), var(--alto-pas-lgt)); /* For Opera 11.1 to 12.0 */
+    --silver-g1-pas-lgt-firefox: -moz-linear-gradient(right, var(--alto-pas-lgt), var(--silverBase-pas-lgt), var(--alto-pas-lgt)); /* For Firefox 3.6 to 15 */
+    --silver-g1-pas-lgt-standard: linear-gradient(to left, var(--alto-pas-lgt), var(--silverBase-pas-lgt), var(--alto-pas-lgt)); /* Standard syntax (must be last) */
+    /*bright*/
+    --silver-g1-pas-brt-safari: -webkit-linear-gradient(left, var(--alto-pas-brt), var(--silverBase-pas-brt), var(--alto-pas-brt)); /* For Safari 5.1 to 6.0 */
+    --silver-g1-pas-brt-opera: -o-linear-gradient(right, var(--alto-pas-brt), var(--silverBase-pas-brt), var(--alto-pas-brt)); /* For Opera 11.1 to 12.0 */
+    --silver-g1-pas-brt-firefox: -moz-linear-gradient(right, var(--alto-pas-brt), var(--silverBase-pas-brt), var(--alto-pas-brt)); /* For Firefox 3.6 to 15 */
+    --silver-g1-pas-brt-standard: linear-gradient(to left, var(--alto-pas-brt), var(--silverBase-pas-brt), var(--alto-pas-brt)); /* Standard syntax (must be last) */
+    /*dark*/
+    --silver-g1-pas-drk-safari: -webkit-linear-gradient(left, var(--alto-pas-drk), var(--silverBase-pas-drk), var(--alto-pas-drk)); /* For Safari 5.1 to 6.0 */
+    --silver-g1-pas-drk-opera: -o-linear-gradient(right, var(--alto-pas-drk), var(--silverBase-pas-drk), var(--alto-pas-drk)); /* For Opera 11.1 to 12.0 */
+    --silver-g1-pas-drk-firefox: -moz-linear-gradient(right, var(--alto-pas-drk), var(--silverBase-pas-drk), var(--alto-pas-drk)); /* For Firefox 3.6 to 15 */
+    --silver-g1-pas-drk-standard: linear-gradient(to left, var(--alto-pas-drk), var(--silverBase-pas-drk), var(--alto-pas-drk)); /* Standard syntax (must be last) */
+
+    /* - Gold - */
+
+    /*-Gradient 1-*/
+
+    /* Saturated */
+
+    /*light*/
+    --gold-g1-sat-lgt-safari: -webkit-linear-gradient(left, var(--mandalay-sat-lgt), var(--confetti-sat-lgt), var(--mandalay-sat-lgt)); /* For Safari 5.1 to 6.0 */
+    --gold-g1-sat-lgt-opera: -o-linear-gradient(right, var(--mandalay-sat-lgt), var(--confetti-sat-lgt), var(--mandalay-sat-lgt)); /* For Opera 11.1 to 12.0 */
+    --gold-g1-sat-lgt-firefox: -moz-linear-gradient(right, var(--mandalay-sat-lgt), var(--confetti-sat-lgt), var(--mandalay-sat-lgt)); /* For Firefox 3.6 to 15 */
+    --gold-g1-sat-lgt-standard: linear-gradient(to left, var(--mandalay-sat-lgt), var(--confetti-sat-lgt), var(--mandalay-sat-lgt)); /* Standard syntax (must be last) */
+    /*bright*/
+    --gold-g1-sat-brt-safari: -webkit-linear-gradient(left, var(--mandalay-sat-brt), var(--confetti-sat-brt), var(--mandalay-sat-brt)); /* For Safari 5.1 to 6.0 */
+    --gold-g1-sat-brt-opera: -o-linear-gradient(right, var(--mandalay-sat-brt), var(--confetti-sat-brt), var(--mandalay-sat-brt)); /* For Opera 11.1 to 12.0 */
+    --gold-g1-sat-brt-firefox: -moz-linear-gradient(right, var(--mandalay-sat-brt), var(--confetti-sat-brt), var(--mandalay-sat-brt)); /* For Firefox 3.6 to 15 */
+    --gold-g1-sat-brt-standard: linear-gradient(to left, var(--mandalay-sat-brt), var(--confetti-sat-brt), var(--mandalay-sat-brt)); /* Standard syntax (must be last) */
+    /*dark*/
+    --gold-g1-sat-drk-safari: -webkit-linear-gradient(left, var(--mandalay-sat-drk), var(--confetti-sat-drk), var(--mandalay-sat-drk)); /* For Safari 5.1 to 6.0 */
+    --gold-g1-sat-drk-opera: -o-linear-gradient(right, var(--mandalay-sat-drk), var(--confetti-sat-drk), var(--mandalay-sat-drk)); /* For Opera 11.1 to 12.0 */
+    --gold-g1-sat-drk-firefox: -moz-linear-gradient(right, var(--mandalay-sat-drk), var(--confetti-sat-drk), var(--mandalay-sat-drk)); /* For Firefox 3.6 to 15 */
+    --gold-g1-sat-drk-standard: linear-gradient(to left, var(--mandalay-sat-drk), var(--confetti-sat-drk), var(--mandalay-sat-drk)); /* Standard syntax (must be last) */
+
+    /* Pastel */
+
+    /*light*/
+    --gold-g1-pas-lgt-safari: -webkit-linear-gradient(left, var(--mandalay-pas-lgt), var(--confetti-pas-lgt), var(--mandalay-pas-lgt)); /* For Safari 5.1 to 6.0 */
+    --gold-g1-pas-lgt-opera: -o-linear-gradient(right, var(--mandalay-pas-lgt), var(--confetti-pas-lgt), var(--mandalay-pas-lgt)); /* For Opera 11.1 to 12.0 */
+    --gold-g1-pas-lgt-firefox: -moz-linear-gradient(right, var(--mandalay-pas-lgt), var(--confetti-pas-lgt), var(--mandalay-pas-lgt)); /* For Firefox 3.6 to 15 */
+    --gold-g1-pas-lgt-standard: linear-gradient(to left, var(--mandalay-pas-lgt), var(--confetti-pas-lgt), var(--mandalay-pas-lgt)); /* Standard syntax (must be last) */
+    /*bright*/
+    --gold-g1-pas-brt-safari: -webkit-linear-gradient(left, var(--mandalay-pas-brt), var(--confetti-pas-brt), var(--mandalay-pas-brt)); /* For Safari 5.1 to 6.0 */
+    --gold-g1-pas-brt-opera: -o-linear-gradient(right, var(--mandalay-pas-brt), var(--confetti-pas-brt), var(--mandalay-pas-brt)); /* For Opera 11.1 to 12.0 */
+    --gold-g1-pas-brt-firefox: -moz-linear-gradient(right, var(--mandalay-pas-brt), var(--confetti-pas-brt), var(--mandalay-pas-brt)); /* For Firefox 3.6 to 15 */
+    --gold-g1-pas-brt-standard: linear-gradient(to left, var(--mandalay-pas-brt), var(--confetti-pas-brt), var(--mandalay-pas-brt)); /* Standard syntax (must be last) */
+    /*dark*/
+    --gold-g1-pas-drk-safari: -webkit-linear-gradient(left, var(--mandalay-pas-drk), var(--confetti-pas-drk), var(--mandalay-pas-drk)); /* For Safari 5.1 to 6.0 */
+    --gold-g1-pas-drk-opera: -o-linear-gradient(right, var(--mandalay-pas-drk), var(--confetti-pas-drk), var(--mandalay-pas-drk)); /* For Opera 11.1 to 12.0 */
+    --gold-g1-pas-drk-firefox: -moz-linear-gradient(right, var(--mandalay-pas-drk), var(--confetti-pas-drk), var(--mandalay-pas-drk)); /* For Firefox 3.6 to 15 */
+    --gold-g1-pas-drk-standard: linear-gradient(to left, var(--mandalay-pas-drk), var(--confetti-pas-drk), var(--mandalay-pas-drk)); /* Standard syntax (must be last) */
+
+    /* - Platinum - */
+
+    /*-Gradient 1-*/
+
+    /* Saturated */
+
+    /*light*/
+    --platinum-g1-sat-lgt-safari: -webkit-linear-gradient(right, var(--linkWater-sat-lgt), var(--juniper-sat-lgt), var(--shuttleGray-sat-lgt), var(--silverBase-sat-lgt), var(--oldLavender-sat-lgt), var(--delRio-sat-lgt), var(--alto-sat-lgt)); /* For Safari 5.1 to 6.0 */
+    --platinum-g1-sat-lgt-opera: -o-linear-gradient(right, var(--linkWater-sat-lgt), var(--juniper-sat-lgt), var(--shuttleGray-sat-lgt), var(--silverBase-sat-lgt), var(--oldLavender-sat-lgt), var(--delRio-sat-lgt), var(--alto-sat-lgt)); /* For Opera 11.1 to 12.0 */
+    --platinum-g1-sat-lgt-firefox: -moz-linear-gradient(right, var(--linkWater-sat-lgt), var(--juniper-sat-lgt), var(--shuttleGray-sat-lgt), var(--silverBase-sat-lgt), var(--oldLavender-sat-lgt), var(--delRio-sat-lgt), var(--alto-sat-lgt)); /* For Firefox 3.6 to 15 */
+    --platinum-g1-sat-lgt-standard: linear-gradient(to right, var(--linkWater-sat-lgt), var(--juniper-sat-lgt), var(--shuttleGray-sat-lgt), var(--silverBase-sat-lgt), var(--oldLavender-sat-lgt), var(--delRio-sat-lgt), var(--alto-sat-lgt)); /* Standard syntax (must be last) */
+    /*bright*/
+    --platinum-g1-sat-brt-safari: -webkit-linear-gradient(right, var(--linkWater-sat-brt), var(--juniper-sat-brt), var(--shuttleGray-sat-brt), var(--silverBase-sat-brt), var(--oldLavender-sat-brt), var(--delRio-sat-brt), var(--alto-sat-brt)); /* For Safari 5.1 to 6.0 */
+    --platinum-g1-sat-brt-opera: -o-linear-gradient(right, var(--linkWater-sat-brt), var(--juniper-sat-brt), var(--shuttleGray-sat-brt), var(--silverBase-sat-brt), var(--oldLavender-sat-brt), var(--delRio-sat-brt), var(--alto-sat-brt)); /* For Opera 11.1 to 12.0 */
+    --platinum-g1-sat-brt-firefox: -moz-linear-gradient(right, var(--linkWater-sat-brt), var(--juniper-sat-brt), var(--shuttleGray-sat-brt), var(--silverBase-sat-brt), var(--oldLavender-sat-brt), var(--delRio-sat-brt), var(--alto-sat-brt)); /* For Firefox 3.6 to 15 */
+    --platinum-g1-sat-brt-standard: linear-gradient(to right, var(--linkWater-sat-brt), var(--juniper-sat-brt), var(--shuttleGray-sat-brt), var(--silverBase-sat-brt), var(--oldLavender-sat-brt), var(--delRio-sat-brt), var(--alto-sat-brt)); /* Standard syntax (must be last) */
+    /*dark*/
+    --platinum-g1-sat-drk-safari: -webkit-linear-gradient(right, var(--linkWater-sat-drk), var(--juniper-sat-drk), var(--shuttleGray-sat-drk), var(--silverBase-sat-drk), var(--oldLavender-sat-drk), var(--delRio-sat-drk), var(--alto-sat-drk)); /* For Safari 5.1 to 6.0 */
+    --platinum-g1-sat-drk-opera: -o-linear-gradient(right, var(--linkWater-sat-drk), var(--juniper-sat-drk), var(--shuttleGray-sat-drk), var(--silverBase-sat-drk), var(--oldLavender-sat-drk), var(--delRio-sat-drk), var(--alto-sat-drk)); /* For Opera 11.1 to 12.0 */
+    --platinum-g1-sat-drk-firefox: -moz-linear-gradient(right,var(--linkWater-sat-drk), var(--juniper-sat-drk), var(--shuttleGray-sat-drk), var(--silverBase-sat-drk), var(--oldLavender-sat-drk), var(--delRio-sat-drk), var(--alto-sat-drk)); /* For Firefox 3.6 to 15 */
+    --platinum-g1-sat-drk-standard: linear-gradient(to right, var(--linkWater-sat-drk), var(--juniper-sat-drk), var(--shuttleGray-sat-drk), var(--silverBase-sat-drk), var(--oldLavender-sat-drk), var(--delRio-sat-drk), var(--alto-sat-drk)); /* Standard syntax (must be last) */
+
+    /* Pastel */
+
+    /*light*/
+    --platinum-g1-pas-lgt-safari: -webkit-linear-gradient(right, var(--linkWater-pas-lgt), var(--juniper-pas-lgt), var(--shuttleGray-pas-lgt), var(--silverBase-pas-lgt), var(--oldLavender-pas-lgt), var(--delRio-pas-lgt), var(--alto-pas-lgt)); /* For Safari 5.1 to 6.0 */
+    --platinum-g1-pas-lgt-opera: -o-linear-gradient(right, var(--linkWater-pas-lgt), var(--juniper-pas-lgt), var(--shuttleGray-pas-lgt), var(--silverBase-pas-lgt), var(--oldLavender-pas-lgt), var(--delRio-pas-lgt), var(--alto-pas-lgt)); /* For Opera 11.1 to 12.0 */
+    --platinum-g1-pas-lgt-firefox: -moz-linear-gradient(right, var(--linkWater-pas-lgt), var(--juniper-pas-lgt), var(--shuttleGray-pas-lgt), var(--silverBase-pas-lgt), var(--oldLavender-pas-lgt), var(--delRio-pas-lgt), var(--alto-pas-lgt)); /* For Firefox 3.6 to 15 */
+    --platinum-g1-pas-lgt-standard: linear-gradient(to right, var(--linkWater-pas-lgt), var(--juniper-pas-lgt), var(--shuttleGray-pas-lgt), var(--silverBase-pas-lgt), var(--oldLavender-pas-lgt), var(--delRio-pas-lgt), var(--alto-pas-lgt)); /* Standard syntax (must be last) */
+    /*bright*/
+    --platinum-g1-pas-brt-safari: -webkit-linear-gradient(right, var(--linkWater-pas-brt), var(--juniper-pas-brt), var(--shuttleGray-pas-brt), var(--silverBase-pas-brt), var(--oldLavender-pas-brt), var(--delRio-pas-brt), var(--alto-pas-brt)); /* For Safari 5.1 to 6.0 */
+    --platinum-g1-pas-brt-opera: -o-linear-gradient(right, var(--linkWater-pas-brt), var(--juniper-pas-brt), var(--shuttleGray-pas-brt), var(--silverBase-pas-brt), var(--oldLavender-pas-brt), var(--delRio-pas-brt), var(--alto-pas-brt)); /* For Opera 11.1 to 12.0 */
+    --platinum-g1-pas-brt-firefox: -moz-linear-gradient(right, var(--linkWater-pas-brt), var(--juniper-pas-brt), var(--shuttleGray-pas-brt), var(--silverBase-pas-brt), var(--oldLavender-pas-brt), var(--delRio-pas-brt), var(--alto-pas-brt)); /* For Firefox 3.6 to 15 */
+    --platinum-g1-pas-brt-standard: linear-gradient(to right, var(--linkWater-pas-brt), var(--juniper-pas-brt), var(--shuttleGray-pas-brt), var(--silverBase-pas-brt), var(--oldLavender-pas-brt), var(--delRio-pas-brt), var(--alto-pas-brt)); /* Standard syntax (must be last) */
+    /*dark*/
+    --platinum-g1-pas-drk-safari: -webkit-linear-gradient(right, var(--linkWater-pas-drk), var(--juniper-pas-drk), var(--shuttleGray-pas-drk), var(--silverBase-pas-drk), var(--oldLavender-pas-drk), var(--delRio-pas-drk), var(--alto-pas-drk)); /* For Safari 5.1 to 6.0 */
+    --platinum-g1-pas-drk-opera: -o-linear-gradient(right, var(--linkWater-pas-drk), var(--juniper-pas-drk), var(--shuttleGray-pas-drk), var(--silverBase-pas-drk), var(--oldLavender-pas-drk), var(--delRio-pas-drk), var(--alto-pas-drk)); /* For Opera 11.1 to 12.0 */
+    --platinum-g1-pas-drk-firefox: -moz-linear-gradient(right, var(--linkWater-pas-drk), var(--juniper-pas-drk), var(--shuttleGray-pas-drk), var(--silverBase-pas-drk), var(--oldLavender-pas-drk), var(--delRio-pas-drk), var(--alto-pas-drk)); /* For Firefox 3.6 to 15 */
+    --platinum-g1-pas-drk-standard: linear-gradient(to right, var(--linkWater-pas-drk), var(--juniper-pas-drk), var(--shuttleGray-pas-drk), var(--silverBase-pas-drk), var(--oldLavender-pas-drk), var(--delRio-pas-drk), var(--alto-pas-drk)); /* Standard syntax (must be last) */
+
+
+    /* ----- Patterns ----- */
+
+
+    /* -- Higher Order (minor) -- */
+
+
+    /* - Rainbow - */
+
+    /*-Pattern 1-*/
+
+    /* Saturated */
+
+    /*light*/
+    --rainbow-p1-sat-lgt: url('../../images/patterns/higherOrder/rainbow/pattern1/rainbow-p1-sat-lgt.jpg');
+     /*bright*/
+     --rainbow-p1-sat-brt: url('../../images/patterns/higherOrder/rainbow/pattern1/rainbow-p1-sat-brt.jpg');
+      /*dark*/
+    --rainbow-p1-sat-drk: url('../../images/patterns/higherOrder/rainbow/pattern1/rainbow-p1-sat-drk.jpg');
+
+    /* - Silver - */
+
+    /*-Pattern 1-*/
+
+    /* Saturated */
+
+    /*light*/
+    --silver-p1-sat-lgt: url('../../images/patterns/higherOrder/silver/pattern1/silver-p1-sat-lgt.jpg');
+    /*bright*/
+    --silver-p1-sat-brt: url('../../images/patterns/higherOrder/silver/pattern1/silver-p1-sat-brt.jpg');
+    /*dark*/
+    --silver-p1-sat-drk: url('../../images/patterns/higherOrder/silver/pattern1/silver-p1-sat-drk.jpg');
+
+    /* - Gold - */
+
+    /*-Pattern 1-*/
+
+    /* Saturated */
+
+    /*light*/
+    --gold-p1-sat-lgt: url('../../images/patterns/higherOrder/gold/pattern1/gold-p1-sat-lgt.jpg');
+    /*bright*/
+    --gold-p1-sat-brt: url('../../images/patterns/higherOrder/gold/pattern1/gold-p1-sat-brt.jpg');
+    /*dark*/
+    --gold-p1-sat-drk: url('../../images/patterns/higherOrder/gold/pattern1/gold-p1-sat-drk.jpg');
+
+    /* - Platinum - */
+
+    /*-Pattern 1-*/
+
+    /* Saturated */
+
+    /*light*/
+    --platinum-p1-sat-lgt: url('../../images/patterns/higherOrder/platinum/pattern1/platinum-p1-sat-lgt.jpg');
+    /*bright*/
+    --platinum-p1-sat-brt: url('../../images/patterns/higherOrder/platinum/pattern1/platinum-p1-sat-brt.jpg');
+    /*dark*/
+    --platinum-p1-sat-drk: url('../../images/patterns/higherOrder/platinum/pattern1/platinum-p1-sat-drk.jpg');
+
+    /* - Diamond - */
+
+    /*-Pattern 1-*/
+
+    /* Saturated */
+
+    /*light*/
+    --diamond-p1-sat-lgt: url('../../images/patterns/higherOrder/diamond/pattern1/diamond-p1-sat-lgt.jpg');
+    /*bright*/
+    --diamond-p1-sat-brt: url('../../images/patterns/higherOrder/diamond/pattern1/diamond-p1-sat-brt.jpg');
+    /*dark*/
+    --diamond-p1-sat-drk: url('../../images/patterns/higherOrder/diamond/pattern1/diamond-p1-sat-drk.jpg');
+
+    /* Pastel */
+
+    /*light*/
+    --diamond-p1-pas-lgt: url('../../images/patterns/higherOrder/diamond/pattern1/diamond-p1-pas-lgt.jpg');
+    /*bright*/
+    --diamond-p1-pas-brt: url('../../images/patterns/higherOrder/diamond/pattern1/diamond-p1-pas-brt.jpg');
+    /*dark*/
+    --diamond-p1-pas-drk: url('../../images/patterns/higherOrder/diamond/pattern1/diamond-p1-pas-drk.jpg');
+
+}

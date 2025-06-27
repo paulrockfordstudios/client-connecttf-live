@@ -1,0 +1,603 @@
+.topBar {
+    position: fixed;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 4.563rem; /*73px*/
+    z-index: 9999;
+}
+
+.topbarBorder {
+    height: 0.188rem; /*3px*/
+    width: 100%;
+    background-size: cover;
+}
+
+.topbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 4.375rem; /*70px*/
+    width: calc(100% - 3.75rem); /*(100% - 60px)*/
+    margin: 0 1.875rem; /*30px*/
+}
+
+/* ------- Topbar Left ------- */
+
+.topbar-left-container {
+    display: flex;
+    width: 40%;
+}
+
+/* ------- Topbar Center ------- */
+
+.topbar-center-container {
+    width: 20%;
+    display: flex;
+    height: 2.75rem; /*44px*/
+    min-width: 16.375rem; /*262px*/
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    overflow: visible;
+}
+
+.topbarLogoLink {
+    text-decoration: none;
+    height: 2.75rem; /*44px*/
+    width: 16.375rem; /*262px*/
+    min-height: 2.75rem; /*44px*/
+    max-width: 16.375rem; /*262px*/ 
+    background-size: 16.375rem 2.75rem; /*44px*/ 
+    background-repeat: no-repeat;
+    background-position: center;
+    overflow: visible;
+}
+
+.topbarLogo {
+    cursor: pointer;
+    width: 100%;
+    min-height: 2.75rem; /*44px*/
+    height: 2.75rem; /*44px*/
+    justify-content: center;
+    align-items: center;
+    background-size: 2.75rem; /*44px*/
+}
+
+.topbarLogoImg {
+    cursor: pointer;
+    width: 100%;
+    min-height: 2.75rem; /*44px*/
+    height: 2.75rem; /*44px*/
+    justify-content: center;
+    align-items: center;
+    background-size: contain;
+}
+
+
+/* ------- Topbar Right ------- */
+
+.topbar-right-container {
+    width: 40%;
+    align-items: center;
+    display: flex;
+    justify-content: right;
+}
+
+.topbarIcons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 75%;
+}
+
+
+
+.topbarIconItemcontainer {
+    position: relative;
+    display: flex;
+    height: 2.75rem; /*44px*/
+    width: 2.75rem; /*44px*/
+    border-radius: 50%;
+}
+
+.topbarIconItemBackgroundTheme {
+    position: absolute;
+    height: 2.75rem; /*44px*/
+    width: 2.75rem; /*44px*/
+    border-radius: 50%;
+    -webkit-filter: blur(0.125rem); /*2px*/
+    -moz-filter: blur(0.125rem); /*2px*/
+    -o-filter: blur(0.125rem); /*2px*/
+    -ms-filter: blur(0.125rem); /*2px*/
+    filter: blur(0.125rem); /*2px*/
+    opacity: 0.75;
+    background-size: cover;
+}
+
+.topbarIconItem {
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    flex-shrink: none;
+    align-items: center;
+    justify-content: center;
+    height: 2.75rem; /*44px*/
+    width: 2.75rem; /*44px*/
+    border-radius: 50%;
+    background-repeat: no-repeat;
+}
+
+.topbarIconItem.open {
+    background-color: transparent;
+}
+
+.topbarIconItem.masculine:hover, .topbarIconItem.focus.masculine {
+    background-color: #d8e1fe;
+}
+
+.topbarIconItem.masculine:active {
+    background-color: #c3cbe5;
+}
+
+.topbarIconItem.feminine:hover, .topbarIconItem.focus.feminine {
+    background-color: #fde1ef;
+}
+
+.topbarIconItem.feminine:active {
+    background-color: #e4cbd8;
+}
+
+.topbarIconItem.ruby:hover, .topbarIconItem.focus.ruby {
+    background-color: #d4a6ad;
+}
+
+.topbarIconItem.ruby:active {
+    background-color: #be959b;
+}
+
+.topbarIconItem.orange:hover, .topbarIconItem.focus.orange {
+    background-color: #ffdab3;
+}
+
+.topbarIconItem.orange:active {
+    background-color: #e6c5a1;
+}
+
+.topbarIconItem.sun:hover, .topbarIconItem.focus.sun {
+    background-color: #fff9bf;
+}
+
+.topbarIconItem.sun:active {
+    background-color: #e6e1ac;
+}
+
+.topbarIconItem.emerald:hover, .topbarIconItem.focus.emerald {
+    background-color: #caeed6;
+}
+
+.topbarIconItem.emerald:active {
+    background-color: #b6d7c1;
+}
+
+.topbarIconItem.blue:hover, .topbarIconItem.focus.blue {
+    background-color: #cee8fb;
+}
+
+.topbarIconItem.blue:active {
+    background-color: #bad1e2;
+}
+
+.topbarIconItem.indigo:hover, .topbarIconItem.focus.indigo {
+    background-color: #babad4;
+}
+
+.topbarIconItem.indigo:active {
+    background-color: #a8a8bf;
+}
+
+.topbarIconItem.violet:hover, .topbarIconItem.focus.violet {
+    background-color: #dcbff6;
+}
+
+.topbarIconItem.violet:active {
+    background-color: #c6acde;
+}
+
+.topbarIconItem.rainbow:hover, .topbarIconItem.focus.rainbow {
+    background-image: -webkit-linear-gradient(left, #d4a6ad, #ffdab3, #fff9bf, #caeed6, #cee8fb, #babad4, #dcbff6); /* For Safari 5.1 to 6.0 */
+    background-image: -o-linear-gradient(right, #d4a6ad, #ffdab3, #fff9bf, #caeed6, #cee8fb, #babad4, #dcbff6); /* For Opera 11.1 to 12.0 */
+    background-image: -moz-linear-gradient(right, #d4a6ad, #ffdab3, #fff9bf, #caeed6, #cee8fb, #babad4, #dcbff6); /* For Firefox 3.6 to 15 */
+    background-image: linear-gradient(to right, #d4a6ad, #ffdab3, #fff9bf, #caeed6, #cee8fb, #babad4, #dcbff6); /* Standard syntax (must be last) */
+}
+
+.topbarIconItem.rainbow:active {
+    background-image: -webkit-linear-gradient(left, #be959b, #e6c5a1, #e6e1ac, #b6d7c1, #bad1e2, #a8a8bf, #c6acde); /* For Safari 5.1 to 6.0 */
+    background-image: -o-linear-gradient(right, #be959b, #e6c5a1, #e6e1ac, #b6d7c1, #bad1e2, #a8a8bf, #c6acde); /* For Opera 11.1 to 12.0 */
+    background-image: -moz-linear-gradient(right, #be959b, #e6c5a1, #e6e1ac, #b6d7c1, #bad1e2, #a8a8bf, #c6acde); /* For Firefox 3.6 to 15 */
+    background-image: linear-gradient(to right, #be959b, #e6c5a1, #e6e1ac, #b6d7c1, #bad1e2, #a8a8bf, #c6acde); /* Standard syntax (must be last) */
+}
+
+.topbarIconItem.silver:hover, .topbarIconItem.focus.silver {
+    background-image: -webkit-linear-gradient(left, #f4f4f4, #dddddd, #f4f4f4); /* For Safari 5.1 to 6.0 */
+    background-image: -o-linear-gradient(right, #f4f4f4, #dddddd, #f4f4f4); /* For Opera 11.1 to 12.0 */
+    background-image: -moz-linear-gradient(right, #f4f4f4, #dddddd, #f4f4f4); /* For Firefox 3.6 to 15 */
+    background-image: linear-gradient(to right, #f4f4f4, #dddddd, #f4f4f4); /* Standard syntax (must be last) */
+    color: white;
+}
+
+.topbarIconItem.silver:active {
+    background-image: -webkit-linear-gradient(left, #dcdcdc, #c7c7c7 , #dcdcdc); /* For Safari 5.1 to 6.0 */
+    background-image: -o-linear-gradient(right, #dcdcdc, #c7c7c7 , #dcdcdc); /* For Opera 11.1 to 12.0 */
+    background-image: -moz-linear-gradient(right, #dcdcdc, #c7c7c7 , #dcdcdc); /* For Firefox 3.6 to 15 */
+    background-image: linear-gradient(to right, #dcdcdc, #c7c7c7 , #dcdcdc); /* Standard syntax (must be last) */
+    color: white;
+}
+
+.topbarIconItem.gold:hover, .topbarIconItem.focus.gold {
+    background-image: -webkit-linear-gradient(left, #e6d6bb, #faf1d0, #e6d6bb); /* For Safari 5.1 to 6.0 */
+    background-image: -o-linear-gradient(right, #e6d6bb, #faf1d0, #e6d6bb); /* For Opera 11.1 to 12.0 */
+    background-image: -moz-linear-gradient(right, #e6d6bb, #faf1d0, #e6d6bb); /* For Firefox 3.6 to 15 */
+    background-image: linear-gradient(to right, #e6d6bb, #faf1d0, #e6d6bb); /* Standard syntax (must be last) */
+    color: white;
+}
+
+.topbarIconItem.gold:active {
+    background-image: -webkit-linear-gradient(left, #cfc1a9, #e1d9bc , #cfc1a9); /* For Safari 5.1 to 6.0 */
+    background-image: -o-linear-gradient(right, #cfc1a9, #e1d9bc , #cfc1a9); /* For Opera 11.1 to 12.0 */
+    background-image: -moz-linear-gradient(right, #cfc1a9, #e1d9bc , #cfc1a9); /* For Firefox 3.6 to 15 */
+    background-image: linear-gradient(to right, #cfc1a9, #e1d9bc , #cfc1a9); /* Standard syntax (must be last) */
+    color: white;
+}
+
+.topbarIconItem.platinum:hover, .topbarIconItem.focus.platinum {
+    background-image: -webkit-linear-gradient(left, #f2f8fc, #d2dcdf, #cccfd1, #dddddd, #d3cfd2, #e7dfe0, #f4f4f4); /* For Safari 5.1 to 6.0 */
+    background-image: -o-linear-gradient(right, #f2f8fc, #d2dcdf, #cccfd1, #dddddd, #d3cfd2, #e7dfe0, #f4f4f4); /* For Opera 11.1 to 12.0 */
+    background-image: -moz-linear-gradient(right, #f2f8fc, #d2dcdf, #cccfd1, #dddddd, #d3cfd2, #e7dfe0, #f4f4f4); /* For Firefox 3.6 to 15 */
+    background-image: linear-gradient(to right, #f2f8fc, #d2dcdf, #cccfd1, #dddddd, #d3cfd2, #e7dfe0, #f4f4f4); /* Standard syntax (must be last) */
+    color: white;
+}
+
+.topbarIconItem.platinum:active {
+    background-image: -webkit-linear-gradient(left, #dae0e3, #bdc6c9, #b8bbbd, #c7c7c7, #bebbbd, #d0c9ca, #dcdcdc); /* For Safari 5.1 to 6.0 */
+    background-image: -o-linear-gradient(right, #dae0e3, #bdc6c9, #b8bbbd, #c7c7c7, #bebbbd, #d0c9ca, #dcdcdc); /* For Opera 11.1 to 12.0 */
+    background-image: -moz-linear-gradient(right, #dae0e3, #bdc6c9, #b8bbbd, #c7c7c7, #bebbbd, #d0c9ca, #dcdcdc); /* For Firefox 3.6 to 15 */
+    background-image: linear-gradient(to right, #dae0e3, #bdc6c9, #b8bbbd, #c7c7c7, #bebbbd, #d0c9ca, #dcdcdc); /* Standard syntax (must be last) */
+    color: white;
+}
+
+.topbarIconItem.gray:hover,  .topbarIconItem.focus.gray {
+    background-color: #e4e6e7;
+}
+
+.topbarIconItem.gray:active {
+    background-color: #cecfd0;
+}
+
+.topbarIcon {
+    margin-top: 6px;
+    margin-left: 6px;
+    background-repeat: no-repeat;
+}
+
+.topbarIcon.masculine {
+    color: #4a76fd;
+}
+
+.topbarIcon.masculine:active {
+    color: #3453b2;
+}
+
+.topbarIcon.feminine {
+    color: #e639af;
+}
+
+.topbarIcon.feminine:active {
+    color: #a1287b;
+}
+
+.topbarIcon.ruby {
+    color: #850014;   
+}
+
+.topbarIcon.ruby:active {
+    color: #5d000e;
+}
+
+.topbarIcon.orange { 
+    color: #ff8303; 
+}
+
+.topbarIcon.orange:active {
+    color: #b35c02;
+}
+
+.topbarIcon.sun {
+    color: #ffe700;  
+}
+
+.topbarIcon.sun:active {
+    color: #b3a200;
+}
+
+.topbarIcon.emerald { 
+    color: #50c878; 
+}
+
+.topbarIcon.emerald:active {
+    color: #388c54;
+}
+
+.topbarIcon.blue {
+    color: #098de9; 
+}
+
+.topbarIcon.blue:active {
+    color: #0663a4;
+}
+
+.topbarIcon.indigo { 
+    color: #30307e; 
+}
+
+.topbarIcon.indigo:active {
+    color: #222258;
+}
+
+.topbarIcon.violet { 
+    color: #8a2be2; 
+}
+
+.topbarIcon.violet:active {
+    color: #611e9f;
+}
+
+.topbarIcon.gray {
+    color: #aeb4b7;
+}
+
+.topbarIcon.gray:active {
+    color: #7a7e80;
+}
+
+.topbarPNGIcon {
+    display: flex;
+    flex-shrink: 0;
+    height: 22px;
+    width: 22px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.topbarPNGIcon.gps {
+    height: 22px;
+    width: 24px;
+}
+
+.topbarPNGIcon.lp {
+    height: 30px;
+    width: 24px;
+}
+
+.topbarIconPNG {
+    height: 25px;
+}
+
+
+.topbarIconPNGPeople {
+    height: 16px;
+    padding-top: 5px;
+}
+
+.topbarIconBadge {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    border-radius: 12px;
+    color: white;
+    display: flex;
+    font-size: 14px;
+    height: 24px;
+    justify-content: center;
+    position: absolute;
+    right: -5px;
+    top: -5px;
+    min-width: 24px;
+}
+
+.topbarIconBadge.masculine {
+    background-color: #e639af;
+}
+
+.topbarIconBadge.feminine {
+    background-color: #4a76fd;
+}
+
+.topbarIconBadge.gray {
+    background-color: #50c878;
+}
+
+.topbar-right-right {
+    width: 108px;
+    position: relative;
+    z-index: initial;
+}
+
+.tbFMDropDown {
+    display: flex;
+    justify-content: center;
+    height: 0;
+    width: 362px;
+    overflow: hidden;
+    background: transparent;
+    position: absolute;
+    right: -6px;
+    transition: height 225ms ease-in-out;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.tbFMDropDown.open {
+    height: 491px;
+}
+
+.tbFMDropDown.flame {
+    top: 59px;
+}
+
+.tbCMDropDown {
+    display: flex;
+    justify-content: center;
+    height: 0;
+    width: 362px;
+    overflow: hidden;
+    background: transparent;
+    position: absolute;
+    right: -6px;
+    transition: height 225ms ease-in-out;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.tbCMDropDown.open {
+    height: 491px;
+}
+
+.tbCMDropDown.flame {
+    top: 59px;
+}
+
+.tbNMDropDown {
+    display: flex;
+    justify-content: center;
+    height: 0;
+    width: 362px;
+    overflow: hidden;
+    background: transparent;
+    position: absolute;
+    right: -6px;
+    transition: height 225ms ease-in-out;
+}
+
+.tbNMDropDown.open {
+    height: 491px;
+}
+
+.tbNMDropDown.flame {
+    top: 59px;
+}
+
+
+.tbAMDropDown {
+    display: flex;
+    justify-content: center;
+    height: 0;
+    width: 362px;
+    overflow: hidden;
+    background: transparent;
+    position: absolute;
+    right: 22px;
+    transition: height 225ms ease-in-out;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.tbAMDropDown.open {
+    height: 464px;
+}
+
+
+.tbAMDropDown {
+    top: 38px;
+}
+
+.topbarProfilePic {
+    border-radius: 50%; 
+    cursor: pointer;
+    object-fit: cover;
+    position: absolute;
+    /*
+    
+    top: -21px;
+    right: 33px;
+    */
+}
+
+.topbarProfilePic.flame.primary {
+    height: 48px;
+    width: 48px;
+}
+
+.topbarProfilePic.flame.secondary {
+    height: 42px;
+    width: 42px;
+    
+}
+
+.topbarProfilePic.flame.secondary.ruby {
+    border: 3px solid #850014;
+    background-color: #850014;
+}    
+
+.topbarProfilePic.flame.secondary.orange {
+    border: 3px solid #ff8303;
+    background-color: #ff8303;
+}    
+
+.topbarProfilePic.flame.secondary.sun {
+    border: 3px solid #ffe700;
+    background-color: #ffe700;
+}    
+
+.topbarProfilePic.flame.secondary.emerald {
+    border: 3px solid #50c878;
+    background-color: #50c878;
+}    
+
+.topbarProfilePic.flame.secondary.blue {
+    border: 3px solid #098de9;
+    background-color: #098de9;
+}    
+
+.topbarProfilePic.flame.secondary.indigo {
+    border: 3px solid #30307e;
+    background-color: #30307e;
+}    
+
+.topbarProfilePic.flame.secondary.violet {
+    border: 3px solid #8a2be2;
+    background-color: #8a2be2;
+}    
+
+
+
+.topbarProfilePic.union {
+    height: 42px;
+    width: 42px;
+}
+
+.topbarProfilePic.union.masculine {
+    border: 3px solid #4a76fd;
+    background-color: #4a76fd;
+}    
+
+.topbarProfilePic.union.feminine {
+    border: 3px solid #e639af;
+    background-color: #e639af;
+}   
+
+.topbarProfilePic.flame.secondary.gray, .topbarProfilePic.union.gray {
+    border: 3px solid #a4b4b7;
+    background-color: #a4b4b7;
+}    
+
+
+
+.tbIconItemDiamondHover {
+    position: absolute;
+    height: 2.75rem; /*44px*/
+    width: 2.75rem; /*44px*/
+    top: 0;
+    border-radius: 50%;
+}

@@ -1,0 +1,76 @@
+.blacklistPopupPortal {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.blacklistPopupModal {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.blacklistPopupContainer {
+    border-radius: 40px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    -webkit-box-shadow: 0px 10px 50px -20px rgba(0,0,0,0.75); 
+    box-shadow: 0px 10px 50px -20px rgba(0,0,0,0.75);
+    padding: 100px;
+}
+
+.blacklistPopupConnectTFLogo {
+    display: flex;
+    flex-shrink: 0;
+    align-self: center;
+    width: 80px;
+    margin-bottom: 20px;
+}
+
+.blacklistPopupTextHeaderOne {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    font-size: 36px;
+    font-weight: 900;
+    margin-bottom: 20px;
+}
+
+.blacklistPopupTextHeaderTwo {
+    display: flex;
+    justify-content: center;
+    text-wrap: nowrap;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.blacklistPopupTextAppealInfo {
+   text-align: center;
+}
+
+.blacklistPopupTextAppealInfoLink {
+    color: #4a76fd;
+}
+
+.blacklistPopupTextAppealInfoLink:hover {
+    color: #4a76fd;
+    font-weight: 500;
+}
+
+.blacklistPopupTextAppealInfoLink:active {
+    color: #e639af;
+}
+
+.blacklistPopupTextAppealInfoLink:visited {
+    color: purple;
+    font-weight: 500;
+}

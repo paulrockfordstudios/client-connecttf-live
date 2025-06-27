@@ -1,0 +1,90 @@
+.faiepPortal {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    z-index: 999;
+}
+
+.faiepBackdropOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.faiepModal {
+    position: fixed;
+    top: 30%;
+    bottom: 30%;
+    left: 30%;
+    right: 30%;
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.faiepScreenContainer {
+    position: fixed;
+    z-index: 999;
+    top: 30%;
+    bottom: 30%;
+    left: 30%;
+    right: 30%;
+    width: 40%;
+    height: 20%;
+}
+
+.faiepContainer {
+    width: 80%;
+    height: 40%;
+    border-radius: 40px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    -webkit-box-shadow: 0px 10px 50px -20px rgba(0,0,0,0.75); 
+    box-shadow: 0px 10px 50px -20px rgba(0,0,0,0.75);
+}
+
+.faiepTop {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.faiepBottom {
+    display: flex;
+    justify-content: center;
+    margin: 40px 0;
+}
+
+.faiepButton {
+    height: 30px;
+    width: 100px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 500;
+    margin: 0 10px;
+    cursor: pointer;
+    background-size: cover;
+}
+
+.faiepButton.masculine {
+    background-color: #4a76fd;
+    color: white;
+}
+
+.faiepButton.feminine {
+    background-color: #e639af;
+    color: white;
+}
+
+.faiepButton.gray {
+    background-color: #a4b4b7;
+    color: black;
+}

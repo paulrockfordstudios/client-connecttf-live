@@ -1,0 +1,92 @@
+.languageBtn {
+    position: relative;
+    background: none;
+    white-space: nowrap;
+    border: none;
+    padding: 0;
+    font: 1rem; /*16px*/
+    cursor: pointer;
+    outline: inherit;
+}
+
+.languageBtn.light {
+    color: #7a7e80;
+}
+
+.languageBtn.dark {
+    color: #cac6cc;
+}
+
+.languageBtn.enabled:hover {
+    text-decoration: underline;
+}
+
+.languageBtn.light:active {
+    color: black;
+}
+
+.languageBtn.dark:active {
+    color: white;
+}
+
+.languageBtn-btn {
+    padding: 0.313rem; /*5px*/
+    border-radius: 0.625rem /*10px*/
+}
+
+.languageBtn-btn.light.keyHov {
+    border: 0.25rem solid #7a7e80; /*4px*/
+}
+
+.languageBtn-btn.dark.keyHov {
+    border: 0.25rem solid #cac6cc; /*4px*/
+}
+
+.languageBtn-btn.disabled {
+    opacity: 30%
+}
+ 
+.localePronunciationBubble {
+    position: absolute;
+    top: -0.25rem; /*4px*/
+    height: 2.25rem; /*36px*/
+    opacity: 0.7;
+    border-radius: 10px;
+    display: none;
+    align-items: center;
+    z-index: 999;
+}
+
+.localePronunciationBubble.light {
+    background-color: black;
+}
+
+.localePronunciationBubble.dark {
+    background-color: white;
+}
+
+.localePronunciationBubble.Sindarin {
+    top: 0;
+}
+
+.localePronunciationBubble.lpHov {
+    display: flex;
+}
+
+.localePronunciationBubble.keyHov.lpHov {
+    top: 0;
+}
+
+.localePronunciationText {
+    margin: 0 0.625rem; /* 0 10px*/
+    font-weight: 100;
+    font-size: 0.813rem; /*13px*/
+}
+
+.localePronunciationText.light {
+    color: white;
+}
+
+.localePronunciationText.dark {
+    color: black;
+}

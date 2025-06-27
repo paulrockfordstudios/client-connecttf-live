@@ -1,0 +1,38 @@
+{
+    "login": {
+        "email": "Epos",
+        "password": "Wagwoord",
+        "show_password": "Wys Wagwoord",
+        "hide_password": "Versteek Wagwoord",
+        "forgot_password": "Wagwoord Vergeet",
+        "sign_in": "Teken Aan",
+        "sign_in_google": "Meld Aan met Google",
+        "sign_up_google": "Sluit Aan met Google",
+        "sign_in_apple": "Meld aan met Apple",
+        "sign_up_apple": "Sluit Aan met Apple",
+        "create_account": "Skep Nuwe Rekening",
+        "about": "omtrent <4>Connect</4><2>tf</2>",
+        "ctfwiki": "<4>C</4><2>TF</2>Wiki",
+        "ctffaqs":  "<4>C</4><2>TF</2> FAQs",
+        "terms_of_use": "Gebruiksvoorwaardes",
+        "privacy_policy": "Privaatheidsbeleid",
+        "cookies": "Koekies",
+        "advertising": "reklame",
+        "newsLetter": "Nuusbrief",
+        "contact": "kontak",
+        "language": "Tale",
+        "account": "Rekening",
+        "settings": "Instellings",
+        "copyright": "Kopiereg 2025",
+        "slogan": "'n Plek waar diegene wat op die <2>tweelingvlam</2>reis is, kan <4>verbind</4>!",
+        "disclaimer": { 
+            "word1": "<6>Vrywaring:</6>",
+            "sentence1": "<7>Hierdie webwerf is 'n openbare forum wat oop is vir enigiemand wat belangstel in tweelingvlamme en/of geestelike verbindings, vriendskappe en verhoudings.</7>",
+            "sentence2": "<7>Hierdie webwerf is geensins geaffilieer met enige kultusse of kultuspraktyke nie.</7>",
+            "sentence3": "<7>Hierdie webwerf vergoelik geensins gedrag soos teistering of agtervolging nie.</7>",
+            "sentence4": "<7>Hierdie webwerf is bedoel as 'n openbare forum vir eendersdenkende mense om kontak te maak met ander wat soortgelyke oortuigings deel met die idee om te help om verdere groei geestelik, emosioneel en geestelik in alle aspekte van hul lewens te fasiliteer.</7>",
+            "sentence5": "<7>Dit is 'n gemeenskapsgemoniteerde forum; Alle geloofstelsels en ideologieë moet gerespekteer word.</7>",
+            "sentence6": "<7>Aanstootlike gedrag, soos trolling, sal nie geduld word nie.</7>"
+        }
+    }
+}

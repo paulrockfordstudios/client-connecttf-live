@@ -1,0 +1,423 @@
+.tfDropdown.friend {
+    top: 66px;
+}
+
+.tfDropdown.union {
+    top: 73px;
+}
+
+.tfDropdownHigherSpectrumBackground {
+    position: absolute;
+    width: 44px;
+    height: 44px;
+    border-radius: 22px;
+    top: 0;
+    left: 0;
+    background-size: cover;
+    opacity: 0.3;
+}
+
+.tfDropdownHigherSpectrumBackground.rainbow {
+    background: -webkit-linear-gradient(left, #850014, #ff8303, #ffe700, #50c878, #098de9, #30307e, #8a2be2); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, #850014, #ff8303, #ffe700, #50c878, #098de9, #30307e, #8a2be2); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, #850014, #ff8303, #ffe700, #50c878, #098de9, #30307e, #8a2be2); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, #850014, #ff8303, #ffe700, #50c878, #098de9, #30307e, #8a2be2); /* Standard syntax (must be last) */
+}
+
+.tfDropdownHigherSpectrumBackground.silver {
+    background: -webkit-linear-gradient(left, #dadada, #8e8e8e, #dadada); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, #dadada, #8e8e8e, #dadada); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, #dadada, #8e8e8e, #dadada); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, #dadada, #8e8e8e, #dadada); /* Standard syntax (must be last) */
+}
+
+.tfDropdownHigherSpectrumBackground.gold {
+    background: -webkit-linear-gradient(left, #ab781d, #eed264, #ab781d); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, #ab781d, #eed264, #ab781d); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, #ab781d, #eed264, #ab781d); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, #ab781d, #eed264, #ab781d); /* Standard syntax (must be last) */
+}
+
+.tfDropdownHigherSpectrumBackground.platinum {
+    background: -webkit-linear-gradient(left, #d3e9f6, #6b8c95, #566167, #8e8e8e, #6d606a, #af9499, #dadada); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, #d3e9f6, #6b8c95, #566167, #8e8e8e, #6d606a, #af9499, #dadada); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, #d3e9f6, #6b8c95, #566167, #8e8e8e, #6d606a, #af9499, #dadada); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, #d3e9f6, #6b8c95, #566167, #8e8e8e, #6d606a, #af9499, #dadada); /* Standard syntax (must be last) */
+}
+
+.tfDropdownWhiteBackground {
+    position: absolute;
+    margin: 20px;
+    width: 2px;
+    height: 2px;
+    border-radius: 22px;
+    top: 0;
+    left: 0;
+    background-color: white;
+    -webkit-box-shadow: 0px 0px 30px 26px white; 
+    box-shadow: 0px 0px 30px 26px white;
+    opacity: .75;
+}
+
+.tfDropdownBackgroundTheme {
+    width: 350px;
+    height: 485px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    -webkit-filter: blur(2px);
+    -moz-filter: blur(2px);
+    -o-filter: blur(2px);
+    -ms-filter: blur(2px);
+    filter: blur(2px);
+    position: absolute;
+    opacity: 0.75;
+}
+
+.tfDropdown-container {
+    position: absolute;
+    width:  350px; 
+    height: 485px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background-color: white;
+    position: sticky;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+}
+
+.tfDropdownList {
+    display: flex;
+    flex-direction: column;
+    height: 445px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.tfDropdownLinkContainer {
+    width: 100%;
+    height: 40px;
+}
+
+.tfDropdownHr {
+    height: 2px;
+    width: 100%;
+    border: none;
+    
+}
+
+.tfDropdownHr.masculine {
+    background-color: #4a76fd;
+}
+
+.tfDropdownHr.feminine {
+    background-color: #e639af;
+}
+
+.tfDropdownHr.ruby {
+    background-color: #850014;
+}
+
+.tfDropdownHr.orange {
+    background-color: #ff8303;
+}
+
+.tfDropdownHr.sun {
+    background-color: #ffe700;
+}
+
+.tfDropdownHr.emerald {
+    background-color: #50c878;
+}
+
+.tfDropdownHr.blue {
+    background-color: #098de9;
+}
+
+.tfDropdownHr.indigo {
+    background-color: #30307e;
+}
+
+.tfDropdownHr.violet {
+    background-color: #8a2be2;
+}
+
+.tfDropdownHr.rainbow {
+    background: -webkit-linear-gradient(left, #850014, #ff8303, #ffe700, #50c878, #098de9, #30307e, #8a2be2); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, #850014, #ff8303, #ffe700, #50c878, #098de9, #30307e, #8a2be2); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, #850014, #ff8303, #ffe700, #50c878, #098de9, #30307e, #8a2be2); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, #850014, #ff8303, #ffe700, #50c878, #098de9, #30307e, #8a2be2); /* Standard syntax (must be last) */
+}
+
+.tfDropdownHr.silver {
+    background: -webkit-linear-gradient(left, #dadada, #8e8e8e, #dadada); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, #dadada, #8e8e8e, #dadada); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, #dadada, #8e8e8e, #dadada); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, #dadada, #8e8e8e, #dadada); /* Standard syntax (must be last) */
+}
+
+.tfDropdownHr.gold {
+    background: -webkit-linear-gradient(left, #ab781d, #eed264, #ab781d); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, #ab781d, #eed264, #ab781d); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, #ab781d, #eed264, #ab781d); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, #ab781d, #eed264, #ab781d); /* Standard syntax (must be last) */
+}
+
+.tfDropdownHr.platinum {
+    background: -webkit-linear-gradient(left, #d3e9f6, #6b8c95, #566167, #8e8e8e, #6d606a, #af9499, #dadada); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, #d3e9f6, #6b8c95, #566167, #8e8e8e, #6d606a, #af9499, #dadada); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, #d3e9f6, #6b8c95, #566167, #8e8e8e, #6d606a, #af9499, #dadada); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, #d3e9f6, #6b8c95, #566167, #8e8e8e, #6d606a, #af9499, #dadada); /* Standard syntax (must be last) */
+}
+
+.tfDropdownHr.gray {
+    background-color: #aeb4b7;
+}
+
+.tfDropdownLinkContainerBottom {
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    height: 38px;
+}
+
+.tfDropdownLink {
+    width: 170px;
+    cursor: pointer;
+}
+
+.tfDropdownLinkText:hover {
+   font-weight: 500;
+}
+
+.tfDropdownLinkText.masculine {
+    color: #4a76fd;
+}
+
+.tfDropdownLinkText.feminine:active {
+    color: #3453b2;
+}
+
+.tfDropdownLinkText.feminine {
+    color: #e639af;
+}
+
+.tfDropdownLinkText.feminine:active {
+    color: #a1287b;
+}
+
+.tfDropdownLinkText.ruby {
+    color: #850014;
+}
+
+.tfDropdownLinkText.ruby:active {
+    color: #5d000e;
+}
+
+.tfDropdownLinkText.orange {
+    color: #ff8303;
+}
+
+.tfDropdownLinkText.orange:active {
+    color: #b35c02;
+}
+
+.tfDropdownLinkText.sun {
+    color: #ffe700;
+}
+
+.tfDropdownLinkText.sun:active {
+    color: #b3a200;
+}
+
+.tfDropdownLinkText.emerald {
+    color: #50c878;
+}
+
+.tfDropdownLinkText.emerald:active {
+    color: #388c54;
+}
+
+.tfDropdownLinkText.blue {
+    color: #098de9;
+}
+
+.tfDropdownLinkText.blue:active {
+    color: #0663a4;
+}
+
+.tfDropdownLinkText.indigo {
+    color: #30307e;
+}
+
+.tfDropdownLinkText.indigo:active {
+    color: #222258;
+}
+
+.tfDropdownLinkText.violet {
+    color: #8a2be2;
+}
+
+.tfDropdownLinkText.violet:active {
+    color: #611e9f;
+}
+
+.tfDropdownLinkText.rainbow {
+    background: -webkit-linear-gradient(left, #850014, #ff8303, #ffe700, #50c878, #098de9, #30307e, #8a2be2); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, #850014, #ff8303, #ffe700, #50c878, #098de9, #30307e, #8a2be2); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, #850014, #ff8303, #ffe700, #50c878, #098de9, #30307e, #8a2be2); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, #850014, #ff8303, #ffe700, #50c878, #098de9, #30307e, #8a2be2); /* Standard syntax (must be last) */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.tfDropdownLinkText.rainbow:active {
+    background: -webkit-linear-gradient(left, #5d000e, #b35c02, #b3a200, #388c54, #0663a4, #222258, #611e9f); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, #5d000e, #b35c02, #b3a200, #388c54, #0663a4, #222258, #611e9f); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, #5d000e, #b35c02, #b3a200, #388c54, #0663a4, #222258, #611e9f); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, #5d000e, #b35c02, #b3a200, #388c54, #0663a4, #222258, #611e9f); /* Standard syntax (must be last) */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.tfDropdownLinkText.silver {
+    background: -webkit-linear-gradient(right, #dadada, #8e8e8e, #dadada); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, #dadada, #8e8e8e, #dadada); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, #dadada, #8e8e8e, #dadada); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, #dadada, #8e8e8e, #dadada); /* Standard syntax (must be last) */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.tfDropdownLinkText.silver:active {
+    background: -webkit-linear-gradient(right, #999999, #646464 , #999999); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, #999999, #646464 , #999999); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, #999999, #646464 , #999999); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, #999999, #646464 , #999999); /* Standard syntax (must be last) */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.tfDropdownLinkText.platinum {
+    background: -webkit-linear-gradient(left, #d3e9f6, #6b8c95, #566167, #8e8e8e, #6d606a, #af9499, #dadada); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, #d3e9f6, #6b8c95, #566167, #8e8e8e, #6d606a, #af9499, #dadada); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, #d3e9f6, #6b8c95, #566167, #8e8e8e, #6d606a, #af9499, #dadada); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, #d3e9f6, #6b8c95, #566167, #8e8e8e, #6d606a, #af9499, #dadada); /* Standard syntax (must be last) */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.tfDropdownLinkText.platinum:active {
+    background: -webkit-linear-gradient(left, #94a4ad, #4b6269, #3c4448, #646464, #4d434a, #7b686b, #999999); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, #94a4ad, #4b6269, #3c4448, #646464, #4d434a, #7b686b, #999999); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, #94a4ad, #4b6269, #3c4448, #646464, #4d434a, #7b686b, #999999); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, #94a4ad, #4b6269, #3c4448, #646464, #4d434a, #7b686b, #999999); /* Standard syntax (must be last) */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.tfDropdownLinkText.gold, .tfDropdownLinkText.diamond {
+    background: -webkit-linear-gradient(right, #ab781d, #eed264, #ab781d); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, #ab781d, #eed264, #ab781d); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, #ab781d, #eed264, #ab781d); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, #ab781d, #eed264, #ab781d); /* Standard syntax (must be last) */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.tfDropdownLinkText.gold:active, .tfDropdownLinkText.diamond:active {
+    background: -webkit-linear-gradient(right, #785414, #a79346 , #785414); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, #785414, #a79346 , #785414); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, #785414, #a79346 , #785414); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, #785414, #a79346 , #785414); /* Standard syntax (must be last) */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.tfDropdownLinkText.gray {
+    color: #aeb4b7;
+}
+
+.tfDropdownLinkText.gray:active {
+    color: #7a7e80;
+}
+
+.tfDropdownLinkBadge {
+    align-items: center;
+    border-radius: 9px;
+    color: white;
+    display: flex;
+    font-size: 12px;
+    height: 18px;
+    justify-content: center;
+    min-width: 18px;
+}
+
+.tfDropdownLinkBadge.masculine {
+    background-color: #4a76fd;
+}
+
+.tfDropdownLinkBadge.feminine {
+    background-color: #e639af;
+}
+
+.tfDropdownLinkBadge.ruby {
+    background-color: #850014;
+}
+
+.tfDropdownLinkBadge.orange {
+    background-color: #ff8303;
+}
+
+.tfDropdownLinkBadge.sun {
+    background-color: #ffe700;
+}
+
+.tfDropdownLinkBadge.emerald {
+    background-color: #50c878;
+}
+
+.tfDropdownLinkBadge.blue {
+    background-color: #098de9;
+}
+
+.tfDropdownLinkBadge.indigo {
+    background-color: #30307e;
+}
+
+.tfDropdownLinkBadge.violet {
+    background-color: #8a2be2;
+}
+
+.tfDropdownLinkBadge.rainbow {
+    background: -webkit-linear-gradient(left, #850014, #ff8303, #ffe700, #50c878, #098de9, #30307e, #8a2be2); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, #850014, #ff8303, #ffe700, #50c878, #098de9, #30307e, #8a2be2); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, #850014, #ff8303, #ffe700, #50c878, #098de9, #30307e, #8a2be2); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, #850014, #ff8303, #ffe700, #50c878, #098de9, #30307e, #8a2be2); /* Standard syntax (must be last) */
+}
+
+.tfDropdownLinkBadge.silver {
+    background: -webkit-linear-gradient(left, #dadada, #8e8e8e, #dadada); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, #dadada, #8e8e8e, #dadada); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, #dadada, #8e8e8e, #dadada); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, #dadada, #8e8e8e, #dadada); /* Standard syntax (must be last) */
+}
+
+.tfDropdownLinkBadge.gold {
+    background: -webkit-linear-gradient(left, #ab781d, #eed264, #ab781d); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, #ab781d, #eed264, #ab781d); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, #ab781d, #eed264, #ab781d); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, #ab781d, #eed264, #ab781d); /* Standard syntax (must be last) */
+}
+
+.tfDropdownLinkBadge.platinum {
+    background: -webkit-linear-gradient(left, #d3e9f6, #6b8c95, #566167, #8e8e8e, #6d606a, #af9499, #dadada); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, #d3e9f6, #6b8c95, #566167, #8e8e8e, #6d606a, #af9499, #dadada); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, #d3e9f6, #6b8c95, #566167, #8e8e8e, #6d606a, #af9499, #dadada); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, #d3e9f6, #6b8c95, #566167, #8e8e8e, #6d606a, #af9499, #dadada); /* Standard syntax (must be last) */
+}
+
+.tfDropdownLinkBadge.gray {
+    background-color: #aeb4b7;
+}

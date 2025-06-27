@@ -1,0 +1,52 @@
+.disclaimerContainer {
+    position: relative;
+    width: 100%;
+    height: 11vh;
+    min-height: 120px;
+    /*margin-top: 10vh;*/
+}
+
+.disclaimerContainerBackground {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    min-height: 120px;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: var(--black);
+    opacity: 0.7;
+    border-radius: 0.625rem; /*10px*/
+}
+
+.disclaimerContainerForground {
+    position: absolute;
+    width: calc(100% - 1.25rem); /*100% - 20px*/
+    height: calc(100% - 1.25rem); /*100% - 20px*/
+    min-height: 100px;
+    top: 0.313rem; /*5px*/
+    right: 0.313rem; /*5px*/
+    bottom: 0.313rem; /*5px*/
+    left: 0.313rem; /*5px*/
+    border-radius: 0.313rem; /*5px*/
+    border: 0.313rem solid goldenrod; /*5px*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.disclaimerText {
+    margin: 0.625rem; /*10px*/
+    color: var(--white);
+    font-size: 0.75rem !important;  /*12px*/ 
+}
+
+.disclaimerTitle {
+    margin-right: 0.125rem; /*2px*/
+}
+
+.disclaimerSentence {
+    /*opacity: 0.7;*/
+    margin: 0 0.125rem; /*2px*/
+}

@@ -1,0 +1,13 @@
+{
+    "flare-production": {
+        "answer": "antwoord",
+        "comment": "Kommentaar",
+        "blog": "Artikel",
+        "flag": "Vlag",
+        "post": "pos",
+        "question": "bevraagteken",
+        "reply": "beantwoord",
+        "report": "Verslag",
+        "share": "deling"
+    }
+} 

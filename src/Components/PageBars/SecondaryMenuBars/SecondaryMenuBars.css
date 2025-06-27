@@ -1,0 +1,11 @@
+.secondaryMenuBar {
+    Height: 100%;
+    width: 80%;
+    margin-top: 20%;
+}
+
+.smb-topicDropdownMenuBtn.tier1 {
+    height: 40px;
+    font-size: 18px; /*36px*/
+    font-weight: 500;
+}

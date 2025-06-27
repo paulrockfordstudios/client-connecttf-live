@@ -1,0 +1,144 @@
+.profileLink {
+    position: relative; 
+}
+
+.profileLinkContainer {
+    display: flex;
+    align-items: center; 
+}
+
+.profileLinkAvatar {
+    display: flex;
+    flex-shrink: 0;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 5px;
+}
+
+.profileLinkAvatar.profile {
+    height: 36px;
+    width: 36px;
+}
+
+.profileLinkAvatar.createFlare {
+    height: 48px;
+    width: 48px;
+}
+
+.profileLinkAvatar.flare.short {
+    height: 32px;
+    width: 32px;
+}
+
+.profileLinkAvatar.flare.full {
+    height: 36px;
+    width: 36px;
+}
+
+.profileLinkAvatar.flareRetort {
+    height: 28px;
+    width: 28px;
+}
+
+.profileLinkIcon {
+    display: flex;
+    flex-shrink: 0;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-right: 3px;
+}
+
+.profileLinkIcon.profile.flame {
+    height: 20px;
+    width: 12px;
+}
+
+.profileLinkIcon.profile.union {
+    height: 20px;
+    width: 20px;
+}
+
+.profileLinkIcon.createFlare.flame {
+    height: 25px;
+    width: 15px;
+}
+
+.profileLinkIcon.createFlare.union {
+    height: 25px;
+    width: 25px;
+}
+
+.profileLinkIcon.flare.flame {
+    height: 20px;
+    width: 12px;
+}
+
+.profileLinkIcon.flareRetort.flame {
+    height: 15px;
+    width: 9px;
+}
+
+.profileLinkIcon.flare.union {
+    height: 20px;
+    width: 20px;
+}
+
+.profileLinkIcon.flareRetort.union {
+    height: 15px;
+    width: 15px;
+}
+
+.profileLinkName {
+    font-weight: 500;
+    margin-right: 10px;
+}
+
+.profileLinkName.profile {
+    font-size: 18px;
+}
+
+.profileLinkName.createFlare {
+    font-size: 16px;
+}
+
+.profileLinkName.flare {
+    font-size: 16px;
+}
+
+.profileLinkName.flareRetort {
+    font-size: 13px;
+}
+
+.profileLinkInfoBubble {
+    position: absolute;
+}
+
+.profileLinkInfoBubble.flare.full.flame {
+    left: 53px;
+    top: 27px;
+}
+
+.profileLinkInfoBubble.flare.full.union {
+    left: 59px;
+    top: 27px;
+}
+
+.profileLinkInfoBubble.flare.short.flame {
+    left: 49px;
+    top: 25px;
+}
+
+.profileLinkInfoBubble.flare.short.union {
+    left: 55px;
+    top: 25px;
+}
+
+.profileLinkInfoBubble.flareRetort.flame {
+    left: 42px;
+    top: 21px;
+}
+
+.profileLinkInfoBubble.flareRetort.union {
+    left: 48px;
+    top: 21px;
+}

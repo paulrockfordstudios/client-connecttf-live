@@ -1,0 +1,318 @@
+.createReportPortal {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.createReportBackdropOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.createReportModal {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.createReport {
+    border-radius: 40px;
+    background-color: white;
+    width: 600px;
+    padding: 20px;
+    top: 2px;
+    left: 2px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    opacity: 1;
+    -webkit-box-shadow: 0px 10px 50px -20px rgba(0,0,0,0.75); 
+    box-shadow: 0px 10px 50px -20px rgba(0,0,0,0.75);
+}
+
+.createReport.union {
+    position: absolute;
+}
+
+.createReport.flame {
+    margin-bottom: 30px;
+}
+
+
+
+.createReport-container {
+    padding: 10px;
+}
+
+.createReportTop {
+    display: flex;
+    flex-direction: column;
+}
+
+.createReportTopUpper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.createReportLogo {
+    display: flex;
+    flex-shrink: 0;
+    flex-grow: 0;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 30px;
+    width: 27px;
+}
+
+.creatReportTitle {
+    font-size: 28px;
+    font-weight: 900;
+}
+
+.createReportCancelPNGIcon {
+    height: 36px;
+    width: 36px;
+    display: flex;
+    flex-shrink: 0;
+    flex-grow: 0;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-right: -5px;
+    margin-bottom: -2px;
+}
+
+.createReportCancelSVGIcon {
+    font-size: 36px !important;
+    margin-right: -5px;
+    margin-bottom: -2px;
+    color: black;
+    opacity: 30%;
+}
+
+.createReportCancelSVGIcon:hover {
+    opacity: 100%;
+}
+
+.createReportTopLower {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.createReportVisibilityIcon {
+    display: flex;
+    align-items: center;
+    font-size: 20px !important;
+    margin: 0 5px;
+}
+
+.createReportVisibilityIcon.diamond {
+    color: #ab781d;
+}
+
+.createReportDropdownTitle {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.createReportDropdownTitle.feed {
+    margin-left: 5px;
+}
+
+
+.createReportEditorContainerContainer {
+    height: 100%;
+    margin-bottom: 50px;
+}
+
+.createReportEditorContainer {
+    border: 5px solid black;
+    padding: 10px;
+    height: 100%;
+    margin-bottom: 20px;
+}
+
+.createReportEditor {
+    width: 100% - 44px;
+    font-size: 14px;
+    height: 250px;
+}
+
+.createReportDisclaimer {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+.createReportDisclaimerTitle {
+    font-size: 18px;
+    font-weight: 900;
+}
+
+/*
+div.public-DraftEditorPlaceholder-inner {
+    font-size: 12px;
+}
+*/
+
+.createReportInput {
+    border: none;
+    width: 80%;
+    white-space: pre-wrap;
+}
+
+.createReportInput:focus {
+    outline: none;
+}
+
+.createReportHr {
+    width: 100%;
+    margin: 20px 0;
+    border: none;
+    height: 1px;
+    background-size: cover;
+    background-color: black;
+}
+
+.createReportImages-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.createReportImageContainer {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.createReportPhotoSection {
+    display: flex;
+    flex-direction: row;
+}
+
+.createReportPhotoContainer {
+    display: flex;
+    border: 5px solid black;
+    height: 23px;
+    width: 100%;
+    overflow: auto;
+    padding: 3px 10px 0 10px;
+}
+
+.createReportImageText {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-wrap: nowrap;
+}
+
+.createReportImg {
+    width: 100%;
+    position: relative;
+    object-fit: cover;
+    opacity: 0.3;
+}
+
+.createReportCancelImgPNGBtn {
+    height: 20px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+   
+}
+
+.createReportCancelImgSVGBtn {
+    cursor: pointer;
+    color: black; 
+    margin-top: -1px; 
+}
+
+.createReportBottom {
+    display: flex;
+    align-items: flex-end;
+    justify-content: right;
+    width: 100%;
+    overflow: visible;
+}
+
+.createReportButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    height: 36px;
+    padding: 0 10px;
+    width: 90px;
+    margin-right: 20px;
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+}
+
+
+.createReportAddPhotoSVGIcon {
+    font-size: 36px !important;
+    color: #858585;
+}
+
+.createReportAddPhotoPNGIcon {
+    width: 36px;
+}
+
+.createReportCancelButton {
+    border: none;
+    padding: 7px;
+    border-radius: 5px;
+    font-weight: 500;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+.createReportShareButton {
+    border: none;
+    border-radius: 10px;
+    font-weight: 500;
+    cursor: pointer;
+    width: 120px;
+    height: 36px;
+    font-size: 24px;
+    padding-bottom: 3px;
+    color: white;
+    background: black;
+}
+ 
+ .createReportTOULink {
+     color: #4a76fd;
+ }
+ 
+ .createReportTOULink:hover {
+     color: #4a76fd;
+     font-weight: 700;
+ }
+ 
+ .createReportTOULink:active {
+     color: #e639af;
+ }
+ 
+ .createReportTOULink:visited {
+     color: purple;
+     font-weight: 500;
+ }

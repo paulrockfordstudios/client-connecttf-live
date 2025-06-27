@@ -1,0 +1,89 @@
+{
+    "layout": {
+        "footer": {
+            "about": "<8>About</8><4>Connect</4><2>TF</2>",
+            "ctfwiki": "<4>C</4><2>TF</2>Wiki",
+            "ctffaqs":  "<4>C</4><2>TF</2> Faqs",
+            "terms_of_use": "Terms of Use",
+            "privacy_policy": "Privacy Policy",
+            "cookies": "Cookies",
+            "advertising": "Advertising",
+            "newsLetter": "Newsletter",
+            "contact": "Contact",
+            "languages": "Languages",
+            "account": "Account",
+            "settings": "Settings",
+            "copyright": "Copyright 2025"
+        }
+    },
+    "pages": {
+        "login": {
+            "components": {
+                "gateway": {
+                    "connect_today": "<4>Connect</4> Today!",
+                    "first_name": "First Name",
+                    "last_name": "Last Name",
+                    "email": "Email",
+                    "password": "Password",
+                    "re-enter_password": "Re-enter Password",
+                    "dob": "Date of Birth",
+                    "show_password": "Show Password",
+                    "hide_password": "Hide Password",
+                    "invalid_creds": "Invalid Credentials",
+                    "forgot_password": "Forgot your Password?",
+                    "sign_in": "Sign In",
+                    "sign_up": "Sign Up",
+                    "sign_in_with_facebook": "Sign In with Facebook",
+                    "sign_up_with_facebook": "Sign Up with Facebook",
+                    "sign_in_with_google": "Sign In with Google",
+                    "sign_up_with_google": "Sign Up with Google",
+                    "not_connected": "Not <4>Connected</4>?",
+                    "create_account": "Create New Account",
+                    "open_dd_calendar": "Open Date Input Dropdown Calendar",
+                    "close_dd_calendar": "Close Date Input Dropdown Calendar"
+                },
+                "greeting": {
+                    "slogan": "A place where those who are on the <2>twin flame</2> journey can <4>connect</4>!"
+                },
+                "disclaimer": {
+                    "word1": "<6>Disclaimer:</6>",
+                    "sentence1": "This website is a public forum open to anyone interested in <3>twin flames</3> and/or spiritual connections, friendships, and relationships.",
+                    "sentence2": "In no way is this website affiliated with any cults or cult practices.",
+                    "sentence3": "This website in no way condones any behaviors such as harassment or stalking.",
+                    "sentence4": "This website is intended as a public forum for like-minded invividuals to <5>connect</5> with others who share similar beliefs with the idea of helping to facilitate further growth mentally, emotionally, and spiritually in all aspects of their lives.",
+                    "sentence5": "This is a community monitered forum; All belief systems and ideologies need to be respected.", 
+                    "sentence6": "Offensive behavior, such as trolling, will not be tolerated."
+                }
+            }    
+        }
+    },
+    "portals": {
+        "access": {},
+        "languageSelect": {
+            "alt_lang_info_sentence": "For more information on alternate languages, click <14>here</14>."
+        },
+        "userAgreement": {
+            "ua_statement": "This is NOT a dating site!",
+            "ua_question": "Are you sure this where you want to be?",
+            "ua_body": {
+                "section1": "This website is a public forum designed specifically for connecting people interested in spiritual relationships and other like-minded individuals.",
+                "section2": "It is also a directory database of spiritual and relationship professionals to help guide along the path of spiritual awakening and soul fulfillment.",
+                "section3": "Our users particpate on this public forum of their own accord. Our platform is community monitered. Any innapropriate behavior such as stalking, harassing, propositioning will not be tolerated.",
+                "section4": "Trolling and/or downgrading accusations will also not be tolerated. Claiming we are a cult or calling anyone on our platform a cultist, puppet, target, or any other demeaning derogatory term will automatically result in the termination of your account.",
+                "section5": "Politics are also not to be discussed on this forum. Save your political views and opinions for other forums please.",
+                "section6": "You must be at least 18 years of age to create an account on this platform.",
+                "section7": "By agreeing and creating an account, you agree to these terms set forth here as well as our official <11>Terms of Use</11>, our <12>Privacy Policy</12>, and our Use of <13>Cookies</13>."
+            }
+        },
+        "registration": {},
+        "revocationNotice": {
+            "blacklist_notice": "User account is blacklisted.",
+            "revoked_notice": "Site access and platform privilages have been revoked."
+        },
+        "suspensionNotice": {
+            "suspension_notice": "User account is suspended.",
+            "under_review_notice": "This user account is currently under review.",
+            "suspended_notice": "Site access and platform privilages are suspended until further notice."
+        }
+    }
+}

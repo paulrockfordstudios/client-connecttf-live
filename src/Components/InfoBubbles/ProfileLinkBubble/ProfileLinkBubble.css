@@ -1,0 +1,246 @@
+.profileLinkBubble {
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+}
+
+.profileLinkBubble.flare {
+    height: 32px;
+    border-radius: 16px;
+}
+
+.profileLinkBubble.flareRetort {
+    height: 28px;
+    border-radius: 14px;
+}
+
+.profileLinkBubble.masculine {
+    background-color: #d8e1fe;
+}
+
+.profileLinkBubble.feminine {
+    background-color: #fde1ef;
+}
+
+.profileLinkBubble.ruby {
+    background-color: #d4a6ad;
+}
+
+.profileLinkBubble.orange {
+    background-color: #ffdab3;
+}
+
+.profileLinkBubble.sun {
+    background-color: #fff9bf;
+}
+
+.profileLinkBubble.emerald {
+    background-color: #caeed6;
+}
+
+.profileLinkBubble.blue {
+    background-color: #cee8fb;
+}
+
+.profileLinkBubble.indigo {
+    background-color: #babad4;
+}
+
+.profileLinkBubble.violet {
+    background-color: #dcbff6;
+}
+
+.profileLinkBubble.rainbow {
+    background: -webkit-linear-gradient(left, #d4a6ad, #ffdab3 , #fff9bf, #caeed6, #cee8fb, #babad4, #dcbff6); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, #d4a6ad, #ffdab3 , #fff9bf, #caeed6, #cee8fb, #babad4, #dcbff6); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, #d4a6ad, #ffdab3 , #fff9bf, #caeed6, #cee8fb, #babad4, #dcbff6); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, #d4a6ad, #ffdab3 , #fff9bf, #caeed6, #cee8fb, #babad4, #dcbff6); /* Standard syntax (must be last) */
+}
+
+.profileLinkBubble.silver {
+    background: -webkit-linear-gradient(left, #f4f4f4 , #dddddd, #f4f4f4); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, #f4f4f4 , #dddddd, #f4f4f4); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, #f4f4f4 , #dddddd, #f4f4f4); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, #f4f4f4 , #dddddd, #f4f4f4); /* Standard syntax (must be last) */
+}
+
+.profileLinkBubble.gold {
+    background: -webkit-linear-gradient(left, #e6d6bb , #faf1d0, #e6d6bb); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, #e6d6bb , #faf1d0, #e6d6bb); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, #e6d6bb , #faf1d0, #e6d6bb); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, #e6d6bb , #faf1d0, #e6d6bb); /* Standard syntax (must be last) */
+}
+
+.profileLinkBubble.platinum {
+    background: -webkit-linear-gradient(left, #f2f8fc, #d2dcdf, #cccfd1, #dddddd, #d3cfd2,  #e7dfe0, #f4f4f4); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, #f2f8fc, #d2dcdf, #cccfd1, #dddddd, #d3cfd2,  #e7dfe0, #f4f4f4); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, #f2f8fc, #d2dcdf, #cccfd1, #dddddd, #d3cfd2,  #e7dfe0, #f4f4f4); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, #f2f8fc, #d2dcdf, #cccfd1, #dddddd, #d3cfd2,  #e7dfe0, #f4f4f4); /* Standard syntax (must be last) */
+}
+
+.profileLinkBubble.gray {
+    background-color: #f1f1f1;
+}
+
+.profileLinkBubbleLeft {
+    display: flex;
+    align-items: center;
+    margin-right: 15px;
+}
+
+.profileLinkBubbleRight {
+    display: flex;
+    align-items: center;
+}
+
+.profileLinkBubbleInfo {
+    display: flex;
+    align-items: center;
+    font-weight: 900;
+    margin-right: 5px;
+}
+
+.profileLinkBubbleInfo.masculine {
+    color: #4a76fd;
+}
+
+.profileLinkBubbleInfo.feminine {
+    color: #e639af;
+}
+
+.profileLinkBubbleInfo.flare {
+    font-size: 20px;
+}
+
+.profileLinkBubbleInfo.flareRetort {
+    font-size: 18px;
+}
+
+.profileLinkBubbleSpiritIcon {
+    display: flex;
+    flex-shrink: 0;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: 0 2.5px;
+}
+
+.profileLinkBubbleSpiritIcon.flare.flame {
+    height: 20px;   
+}
+
+.profileLinkBubbleSpiritIcon.flare.union {
+    height: 16px;
+}
+
+.profileLinkBubbleSpiritIcon.flareRetort.flame {
+    height: 16px;   
+}
+
+.profileLinkBubbleSpiritIcon.flareRetort.union {
+    height: 14px;
+}
+
+.profileLinkBubbleSpiritIcon.flame.energy {
+    width: 12px;   
+}
+
+.profileLinkBubbleSpiritIcon.union.energy {
+    width: 10px;
+}
+
+.profileLinkBubbleSpiritIcon.flame.charge {
+    width: 15px;   
+}
+
+.profileLinkBubbleSpiritIcon.union.charge {
+    width: 12px;
+}
+
+.profileLinkBubbleSpiritIcon.flame.sex.male {
+    width: 20px;   
+}
+
+.profileLinkBubbleSpiritIcon.union.sex.male {
+    width: 16px;
+}
+
+.profileLinkBubbleSpiritIcon.flame.sex.female {
+    width: 13px;   
+}
+
+.profileLinkBubbleSpiritIcon.union.sex.female {
+    width: 11px;
+}
+
+.profileLinkBubbleSpiritIcon.flame.sex.bigender {
+    width: 14px;   
+}
+
+.profileLinkBubbleSpiritIcon.union.sex.bigender {
+    width: 11px;
+}
+
+.profileLinkBubbleSpiritIcon.flame.sex.transgender {
+    width: 19px;   
+}
+
+.profileLinkBubbleSpiritIcon.union.sex.transgender {
+    width: 15px;
+}
+
+.profileLinkBubbleSpiritIcon.flame.orientation.straight {
+    width: 20px;
+}
+
+.profileLinkBubbleSpiritIcon.union.orientation.straight {
+    width: 16px;
+}
+
+.profileLinkBubbleSpiritIcon.flame.orientation.gay {
+    width: 20px;
+}
+
+.profileLinkBubbleSpiritIcon.union.orientation.gay {
+    width: 16px;
+}
+
+.profileLinkBubbleSpiritIcon.flame.orientation.lesbian {
+    width: 20px;
+}
+
+.profileLinkBubbleSpiritIcon.union.orientation.lesbian {
+    width: 16px;
+}
+
+.profileLinkBubbleSpiritIcon.flame.orientation.pan {
+    width: 10px;
+}
+
+.profileLinkBubbleSpiritIcon.union.orientation.pan {
+    width: 8px;
+}
+
+.profileLinkBubbleSpiritIcon.orientation.flame.male.bisexual {
+    width: 28px;
+}
+
+.profileLinkBubbleSpiritIcon.orientation.union.male.bisexual {
+    width: 23px;
+}
+
+.profileLinkBubbleSpiritIcon.flame.sunSign {
+    width: 20px;   
+}
+
+.profileLinkBubbleSpiritIcon.union.sunSign {
+    width: 16px;
+}
+
+.profileLinkBubbleSpiritIcon.flame.compass {
+    width: 20px;   
+}
+
+.profileLinkBubbleSpiritIcon.union.compass {
+    width: 16px;
+}
+

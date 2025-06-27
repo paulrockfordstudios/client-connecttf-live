@@ -1,0 +1,314 @@
+.messageNotice {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+    height: 89px;
+}
+
+.messageNoticeBackgroundTheme {
+    display: flex;
+    position: absolute;
+    width: 350px;
+    height: 89px;
+    
+}
+
+.messageNoticeContainer {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    cursor: pointer;
+    align-items: center;
+    width: 350px;
+    height: 85px;
+    top: 2px;
+}
+
+.messageNoticeBackgroundTheme.unseen {
+    opacity: 1;   
+}
+
+
+.messageNoticeBackgroundTheme.seen {
+    opacity: 0;
+    transition-delay: 325ms;
+    transition: opacity 4000ms ease-in-out;
+    -webkit-transition: opacity 4000ms ease-in-out;
+    -moz-transition: opacity 4000ms ease-in-out;
+}
+
+
+.messageNoticeBackgroundTheme.masculine {
+    background-color: #d8e1fe;
+    
+}
+
+.messageNoticeBackgroundTheme.feminine {
+    background-color: #fde1ef;
+}
+
+.messageNoticeBackgroundTheme.ruby {
+    background-color: #d4a6ad;
+}
+
+.messageNoticeBackgroundTheme.orange {
+    background-color: #ffdab3;
+}
+
+.messageNoticeBackgroundTheme.sun {
+    background-color: #fff9bf;
+}
+
+.messageNoticeBackgroundTheme.emerald {
+    background-color: #caeed6;
+}
+
+.messageNoticeBackgroundTheme.blue {
+    background-color: #cee8fb;
+}
+
+.messageNoticeBackgroundTheme.indigo {
+    background-color: #babad4;
+}
+
+.messageNoticeBackgroundTheme.violet {
+    background-color: #dcbff6;
+}
+
+.messageNoticeBackgroundTheme.rainbow {
+    background: -webkit-linear-gradient(left, #d4a6ad, #ffdab3 , #fff9bf, #caeed6, #cee8fb, #babad4, #dcbff6); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, #d4a6ad, #ffdab3 , #fff9bf, #caeed6, #cee8fb, #babad4, #dcbff6); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, #d4a6ad, #ffdab3 , #fff9bf, #caeed6, #cee8fb, #babad4, #dcbff6); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, #d4a6ad, #ffdab3 , #fff9bf, #caeed6, #cee8fb, #babad4, #dcbff6); /* Standard syntax (must be last) */
+}
+
+.messageNoticeBackgroundTheme.silver {
+    background: -webkit-linear-gradient(left, #f4f4f4 , #dddddd, #f4f4f4); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, #f4f4f4 , #dddddd, #f4f4f4); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, #f4f4f4 , #dddddd, #f4f4f4); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, #f4f4f4 , #dddddd, #f4f4f4); /* Standard syntax (must be last) */
+}
+
+.messageNoticeBackgroundTheme.gold {
+    background: -webkit-linear-gradient(left, #e6d6bb , #faf1d0, #e6d6bb); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, #e6d6bb , #faf1d0, #e6d6bb); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, #e6d6bb , #faf1d0, #e6d6bb); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, #e6d6bb , #faf1d0, #e6d6bb); /* Standard syntax (must be last) */
+}
+
+.messageNoticeBackgroundTheme.platinum {
+    background: -webkit-linear-gradient(left, #f2f8fc, #d2dcdf, #cccfd1, #dddddd, #d3cfd2,  #e7dfe0, #f4f4f4); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, #f2f8fc, #d2dcdf, #cccfd1, #dddddd, #d3cfd2,  #e7dfe0, #f4f4f4); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, #f2f8fc, #d2dcdf, #cccfd1, #dddddd, #d3cfd2,  #e7dfe0, #f4f4f4); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, #f2f8fc, #d2dcdf, #cccfd1, #dddddd, #d3cfd2,  #e7dfe0, #f4f4f4); /* Standard syntax (must be last) */
+}
+
+.messageNoticeBackgroundTheme.gray {
+    background-color: #e4e6e7;
+}
+
+.messageNoticeHr {
+    height: 2px;
+    width: 100%;
+    border: none;
+}
+
+.messageNoticeHr.bottom {
+    margin-top: 85px;
+}
+
+.messageNoticeLeft {
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 100%;
+}
+
+.messageNoticeProfilePic {
+    display: flex; 
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    object-fit: cover;    
+}
+
+.messageNoticeIcon {
+    display: flex;
+    flex-shrink: 0; 
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    height: 22px;
+    width: 14px;
+    margin-right: 5px;
+    right: 0;
+    bottom: 20px;
+}
+
+.messageNoticeRight {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: calc(100% - 75px);
+    height: 70px;
+    margin-left: 5px;
+    padding-right: 10px;
+}
+
+.messageNoticeRightTop {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: auto; 
+}
+
+.messageNoticeTitle {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 285px;
+    height: auto;
+}
+
+.messageNoticeTitleLeft {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    
+    height: auto;
+}
+
+.messageNoticeTitleRight {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row;
+    width: auto;
+    height: auto;
+}
+
+.messageNoticeTitleRight.masculine {
+    color: #4a76fd;
+}
+
+.messageNoticeTitleRight.feminine {
+    color: #e639af;
+}
+
+.messageNoticeTitleRight.gray {
+    color: #aeb4b7;
+}
+
+.messageNoticeName {
+    font-size: 15px;
+    font-weight: bold;   
+}
+
+.messageNoticeRightCenter {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    height: 20px;   
+}
+
+.messageNoticeAction {
+    white-space: pre-wrap;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.messageNoticeRightBottom {
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 5px;
+}
+
+.messageNoticeRetort {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 12px;
+    color: #7a7e80;
+    width: 100%;
+}
+
+.messageNoticeRetort.request {
+    justify-content: space-evenly;
+}
+
+.messageNoticeRetortLeft.friendship {
+    width: calc(100% - 75px);
+    padding-right: 10px;
+}
+
+.messageNoticeRetortRight.friendship {
+    width: 75px;
+}
+
+.messageNoticeRetortLeft.befriend {
+    width: calc(100% - 90px);
+    padding-right: 10px;
+}
+
+.messageNoticeRetortRight.befriend {
+    width: 90px;  
+}
+
+.messageNoticeBtn {
+    font-size: 12px;
+    font-weight: 500;
+    border: none;
+    height: 24px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.messageNoticeBtn.befriend {
+    width: 90px;
+}
+
+.messageNoticeBtn.message {
+    width: 75px;
+}
+
+.messageNoticeBtn.accept {
+    width: 100px;
+}
+
+.messageNoticeBtn.reject {
+    width: 100px;
+}
+
+
+.messageNoticeBtn.masculine {
+    background-color: #4a76fd;
+    color: white;
+}
+
+.messageNoticeBtn.feminine {
+    background-color: #e639af;
+    color: white;
+}
+
+.messageNoticeBtn.gray {
+    background-color: #bfc2c7;
+    color: black;
+}
+
+
+

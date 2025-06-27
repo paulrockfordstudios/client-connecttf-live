@@ -1,0 +1,145 @@
+.healerFullDisplayContainer {
+    margin-right: 2px;
+    margin-left: -2px;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.healerFullDisplayBackgroundTheme {
+    width: 100%;
+    border-radius: 10px;
+    -webkit-filter: blur(2px);
+    -moz-filter: blur(2px);
+    -o-filter: blur(2px);
+    -ms-filter: blur(2px);
+    filter: blur(2px);
+    position: absolute;
+    opacity: 0.75;
+    top: -10px;
+}
+
+.healerFullDisplay {
+    width: 100%; 
+    border-radius: 10px;
+    background-color: white;
+    margin-bottom: 20px;
+}
+
+.healerFullDisplay.union {
+    position: absolute;
+}
+
+.healerFullDisplay-container {
+    padding: 30px;
+}
+
+.healerFullDisplayContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.healerFullDisplayContainerTop {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
+}
+
+.healerFullDisplayContainerTopLeft.indexEven {
+    margin-right: 30px;
+}
+
+.healerFullDisplayContainerTopRight.indexEven {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.healerFullDisplayContainerTopLeft.indexOdd {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.healerFullDisplayContainerTopRight.indexOdd {
+    margin-left: 30px;
+}
+
+.healerFullDisplayContainerHeader {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.healerFullDisplayContainerImg {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.healerFullDisplayContainerName {
+    font-size: 32px;
+    font-weight: 700;  
+}
+
+.healerFullDisplayContainerHeaderYouTubeIcon {
+    font-size: 48px !important;
+    color: #c4302b;
+    margin-right: 10px;
+}
+
+.healerFullDisplayContainerProfile {
+    display: flex;
+    align-items: center;
+}
+
+.healerFullDisplayContainerProfilePic {
+    height: 36px;
+    width: 36px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.healerFullDisplayContainerProfileSpectrum {
+    height: 36px;
+    width: 36px;
+    cursor: pointer;
+}
+
+.healerFullDisplayContainerProfileName {
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.healerFullDisplayContainerMoreVert {
+    font-size: 32px;
+    cursor: pointer;
+}
+
+.healerFullDisplayContainerStats {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.healerFullDisplayContainerStarField {
+    margin-left: 10px;
+}
+
+.healerFullDisplayContainerStatText {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.healerFullDisplayContainerStatCount {
+    font-size: 18px;
+    font-weight: 900;
+    margin-right: 10px;
+}

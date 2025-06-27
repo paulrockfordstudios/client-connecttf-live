@@ -1,0 +1,411 @@
+/* Alienese 1 */
+@font-face {
+    font-family: 'alienese1';
+    src: url("../fonts/Alienese/Alienese1/Alienese1.woff2") format("woff2"),
+    url("../fonts/Alienese/Alienese1/Alienese1.woff") format("woff"),
+    url("../fonts/Alienese/Alienese1/Alienese1.ttf") format("truetype"),
+    url("../fonts/Alienese/Alienese1/Alienese1.otf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+.alienese1 {
+    font-family: 'alienese1';
+}
+
+
+/* Alienese 2 */
+@font-face {
+    font-family: 'alienese2';
+    src: url("../fonts/Alienese/Alienese2/Alienese2.woff") format("woff2"),
+    url("../fonts/Alienese/Alienese2/Alienese2.woff") format("woff"),
+    url("../fonts/Alienese/Alienese2/Alienese2.ttf") format("truetype"),
+    url("../fonts/Alienese/Alienese2/Alienese2.otf") format("opentype");
+    font-weight: normal;
+    font-style: normal; 
+    font-display: block;
+}
+
+.alienese2 {
+    font-family: 'alienese2';
+}
+
+
+/* Ancient */
+@font-face {
+    font-family: 'ancient';
+    src: url("../fonts/Ancient/Ancient.woff2") format("woff2"),
+    url("../fonts/Ancient/Ancient.woff") format("woff"),
+    url("../fonts/Ancient/Ancient.ttf") format("truetype"),
+    url("../fonts/Ancient/Ancient.otf") format("opentype");
+    font-weight: normal;
+    font-style: normal; 
+    font-display: block;
+}
+
+.ancient {
+    font-family: 'ancient';
+}
+
+
+/* Annatar (Tengwar) */
+@font-face {
+    font-family: 'tengwar-annatar';
+    src: url("../fonts/Tengwar/Annatar/Annatar.woff2") format("woff2"),
+    url("../fonts/Tengwar/Annatar/Annatar.woff") format("woff"),
+    url("../fonts/Tengwar/Annatar/Annatar.ttf") format("truetype"),
+    url("../fonts/Tengwar/Annatar/Annatar.otf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+.annatar {
+    font-family: 'tengwar-annatar';
+}
+
+
+/* Asgard */
+@font-face {
+    font-family: 'asgard';
+    src: url("../fonts/Asgard/Asgard.woff2") format("woff2"),
+    url("../fonts/Asgard/Asgard.woff") format("woff"),
+    url("../fonts/Asgard/Asgard.ttf") format("truetype"),
+    url("../fonts/Asgard/Asgard.otf") format("opentype");
+    font-weight: normal;
+    font-style: normal; 
+    font-display: block;
+}
+
+.asgard {
+    font-family: 'asgard';
+}
+
+
+/* Aurek */
+@font-face {
+    font-family: 'aurek';
+    src: url("../fonts/Aurek/Aurek.woff2") format("woff2"),
+    url("../fonts/Aurek/Aurek.woff") format("woff"),
+    url("../fonts/Aurek/Aurek.ttf") format("truetype"),
+    url("../fonts/Aurek/Aurek.otf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+.aurek {
+    font-family: 'aurek';
+}
+
+
+/* Bajoran */
+@font-face {
+    font-family: 'bajoran';
+    src: url("../fonts/Bajoran/Bajoran.woff2") format("woff2"),
+    url("../fonts/Bajoran/Bajoran.woff") format("woff"),
+    url("../fonts/Bajoran/Bajoran.ttf") format("truetype"),
+    url("../fonts/Bajoran/Bajoran.otf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+.bajoran {
+    font-family: 'bajoran';
+}
+
+
+/* Borg */
+@font-face {
+    font-family: 'borg';
+    src: url("../fonts/Borg/Borg.woff2") format("woff2"),
+    url("../fonts/Borg/Borg.woff") format("woff"),
+    url("../fonts/Borg/Borg.ttf") format("truetype"),
+    url("../fonts/Borg/Borg.otf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+.borg {
+    font-family: 'borg';
+}
+
+
+/* Cardassian */
+@font-face {
+    font-family: 'cardassian';
+    src: url("../fonts/Cardassian/Cardassian.woff2") format("woff2"),
+    url("../fonts/Cardassian/Cardassian.woff") format("woff"),
+    url("../fonts/Cardassian/Cardassian.ttf") format("truetype"),
+    url("../fonts/Cardassian/Cardassian.otf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+.cardassian {
+    font-family: 'cardassian';
+}
+
+
+/* Dunny */
+@font-face {
+    font-family: 'dunny';
+    src: url("../fonts/Dunny/Dunny.woff2") format("woff2"),
+    url("../fonts/Dunny/Dunny.woff") format("woff"),
+    url("../fonts/Dunny/Dunny.ttf") format("truetype"),
+    url("../fonts/Dunny/Dunny.otf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+.dunny {
+    font-family: 'dunny';
+}
+
+
+/* Ferengi */
+@font-face {
+    font-family: 'ferengi';
+    src: url("../fonts/Ferengi/Ferengi.woff2") format("woff2"),
+    url("../fonts/Ferengi/Ferengi.woff") format("woff"),
+    url("../fonts/Ferengi/Ferengi.ttf") format("truetype"),
+    url("../fonts/Ferengi/Ferengi.otf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+.ferengi {
+    font-family: 'ferengi';
+}
+
+
+/* Furling */
+@font-face {
+    font-family: 'furling';
+    src: url("../fonts/Furling/Furling.woff2") format("woff2"),
+    url("../fonts/Furling/Furling.woff") format("woff"),
+    url("../fonts/Furling/Furling.ttf") format("truetype"),
+    url("../fonts/Furling/Furling.otf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+.furling {
+    font-family: 'furling';
+}
+
+
+/* Goongan */
+@font-face {
+    font-family: 'goongan';
+    src: url("../fonts/Goongan/Goongan.woff2") format("woff2"),
+    url("../fonts/Goongan/Goongan.woff") format("woff"),
+    url("../fonts/Goongan/Goongan.ttf") format("truetype"),
+    url("../fonts/Goongan/Goongan.otf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+.goongan {
+    font-family: 'goongan';
+}
+
+
+/* Klingon */
+@font-face {
+    font-family: 'klingon';
+    src: url("../fonts/Klingon/Klingon.woff2") format("woff2"),
+    url("../fonts/Klingon/Klingon.woff") format("woff"),
+    url("../fonts/Klingon/Klingon.ttf") format("truetype"),
+    url("../fonts/Klingon/Klingon.otf") format("opentype");
+    font-style: normal;
+    font-weight: normal;
+    font-display: block;
+}
+
+.klingon {
+    font-family: 'klingon';
+}
+
+
+@font-face {
+    font-family: 'kryptonese';
+    src: url('../fonts/Kryptonese/Kryptonese.woff2') format("woff2"),
+    url('../fonts/Kryptonese/Kryptonese.woff') format("woff"),
+    url("../fonts/Kryptonese/Kryptonese.ttf") format("truetype"),
+    url('../fonts/Kryptonese/Kryptonese.otf') format("opentype");
+    font-style: normal;
+    font-weight: normal;
+    font-display: block;
+}
+
+.kryptonese {
+    font-family: 'kryptonese';
+}
+
+
+
+/* Mandalor */
+@font-face {
+    font-family: 'mandalor';
+    src: url("../fonts/Mandalor/Mandalor.woff2") format("woff2"),
+    url("../fonts/Mandalor/Mandalor.woff") format("woff"),
+    url("../fonts/Mandalor/Mandalor.ttf") format("truetype"),
+    url("../fonts/Mandalor/Mandalor.otf") format("opentype");
+    font-style: normal;
+    font-weight: normal;
+    font-display: block;
+}
+
+.mandalor {
+    font-family: 'mandalor';
+}
+
+
+/* Nox */
+@font-face {
+    font-family: 'nox';
+    src: url("../fonts/Nox/Nox.woff2") format("woff2"),
+    url("../fonts/Nox/Nox.woff") format("woff"),
+    url("../fonts/Nox/Nox.ttf") format("truetype"),
+    url("../fonts/Nox/Nox.otf") format("opentype");
+    font-style: normal;
+    font-weight: normal;
+    font-display: block;
+}
+
+.nox {
+    font-family: 'nox';
+}
+
+
+/* Ongunkan */
+@font-face {
+    font-family: 'ongunkan';
+    src: url("../fonts/Ongunkan/Ongunkan.woff2") format("woff2"),
+    url("../fonts/Ongunkan/Ongunkan.woff") format("woff"),
+    url("../fonts/Ongunkan/Ongunkan.ttf") format("truetype"),
+    url("../fonts/Ongunkan/Ongunkan.otf") format("opentype");
+    font-style: normal;
+    font-weight: normal;
+    font-display: block;
+}
+
+.ongunkan {
+    font-family: 'ongunkan';
+}
+
+
+/* Quenya (Tengwar) */
+@font-face {
+    font-family: 'tengwar-quenya';
+    src: url("../fonts/Tengwar/Quenya/Quenya.woff2") format("woff2"),
+    url("../fonts/Tengwar/Quenya/Quenya.woff") format("woff"),
+    url("../fonts/Tengwar/Quenya/Quenya.ttf") format("truetype"),
+    url("../fonts/Tengwar/Quenya/Quenya.otf") format("opentype");
+    font-style: normal;
+    font-weight: normal;
+    font-display: block;
+}
+
+.quenya {
+    font-family: 'tengwar-quenya';
+}
+
+/* Roboto */
+.roboto {
+    font-family: 'Roboto', sans-serif;
+}
+
+
+/* Romulan */
+@font-face {
+    font-family: 'romulan';
+    src: url("../fonts/Romulan/Romulan.woff2") format("woff2"),
+    url("../fonts/Romulan/Romulan.woff") format("woff"),
+    url("../fonts/Romulan/Romulan.ttf") format("truetype"),
+    url("../fonts/Romulan/Romulan.otf") format("opentype");
+    font-style: normal;
+    font-weight: normal;
+    font-display: block;
+}
+
+.romulan {
+    font-family: 'romulan';
+}
+
+
+/* Sinescript */
+@font-face {
+    font-family: 'sinescript';
+    src: url('../fonts/Sinescript/Sinescript.woff2') format("woff2"),
+    url('../fonts/Sinescript/Sinescript.woff') format("woff"),
+    url("../fonts/Sinescript/Sinescript.ttf") format("truetype"),
+    url("../fonts/Sinescript/Sinescript.otf") format("opentype");
+    font-style: normal;
+    font-weight: normal;
+    font-display: block;
+}
+
+.sinescript {
+    font-family: 'sinescript';
+}
+
+
+/* Tanaf */
+@font-face {
+    font-family: 'tanaf';
+    src: url("../fonts/Tanaf/Tanaf.woff2") format("woff2"),
+    url("../fonts/Tanaf/Tanaf.woff") format("woff"),
+    url("../fonts/Tanaf/Tanaf.ttf") format("truetype"),
+    url("../fonts/Tanaf/Tanaf.otf") format("opentype");
+    font-style: normal;
+    font-weight: normal;
+    font-display: block;
+}
+
+.tanaf {
+    font-family: 'tanaf';
+}
+
+
+/* Trill */
+@font-face {
+    font-family: 'trill';
+    src: url("../fonts/Trill/Trill.woff2") format("woff2"),
+    url("../fonts/Trill/Trill.woff") format("woff"),
+    url("../fonts/Trill/Trill.ttf") format("truetype"),
+    url("../fonts/Trill/Trill.otf") format("opentype");
+    font-style: normal;
+    font-weight: normal;
+    font-display: block;
+}
+
+.trill {
+    font-family: 'trill';
+}
+
+
+/* Ur-Kittât */
+@font-face {
+    font-family: 'urKittat';
+    src: url("../fonts/Ur-Kittat/Ur-Kittat.woff2") format("woff2"),
+    url("../fonts/Ur-Kittat/Ur-Kittat.woff") format("woff"),
+    url("../fonts/Ur-Kittat/Ur-Kittat.ttf") format("truetype"),
+    url("../fonts/Ur-Kittat/Ur-Kittat.otf") format("opentype");
+    font-style: normal;
+    font-weight: normal;
+    font-display: block;
+}
+
+.urKittat {
+    font-family: 'urKittat';
+}

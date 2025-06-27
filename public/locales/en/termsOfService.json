@@ -1,0 +1,83 @@
+{
+    "article_1": {
+        "title": "PDF",
+        "description": {
+            "sentence_1": "",
+            "sentence_2": "",
+            "sentence_3": ""
+        }
+    },
+    "section_1": {
+        "title": "Definitions",
+        "description": {
+            "sentence_1": "",
+            "sentence_2": "",
+            "sentence_3": ""
+        },
+        "articles": {
+            "article_2": {
+                "title": "The Platform",
+                "description": {
+                    "sentence_1": "",
+                    "sentence_2": "",
+                    "sentence_3": ""
+                }
+            },
+            "article_3": {
+                "title": "User Entity",
+                "description": {
+                    "sentence_1": "",
+                    "sentence_2": "",
+                    "sentence_3": ""
+                }
+            }
+        }
+    },
+    "section_2": {
+        "title": "The Terms",
+        "articles": {
+            "article_1": {
+                "title": "Use of the Services",
+                "description": {
+                    "sentence_1": "",
+                    "sentence_2": "",
+                    "sentence_3": ""
+                }
+            },
+            "article_2": {
+                "title": "Disclaimer",
+                "description": {
+                    "sentence_1": "",
+                    "sentence_2": "",
+                    "sentence_3": ""
+                }
+            },
+            "article_3": {
+                "title": "Platform Beliefs, Definitions, Conditions",
+                "description": {
+                    "sentence_1": "",
+                    "sentence_2": "",
+                    "sentence_3": ""
+                }
+            },
+            "article_4": {
+                "title": "Privacy",
+                "description": {
+                    "paragraph_1": {
+                        "sentence_1": "The <4>Connect</4><2>TF</2> (the platform) <200>Privacy Policy</200> discloses in detail how this platform and company handles any content provided by you or any other user entity when using the services of this platform",
+                        "sentence_2": "By using the services of the platform, you (the user entity) consent to the use and collection of this content set forth in this platform's privacy policy.",
+                        "sentence_3": "This consent includes the transfer of the content to any legal authority or governing body jursidiction in accordance of local, state, and federal laws of the United States as well as any other countries and/or any of our affiliates for use and/or any other actions set forth in this platform's privacy policy."
+                    }
+                }
+            },
+            "article_5": {
+                "title": "Liability",
+                "description": {
+                    "sentence_1": "",
+                    "sentence_2": "",
+                    "sentence_3": ""
+                }
+            }
+        }
+    }
+}

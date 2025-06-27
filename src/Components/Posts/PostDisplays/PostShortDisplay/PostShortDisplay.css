@@ -1,0 +1,333 @@
+.postShortDisplayContainer {
+    position: relative;
+    margin-bottom: 1.25rem; /*20px*/
+    z-index: 1;
+}
+
+.postShortDisplayBackgroundTheme {
+    background-size: cover;
+    background-repeat: repeat;
+    width: 100%;
+    height: 100%;
+    border-radius: 0.625rem; /*10px*/
+    -webkit-filter: blur(0.125rem /*2px*/);
+    -moz-filter: blur(0.125rem /*2px*/);
+    -o-filter: blur(0.125rem /*2px*/);
+    -ms-filter: blur(0.125rem /*2px*/);
+    filter: blur(0.125rem /*2px*/);
+    position: absolute;
+    opacity: 0.75;
+    z-index: 1;
+}
+
+.postShortDisplay {
+    width: 100%; 
+    border-radius: 0.625rem; /*10px*/
+    background-color: white;
+    margin-bottom: 1.25rem; /*20px*/
+    z-index: 1;
+}
+
+.postShortDisplay.union {
+    position: absolute;
+}
+
+.postShortDisplay-container {
+    padding: 0.625rem; /*10px*/
+    cursor: pointer;
+}
+
+/* ------- Post Top ------- */
+
+.postShortDisplayTop {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.postShortDisplayTopLeft {
+    display: flex;
+    align-items: center;
+    position: relative; 
+}
+
+.postShortDisplayDateTime {
+    font-size: 0.75rem; /*12px*/
+    margin-right: 0.313rem; /*5px*/
+    color: #bfc2c7;
+}
+
+.postShortDisplayVisibilityIcon {
+    display: flex;
+    align-items: top;
+    color: #bfc2c7;
+}
+
+.postShortDisplaypostODropdown {
+    display: flex;
+    position: absolute;
+    right: 1.25rem; /*20px*/
+    top: 0;
+}
+
+/* ------- Post Center ------- */
+
+.postShortDisplayCenter {
+    margin: 1.563rem 0.625rem; /*25px 10px*/  
+}
+
+.postShortDisplayTitle {
+    width: calc(100% - 7.5rem); /*120px*/
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 1.5rem; /*24px*/
+    font-weight: 500;
+}
+
+.postShortDisplayDescriptionPreview {
+    width: calc(100% - 0.625rem); /*10px*/
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+}
+
+.postShortDisplayText {
+    /*max-height: 5rem; /*80px*/
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-bottom: 0.625rem; /*10px*/
+    color: #7a7e80;
+    padding-top: 0.125rem; /*2px*/
+}
+
+.postShortDisplayImgBackground {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    /*height: 5rem; /*80px*/
+    /* width: 7.5rem; /*120px*/
+}
+
+.postShortDisplayImgBGIcon {
+    position: absolute;
+    font-size: 3.75rem !important; /*60px*/
+    color: white;
+    top: 0.625rem; /*10px*/
+    left: 1.875rem; /*30px*/
+}
+
+.postShortDisplayPhoto {
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    object-fit: cover;
+}
+
+.postShortDisplayMultiVideoCntContainer {
+    width: 11.25rem; /*180px*/
+    height: 7.5rem; /*120px*/
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.postShortDisplayMultiVideoCntWBG {
+    width: 11.25rem; /*180px*/
+    height: 7.5rem; /*120px*/
+    background-color: white;
+    padding-top: 0.313rem; /*5px*/
+    padding-left: 0.313rem; /*5px*/
+}
+
+.postShortDisplayMultiVideoCntBG {
+    width: 10.938rem; /*175px*/
+    height: 7.188rem; /*115px*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.postShortDisplayMultiVideoCntText {
+    color: white;
+    font-size: 2rem; /*32px*/
+    font-weight: 500;
+}
+
+.postShortDisplayHashtagList {
+    margin-top: 1.25rem; /*20px*/
+    width: 40%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.postShortDisplayhashtags {
+    font-size: 0.875rem; /*14px*/
+    margin-right: 0.5rem; /*8px*/
+}
+
+.postShortDisplayhashtags:hover {
+    font-weight: 500;
+}
+
+.postShortDisplayIframeContainer {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    padding-top: 54%;
+}
+
+.postShortDisplayIframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100% !important;
+    height: 100% !important;
+}
+
+.postShortDisplayIframeCover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100% !important;
+    height: 100% !important;
+}
+
+.photoList {
+    margin-right: 2.5rem; /*40px*/
+}
+
+.photos {
+    list-style: none;
+}
+
+.postImg {
+    margin-top: 1.25rem; /*20px*/
+    width: 100%;
+    max-height: 31.25rem; /*500px*/
+    object-fit: contain;
+}
+
+/* ------- Post Bottom ------- */
+
+.postShortDisplayBottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.postShortDisplayBottomLeft {
+    position: relative;
+}
+
+.postShortDisplayInfoBubblePopup {
+    position: absolute; 
+    top: 1.563rem; /*25px*/
+}
+
+
+.postShortDisplayInfoBubble {
+    position: absolute;
+    top: 0;
+}
+
+.postShortDisplayInfoBubble.left {
+    right: 0;
+}
+
+.postShortDisplayInfoBubble.right {
+    left: 0;
+}
+
+
+.postShortDisplayCountItem {
+    display: flex;
+    align-items: center;
+}
+
+.postShortDisplayCountItem.left {
+    margin-right: 1.25rem; /*20px*/
+}
+
+.postShortDisplaySVGIcon {
+    height: 1.5rem; /*24px*/
+    width: 1.5rem; /*24px*/
+    cursor: pointer;
+}
+
+.postShortDisplayPNGIcon {
+    height: 1.25rem; /*20px*/
+    width: 1.25rem; /*20px*/
+    cursor: pointer;
+    background-size: contain;
+}
+
+.postShortDisplayCounter {
+    font-size: 0.938rem; /*15px*/
+}
+
+.postShortDisplayBottomLeft {
+    display: flex;
+    align-items: center;
+    
+}
+
+.postShortDisplaySVGIcon.left {
+    margin-right: 0.313rem; /*5px*/
+}
+
+.postShortDisplayPNGIcon.left {
+    margin-right: 0.313rem; /*5px*/
+    border: none;
+}
+
+.postShortDisplayCounter.left {
+    margin-right: 1.25rem; /*20px*/
+}
+
+.postShortDisplayBottomRight {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.postShortDisplaySVGIconDiv {
+    display: flex;
+    align-items: center;
+}
+
+.postShortDisplayCommentsDropdown {
+    position: absolute; 
+    top: 1.563rem; /*25px*/
+}
+
+.postShortDisplaySharesDropdown {
+    position: absolute; 
+    top: 1.563rem; /*25px*/
+}
+
+.postShortDisplaySVGIcon.right {
+    margin-left: 1.25rem; /*20px*/
+}
+
+.postShortDisplayPNGIcon.right {
+    margin-left: 1.25rem; /*20px*/
+}
+
+.postShortDisplayCounter.right {
+    margin-left: 0.313rem; /*5px*/
+}
+
+.psdShareBlock {
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 2;
+}

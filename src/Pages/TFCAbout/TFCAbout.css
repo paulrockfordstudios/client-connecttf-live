@@ -1,0 +1,20 @@
+.rainbowSquare {
+    width: 600px;
+    height: 600px;
+    margin: 200px;
+    background: linear-gradient(to right, #d3e9f6, #6b8c95, #566167, #8e8e8e, #6d606a, #af9499, #dadada); /* Standard syntax (must be last) */
+    /*box-shadow: 0 0 8px 8px transparent inset;*/
+}
+
+.dobclass {
+    margin-left: 50%;
+    margin-top: 50%;
+    height: 50px;
+    width: 200px;
+    border-radius: 10px;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+    background-color: yellow;
+}
+

@@ -1,0 +1,890 @@
+/* ---------- COLOR PALETTE ---------- */ /* lines 400 - ? */
+
+
+/* - BACKGROUND - */ /* lines - 403 - ? */
+
+/* screen mode */
+
+.BACKGROUND_SCREEN.light {
+    background-color: white;
+}
+
+.BACKGROUND_SCREEN.dark {
+    background-color: black;
+}
+
+
+/* bright */ /* lines - 406 - 478 */
+ 
+.cp-bgc-brt.static.masculine {
+    background-color: #4a76fd;
+}
+
+.cp-bgc-brt.static.feminine {
+    background-color: #e639af;
+}
+
+.cp-bgc-brt.static.ruby {
+    background-color: #850014;   
+}
+ 
+.cp-bgc-brt.static.orange { 
+    background-color: #ff8303; 
+}
+
+.cp-bgc-brt.static.sun {
+    background-color: #ffe700;  
+}
+
+.cp-bgc-brt.static.emerald { 
+    background-color: #50c878; 
+}
+
+.cp-bgc-brt.static.blue {
+    background-color: #098de9; 
+}
+
+.cp-bgc-brt.static.indigo { 
+    background-color: #30307e; 
+}
+ 
+.cp-bgc-brt.static.violet { 
+    background-color: #8a2be2; 
+}
+ 
+.cp-bgc-brt.static.rainbow {
+    background: -webkit-linear-gradient(right, #850014, #ff8303, #ffe700, #50c878, #098de9, #30307e, #8a2be2); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, #850014, #ff8303, #ffe700, #50c878, #098de9, #30307e, #8a2be2); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, #850014, #ff8303, #ffe700, #50c878, #098de9, #30307e, #8a2be2); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, #850014, #ff8303, #ffe700, #50c878, #098de9, #30307e, #8a2be2); /* Standard syntax (must be last) */
+}
+
+.cp-bgc-brt.static.rainbowAlt {
+    background-image: url('./Assets/misc/rainbow-background.jpg');
+}
+ 
+.cp-bgc-brt.static.silver {
+    background: -webkit-linear-gradient(left, #dadada , #8e8e8e, #dadada); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, #dadada , #8e8e8e, #dadada); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, #dadada , #8e8e8e, #dadada); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, #dadada , #8e8e8e, #dadada); /* Standard syntax (must be last) */
+}
+
+.cp-bgc-brt.static.silverAlt {
+    background-image: url('./Assets/misc/silver-background.jpg');
+}
+ 
+.cp-bgc-brt.static.gold {
+    background: -webkit-linear-gradient(left, #ab781d , #eed264, #ab781d); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, #ab781d , #eed264, #ab781d); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, #ab781d , #eed264, #ab781d); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, #ab781d , #eed264, #ab781d); /* Standard syntax (must be last) */
+}
+
+.cp-bgc-brt.static.goldAlt {
+    background-image: url('./Assets/misc/gold-background.jpg');
+}
+ 
+.cp-bgc-brt.static.platinum {
+    background: -webkit-linear-gradient(left, #d3e9f6, #6b8c95, #566167, #8e8e8e, #6d606a,  #af9499, #dadada); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, #d3e9f6, #6b8c95, #566167, #8e8e8e, #6d606a,  #af9499, #dadada); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, #d3e9f6, #6b8c95, #566167, #8e8e8e, #6d606a,  #af9499, #dadada); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, #d3e9f6, #6b8c95, #566167, #8e8e8e, #6d606a,  #af9499, #dadada); /* Standard syntax (must be last) */
+}
+
+.cp-bgc-brt.static.platinumAlt {
+    background-image: url('./Assets/misc/platinum-background.jpg');
+}
+ 
+.cp-bgc-brt.static.diamond {
+    background-image: url('./Assets/misc/diamond-background.jpg');
+}
+ 
+.cp-bgc-brt.static.gray {
+    background-color: #aeb4b7;
+}
+
+/* light */ /* lines 480 - 552 */
+ 
+.cp-bgc-lgt.static.masculine,
+.cp-bgc-lgt.dynamic.light.masculine:hover,
+.cp-bgc-lgt.dynamic.dark.masculine:active {
+    background-color: #d8e1fe;
+}
+ 
+.cp-bgc-lgt.static.feminine,
+.cp-bgc-lgt.dynamic.light.feminine:hover,
+.cp-bgc-lgt.dynamic.dark.feminine:active {
+    background-color: #fde1ef;
+}
+
+.cp-bgc-lgt.static.ruby,
+.cp-bgc-lgt.dynamic.light.ruby:hover,
+.cp-bgc-lgt.dynamic.dark.ruby:active {
+    background-color: #d4a6ad;
+}
+ 
+.cp-bgc-lgt.static.orange,
+.cp-bgc-lgt.dynamic.light.orange:hover,
+.cp-bgc-lgt.dynamic.dark.orange:active {
+    background-color: #ffdab3;
+}
+
+.cp-bgc-lgt.static.sun,
+.cp-bgc-lgt.dynamic.light.sun:hover,
+.cp-bgc-lgt.dynamic.dark.sun:active {
+    background-color: #fff9bf;
+}
+ 
+.cp-bgc-lgt.static.emerald,
+.cp-bgc-lgt.dynamic.light.emerald:hover,
+.cp-bgc-lgt.dynamic.dark.emerald:active {
+    background-color: #caeed6;
+}
+ 
+.cp-bgc-lgt.static.blue,
+.cp-bgc-lgt.dynamic.light.blue:hover,
+.cp-bgc-lgt.dynamic.dark.blue:active {
+    background-color: #cee8fb;
+}
+
+.cp-bgc-lgt.static.indigo,
+.cp-bgc-lgt.dynamic.light.indigo:hover,
+.cp-bgc-lgt.dynamic.dark.indigo:active {
+    background-color: #babad4;
+}
+
+.cp-bgc-lgt.static.violet,
+.cp-bgc-lgt.dynamic.light.violet:hover,
+.cp-bgc-lgt.dynamic.dark.violet:active {
+    background-color: #dcbff6;
+}
+ 
+.cp-bgc-lgt.static.rainbow,
+.cp-bgc-lgt.dynamic.light.rainbow:hover,
+.cp-bgc-lgt.dynamic.dark.rainbow:active {
+    background: -webkit-linear-gradient(right, #d4a6ad, #ffdab3, #fff9bf, #caeed6, #cee8fb, #babad4, #dcbff6); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, #d4a6ad, #ffdab3, #fff9bf, #caeed6, #cee8fb, #babad4, #dcbff6); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, #d4a6ad, #ffdab3, #fff9bf, #caeed6, #cee8fb, #babad4, #dcbff6); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, #d4a6ad, #ffdab3, #fff9bf, #caeed6, #cee8fb, #babad4, #dcbff6); /* Standard syntax (must be last) */
+}
+
+/*
+.cp-bgc-lgt.static.rainbowAlt {
+    background-image: url('./Assets/misc/rainbow-background-lgt.jpg');
+}
+*/
+ 
+.cp-bgc-lgt.static.silver,
+.cp-bgc-lgt.dynamic.light.silver:hover,
+.cp-bgc-lgt.dynamic.dark.silver:active {
+    background: -webkit-linear-gradient(left, #f4f4f4, #dddddd, #f4f4f4); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, #f4f4f4, #dddddd, #f4f4f4); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, #f4f4f4, #dddddd, #f4f4f4); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to left, #f4f4f4, #dddddd, #f4f4f4); /* Standard syntax (must be last) */
+}
+
+.cp-bgc-lgt.static.silverAlt {
+    background-image: url('./Assets/misc/silver-background-lgt.jpg');
+}
+
+.cp-bgc-lgt.static.gold,
+.cp-bgc-lgt.dynamic.light.gold:hover,
+.cp-bgc-lgt.dynamic.dark.gold:active {
+    background: -webkit-linear-gradient(left, #e6d6bb, #faf1d0, #e6d6bb); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, #e6d6bb, #faf1d0, #e6d6bb); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, #e6d6bb, #faf1d0, #e6d6bb); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, #e6d6bb, #faf1d0, #e6d6bb); /* Standard syntax (must be last) */
+}
+
+.cp-bgc-lgt.static.goldAlt {
+    background-image: url('./Assets/misc/gold-background-lgt.jpg');
+}
+ 
+.cp-bgc-lgt.static.platinum,
+.cp-bgc-lgt.dynamic.light.platinum:hover,
+.cp-bgc-lgt.dynamic.dark.platinum:active {
+    background: -webkit-linear-gradient(left, #f2f8fc, #d2dcdf, #cccfd1, #dddddd, #d3cfd2, #e7dfe0, #f4f4f4); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, #f2f8fc, #d2dcdf, #cccfd1, #dddddd, #d3cfd2, #e7dfe0, #f4f4f4); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, #f2f8fc, #d2dcdf, #cccfd1, #dddddd, #d3cfd2, #e7dfe0, #f4f4f4); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, #f2f8fc, #d2dcdf, #cccfd1, #dddddd, #d3cfd2, #e7dfe0, #f4f4f4); /* Standard syntax (must be last) */
+}
+
+/*
+.cp-bgc-lgt.static.platinumAlt {
+    background-image: url('./Assets/misc/platinum-background-lgt.jpg');
+}
+*/
+ 
+.cp-bgc-lgt.static.diamond,
+.cp-bgc-lgt.dynamic.light.diamond:hover,
+.cp-bgc-lgt.dynamic.dark.diamond:active {
+    background-image: url('./Assets/misc/diamond-background-lgt.jpg');
+}
+ 
+.cp-bgc-lgt.static.gray,
+.cp-bgc-lgt.dynamic.light.gray:hover,
+.cp-bgc-lgt.dynamic.dark.gray:active {
+    background-color: #f1f1f1;
+}
+
+/* dark light */ /* lines 480 - 552 */
+ 
+.cp-bgc-dklt.static.masculine,
+.cp-bgc-dklt.dynamic.dark.masculine:hover,
+.cp-bgc-dklt.dynamic.light.masculine:active {
+    background-color: #c3cbe5;
+}
+ 
+.cp-bgc-dklt.static.feminine,
+.cp-bgc-dklt.dynamic.dark.feminine:hover,
+.cp-bgc-dklt.dynamic.light.feminine:active {
+    background-color: #e4cbd8;
+}
+
+.cp-bgc-dklt.static.ruby,
+.cp-bgc-dklt.dynamic.dark.ruby:hover,
+.cp-bgc-dklt.dynamic.light.ruby:active {
+    background-color: #be959b;
+}
+ 
+.cp-bgc-dklt.static.orange,
+.cp-bgc-dklt.dynamic.dark.orange:hover,
+.cp-bgc-dklt.dynamic.light.orange:active {
+    background-color: #e6c5a1;
+}
+
+.cp-bgc-dklt.static.sun,
+.cp-bgc-dklt.dynamic.dark.sun:hover,
+.cp-bgc-dklt.dynamic.light.sun:active {
+    background-color: #e6e1ac;
+}
+ 
+.cp-bgc-dklt.static.emerald,
+.cp-bgc-dklt.dynamic.dark.emerald:hover,
+.cp-bgc-dklt.dynamic.light.emerald:active {
+    background-color: #b6d7c1;
+}
+ 
+.cp-bgc-dklt.static.blue,
+.cp-bgc-dklt.dynamic.dark.blue:hover,
+.cp-bgc-dklt.dynamic.light.blue:active {
+    background-color: #bad1e2;
+}
+
+.cp-bgc-dklt.static.indigo,
+.cp-bgc-dklt.dynamic.dark.indigo:hover,
+.cp-bgc-dklt.dynamic.light.indigo:active {
+    background-color: #a8a8bf;
+}
+
+.cp-bgc-dklt.static.violet,
+.cp-bgc-dklt.dynamic.dark.violet:hover,
+.cp-bgc-dklt.dynamic.light.violet:active {
+    background-color: #c6acde;
+}
+ 
+.cp-bgc-dklt.static.rainbow,
+.cp-bgc-dklt.dynamic.dark.rainbow:hover,
+.cp-bgc-dklt.dynamic.light.rainbow:active {
+    background: -webkit-linear-gradient(right, #be959b, #e6c5a1, #e6e1ac, #b6d7c1, #bad1e2, #a8a8bf, #c6acde); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, #be959b, #e6c5a1, #e6e1ac, #b6d7c1, #bad1e2, #a8a8bf, #c6acde); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, #be959b, #e6c5a1, #e6e1ac, #b6d7c1, #bad1e2, #a8a8bf, #c6acde); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, #be959b, #e6c5a1, #e6e1ac, #b6d7c1, #bad1e2, #a8a8bf, #c6acde); /* Standard syntax (must be last) */
+}
+
+/*
+.cp-bgc-lgt.static.rainbowAlt {
+    background-image: url('./Assets/misc/rainbow-background-lgt.jpg');
+}
+*/
+ 
+.cp-bgc-dklt.static.silver,
+.cp-bgc-dklt.dynamic.dark.silver:hover,
+.cp-bgc-dklt.dynamic.light.silver:active {
+    background: -webkit-linear-gradient(left, #dcdcdc, #c7c7c7 , #dcdcdc); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, #dcdcdc, #c7c7c7 , #dcdcdc); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, #dcdcdc, #c7c7c7 , #dcdcdc); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to left, #dcdcdc, #c7c7c7 , #dcdcdc); /* Standard syntax (must be last) */
+}
+
+/*
+.cp-bgc-lgt.static.silverAlt {
+    background-image: url('./Assets/misc/silver-background-lgt.jpg');
+}
+*/
+
+.cp-bgc-dklt.static.gold,
+.cp-bgc-dklt.dynamic.dark.gold:hover,
+.cp-bgc-dklt.dynamic.light.gold:active {
+    background: -webkit-linear-gradient(left, #cfc1a9, #e1d9bc , #cfc1a9); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, #cfc1a9, #e1d9bc , #cfc1a9); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, #cfc1a9, #e1d9bc , #cfc1a9); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, #cfc1a9, #e1d9bc , #cfc1a9); /* Standard syntax (must be last) */
+}
+
+/*
+.cp-bgc-lgt.static.goldAlt {
+    background-image: url('./Assets/misc/gold-background-lgt.jpg');
+}
+*/
+ 
+.cp-bgc-dklt.static.platinum,
+.cp-bgc-dklt.dynamic.dark.platinum:hover,
+.cp-bgc-dklt.dynamic.light.platinum:active {
+    background: -webkit-linear-gradient(left, #dae0e3, #bdc6c9, #b8bbbd, #c7c7c7, #bebbbd, #d0c9ca, #dcdcdc); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, #dae0e3, #bdc6c9, #b8bbbd, #c7c7c7, #bebbbd, #d0c9ca, #dcdcdc); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, #dae0e3, #bdc6c9, #b8bbbd, #c7c7c7, #bebbbd, #d0c9ca, #dcdcdc); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, #dae0e3, #bdc6c9, #b8bbbd, #c7c7c7, #bebbbd, #d0c9ca, #dcdcdc); /* Standard syntax (must be last) */
+}
+
+/*
+.cp-bgc-lgt.static.platinumAlt {
+    background-image: url('./Assets/misc/platinum-background-lgt.jpg');
+}
+*/
+ 
+/*
+.cp-bgc-lgt.static.diamond,
+.cp-bgc-lgt.dynamic.light.diamond:hover,
+.cp-bgc-lgt.dynamic.dark.diamond:active {
+    background-image: url('./Assets/misc/diamond-background-lgt.jpg');
+}
+*/
+ 
+.cp-bgc-dklt.static.gray,
+.cp-bgc-dklt.dynamic.dark.gray:hover,
+.cp-bgc-dklt.dynamic.light.gray:active {
+    background-color: #cecfd0;
+}
+
+/* dark */ /* lines - ? - ? */
+
+.cp-bgc-drk.dynamic.feminine:active {
+    background-color: #3453b2;
+}
+
+.cp-bgc-drk.dynamic.feminine:active {
+    background-color: #a1287b;
+}
+
+.cp-bgc-drk.dynamic.ruby:active {
+    background-color: #5d000e;
+}
+
+.cp-bgc-drk.dynamic.orange:active {
+    background-color: #b35c02;
+}
+
+.cp-bgc-drk.dynamic.sun:active {
+    background-color: #b3a200;
+}
+
+.cp-bgc-drk.dynamic.emerald:active {
+    background-color: #388c54;
+}
+
+.cp-bgc-drk.dynamic.blue:active {
+    background-color: #0663a4;
+}
+
+.cp-bgc-drk.dynamic.indigo:active {
+    background-color: #222258;
+}
+
+.cp-bgc-drk.dynamic.violet:active {
+    background-color: #611e9f;
+}
+
+.cp-bgc-drk.dynamic.rainbow:active {
+    background: -webkit-linear-gradient(left, #5d000e, #b35c02, #b3a200, #388c54, #0663a4, #222258, #611e9f); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, #5d000e, #b35c02, #b3a200, #388c54, #0663a4, #222258, #611e9f); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, #5d000e, #b35c02, #b3a200, #388c54, #0663a4, #222258, #611e9f); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, #5d000e, #b35c02, #b3a200, #388c54, #0663a4, #222258, #611e9f); /* Standard syntax (must be last) */
+}
+
+.cp-bgc-drk.dynamic.silver:active {
+    background: -webkit-linear-gradient(right, #999999, #646464 , #999999); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, #999999, #646464 , #999999); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, #999999, #646464 , #999999); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, #999999, #646464 , #999999); /* Standard syntax (must be last) */
+}
+
+.cp-bgc-drk.dynamic.platinum:active {
+    background: -webkit-linear-gradient(left, #94a4ad, #4b6269, #3c4448, #646464, #4d434a, #7b686b, #999999); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, #94a4ad, #4b6269, #3c4448, #646464, #4d434a, #7b686b, #999999); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, #94a4ad, #4b6269, #3c4448, #646464, #4d434a, #7b686b, #999999); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, #94a4ad, #4b6269, #3c4448, #646464, #4d434a, #7b686b, #999999); /* Standard syntax (must be last) */
+}
+
+.cp-bgc-drk.dynamic.gold:active, .cp-bgc-drk.dynamic.diamond:active {
+    background: -webkit-linear-gradient(right, #785414, #a79346 , #785414); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, #785414, #a79346 , #785414); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, #785414, #a79346 , #785414); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, #785414, #a79346 , #785414); /* Standard syntax (must be last) */
+}
+
+.cp-c-drk.dynamic.gray:active {
+    background-color: #7a7e80;
+}
+
+
+
+
+
+
+
+
+
+/* - FOREGROUND - */ /* lines - ? - ? */
+
+/* screen mode */
+
+.FOREGROUND_SCREEN.light {
+    color: black;
+}
+
+.FOREGROUND_SCREEN.dark {
+    color: white;
+}
+
+/* bright */ /* lines - ? - ? */
+
+.cp-c-brt.static.masculine, 
+.cp-c-brt.dynamic.masculine:focus {
+    color: #4a76fd;
+}
+
+.cp-c-brt.static.feminine, 
+.cp-c-brt.dynamic.feminine:focus {
+    color: #e639af;
+}
+
+.cp-c-brt.static.ruby, 
+.cp-c-brt.dynamic.ruby:focus {
+    color: #850014;
+}
+
+.cp-c-brt.static.orange, 
+.cp-c-brt.dynamic.orange:focus {
+    color: #ff8303;
+}
+
+.cp-c-brt.static.sun, 
+.cp-c-brt.dynamic.sun:focus {
+    color: #ffe700;
+}
+
+.cp-c-brt.static.emerald, 
+.cp-c-brt.dynamic.emerald:focus {
+    color: #50c878;
+}
+
+.cp-c-brt.static.blue, 
+.cp-c-brt.dynamic.blue:focus {
+    color: #098de9;
+}
+
+.cp-c-brt.static.indigo, 
+.cp-c-brt.dynamic.indigo:focus {
+    color: #30307e;
+}
+
+.cp-c-brt.static.violet, 
+.cp-c-brt.dynamic.violet:focus {
+    color: #8a2be2;
+}
+
+.cp-c-brt.static.rainbow, 
+.cp-c-brt.dynamic.rainbow:focus {
+    background: -webkit-linear-gradient(right, #850014, #ff8303, #ffe700, #50c878, #098de9, #30307e, #8a2be2); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, #850014, #ff8303, #ffe700, #50c878, #098de9, #30307e, #8a2be2); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, #850014, #ff8303, #ffe700, #50c878, #098de9, #30307e, #8a2be2); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, #850014, #ff8303, #ffe700, #50c878, #098de9, #30307e, #8a2be2); /* Standard syntax (must be last) */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.cp-c-brt.static.silver, 
+.cp-c-brt.dynamic.silver:focus {
+    background: -webkit-linear-gradient(left, #dadada , #8e8e8e, #dadada); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, #dadada , #8e8e8e, #dadada); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, #dadada , #8e8e8e, #dadada); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, #dadada , #8e8e8e, #dadada); /* Standard syntax (must be last) */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.cp-c-brt.static.gold, 
+.cp-c-brt.dynamic.gold:focus {
+    background: -webkit-linear-gradient(left, #ab781d , #eed264, #ab781d); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, #ab781d , #eed264, #ab781d); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, #ab781d , #eed264, #ab781d); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, #ab781d , #eed264, #ab781d); /* Standard syntax (must be last) */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.cp-c-brt.static.platinum, 
+.cp-c-brt.dynamic.platinum:focus {
+    background: -webkit-linear-gradient(left, #d3e9f6, #6b8c95, #566167, #8e8e8e, #6d606a,  #af9499, #dadada); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, #d3e9f6, #6b8c95, #566167, #8e8e8e, #6d606a,  #af9499, #dadada); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, #d3e9f6, #6b8c95, #566167, #8e8e8e, #6d606a,  #af9499, #dadada); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, #d3e9f6, #6b8c95, #566167, #8e8e8e, #6d606a,  #af9499, #dadada); /* Standard syntax (must be last) */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.cp-c-brt.static.gray, 
+.cp-c-brt.dynamic.gray:focus {
+    color: #aeb4b7;
+}
+
+/* light */ /* lines 480 - 552 */
+ 
+.cp-c-lgt.static.masculine,
+.cp-c-lgt.dynamic.light.masculine:hover,
+.cp-c-lgt.dynamic.dark.masculine:active {
+    color: #d8e1fe;
+}
+ 
+.cp-c-lgt.static.feminine,
+.cp-c-lgt.dynamic.light.feminine:hover,
+.cp-c-lgt.dynamic.dark.feminine:active {
+    color: #fde1ef;
+}
+
+.cp-c-lgt.static.ruby,
+.cp-c-lgt.dynamic.light.ruby:hover,
+.cp-c-lgt.dynamic.dark.ruby:active {
+    color: #d4a6ad;
+}
+ 
+.cp-c-lgt.static.orange,
+.cp-c-lgt.dynamic.light.orange:hover,
+.cp-c-lgt.dynamic.dark.orange:active {
+    color: #ffdab3;
+}
+
+.cp-c-lgt.static.sun,
+.cp-c-lgt.dynamic.light.sun:hover,
+.cp-c-lgt.dynamic.dark.sun:active {
+    color: #fff9bf;
+}
+ 
+.cp-c-lgt.static.emerald,
+.cp-c-lgt.dynamic.light.emerald:hover,
+.cp-c-lgt.dynamic.dark.emerald:active {
+    color: #caeed6;
+}
+ 
+.cp-c-lgt.static.blue,
+.cp-c-lgt.dynamic.light.blue:hover,
+.cp-c-lgt.dynamic.dark.blue:active {
+    color: #cee8fb;
+}
+
+.cp-c-lgt.static.indigo,
+.cp-c-lgt.dynamic.light.indigo:hover,
+.cp-c-lgt.dynamic.dark.indigo:active {
+    color: #babad4;
+}
+
+.cp-c-lgt.static.violet,
+.cp-c-lgt.dynamic.light.violet:hover,
+.cp-c-lgt.dynamic.dark.violet:active {
+    color: #dcbff6;
+}
+ 
+.cp-c-lgt.static.rainbow,
+.cp-c-lgt.dynamic.light.rainbow:hover,
+.cp-c-lgt.dynamic.dark.rainbow:active {
+    background: -webkit-linear-gradient(right, #d4a6ad, #ffdab3, #fff9bf, #caeed6, #cee8fb, #babad4, #dcbff6); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, #d4a6ad, #ffdab3, #fff9bf, #caeed6, #cee8fb, #babad4, #dcbff6); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, #d4a6ad, #ffdab3, #fff9bf, #caeed6, #cee8fb, #babad4, #dcbff6); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, #d4a6ad, #ffdab3, #fff9bf, #caeed6, #cee8fb, #babad4, #dcbff6); /* Standard syntax (must be last) */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/*
+.cp-bgc-lgt.static.rainbowAlt {
+    background-image: url('./Assets/misc/rainbow-background-lgt.jpg');
+}
+*/
+ 
+.cp-c-lgt.static.silver,
+.cp-c-lgt.dynamic.light.silver:hover,
+.cp-c-lgt.dynamic.dark.silver:active {
+    background: -webkit-linear-gradient(left, #f4f4f4, #dddddd, #f4f4f4); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, #f4f4f4, #dddddd, #f4f4f4); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, #f4f4f4, #dddddd, #f4f4f4); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to left, #f4f4f4, #dddddd, #f4f4f4); /* Standard syntax (must be last) */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.cp-c-lgt.static.silverAlt {
+    background-image: url('./Assets/misc/silver-background-lgt.jpg');
+}
+
+.cp-c-lgt.static.gold,
+.cp-c-lgt.dynamic.light.gold:hover,
+.cp-c-lgt.dynamic.dark.gold:active {
+    background: -webkit-linear-gradient(left, #e6d6bb, #faf1d0, #e6d6bb); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, #e6d6bb, #faf1d0, #e6d6bb); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, #e6d6bb, #faf1d0, #e6d6bb); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, #e6d6bb, #faf1d0, #e6d6bb); /* Standard syntax (must be last) */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.cp-c-lgt.static.goldAlt {
+    background-image: url('./Assets/misc/gold-background-lgt.jpg');
+}
+ 
+.cp-c-lgt.static.platinum,
+.cp-c-lgt.dynamic.light.platinum:hover,
+.cp-c-lgt.dynamic.dark.platinum:active {
+    background: -webkit-linear-gradient(left, #f2f8fc, #d2dcdf, #cccfd1, #dddddd, #d3cfd2, #e7dfe0, #f4f4f4); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, #f2f8fc, #d2dcdf, #cccfd1, #dddddd, #d3cfd2, #e7dfe0, #f4f4f4); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, #f2f8fc, #d2dcdf, #cccfd1, #dddddd, #d3cfd2, #e7dfe0, #f4f4f4); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, #f2f8fc, #d2dcdf, #cccfd1, #dddddd, #d3cfd2, #e7dfe0, #f4f4f4); /* Standard syntax (must be last) */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/*
+.cp-bgc-lgt.static.platinumAlt {
+    background-image: url('./Assets/misc/platinum-background-lgt.jpg');
+}
+*/
+ 
+.cp-c-lgt.static.diamond,
+.cp-c-lgt.dynamic.light.diamond:hover,
+.cp-c-lgt.dynamic.dark.diamond:active {
+    background-image: url('./Assets/misc/diamond-background-lgt.jpg');
+}
+ 
+.cp-c-lgt.static.gray,
+.cp-c-lgt.dynamic.light.gray:hover,
+.cp-c-lgt.dynamic.dark.gray:active {
+    color: #f1f1f1;
+}
+
+
+/* dark light */ /* lines 480 - 552 */
+ 
+.cp-c-dklt.static.masculine,
+.cp-c-dklt.dynamic.light.masculine:hover,
+.cp-c-dklt.dynamic.dark.masculine:active {
+    color: #c3cbe5;
+}
+ 
+.cp-c-dklt.static.feminine,
+.cp-c-dklt.dynamic.light.feminine:hover,
+.cp-c-dklt.dynamic.dark.feminine:active {
+    color: #e4cbd8;
+}
+
+.cp-c-dklt.static.ruby,
+.cp-c-dklt.dynamic.light.ruby:hover,
+.cp-c-dklt.dynamic.dark.ruby:active {
+    color: #be959b;
+}
+ 
+.cp-c-dklt.static.orange,
+.cp-c-dklt.dynamic.light.orange:hover,
+.cp-c-dklt.dynamic.dark.orange:active {
+    color: #e6c5a1;
+}
+
+.cp-c-dklt.static.sun,
+.cp-c-dklt.dynamic.light.sun:hover,
+.cp-c-dklt.dynamic.dark.sun:active {
+    color: #e6e1ac;
+}
+ 
+.cp-c-dklt.static.emerald,
+.cp-c-dklt.dynamic.light.emerald:hover,
+.cp-c-dklt.dynamic.dark.emerald:active {
+    color: #b6d7c1;
+}
+ 
+.cp-c-dklt.static.blue,
+.cp-c-dklt.dynamic.light.blue:hover,
+.cp-c-dklt.dynamic.dark.blue:active {
+    color: #bad1e2;
+}
+
+.cp-c-dklt.static.indigo,
+.cp-c-dklt.dynamic.light.indigo:hover,
+.cp-c-dklt.dynamic.dark.indigo:active {
+    color: #a8a8bf;
+}
+
+.cp-c-dklt.static.violet,
+.cp-c-dklt.dynamic.light.violet:hover,
+.cp-c-dklt.dynamic.dark.violet:active {
+    color: #c6acde;
+}
+ 
+.cp-c-dklt.static.rainbow,
+.cp-c-dklt.dynamic.light.rainbow:hover,
+.cp-c-dklt.dynamic.dark.rainbow:active {
+    background: -webkit-linear-gradient(right, #be959b, #e6c5a1, #e6e1ac, #b6d7c1, #bad1e2, #a8a8bf, #c6acde); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, #be959b, #e6c5a1, #e6e1ac, #b6d7c1, #bad1e2, #a8a8bf, #c6acde); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, #be959b, #e6c5a1, #e6e1ac, #b6d7c1, #bad1e2, #a8a8bf, #c6acde); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, #be959b, #e6c5a1, #e6e1ac, #b6d7c1, #bad1e2, #a8a8bf, #c6acde); /* Standard syntax (must be last) */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/*
+.cp-bgc-lgt.static.rainbowAlt {
+    background-image: url('./Assets/misc/rainbow-background-lgt.jpg');
+}
+*/
+ 
+.cp-c-dklt.static.silver,
+.cp-c-dklt.dynamic.light.silver:hover,
+.cp-c-dklt.dynamic.dark.silver:active {
+    background: -webkit-linear-gradient(left, #dcdcdc, #c7c7c7 , #dcdcdc); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, #dcdcdc, #c7c7c7 , #dcdcdc); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, #dcdcdc, #c7c7c7 , #dcdcdc); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to left, #dcdcdc, #c7c7c7 , #dcdcdc); /* Standard syntax (must be last) */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/*
+.cp-bgc-lgt.static.silverAlt {
+    background-image: url('./Assets/misc/silver-background-lgt.jpg');
+}
+*/
+
+.cp-c-dklt.static.gold,
+.cp-c-dklt.dynamic.light.gold:hover,
+.cp-c-dklt.dynamic.dark.gold:active {
+    background: -webkit-linear-gradient(left, #cfc1a9, #e1d9bc , #cfc1a9); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, #cfc1a9, #e1d9bc , #cfc1a9); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, #cfc1a9, #e1d9bc , #cfc1a9); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, #cfc1a9, #e1d9bc , #cfc1a9); /* Standard syntax (must be last) */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/*
+.cp-bgc-lgt.static.goldAlt {
+    background-image: url('./Assets/misc/gold-background-lgt.jpg');
+}
+*/
+ 
+.cp-c-dklt.static.platinum,
+.cp-c-dklt.dynamic.light.platinum:hover,
+.cp-c-dklt.dynamic.dark.platinum:active {
+    background: -webkit-linear-gradient(left, #dae0e3, #bdc6c9, #b8bbbd, #c7c7c7, #bebbbd, #d0c9ca, #dcdcdc); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, #dae0e3, #bdc6c9, #b8bbbd, #c7c7c7, #bebbbd, #d0c9ca, #dcdcdc); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, #dae0e3, #bdc6c9, #b8bbbd, #c7c7c7, #bebbbd, #d0c9ca, #dcdcdc); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, #dae0e3, #bdc6c9, #b8bbbd, #c7c7c7, #bebbbd, #d0c9ca, #dcdcdc); /* Standard syntax (must be last) */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/*
+.cp-bgc-lgt.static.platinumAlt {
+    background-image: url('./Assets/misc/platinum-background-lgt.jpg');
+}
+*/
+ 
+/*
+.cp-bgc-lgt.static.diamond,
+.cp-bgc-lgt.dynamic.light.diamond:hover,
+.cp-bgc-lgt.dynamic.dark.diamond:active {
+    background-image: url('./Assets/misc/diamond-background-lgt.jpg');
+}
+*/
+ 
+.cp-c-dklt.static.gray,
+.cp-c-dklt.dynamic.light.gray:hover,
+.cp-c-dklt.dynamic.dark.gray:active {
+    background-color: #cecfd0;
+}
+
+/* dark */ /* lines ? - ? */
+
+.cp-c-drk.dynamic.feminine:active {
+    color: #3453b2;
+}
+
+.cp-c-drk.dynamic.feminine:active {
+    color: #a1287b;
+}
+
+.cp-c-drk.dynamic.ruby:active {
+    color: #5d000e;
+}
+
+.cp-c-drk.dynamic.orange:active {
+    color: #b35c02;
+}
+
+.cp-c-drk.dynamic.sun:active {
+    color: #b3a200;
+}
+
+.cp-c-drk.dynamic.emerald:active {
+    color: #388c54;
+}
+
+.cp-c-drk.dynamic.blue:active {
+    color: #0663a4;
+}
+
+.cp-c-drk.dynamic.indigo:active {
+    color: #222258;
+}
+
+.cp-c-drk.dynamic.violet:active {
+    color: #611e9f;
+}
+
+.cp-c-drk.dynamic.rainbow:active {
+    background: -webkit-linear-gradient(left, #5d000e, #b35c02, #b3a200, #388c54, #0663a4, #222258, #611e9f); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, #5d000e, #b35c02, #b3a200, #388c54, #0663a4, #222258, #611e9f); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, #5d000e, #b35c02, #b3a200, #388c54, #0663a4, #222258, #611e9f); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, #5d000e, #b35c02, #b3a200, #388c54, #0663a4, #222258, #611e9f); /* Standard syntax (must be last) */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.cp-c-drk.dynamic.silver:active {
+    background: -webkit-linear-gradient(right, #999999, #646464 , #999999); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, #999999, #646464 , #999999); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, #999999, #646464 , #999999); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, #999999, #646464 , #999999); /* Standard syntax (must be last) */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.cp-c-drk.dynamic.platinum:active {
+    background: -webkit-linear-gradient(left, #94a4ad, #4b6269, #3c4448, #646464, #4d434a, #7b686b, #999999); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, #94a4ad, #4b6269, #3c4448, #646464, #4d434a, #7b686b, #999999); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, #94a4ad, #4b6269, #3c4448, #646464, #4d434a, #7b686b, #999999); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, #94a4ad, #4b6269, #3c4448, #646464, #4d434a, #7b686b, #999999); /* Standard syntax (must be last) */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.cp-c-drk.dynamic.gold:active, .cp-c-drk.dynamic.diamond:active {
+    background: -webkit-linear-gradient(right, #785414, #a79346 , #785414); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, #785414, #a79346 , #785414); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, #785414, #a79346 , #785414); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, #785414, #a79346 , #785414); /* Standard syntax (must be last) */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.cp-c-drk.dynamic.gray:active {
+    color: #7a7e80;
+}

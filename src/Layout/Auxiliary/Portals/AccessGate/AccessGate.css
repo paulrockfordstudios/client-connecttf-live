@@ -1,0 +1,195 @@
+.accessGate { 
+    max-width: 450px;
+    width: 90%;
+    border-radius: 60px;
+}
+
+.accessGate.light {
+    background-color: white;
+} 
+
+.accessGate.dark {
+    background-color: black;
+} 
+
+.accessGateborderBg {
+    width: calc(100% - 12px);
+    margin: 6px;
+    border-radius: 54px;
+}
+
+.accessGateContainer {
+    width: calc(100% - 12px);
+    margin: 6px;
+    border-radius: 48px; 
+    position: relative;
+}
+
+.accessGateContainer.light {
+    background-color: white;
+}
+
+.accessGateContainer.dark {
+    background-color: black;
+}
+
+.accesGateCloseBtn {
+    width: 1.25rem; /*20px*/
+    height: 1.25rem; /*20px*/
+    position: absolute;
+    top: 1.25rem; /*20px*/
+    right: 1.25rem; /*20px*/
+    border-radius: 50%;
+    margin: 0.25rem; /*4px*/
+}
+
+.accesGateCloseBtn.light {
+    color: #c6cacc;
+}
+
+.accesGateCloseBtn.dark {
+    color: #7a7e80;
+}
+
+.accesGateCloseBtn:hover {
+    color: #aeb4b7;
+}
+
+.accesGateCloseBtn.light:active {
+    color: #7a7e80;
+}
+
+.accesGateCloseBtn.dark:active {
+    color: #c6cacc;
+}
+
+.accesGateCloseBtn.light.keyHov {
+    border: 0.25rem solid black; /*4px*/
+}
+
+.accesGateCloseBtn.dark.keyHov {
+    border: 0.25rem solid white; /*4px*/
+}
+
+.accessGateContent {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 40px;
+}
+
+.accessGateLogo {
+    height: 2.75rem; /*30px*/
+    width: 2.5rem; /*27px*/
+    /*margin-bottom: 0.938rem; /*15px*/
+    margin-bottom: 16px;
+    align-self: center;
+}
+
+
+.ctfInput {
+    height: 44px;
+    width: 100%;
+    border-radius: 22px;
+    overflow: hidden;
+    border: 2px solid;
+}
+
+.ctfInput.valid {
+    border-color: white;
+}
+
+.ctfInput.invalid {
+     border-color: red;
+}
+
+.ctfInputFade {
+    margin: 22px;
+    width: calc(100% - 44px);
+    height: 0;
+    border-radius: 22px;
+}
+
+.ctfInputItemsContainer {
+    display: flex;
+    flex-direction: row;
+    height: 44px;
+    width: 100%;
+}
+
+.ctfInputIconContainer {
+    width: 44px;
+    height: 44px;
+    display: flex;
+    flex-shrink: 0;
+    flex-grow: 0;
+    justify-content: center;
+    align-items: center;
+    overflow: auto;
+}
+
+.ctfInputIcon {
+    font-size: 1.125rem !important; /*18px*/   
+}
+
+.ctfInputIcon.toggle {
+    cursor: pointer;
+}
+
+.ctfInputIcon.toggle:active {
+    color: #7a7e80;
+}
+
+.ctfInputContainer {
+    height: 44px;
+    width: calc(100% - 88px);
+    background: none;
+    border: none;
+    font-size: 1.125rem; /*18px*/
+    -webkit-background-clip: text !important;
+}
+
+.ctfInputContainer:focus {
+    outline: none;
+}
+
+.ctfInputContainer:auto-fill {
+    background: none !important;
+}
+
+.showPasswordBtn {
+    font-size: 0.688rem; /*11px*/
+    text-decoration: underline;
+    text-wrap: nowrap;
+    cursor: pointer;
+}
+
+.forgotPassword {
+    height: 1rem; /*16px*/
+    font-size: 1rem; /*16px*/
+    font-weight: 500;
+    margin-bottom: 16px;
+    align-self: center;
+    cursor: pointer;
+    margin-top: 6px;
+}
+
+.forgotPassword.light {
+    color: var(--black);
+}
+
+.forgotPassword.dark {
+    color: var(--white);
+}
+
+.forgotPassword:hover {
+    font-weight: 700;
+}
+
+@media (max-width: 600px) {
+
+    .accessGateContent {
+        margin: 20px;
+    }
+
+} 

@@ -1,0 +1,2518 @@
+.editAnswerPortal {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.editAnswerBackdropOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.editAnswerModal {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.editAnswer {
+    border-radius: 40px;
+    background-color: white;
+    padding: 20px;
+    top: 2px;
+    left: 2px;
+    position: relative;
+    opacity: 1;
+    -webkit-box-shadow: 0px 10px 50px -20px rgba(0,0,0,0.75); 
+    box-shadow: 0px 10px 50px -20px rgba(0,0,0,0.75);
+}
+
+.editAnswer.union {
+    position: absolute;
+}
+
+.editAnswer.flame {
+    margin-bottom: 30px;
+}
+
+
+
+.editAnswer-container {
+    padding: 10px;
+}
+
+.editAnswerTop {
+    display: flex;
+    flex-direction: column;
+}
+
+.editAnswerTopUpper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.editAnswerLogo {
+    display: flex;
+    flex-shrink: 0;
+    flex-grow: 0;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 30px;
+    width: 27px;
+}
+
+.creatAnswerTitle {
+    font-size: 28px;
+    font-weight: 900;
+}
+
+.editAnswerCancelPNGIcon {
+    height: 36px;
+    width: 36px;
+    display: flex;
+    flex-shrink: 0;
+    flex-grow: 0;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-right: -5px;
+    margin-bottom: -2px;
+}
+
+.editAnswerCancelSVGIcon {
+    font-size: 36px !important;
+    margin-right: -5px;
+    margin-bottom: -2px;
+}
+
+.editAnswerCancelSVGIcon.masculine {
+    color: #d8e1fe;
+}
+
+.editAnswerCancelSVGIcon.masculine:hover {
+    color: #4a76fd;
+}
+
+.editAnswerCancelSVGIcon.masculine:active {
+    color: #3453b2;
+}
+
+.editAnswerCancelSVGIcon.feminine {
+    color: #fde1ef;
+}
+
+.editAnswerCancelSVGIcon.feminine:hover {
+    color: #e639af;
+}
+
+.editAnswerCancelSVGIcon.feminine:active {
+    color: #a1287b;
+}
+
+.editAnswerCancelSVGIcon.ruby {
+    color: #d4a6ad;
+}
+
+.editAnswerCancelSVGIcon.ruby:hover {
+    color: #850014;
+}
+
+.editAnswerCancelSVGIcon.ruby:active {
+    color: #5d000e;
+}
+
+.editAnswerCancelSVGIcon.orange {
+    color: #ffdab3;
+}
+
+.editAnswerCancelSVGIcon.orange:hover {
+    color: #ff8303;
+}
+
+.editAnswerCancelSVGIcon.orange:active {
+    color: #b35c02;
+}
+
+.editAnswerCancelSVGIcon.sun {
+    color: #fff9bf;
+}
+
+.editAnswerCancelSVGIcon.sun:hover {
+    color: #ffe700;
+}
+
+.editAnswerCancelSVGIcon.sun:active {
+    color: #b3a200;
+}
+
+.editAnswerCancelSVGIcon.emerald {
+    color: #caeed6;
+}
+
+.editAnswerCancelSVGIcon.emerald:hover {
+    color: #50c878;
+}
+
+.editAnswerCancelSVGIcon.emerald:active {
+    color: #388c54;
+}
+
+.editAnswerCancelSVGIcon.blue {
+    color: #cee8fb;
+}
+
+.editAnswerCancelSVGIcon.blue:hover {
+    color: #098de9;
+}
+
+.editAnswerCancelSVGIcon.blue:active {
+    color: #0663a4;
+}
+
+.editAnswerCancelSVGIcon.indigo {
+    color: #babad4;
+}
+
+.editAnswerCancelSVGIcon.indigo:hover {
+    color: #30307e;
+}
+
+.editAnswerCancelSVGIcon.indigo:active {
+    color: #222258;
+}
+
+.editAnswerCancelSVGIcon.violet {
+    color: #dcbff6;
+}
+
+.editAnswerCancelSVGIcon.violet:hover {
+    color: #8a2be2;
+}
+
+.editAnswerCancelSVGIcon.violet:active {
+    color: #611e9f;
+}
+
+.editAnswerCancelSVGIcon.gray {
+    color: #e4e6e7;
+}
+
+.editAnswerCancelSVGIcon.gray:hover {
+    color: #aeb4b7;
+}
+
+.editAnswerCancelSVGIcon.gray:active {
+    color: #7a7e80;
+}
+
+.editAnswerTopLower {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.editAnswerLink {
+    display: flex;
+    align-items: center;
+}
+
+.editAnswerProfilePic {
+    flex-shrink: 0;
+    height: 48px;
+    width: 48px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 5px;
+}
+
+.editAnswerProfileIcon {
+    display: flex;
+    flex-shrink: 0;
+    flex-grow: 0;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 24px;
+    margin-right: 3px;
+}
+
+.editAnswerProfileIcon.flame {
+    width: 14px;
+}
+
+.editAnswerProfileIcon.union {
+    width: 24px;
+}
+
+.editAnswerName {
+    display: flex;
+    flex-wrap: wrap;
+    font-weight: 500;
+}
+
+.editAnswerDropdownBtns {
+    display: flex;
+    flex-direction: row;
+}
+
+.editAnswerDropdownBtn {
+    display: flex;
+    align-items: center;
+    height: 36px;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    margin-left: 20px;
+    background-size: cover;
+}
+
+.editAnswerDropdownBtn.masculine {
+    background-color: #4a76fd;
+}
+
+.editAnswerDropdownBtn.feminine {
+    background-color: #e639af;
+}
+
+.editAnswerDropdownBtn.ruby {
+    background-color: #850014;
+}
+
+.editAnswerDropdownBtn.orange {
+    background-color: #ff8303;
+}
+
+.editAnswerDropdownBtn.sun {
+    background-color: #ffe700;
+}
+
+.editAnswerDropdownBtn.emerald {
+    background-color: #50c878;
+}
+
+.editAnswerDropdownBtn.blue {
+    background-color: #098de9;
+}
+
+.editAnswerDropdownBtn.indigo {
+    background-color: #30307e;
+}
+
+.editAnswerDropdownBtn.violet {
+    background-color: #8a2be2;
+}
+
+.editAnswerDropdownBtn.rainbow {
+    background: -webkit-linear-gradient(right, #850014, #ff8303, #ffe700, #50c878, #098de9, #30307e, #8a2be2); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, #850014, #ff8303, #ffe700, #50c878, #098de9, #30307e, #8a2be2); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, #850014, #ff8303, #ffe700, #50c878, #098de9, #30307e, #8a2be2); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, #850014, #ff8303, #ffe700, #50c878, #098de9, #30307e, #8a2be2); /* Standard syntax (must be last) */
+}
+
+.editAnswerDropdownBtn.silver {
+    background: -webkit-linear-gradient(left, #dadada , #8e8e8e, #dadada); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, #dadada , #8e8e8e, #dadada); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, #dadada , #8e8e8e, #dadada); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, #dadada , #8e8e8e, #dadada); /* Standard syntax (must be last) */
+}
+
+.editAnswerDropdownBtn.gold {
+    background: -webkit-linear-gradient(left, #ab781d , #eed264, #ab781d); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, #ab781d , #eed264, #ab781d); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, #ab781d , #eed264, #ab781d); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, #ab781d , #eed264, #ab781d); /* Standard syntax (must be last) */
+}
+
+.editAnswerDropdownBtn.platinum {
+    background: -webkit-linear-gradient(left, #d3e9f6, #6b8c95, #566167, #8e8e8e, #6d606a,  #af9499, #dadada); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, #d3e9f6, #6b8c95, #566167, #8e8e8e, #6d606a,  #af9499, #dadada); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, #d3e9f6, #6b8c95, #566167, #8e8e8e, #6d606a,  #af9499, #dadada); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, #d3e9f6, #6b8c95, #566167, #8e8e8e, #6d606a,  #af9499, #dadada); /* Standard syntax (must be last) */
+}
+
+.editAnswerDropdownBtn.gray {
+    background-color: #aeb4b7;
+}
+
+.editAnswerVisibilityIcon {
+    display: flex;
+    align-items: center;
+    font-size: 20px !important;
+    margin: 0 5px;
+}
+
+.editAnswerVisibilityIcon.diamond {
+    color: #ab781d;
+}
+
+.editAnswerDropdownTitle {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.editAnswerDropdownTitle.feed {
+    margin-left: 5px;
+}
+
+
+.editAnswerDropdownTitle.feed.diamond {
+    background: -webkit-linear-gradient(left, #ab781d , #ab781d, #eed264, #eed264, #eed264, #ab781d); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, #ab781d , #ab781d, #eed264, #eed264, #eed264, #ab781d); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, #ab781d , #ab781d, #eed264, #eed264, #eed264, #ab781d); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, #ab781d , #ab781d, #eed264, #eed264, #eed264, #ab781d); /* Standard syntax (must be last) */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 900;
+}
+
+.editAnswerDropdownTitle.visibility.diamond {
+    background: -webkit-linear-gradient(left, #ab781d , #eed264, #eed264, #eed264, #ab781d); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, #ab781d , #eed264, #eed264, #eed264, #ab781d); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, #ab781d , #eed264, #eed264, #eed264, #ab781d); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, #ab781d , #eed264, #eed264, #eed264, #ab781d); /* Standard syntax (must be last) */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 900;
+}
+
+.editAnswerDropdownIcon {
+    font-size: 30px !important;
+    margin-right: -2px;
+}
+
+.editAnswerDropdownIcon.diamond {
+    color: #ab781d;
+}
+
+.editAnswerEditorContainerContainer {
+    position: relative;
+    width: 610px;
+    height: 254px;
+    border-radius: 20px; 
+}
+
+.editAnswerEditorContainerContainer.editor {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.editAnswerEditorContainerContainer.imgDZ {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    transition: height 325ms cubic-bezier(0.43,-0.35, 0.14, 1.35);
+}
+
+.editAnswerHigherSpectrumBackground {
+    position: absolute;
+    width: 100%;
+    height: 256px;
+    border-radius: 20px;
+    top: 0;
+    left: 0;
+    transition: height 325ms cubic-bezier(0.43,-0.35, 0.14, 1.35);
+    background-size: 100% 256px;
+    opacity: 30%;
+}
+
+.editAnswerWhiteBackground {
+    position: absolute;
+    margin: 50px;
+    width: calc(100% - 100px);
+    height: 154px;
+    border-radius: 20px;
+    top: 0;
+    left: 0;
+    background-color: white;
+    -webkit-box-shadow: 0px 0px 30px 50px white; 
+    box-shadow: 0px 0px 30px 50px white;
+}
+
+.editAnswerEditor {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: calc(100% - 44px);
+    height: 214px;
+    max-height: 254px;
+    padding:  20px 19px 20px 25px;
+    font-size: 14px;
+    border-radius: 20px;
+    overflow: hidden;
+
+}
+
+.creatAnswerImgDropzoneContainer {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: -2px;
+    left: 0;
+    z-index: 2;
+    width: 100%;
+    overflow: hidden;
+    transition: height 325ms cubic-bezier(0.43,-0.35, 0.14, 1.35);
+    border-radius: 20px;
+}
+
+.editAnswerImgDZContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 222px;
+    width: 570px; 
+    margin: 20px;  
+    border-radius: 20px;
+}
+
+.editAnswerImgDZContainer.rainbow {
+    background: -webkit-linear-gradient(right, #d4a6ad, #ffdab3, #fff9bf, #caeed6, #cee8fb, #babad4, #dcbff6); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, #d4a6ad, #ffdab3, #fff9bf, #caeed6, #cee8fb, #babad4, #dcbff6); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, #d4a6ad, #ffdab3, #fff9bf, #caeed6, #cee8fb, #babad4, #dcbff6); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, #d4a6ad, #ffdab3, #fff9bf, #caeed6, #cee8fb, #babad4, #dcbff6); /* Standard syntax (must be last) */
+}
+
+
+.editAnswerImgDZContainer.silver {
+    background: -webkit-linear-gradient(left, #f4f4f4, #dddddd, #f4f4f4); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, #f4f4f4, #dddddd, #f4f4f4); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, #f4f4f4, #dddddd, #f4f4f4); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, #f4f4f4, #dddddd, #f4f4f4); /* Standard syntax (must be last) */
+}
+
+.editAnswerImgDZContainer.gold {
+    background: -webkit-linear-gradient(left, #e6d6bb , #faf1d0, #e6d6bb); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, #e6d6bb , #faf1d0, #e6d6bb); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, #e6d6bb , #faf1d0, #e6d6bb); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, #e6d6bb , #faf1d0, #e6d6bb); /* Standard syntax (must be last) */
+}
+
+.editAnswerImgDZContainer.platinum {
+    background: -webkit-linear-gradient(left, #f2f8fc, #d2dcdf, #cccfd1, #dddddd, #d3cfd2, #e7dfe0, #f4f4f4); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, #f2f8fc, #d2dcdf, #cccfd1, #dddddd, #d3cfd2, #e7dfe0, #f4f4f4); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, #f2f8fc, #d2dcdf, #cccfd1, #dddddd, #d3cfd2, #e7dfe0, #f4f4f4); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, #f2f8fc, #d2dcdf, #cccfd1, #dddddd, #d3cfd2, #e7dfe0, #f4f4f4); /* Standard syntax (must be last) */
+}
+
+.editAnswerImgDZBorder {
+    display: flex;
+    flex-shrink: 0;
+    flex-grow: 0;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 222px;
+    width: 570px;
+    position: absolute;
+    top: 17px;
+    left: 20px;
+}
+
+.editAnswerImgDropzone {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 564px;
+    height: 216px;
+    border-radius: 20px;
+    z-index: 2;
+}
+
+.editAnswerImgDropzone.masculine {
+    background-color: #d8e1ef; 
+    border: dashed 3px #4a76fd;
+}
+
+.editAnswerImgDropzone.feminine {
+    background-color: #fde1ef; 
+    border: dashed 3px #e639af;
+}
+
+.editAnswerImgDropzone.ruby {
+    background-color: #d4a6ad; 
+    border: dashed 3px #850014;
+}
+
+.editAnswerImgDropzone.orange {
+    background-color: #ffdab3; 
+    border: dashed 3px #ff8303;
+}
+
+.editAnswerImgDropzone.sun {
+    background-color: #fff9bf; 
+    border: dashed 3px #ff3700;
+}
+
+.editAnswerImgDropzone.emerald {
+    background-color: #caeed6; 
+    border: dashed 3px #50c878;
+}
+
+.editAnswerImgDropzone.blue {
+    background-color: #cee8fb; 
+    border: dashed 3px #098de9;
+}
+
+.editAnswerImgDropzone.indigo {
+    background-color: #babad4; 
+    border: dashed 3px #30307e;
+}
+
+.editAnswerImgDropzone.violet {
+    background-color: #dcbff6; 
+    border: dashed 3px #8a2be2;
+}
+
+.editAnswerImgDropzone.violet {
+    background-color: #dcbff6; 
+    border: dashed 3px #8a2be2;
+}
+
+.editAnswerImgDropzone.gray {
+    background-color: #e4e6e7; 
+    border: dashed 3px #aeb4b7;
+}
+
+.editAnswerImgDropzone.diamond {
+    background-image: url("../../../Assets/misc/diamond-background-lgt.jpg");
+}
+
+.editAnswerImgDZCancelPNGIcon {
+    position: absolute;
+    top: 25px;
+    right: 27px;
+    height: 20px;
+    width: 20px;
+    z-index: 3;
+}
+
+.editAnswerImgDZCancelSVGIcon {
+    position: absolute;
+    top: 23px;
+    right: 25px;
+    z-index: 3;
+}
+
+.editAnswerImgDZCancelSVGIcon.masculine {
+    color: #4a76fd;
+}
+
+.editAnswerImgDZCancelSVGIcon.feminine {
+    color: #e639af;
+}
+
+.editAnswerImgDZCancelSVGIcon.ruby {
+    color: #850014;
+}
+
+.editAnswerImgDZCancelSVGIcon.orange {
+    color: #ff8303;
+}
+
+.editAnswerImgDZCancelSVGIcon.sun {
+    color: #ffe700;
+}
+
+.editAnswerImgDZCancelSVGIcon.emerald {
+    color: #50c878;
+}
+
+.editAnswerImgDZCancelSVGIcon.blue {
+    color: #098de9;
+}
+
+.editAnswerImgDZCancelSVGIcon.indigo {
+    color: #30307e;
+}
+
+.editAnswerImgDZCancelSVGIcon.violet {
+    color: #8a2be2;
+}
+
+.editAnswerImgDZCancelSVGIcon.gray {
+    color: #aeb4b7;
+}
+
+.editAnswerEditorContainer {
+    height: 100%;
+    overflow-y: auto;
+}
+
+.editAnswerHashtagEditor {
+    width: 100%;
+    padding-right: 20px;
+}
+
+/*
+div.public-DraftEditorPlaceholder-inner {
+    font-size: 12px;
+}
+*/
+
+.editAnswerInput {
+    border: none;
+    width: 80%;
+    white-space: pre-wrap;
+}
+
+.editAnswerInput:focus {
+    outline: none;
+}
+
+.editAnswerHr {
+    width: 100%;
+    margin: 20px 0;
+    border: none;
+    height: 1px;
+    background-size: cover;
+}
+
+.editAnswerHr.masculine {
+    background-color: #4a76fd;
+}
+
+.editAnswerHr.feminine {
+    background-color: #e639af;
+}
+
+.editAnswerHr.ruby {
+    background-color: #850014;   
+}
+
+.editAnswerHr.orange { 
+    background-color: #ff8303; 
+}
+
+.editAnswerHr.sun {
+    background-color: #ffe700;  
+}
+
+.editAnswerHr.emerald { 
+    background-color: #50c878; 
+}
+
+.editAnswerHr.blue {
+    background-color: #098de9; 
+}
+
+.editAnswerHr.indigo { 
+    background-color: #30307e; 
+}
+
+.editAnswerHr.violet { 
+    background-color: #8a2be2; 
+}
+
+.editAnswerHr.rainbow {
+    background: -webkit-linear-gradient(right, #850014, #ff8303, #ffe700, #50c878, #098de9, #30307e, #8a2be2); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, #850014, #ff8303, #ffe700, #50c878, #098de9, #30307e, #8a2be2); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, #850014, #ff8303, #ffe700, #50c878, #098de9, #30307e, #8a2be2); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, #850014, #ff8303, #ffe700, #50c878, #098de9, #30307e, #8a2be2); /* Standard syntax (must be last) */
+}
+
+.editAnswerHr.silver {
+    background: -webkit-linear-gradient(left, #dadada , #8e8e8e, #dadada); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, #dadada , #8e8e8e, #dadada); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, #dadada , #8e8e8e, #dadada); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, #dadada , #8e8e8e, #dadada); /* Standard syntax (must be last) */
+}
+
+.editAnswerHr.gold {
+    background: -webkit-linear-gradient(left, #ab781d , #eed264, #ab781d); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, #ab781d , #eed264, #ab781d); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, #ab781d , #eed264, #ab781d); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, #ab781d , #eed264, #ab781d); /* Standard syntax (must be last) */
+}
+
+.editAnswerHr.platinum {
+    background: -webkit-linear-gradient(left, #d3e9f6, #6b8c95, #566167, #8e8e8e, #6d606a,  #af9499, #dadada); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, #d3e9f6, #6b8c95, #566167, #8e8e8e, #6d606a,  #af9499, #dadada); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, #d3e9f6, #6b8c95, #566167, #8e8e8e, #6d606a,  #af9499, #dadada); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, #d3e9f6, #6b8c95, #566167, #8e8e8e, #6d606a,  #af9499, #dadada); /* Standard syntax (must be last) */
+}
+
+.editAnswerHr.gray {
+    background-color: #aeb4b7;
+}
+
+.editAnswerImages-container {
+    display: flex;
+    flex-direction: column;
+    max-height: 250px;
+}
+
+.editAnswerImageContainer {
+    position: relative;
+    margin-top: 10px;
+}
+
+.editAnswerImageContainer.top {
+    margin-top: 0;
+}
+
+.editAnswerImg {
+    width: 100%;
+    position: relative;
+    object-fit: cover;
+    opacity: 0.3;
+}
+
+.editAnswerCancelImgPNGBtn {
+    height: 20px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+   
+}
+
+.editAnswerCancelImgSVGBtn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+   
+}
+
+.editAnswerCancelImgSVGBtn.masculine {
+    color: #4a76fd;
+}
+
+.editAnswerCancelImgSVGBtn.feminine {
+    color: #e639af;
+}
+
+.editAnswerCancelImgSVGBtn.ruby {
+    color: #850014;
+}
+
+.editAnswerCancelImgSVGBtn.orange {
+    color: #ff8303;
+}
+
+.editAnswerCancelImgSVGBtn.sun {
+    color: #ffe700;
+}
+
+.editAnswerCancelImgSVGBtn.emerald {
+    color: #50c878;
+}
+
+.editAnswerCancelImgSVGBtn.blue {
+    color: #098de9;
+}
+
+.editAnswerCancelImgSVGBtn.indigo {
+    color: #30307e;
+}
+
+.editAnswerCancelImgSVGBtn.violet {
+    color: #8a2be2;
+}
+
+.editAnswerCancelImgSVGBtn.gray {
+    color: #aeb4b7;
+}
+
+.editAnswerBottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    overflow: visible;
+}
+
+.editAnswerOptions {
+    display: flex;
+    flex-direction: row;
+    height: 36px;
+    max-width: 100px;
+    overflow: visible;
+}
+
+.editAnswerOption {
+    display: flex;
+    align-items: center;
+    margin-right: 15px;
+    max-width: 36px;
+    cursor: pointer;
+}
+
+.editAnswerAddPhotoSVGIcon {
+    font-size: 36px !important;
+    color: #858585;
+}
+
+.editAnswerAddPhotoPNGIcon {
+    width: 36px;
+}
+
+.editAnswerCancelButton {
+    border: none;
+    padding: 7px;
+    border-radius: 5px;
+    font-weight: 500;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+.editAnswerShareButtonBackground {
+    border: none;
+    border-radius: 10px;
+    font-weight: 500;
+    cursor: pointer;
+    width: 120px;
+    height: 36px;
+    background-size: cover;
+}
+
+.editAnswerShareButtonBackground.disabled {
+    opacity: 0.3;
+}
+
+.editAnswerShareButtonBackground.masculine {
+    background-color: #4a76fd;
+}
+
+.editAnswerShareButtonBackground.feminine {
+    background-color: #e639af;
+}
+
+.editAnswerShareButtonBackground.ruby {
+    background-color: #850014;
+}
+
+.editAnswerShareButtonBackground.orange {
+    background-color: #ff8303;
+}
+
+.editAnswerShareButtonBackground.sun {
+    background-color: #ffe700;
+}
+
+.editAnswerShareButtonBackground.emerald {
+    background-color: #50c878;
+}
+
+.editAnswerShareButtonBackground.blue {
+    background-color: #098de9;
+}
+
+.editAnswerShareButtonBackground.indigo {
+    background-color: #30307e;
+}
+
+.editAnswerShareButtonBackground.violet {
+    background-color: #8a2be2;
+}
+
+.editAnswerShareButtonBackground.rainbow {
+    background: -webkit-linear-gradient(left, #850014, #ff8303, #ffe700, #50c878, #098de9, #30307e, #8a2be2); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, #850014, #ff8303, #ffe700, #50c878, #098de9, #30307e, #8a2be2); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, #850014, #ff8303, #ffe700, #50c878, #098de9, #30307e, #8a2be2); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, #850014, #ff8303, #ffe700, #50c878, #098de9, #30307e, #8a2be2); /* Standard syntax (must be last) */
+}
+
+.editAnswerShareButtonBackground.rainbow:active {
+    background: -webkit-linear-gradient(left, #5d000e, #b35c02, #b3a200, #388c54, #0663a4, #222258, #611e9f); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, #5d000e, #b35c02, #b3a200, #388c54, #0663a4, #222258, #611e9f); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, #5d000e, #b35c02, #b3a200, #388c54, #0663a4, #222258, #611e9f); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, #5d000e, #b35c02, #b3a200, #388c54, #0663a4, #222258, #611e9f); /* Standard syntax (must be last) */
+}
+
+.editAnswerShareButtonBackground.silver {
+    background: -webkit-linear-gradient(left, #dadada, #8e8e8e, #dadada); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, #dadada, #8e8e8e, #dadada); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, #dadada, #8e8e8e, #dadada); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, #dadada, #8e8e8e, #dadada); /* Standard syntax (must be last) */
+}
+
+.editAnswerShareButtonBackground.silver:active {
+    background: -webkit-linear-gradient(left, #999999, #646464 , #999999); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, #999999, #646464 , #999999); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, #999999, #646464 , #999999); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, #999999, #646464 , #999999); /* Standard syntax (must be last) */
+}
+
+.editAnswerShareButtonBackground.gold {
+    background: -webkit-linear-gradient(left, #ab781d , #eed264, #ab781d); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, #ab781d , #eed264, #ab781d); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, #ab781d , #eed264, #ab781d); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, #ab781d , #eed264, #ab781d); /* Standard syntax (must be last) */
+}
+
+.editAnswerShareButtonBackground.gold:active {
+    background: -webkit-linear-gradient(left, #785414, #a79346 , #785414); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, #785414, #a79346 , #785414); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, #785414, #a79346 , #785414); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, #785414, #a79346 , #785414); /* Standard syntax (must be last) */
+}
+
+.editAnswerShareButtonBackground.platinum{
+    background: -webkit-linear-gradient(left, #d3e9f6, #6b8c95, #566167, #8e8e8e, #6d606a, #af9499, #dadada); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, #d3e9f6, #6b8c95, #566167, #8e8e8e, #6d606a, #af9499, #dadada); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, #d3e9f6, #6b8c95, #566167, #8e8e8e, #6d606a, #af9499, #dadada); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, #d3e9f6, #6b8c95, #566167, #8e8e8e, #6d606a, #af9499, #dadada); /* Standard syntax (must be last) */
+}
+
+.editAnswerShareButtonBackground.platinum:active {
+    background: -webkit-linear-gradient(left, #94a4ad, #4b6269, #3c4448, #646464, #4d434a, #7b686b, #999999); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, #94a4ad, #4b6269, #3c4448, #646464, #4d434a, #7b686b, #999999); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, #94a4ad, #4b6269, #3c4448, #646464, #4d434a, #7b686b, #999999); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, #94a4ad, #4b6269, #3c4448, #646464, #4d434a, #7b686b, #999999); /* Standard syntax (must be last) */
+}
+
+.editAnswerShareButton {
+    border: none;
+    border-radius: 10px;
+    font-weight: 500;
+    cursor: pointer;
+    width: 120px;
+    height: 36px;
+    font-size: 24px;
+    color: white;
+    background: transparent;
+}
+
+.editAnswerShareButton.masculine {
+    background-color: #4a76fd;
+}
+
+.editAnswerShareButton.masculine:hover {
+    color: #d8e1fe;
+}
+
+.editAnswerShareButton.masculine:active {
+    background-color: #3453b2;
+    color: #c3cbe5;
+}
+
+.editAnswerShareButton.feminine {
+    background-color: #e639af;
+}
+
+.editAnswerShareButton.feminine:hover {
+    color: #fde1ef;
+}
+
+.editAnswerShareButton.feminine:active {
+    background-color: #a1287b;
+    color: #e4cbd8;
+}
+
+.editAnswerShareButton.ruby {
+    background-color: #850014; 
+}
+
+.editAnswerShareButton.ruby:hover {
+    color: #d4a6ad;
+}
+
+.editAnswerShareButton.ruby:active {
+    background-color: #5d000e;
+    color: #be959b;
+}
+
+.editAnswerShareButton.orange { 
+    background-color: #ff8303; 
+}
+
+.editAnswerShareButton.orange:hover {
+    color: #ffdab3;
+}
+
+.editAnswerShareButton.orange:active {
+    background-color: #b35c02;
+    color: #e6c1ac;
+}
+
+.editAnswerShareButton.sun {
+    background-color: #ffe700; 
+}
+
+.editAnswerShareButton.sun:hover {
+    color: #fff9bf;
+}
+
+.editAnswerShareButton.sun:active {
+    background-color: #b3a200;
+    color: #e6e1ac;
+}
+
+.editAnswerShareButton.emerald { 
+    background-color: #50c878; 
+}
+
+.editAnswerShareButton.emerald:hover {
+    color: #caeed6;
+}
+
+.editAnswerShareButton.emerald:active {
+    background-color: #388c54;
+    color: #b6d7c1;
+}
+
+.editAnswerShareButton.blue {
+    background-color: #098de9;
+}
+
+.editAnswerShareButton.blue:hover {
+    color: #cee8fb;
+}
+
+.editAnswerShareButton.blue:active {
+    background-color: #0663a4;
+    color: #bad1e2;
+}
+
+.editAnswerShareButton.indigo { 
+    background-color: #30307e; 
+}
+
+.editAnswerShareButton.indigo:hover {
+    color: #babad4;
+}
+
+.editAnswerShareButton.indigo:active {
+    background-color: #222258;
+    color: #a8a8bf;
+}
+
+.editAnswerShareButton.violet { 
+    background-color: #8a2be2; 
+}
+
+.editAnswerShareButton.violet:hover {
+    color: #dcbff6;
+}
+
+.editAnswerShareButton.violet:active {
+    background-color: #611e9f;
+    color: #c6acde;
+}
+
+.editAnswerShareButton.rainbow,
+.editAnswerShareButton.silver,
+.editAnswerShareButton.gold,
+.editAnswerShareButton.platinum {
+    background: transparent;
+    color: white;
+}
+
+.editAnswerShareButton.rainbow:hover {
+    background: -webkit-linear-gradient(right, #d4a6ad, #ffdab3, #fff9bf, #caeed6, #cee8fb, #babad4, #dcbff6); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, #d4a6ad, #ffdab3, #fff9bf, #caeed6, #cee8fb, #babad4, #dcbff6); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, #d4a6ad, #ffdab3, #fff9bf, #caeed6, #cee8fb, #babad4, #dcbff6); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, #d4a6ad, #ffdab3, #fff9bf, #caeed6, #cee8fb, #babad4, #dcbff6); /* Standard syntax (must be last) */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.editAnswerShareButton.rainbow:active {
+    background: -webkit-linear-gradient(right, #be959b, #e6c5a1, #e6e1ac, #b6d7c1, #bad1e2, #a8a8bf, #c6acde); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, #be959b, #e6c5a1, #e6e1ac, #b6d7c1, #bad1e2, #a8a8bf, #c6acde); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, #be959b, #e6c5a1, #e6e1ac, #b6d7c1, #bad1e2, #a8a8bf, #c6acde); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, #be959b, #e6c5a1, #e6e1ac, #b6d7c1, #bad1e2, #a8a8bf, #c6acde); /* Standard syntax (must be last) */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.editAnswerShareButton.silver:hover {
+    background: -webkit-linear-gradient(left, #f4f4f4, #dddddd, #f4f4f4); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, #f4f4f4, #dddddd, #f4f4f4); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, #f4f4f4, #dddddd, #f4f4f4); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to left, #f4f4f4, #dddddd, #f4f4f4); /* Standard syntax (must be last) */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.editAnswerShareButton.silver:active {
+    background: -webkit-linear-gradient(left, #dcdcdc, #c7c7c7 , #dcdcdc); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, #dcdcdc, #c7c7c7 , #dcdcdc); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, #dcdcdc, #c7c7c7 , #dcdcdc); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to left, #dcdcdc, #c7c7c7 , #dcdcdc); /* Standard syntax (must be last) */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.editAnswerShareButton.gold:hover {
+    background: -webkit-linear-gradient(left, #e6d6bb , #faf1d0, #e6d6bb); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, #e6d6bb , #faf1d0, #e6d6bb); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, #e6d6bb , #faf1d0, #e6d6bb); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, #e6d6bb , #faf1d0, #e6d6bb); /* Standard syntax (must be last) */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.editAnswerShareButton.gold:active {
+    background: -webkit-linear-gradient(left, #cfc1a9, #e1d9bc , #cfc1a9); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, #cfc1a9, #e1d9bc , #cfc1a9); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, #cfc1a9, #e1d9bc , #cfc1a9); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, #cfc1a9, #e1d9bc , #cfc1a9); /* Standard syntax (must be last) */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.editAnswerShareButton.platinum:hover {
+    background: -webkit-linear-gradient(left, #f2f8fc, #d2dcdf, #cccfd1, #dddddd, #d3cfd2, #e7dfe0, #f4f4f4); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, #f2f8fc, #d2dcdf, #cccfd1, #dddddd, #d3cfd2, #e7dfe0, #f4f4f4); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, #f2f8fc, #d2dcdf, #cccfd1, #dddddd, #d3cfd2, #e7dfe0, #f4f4f4); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, #f2f8fc, #d2dcdf, #cccfd1, #dddddd, #d3cfd2, #e7dfe0, #f4f4f4); /* Standard syntax (must be last) */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.editAnswerShareButton.platinum:active {
+    background: -webkit-linear-gradient(left, #dae0e3, #bdc6c9, #b8bbbd, #c7c7c7, #bebbbd, #d0c9ca, #dcdcdc); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, #dae0e3, #bdc6c9, #b8bbbd, #c7c7c7, #bebbbd, #d0c9ca, #dcdcdc); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, #dae0e3, #bdc6c9, #b8bbbd, #c7c7c7, #bebbbd, #d0c9ca, #dcdcdc); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, #dae0e3, #bdc6c9, #b8bbbd, #c7c7c7, #bebbbd, #d0c9ca, #dcdcdc); /* Standard syntax (must be last) */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.editAnswerShareButton.diamond {
+    background: -webkit-linear-gradient(left, #ab781d , #eed264, #ab781d); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, #ab781d , #eed264, #ab781d); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, #ab781d , #eed264, #ab781d); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, #ab781d , #eed264, #ab781d); /* Standard syntax (must be last) */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 900;
+}
+
+.editAnswerShareButton.diamond.lgt {
+    background: -webkit-linear-gradient(left, #e6d6bb, #faf1d0, #e6d6bb); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, #e6d6bb, #faf1d0, #e6d6bb); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, #e6d6bb, #faf1d0, #e6d6bb); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, #e6d6bb, #faf1d0, #e6d6bb); /* Standard syntax (must be last) */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 900;
+}
+
+.editAnswerShareButton.diamond:hover {
+    background: -webkit-linear-gradient(left, #785414, #a79346 , #785414); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, #785414, #a79346 , #785414); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, #785414, #a79346 , #785414); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, #785414, #a79346 , #785414); /* Standard syntax (must be last) */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 900;
+}
+
+.editAnswerShareButton.diamond:active {
+    background: -webkit-linear-gradient(left, #785414, #a79346 , #785414); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, #785414, #a79346 , #785414); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, #785414, #a79346 , #785414); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, #785414, #a79346 , #785414); /* Standard syntax (must be last) */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 900;
+}
+
+.editAnswerShareButton.gray {
+    background-color: #bfc2c7;
+    color: black;
+}
+
+.editAnswerShareButton.lgt:hover {
+    color: white;
+}
+
+.EmojiPickerReact.epr-main {
+    /*width: 610px !important;*/
+    /*height: 256px !important;*/
+    width: 100% !important;
+    height: 100% !important;
+    border-radius: 20px !important;
+    overflow: hidden;
+    border: none !important;
+    top: 0px !important;
+    --epr-hover-bg-color: none;
+    --epr-focus-bg-color: none;
+    --epr-search-input-bg-color: transparent;
+    --epr-search-border-color: none;
+    --epr-picker-border-radius: 10px;
+}
+
+.Flex.epr-header-overlay.FlexRow {
+    position: relative;
+    width: 100%;
+    padding: 10px 10px 0 10px !important;
+}
+
+.emojiSearchBackgroundTheme {
+    position: absolute;
+    border-radius: 10px;
+    width: 522px;
+    height: 48px;
+}
+
+.emojiSearchBackgroundTheme.rainbow {
+    background: -webkit-linear-gradient(left, #d4a6ad, #ffdab3, #fff9bf, #caeed6, #cee8fb, #babad4, #dcbff6); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, #d4a6ad, #ffdab3, #fff9bf, #caeed6, #cee8fb, #babad4, #dcbff6); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, #d4a6ad, #ffdab3, #fff9bf, #caeed6, #cee8fb, #babad4, #dcbff6); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, #d4a6ad, #ffdab3, #fff9bf, #caeed6, #cee8fb, #babad4, #dcbff6); /* Standard syntax (must be last) */
+}
+
+.emojiSearchBackgroundTheme.diamond {
+    background-image: url('../../../Assets/misc/diamond-background-lgt.jpg');
+    background-size: cover;
+}
+
+.emojiSearchWhiteBackground {
+    position: absolute;
+    margin: 24px 30px;
+    width: calc(100% - 60px);
+    height: 0px;
+    border-radius: 20px;
+    top: 0;
+    left: 0;
+    background-color: white;
+    -webkit-box-shadow: 0px 0px 30px 30px white; 
+    box-shadow: 0px 0px 30px 30px white;
+}
+
+.epr-category-nav {
+    padding: 10px !important;
+}
+
+.epr-emoji-category-label {
+    height: 30px !important;
+}
+
+.epr-body {
+    height: 155px !important;
+}
+
+.Flex.epr-preview.FlexRow {
+    height: 0px !important;
+    overflow: hidden;
+}
+
+.__EmojiPicker__.epr-emoji-img {
+    height: 35px !important;
+    width: 35px !important;
+}
+
+.eaEmojiPickerBtn {
+    display: flex;
+    flex-shrink: 0;
+    flex-grow: 0;
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    height: 36px;
+    width: 36px;
+    cursor: pointer;
+}
+
+.eaEmojiPickerContainer {
+    position: absolute;
+    width: 606px;
+    overflow: hidden;
+    left: 2px;
+    bottom: 2px;
+    transition: height 325ms cubic-bezier(0.43,-0.35, 0.14, 1.35);
+    z-index: 1;
+    border-radius: 15px;
+}
+
+.eaMentionContainer {
+    position: absolute;
+}
+
+.epr-search-container {
+    z-index: 10;
+}
+
+.EmojiPickerReact .epr-search-container input.epr-search {
+    background-color: transparent;
+    border: none;
+    height: 48px;
+    font-size: 14px;
+}
+
+.epr-btn .epr-btn-clear-search .epr-visible-on-search-only{
+    z-index: 10;
+}
+
+.emojiCancelBtn {
+    position: relative;
+}
+
+.emojiCancelPNGIcon {
+    display: flex;
+    width: 26px;
+    height: 26px;
+    margin-left: 10px;
+    margin-top: 11px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    flex-shrink: 0;
+    flex-grow: 0;
+    opacity: 30%;
+}
+
+.emojiCancelPNGIcon:hover {
+    opacity: 100%;
+}
+
+.emojiCancelShade {
+    height: 26px;
+    width: 26px;
+    border-radius: 50%;
+    background-color: black;
+    opacity: 0;
+}
+
+.emojiCancelShade:active {
+    opacity: 30%;
+}
+
+.epr-cat-btn {
+    width: 100%;
+    height: 100%;
+}
+
+.eprCatBtn {
+    width: 30px;
+    height: 30px;
+    background-image: url("../../../Assets/icons/airplane/airplane-blue.png");
+    background-size: calc(100% - 10px), calc(100% - 10px);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.eprCatBtn.animals_nature {
+    background-image: url("../../../Assets/icons/pawPrint/pawPrint-base.png");
+}
+
+.eprCatBtn.animals_nature.masculine:hover {
+    background-image: url("../../../Assets/icons/pawPrint/pawPrint-masculine-lgt.png");
+}
+
+.eprCatBtn.animals_nature.masculine.active {
+    background-image: url("../../../Assets/icons/pawPrint/pawPrint-masculine.png");
+}
+
+.eprCatBtn.animals_nature.feminine:hover {
+    background-image: url("../../../Assets/icons/pawPrint/pawPrint-feminine-lgt.png");
+}
+
+.eprCatBtn.animals_nature.feminine.active {
+    background-image: url("../../../Assets/icons/pawPrint/pawPrint-feminine.png");
+}
+
+.eprCatBtn.animals_nature.ruby:hover {
+    background-image: url("../../../Assets/icons/pawPrint/pawPrint-ruby-lgt.png");
+}
+
+.eprCatBtn.animals_nature.ruby.active {
+    background-image: url("../../../Assets/icons/pawPrint/pawPrint-ruby.png");
+}
+
+.eprCatBtn.animals_nature.orange:hover {
+    background-image: url("../../../Assets/icons/pawPrint/pawPrint-orange-lgt.png");
+}
+
+.eprCatBtn.animals_nature.orange.active {
+    background-image: url("../../../Assets/icons/pawPrint/pawPrint-orange.png");
+}
+
+.eprCatBtn.animals_nature.sun:hover {
+    background-image: url("../../../Assets/icons/pawPrint/pawPrint-sun-lgt.png");
+}
+
+.eprCatBtn.animals_nature.sun.active {
+    background-image: url("../../../Assets/icons/pawPrint/pawPrint-sun.png");
+}
+
+.eprCatBtn.animals_nature.emerald:hover {
+    background-image: url("../../../Assets/icons/pawPrint/pawPrint-emerald-lgt.png");
+}
+
+.eprCatBtn.animals_nature.emerald.active {
+    background-image: url("../../../Assets/icons/pawPrint/pawPrint-emerald.png");
+}
+
+.eprCatBtn.animals_nature.blue:hover {
+    background-image: url("../../../Assets/icons/pawPrint/pawPrint-blue-lgt.png");
+}
+
+.eprCatBtn.animals_nature.blue.active {
+    background-image: url("../../../Assets/icons/pawPrint/pawPrint-blue.png");
+}
+
+.eprCatBtn.animals_nature.indigo:hover {
+    background-image: url("../../../Assets/icons/pawPrint/pawPrint-indigo-lgt.png");
+}
+
+.eprCatBtn.animals_nature.indigo.active {
+    background-image: url("../../../Assets/icons/pawPrint/pawPrint-indigo.png");
+}
+
+.eprCatBtn.animals_nature.violet:hover {
+    background-image: url("../../../Assets/icons/pawPrint/pawPrint-violet-lgt.png");
+}
+
+.eprCatBtn.animals_nature.violet.active {
+    background-image: url("../../../Assets/icons/pawPrint/pawPrint-violet.png");
+}
+
+.eprCatBtn.animals_nature.rainbow:hover {
+    background-image: url("../../../Assets/icons/pawPrint/pawPrint-rainbow-lgt.png");
+}
+
+.eprCatBtn.animals_nature.rainbow.active {
+    background-image: url("../../../Assets/icons/pawPrint/pawPrint-rainbow.png");
+}
+
+.eprCatBtn.animals_nature.silver:hover {
+    background-image: url("../../../Assets/icons/pawPrint/pawPrint-silver-lgt.png");
+}
+
+.eprCatBtn.animals_nature.silver.active {
+    background-image: url("../../../Assets/icons/pawPrint/pawPrint-silver.png");
+}
+
+.eprCatBtn.animals_nature.gold:hover {
+    background-image: url("../../../Assets/icons/pawPrint/pawPrint-gold-lgt.png");
+}
+
+.eprCatBtn.animals_nature.gold.active {
+    background-image: url("../../../Assets/icons/pawPrint/pawPrint-gold.png");
+}
+
+.eprCatBtn.animals_nature.platinum:hover {
+    background-image: url("../../../Assets/icons/pawPrint/pawPrint-platinum-lgt.png");
+}
+
+.eprCatBtn.animals_nature.platinum.active {
+    background-image: url("../../../Assets/icons/pawPrint/pawPrint-platinum.png");
+}
+
+.eprCatBtn.animals_nature.diamond:hover {
+    background-image: url("../../../Assets/icons/pawPrint/pawPrint-diamond-lgt.png");
+}
+
+.eprCatBtn.animals_nature.diamond.active {
+    background-image: url("../../../Assets/icons/pawPrint/pawPrint-diamond.png");
+}
+
+.eprCatBtn.animals_nature.gray:hover {
+    background-image: url("../../../Assets/icons/pawPrint/pawPrint-gray-lgt.png");
+}
+
+.eprCatBtn.animals_nature.gray.active {
+    background-image: url("../../../Assets/icons/pawPrint/pawPrint-gray.png");
+}
+
+.eprCatBtn.food_drink {
+    background-image: url("../../../Assets/icons/meal/meal-base.png");
+}
+
+.eprCatBtn.food_drink.masculine:hover {
+    background-image: url("../../../Assets/icons/meal/meal-masculine-lgt.png");
+}
+
+.eprCatBtn.food_drink.masculine.active {
+    background-image: url("../../../Assets/icons/meal/meal-masculine.png");
+}
+
+.eprCatBtn.food_drink.feminine:hover {
+    background-image: url("../../../Assets/icons/meal/meal-feminine-lgt.png");
+}
+
+.eprCatBtn.food_drink.feminine.active {
+    background-image: url("../../../Assets/icons/meal/meal-feminine.png");
+}
+
+.eprCatBtn.food_drink.ruby:hover {
+    background-image: url("../../../Assets/icons/meal/meal-ruby-lgt.png");
+}
+
+.eprCatBtn.food_drink.ruby.active {
+    background-image: url("../../../Assets/icons/meal/meal-ruby.png");
+}
+
+.eprCatBtn.food_drink.orange:hover {
+    background-image: url("../../../Assets/icons/meal/meal-orange-lgt.png");
+}
+
+.eprCatBtn.food_drink.orange.active {
+    background-image: url("../../../Assets/icons/meal/meal-orange.png");
+}
+
+.eprCatBtn.food_drink.sun:hover {
+    background-image: url("../../../Assets/icons/meal/meal-sun-lgt.png");
+}
+
+.eprCatBtn.food_drink.sun.active {
+    background-image: url("../../../Assets/icons/meal/meal-sun.png");
+}
+
+.eprCatBtn.food_drink.emerald:hover {
+    background-image: url("../../../Assets/icons/meal/meal-emerald-lgt.png");
+}
+
+.eprCatBtn.food_drink.emerald.active {
+    background-image: url("../../../Assets/icons/meal/meal-emerald.png");
+}
+
+.eprCatBtn.food_drink.blue:hover {
+    background-image: url("../../../Assets/icons/meal/meal-blue-lgt.png");
+}
+
+.eprCatBtn.food_drink.blue.active {
+    background-image: url("../../../Assets/icons/meal/meal-blue.png");
+}
+
+.eprCatBtn.food_drink.indigo:hover {
+    background-image: url("../../../Assets/icons/meal/meal-indigo-lgt.png");
+}
+
+.eprCatBtn.food_drink.indigo.active {
+    background-image: url("../../../Assets/icons/meal/meal-indigo.png");
+}
+
+.eprCatBtn.food_drink.violet:hover {
+    background-image: url("../../../Assets/icons/meal/meal-violet-lgt.png");
+}
+
+.eprCatBtn.food_drink.violet.active {
+    background-image: url("../../../Assets/icons/meal/meal-violet.png");
+}
+
+.eprCatBtn.food_drink.rainbow:hover {
+    background-image: url("../../../Assets/icons/meal/meal-rainbow-lgt.png");
+}
+
+.eprCatBtn.food_drink.rainbow.active {
+    background-image: url("../../../Assets/icons/meal/meal-rainbow.png");
+}
+
+.eprCatBtn.food_drink.silver:hover {
+    background-image: url("../../../Assets/icons/meal/meal-silver-lgt.png");
+}
+
+.eprCatBtn.food_drink.silver.active {
+    background-image: url("../../../Assets/icons/meal/meal-silver.png");
+}
+
+.eprCatBtn.food_drink.gold:hover {
+    background-image: url("../../../Assets/icons/meal/meal-gold-lgt.png");
+}
+
+.eprCatBtn.food_drink.gold.active {
+    background-image: url("../../../Assets/icons/meal/meal-gold.png");
+}
+
+.eprCatBtn.food_drink.platinum:hover {
+    background-image: url("../../../Assets/icons/meal/meal-platinum-lgt.png");
+}
+
+.eprCatBtn.food_drink.platinum.active {
+    background-image: url("../../../Assets/icons/meal/meal-platinum.png");
+}
+
+.eprCatBtn.food_drink.diamond:hover {
+    background-image: url("../../../Assets/icons/meal/meal-diamond-lgt.png");
+}
+
+.eprCatBtn.food_drink.diamond.active {
+    background-image: url("../../../Assets/icons/meal/meal-diamond.png");
+}
+
+.eprCatBtn.food_drink.gray:hover {
+    background-image: url("../../../Assets/icons/meal/meal-gray-lgt.png");
+}
+
+.eprCatBtn.food_drink.gray.active {
+    background-image: url("../../../Assets/icons/meal/meal-gray.png");
+}
+
+.eprCatBtn.smileys_people {
+    background-image: url("../../../Assets/icons/smiley/smiley-base.png");
+}
+
+.eprCatBtn.smileys_people.masculine:hover {
+    background-image: url("../../../Assets/icons/smiley/smiley-masculine-lgt.png");
+}
+
+.eprCatBtn.smileys_people.masculine.active {
+    background-image: url("../../../Assets/icons/smiley/smiley-masculine.png");
+}
+
+.eprCatBtn.smileys_people.feminine:hover {
+    background-image: url("../../../Assets/icons/smiley/smiley-feminine-lgt.png");
+}
+
+.eprCatBtn.smileys_people.feminine.active {
+    background-image: url("../../../Assets/icons/smiley/smiley-feminine.png");
+}
+
+.eprCatBtn.smileys_people.ruby:hover {
+    background-image: url("../../../Assets/icons/smiley/smiley-ruby-lgt.png");
+}
+
+.eprCatBtn.smileys_people.ruby.active {
+    background-image: url("../../../Assets/icons/smiley/smiley-ruby.png");
+}
+
+.eprCatBtn.smileys_people.orange:hover {
+    background-image: url("../../../Assets/icons/smiley/smiley-orange-lgt.png");
+}
+
+.eprCatBtn.smileys_people.orange.active {
+    background-image: url("../../../Assets/icons/smiley/smiley-orange.png");
+}
+
+.eprCatBtn.smileys_people.sun:hover {
+    background-image: url("../../../Assets/icons/smiley/smiley-sun-lgt.png");
+}
+
+.eprCatBtn.smileys_people.sun.active {
+    background-image: url("../../../Assets/icons/smiley/smiley-sun.png");
+}
+
+.eprCatBtn.smileys_people.emerald:hover {
+    background-image: url("../../../Assets/icons/smiley/smiley-emerald-lgt.png");
+}
+
+.eprCatBtn.smileys_people.emerald.active {
+    background-image: url("../../../Assets/icons/smiley/smiley-emerald.png");
+}
+
+.eprCatBtn.smileys_people.blue:hover {
+    background-image: url("../../../Assets/icons/smiley/smiley-blue-lgt.png");
+}
+
+.eprCatBtn.smileys_people.blue.active {
+    background-image: url("../../../Assets/icons/smiley/smiley-blue.png");
+}
+
+.eprCatBtn.smileys_people.indigo:hover {
+    background-image: url("../../../Assets/icons/smiley/smiley-indigo-lgt.png");
+}
+
+.eprCatBtn.smileys_people.indigo.active {
+    background-image: url("../../../Assets/icons/smiley/smiley-indigo.png");
+}
+
+.eprCatBtn.smileys_people.violet:hover {
+    background-image: url("../../../Assets/icons/smiley/smiley-violet-lgt.png");
+}
+
+.eprCatBtn.smileys_people.violet.active {
+    background-image: url("../../../Assets/icons/smiley/smiley-violet.png");
+}
+
+.eprCatBtn.smileys_people.rainbow:hover {
+    background-image: url("../../../Assets/icons/smiley/smiley-rainbow-lgt.png");
+}
+
+.eprCatBtn.smileys_people.rainbow.active {
+    background-image: url("../../../Assets/icons/smiley/smiley-rainbow.png");
+}
+
+.eprCatBtn.smileys_people.silver:hover {
+    background-image: url("../../../Assets/icons/smiley/smiley-silver-lgt.png");
+}
+
+.eprCatBtn.smileys_people.silver.active {
+    background-image: url("../../../Assets/icons/smiley/smiley-silver.png");
+}
+
+.eprCatBtn.smileys_people.gold:hover {
+    background-image: url("../../../Assets/icons/smiley/smiley-gold-lgt.png");
+}
+
+.eprCatBtn.smileys_people.gold.active {
+    background-image: url("../../../Assets/icons/smiley/smiley-gold.png");
+}
+
+.eprCatBtn.smileys_people.platinum:hover {
+    background-image: url("../../../Assets/icons/smiley/smiley-platinum-lgt.png");
+}
+
+.eprCatBtn.smileys_people.platinum.active {
+    background-image: url("../../../Assets/icons/smiley/smiley-platinum.png");
+}
+
+.eprCatBtn.smileys_people.diamond:hover {
+    background-image: url("../../../Assets/icons/smiley/smiley-diamond-lgt.png");
+}
+
+.eprCatBtn.smileys_people.diamond.active {
+    background-image: url("../../../Assets/icons/smiley/smiley-diamond.png");
+}
+
+.eprCatBtn.smileys_people.gray:hover {
+    background-image: url("../../../Assets/icons/smiley/smiley-gray-lgt.png");
+}
+
+.eprCatBtn.smileys_people.gray.active {
+    background-image: url("../../../Assets/icons/smiley/smiley-gray.png");
+}
+
+.eprCatBtn.travel_places {
+    background-image: url("../../../Assets/icons/globeMap/globeMap-base.png");
+}
+
+.eprCatBtn.travel_places.masculine:hover {
+    background-image: url("../../../Assets/icons/globeMap/globeMap-masculine-lgt.png");
+}
+
+.eprCatBtn.travel_places.masculine.active {
+    background-image: url("../../../Assets/icons/globeMap/globeMap-masculine.png");
+}
+
+.eprCatBtn.travel_places.feminine:hover {
+    background-image: url("../../../Assets/icons/globeMap/globeMap-feminine-lgt.png");
+}
+
+.eprCatBtn.travel_places.feminine.active {
+    background-image: url("../../../Assets/icons/globeMap/globeMap-feminine.png");
+}
+
+.eprCatBtn.travel_places.ruby:hover {
+    background-image: url("../../../Assets/icons/globeMap/globeMap-ruby-lgt.png");
+}
+
+.eprCatBtn.travel_places.ruby.active {
+    background-image: url("../../../Assets/icons/globeMap/globeMap-ruby.png");
+}
+
+.eprCatBtn.travel_places.orange:hover {
+    background-image: url("../../../Assets/icons/globeMap/globeMap-orange-lgt.png");
+}
+
+.eprCatBtn.travel_places.orange.active {
+    background-image: url("../../../Assets/icons/globeMap/globeMap-orange.png");
+}
+
+.eprCatBtn.travel_places.sun:hover {
+    background-image: url("../../../Assets/icons/globeMap/globeMap-sun-lgt.png");
+}
+
+.eprCatBtn.travel_places.sun.active {
+    background-image: url("../../../Assets/icons/globeMap/globeMap-sun.png");
+}
+
+.eprCatBtn.travel_places.emerald:hover {
+    background-image: url("../../../Assets/icons/globeMap/globeMap-emerald-lgt.png");
+}
+
+.eprCatBtn.travel_places.emerald.active {
+    background-image: url("../../../Assets/icons/globeMap/globeMap-emerald.png");
+}
+
+.eprCatBtn.travel_places.blue:hover {
+    background-image: url("../../../Assets/icons/globeMap/globeMap-blue-lgt.png");
+}
+
+.eprCatBtn.travel_places.blue.active {
+    background-image: url("../../../Assets/icons/globeMap/globeMap-blue.png");
+}
+
+.eprCatBtn.travel_places.indigo:hover {
+    background-image: url("../../../Assets/icons/globeMap/globeMap-indigo-lgt.png");
+}
+
+.eprCatBtn.travel_places.indigo.active {
+    background-image: url("../../../Assets/icons/globeMap/globeMap-indigo.png");
+}
+
+.eprCatBtn.travel_places.violet:hover {
+    background-image: url("../../../Assets/icons/globeMap/globeMap-violet-lgt.png");
+}
+
+.eprCatBtn.travel_places.violet.active {
+    background-image: url("../../../Assets/icons/globeMap/globeMap-violet.png");
+}
+
+.eprCatBtn.travel_places.rainbow:hover {
+    background-image: url("../../../Assets/icons/globeMap/globeMap-rainbow-lgt.png");
+}
+
+.eprCatBtn.travel_places.rainbow.active {
+    background-image: url("../../../Assets/icons/globeMap/globeMap-rainbow.png");
+}
+
+.eprCatBtn.travel_places.silver:hover {
+    background-image: url("../../../Assets/icons/globeMap/globeMap-silver-lgt.png");
+}
+
+.eprCatBtn.travel_places.silver.active {
+    background-image: url("../../../Assets/icons/globeMap/globeMap-silver.png");
+}
+
+.eprCatBtn.travel_places.gold:hover {
+    background-image: url("../../../Assets/icons/globeMap/globeMap-gold-lgt.png");
+}
+
+.eprCatBtn.travel_places.gold.active {
+    background-image: url("../../../Assets/icons/globeMap/globeMap-gold.png");
+}
+
+.eprCatBtn.travel_places.platinum:hover {
+    background-image: url("../../../Assets/icons/globeMap/globeMap-platinum-lgt.png");
+}
+
+.eprCatBtn.travel_places.platinum.active {
+    background-image: url("../../../Assets/icons/globeMap/globeMap-platinum.png");
+}
+
+.eprCatBtn.travel_places.diamond:hover {
+    background-image: url("../../../Assets/icons/globeMap/globeMap-diamond-lgt.png");
+}
+
+.eprCatBtn.travel_places.diamond.active {
+    background-image: url("../../../Assets/icons/globeMap/globeMap-diamond.png");
+}
+
+.eprCatBtn.travel_places.gray:hover {
+    background-image: url("../../../Assets/icons/globeMap/globeMap-gray-lgt.png");
+}
+
+.eprCatBtn.travel_places.gray.active {
+    background-image: url("../../../Assets/icons/globeMap/globeMap-gray.png");
+}
+
+.eprCatBtn.flags {
+    background-image: url("../../../Assets/icons/flag/flag-base.png");
+}
+
+.eprCatBtn.flags.masculine:hover {
+    background-image: url("../../../Assets/icons/flag/flag-masculine-lgt.png");
+}
+
+.eprCatBtn.flags.masculine.active {
+    background-image: url("../../../Assets/icons/flag/flag-masculine.png");
+}
+
+.eprCatBtn.flags.feminine:hover {
+    background-image: url("../../../Assets/icons/flag/flag-feminine-lgt.png");
+}
+
+.eprCatBtn.flags.feminine.active {
+    background-image: url("../../../Assets/icons/flag/flag-feminine.png");
+}
+
+.eprCatBtn.flags.ruby:hover {
+    background-image: url("../../../Assets/icons/flag/flag-ruby-lgt.png");
+}
+
+.eprCatBtn.flags.ruby.active {
+    background-image: url("../../../Assets/icons/flag/flag-ruby.png");
+}
+
+.eprCatBtn.flags.orange:hover {
+    background-image: url("../../../Assets/icons/flag/flag-orange-lgt.png");
+}
+
+.eprCatBtn.flags.orange.active {
+    background-image: url("../../../Assets/icons/flag/flag-orange.png");
+}
+
+.eprCatBtn.flags.sun:hover {
+    background-image: url("../../../Assets/icons/flag/flag-sun-lgt.png");
+}
+
+.eprCatBtn.flags.sun.active {
+    background-image: url("../../../Assets/icons/flag/flag-sun.png");
+}
+
+.eprCatBtn.flags.emerald:hover {
+    background-image: url("../../../Assets/icons/flag/flag-emerald-lgt.png");
+}
+
+.eprCatBtn.flags.emerald.active {
+    background-image: url("../../../Assets/icons/flag/flag-emerald.png");
+}
+
+.eprCatBtn.flags.blue:hover {
+    background-image: url("../../../Assets/icons/flag/flag-blue-lgt.png");
+}
+
+.eprCatBtn.flags.blue.active {
+    background-image: url("../../../Assets/icons/flag/flag-blue.png");
+}
+
+.eprCatBtn.flags.indigo:hover {
+    background-image: url("../../../Assets/icons/flag/flag-indigo-lgt.png");
+}
+
+.eprCatBtn.flags.indigo.active {
+    background-image: url("../../../Assets/icons/flag/flag-indigo.png");
+}
+
+.eprCatBtn.flags.violet:hover {
+    background-image: url("../../../Assets/icons/flag/flag-violet-lgt.png");
+}
+
+.eprCatBtn.flags.violet.active {
+    background-image: url("../../../Assets/icons/flag/flag-violet.png");
+}
+
+.eprCatBtn.flags.rainbow:hover {
+    background-image: url("../../../Assets/icons/flag/flag-rainbow-lgt.png");
+}
+
+.eprCatBtn.flags.rainbow.active {
+    background-image: url("../../../Assets/icons/flag/flag-rainbow.png");
+}
+
+.eprCatBtn.flags.silver:hover {
+    background-image: url("../../../Assets/icons/flag/flag-silver-lgt.png");
+}
+
+.eprCatBtn.flags.silver.active {
+    background-image: url("../../../Assets/icons/flag/flag-silver.png");
+}
+
+.eprCatBtn.flags.gold:hover {
+    background-image: url("../../../Assets/icons/flag/flag-gold-lgt.png");
+}
+
+.eprCatBtn.flags.gold.active {
+    background-image: url("../../../Assets/icons/flag/flag-gold.png");
+}
+
+.eprCatBtn.flags.platinum:hover {
+    background-image: url("../../../Assets/icons/flag/flag-platinum-lgt.png");
+}
+
+.eprCatBtn.flags.platinum.active {
+    background-image: url("../../../Assets/icons/flag/flag-platinum.png");
+}
+
+.eprCatBtn.flags.diamond:hover {
+    background-image: url("../../../Assets/icons/flag/flag-diamond-lgt.png");
+}
+
+.eprCatBtn.flags.diamond.active {
+    background-image: url("../../../Assets/icons/flag/flag-diamond.png");
+}
+
+.eprCatBtn.flags.gray:hover {
+    background-image: url("../../../Assets/icons/flag/flag-gray-lgt.png");
+}
+
+.eprCatBtn.flags.gray.active {
+    background-image: url("../../../Assets/icons/flag/flag-gray.png");
+}
+
+.eprCatBtn.symbols {
+    background-image: url("../../../Assets/icons/musicNote/musicNote-base.png");
+}
+
+.eprCatBtn.symbols.masculine:hover {
+    background-image: url("../../../Assets/icons/musicNote/musicNote-masculine-lgt.png");
+}
+
+.eprCatBtn.symbols.masculine.active {
+    background-image: url("../../../Assets/icons/musicNote/musicNote-masculine.png");
+}
+
+.eprCatBtn.symbols.feminine:hover {
+    background-image: url("../../../Assets/icons/musicNote/musicNote-feminine-lgt.png");
+}
+
+.eprCatBtn.symbols.feminine.active {
+    background-image: url("../../../Assets/icons/musicNote/musicNote-feminine.png");
+}
+
+.eprCatBtn.symbols.ruby:hover {
+    background-image: url("../../../Assets/icons/musicNote/musicNote-ruby-lgt.png");
+}
+
+.eprCatBtn.symbols.ruby.active {
+    background-image: url("../../../Assets/icons/musicNote/musicNote-ruby.png");
+}
+
+.eprCatBtn.symbols.orange:hover {
+    background-image: url("../../../Assets/icons/musicNote/musicNote-orange-lgt.png");
+}
+
+.eprCatBtn.symbols.orange.active {
+    background-image: url("../../../Assets/icons/musicNote/musicNote-orange.png");
+}
+
+.eprCatBtn.symbols.sun:hover {
+    background-image: url("../../../Assets/icons/musicNote/musicNote-sun-lgt.png");
+}
+
+.eprCatBtn.symbols.sun.active {
+    background-image: url("../../../Assets/icons/musicNote/musicNote-sun.png");
+}
+
+.eprCatBtn.symbols.emerald:hover {
+    background-image: url("../../../Assets/icons/musicNote/musicNote-emerald-lgt.png");
+}
+
+.eprCatBtn.symbols.emerald.active {
+    background-image: url("../../../Assets/icons/musicNote/musicNote-emerald.png");
+}
+
+.eprCatBtn.symbols.blue:hover {
+    background-image: url("../../../Assets/icons/musicNote/musicNote-blue-lgt.png");
+}
+
+.eprCatBtn.symbols.blue.active {
+    background-image: url("../../../Assets/icons/musicNote/musicNote-blue.png");
+}
+
+.eprCatBtn.symbols.indigo:hover {
+    background-image: url("../../../Assets/icons/musicNote/musicNote-indigo-lgt.png");
+}
+
+.eprCatBtn.symbols.indigo.active {
+    background-image: url("../../../Assets/icons/musicNote/musicNote-indigo.png");
+}
+
+.eprCatBtn.symbols.violet:hover {
+    background-image: url("../../../Assets/icons/musicNote/musicNote-violet-lgt.png");
+}
+
+.eprCatBtn.symbols.violet.active {
+    background-image: url("../../../Assets/icons/musicNote/musicNote-violet.png");
+}
+
+.eprCatBtn.symbols.rainbow:hover {
+    background-image: url("../../../Assets/icons/musicNote/musicNote-rainbow-lgt.png");
+}
+
+.eprCatBtn.symbols.rainbow.active {
+    background-image: url("../../../Assets/icons/musicNote/musicNote-rainbow.png");
+}
+
+.eprCatBtn.symbols.silver:hover {
+    background-image: url("../../../Assets/icons/musicNote/musicNote-silver-lgt.png");
+}
+
+.eprCatBtn.symbols.silver.active {
+    background-image: url("../../../Assets/icons/musicNote/musicNote-silver.png");
+}
+
+.eprCatBtn.symbols.gold:hover {
+    background-image: url("../../../Assets/icons/musicNote/musicNote-gold-lgt.png");
+}
+
+.eprCatBtn.symbols.gold.active {
+    background-image: url("../../../Assets/icons/musicNote/musicNote-gold.png");
+}
+
+.eprCatBtn.symbols.platinum:hover {
+    background-image: url("../../../Assets/icons/musicNote/musicNote-platinum-lgt.png");
+}
+
+.eprCatBtn.symbols.platinum.active {
+    background-image: url("../../../Assets/icons/musicNote/musicNote-platinum.png");
+}
+
+.eprCatBtn.symbols.diamond:hover {
+    background-image: url("../../../Assets/icons/musicNote/musicNote-diamond-lgt.png");
+}
+
+.eprCatBtn.symbols.diamond.active {
+    background-image: url("../../../Assets/icons/musicNote/musicNote-diamond.png");
+}
+
+.eprCatBtn.symbols.gray:hover {
+    background-image: url("../../../Assets/icons/musicNote/musicNote-gray-lgt.png");
+}
+
+.eprCatBtn.symbols.gray.active {
+    background-image: url("../../../Assets/icons/musicNote/musicNote-gray.png");
+}
+
+.eprCatBtn.activities {
+    background-image: url("../../../Assets/icons/baseball/baseball-base.png");
+}
+
+.eprCatBtn.activities.masculine:hover {
+    background-image: url("../../../Assets/icons/baseball/baseball-masculine-lgt.png");
+}
+
+.eprCatBtn.activities.masculine.active {
+    background-image: url("../../../Assets/icons/baseball/baseball-masculine.png");
+}
+
+.eprCatBtn.activities.feminine:hover {
+    background-image: url("../../../Assets/icons/baseball/baseball-feminine-lgt.png");
+}
+
+.eprCatBtn.activities.feminine.active {
+    background-image: url("../../../Assets/icons/baseball/baseball-feminine.png");
+}
+
+.eprCatBtn.activities.ruby:hover {
+    background-image: url("../../../Assets/icons/baseball/baseball-ruby-lgt.png");
+}
+
+.eprCatBtn.activities.ruby.active {
+    background-image: url("../../../Assets/icons/baseball/baseball-ruby.png");
+}
+
+.eprCatBtn.activities.orange:hover {
+    background-image: url("../../../Assets/icons/baseball/baseball-orange-lgt.png");
+}
+
+.eprCatBtn.activities.orange.active {
+    background-image: url("../../../Assets/icons/baseball/baseball-orange.png");
+}
+
+.eprCatBtn.activities.sun:hover {
+    background-image: url("../../../Assets/icons/baseball/baseball-sun-lgt.png");
+}
+
+.eprCatBtn.activities.sun.active {
+    background-image: url("../../../Assets/icons/baseball/baseball-sun.png");
+}
+
+.eprCatBtn.activities.emerald:hover {
+    background-image: url("../../../Assets/icons/baseball/baseball-emerald-lgt.png");
+}
+
+.eprCatBtn.activities.emerald.active {
+    background-image: url("../../../Assets/icons/baseball/baseball-emerald.png");
+}
+
+.eprCatBtn.activities.blue:hover {
+    background-image: url("../../../Assets/icons/baseball/baseball-blue-lgt.png");
+}
+
+.eprCatBtn.activities.blue.active {
+    background-image: url("../../../Assets/icons/baseball/baseball-blue.png");
+}
+
+.eprCatBtn.activities.indigo:hover {
+    background-image: url("../../../Assets/icons/baseball/baseball-indigo-lgt.png");
+}
+
+.eprCatBtn.activities.indigo.active {
+    background-image: url("../../../Assets/icons/baseball/baseball-indigo.png");
+}
+
+.eprCatBtn.activities.violet:hover {
+    background-image: url("../../../Assets/icons/baseball/baseball-violet-lgt.png");
+}
+
+.eprCatBtn.activities.violet.active {
+    background-image: url("../../../Assets/icons/baseball/baseball-violet.png");
+}
+
+.eprCatBtn.activities.rainbow:hover {
+    background-image: url("../../../Assets/icons/baseball/baseball-rainbow-lgt.png");
+}
+
+.eprCatBtn.activities.rainbow.active {
+    background-image: url("../../../Assets/icons/baseball/baseball-rainbow.png");
+}
+
+.eprCatBtn.activities.silver:hover {
+    background-image: url("../../../Assets/icons/baseball/baseball-silver-lgt.png");
+}
+
+.eprCatBtn.activities.silver.active {
+    background-image: url("../../../Assets/icons/baseball/baseball-silver.png");
+}
+
+.eprCatBtn.activities.gold:hover {
+    background-image: url("../../../Assets/icons/baseball/baseball-gold-lgt.png");
+}
+
+.eprCatBtn.activities.gold.active {
+    background-image: url("../../../Assets/icons/baseball/baseball-gold.png");
+}
+
+.eprCatBtn.activities.platinum:hover {
+    background-image: url("../../../Assets/icons/baseball/baseball-platinum-lgt.png");
+}
+
+.eprCatBtn.activities.platinum.active {
+    background-image: url("../../../Assets/icons/baseball/baseball-platinum.png");
+}
+
+.eprCatBtn.activities.diamond:hover {
+    background-image: url("../../../Assets/icons/baseball/baseball-diamond-lgt.png");
+}
+
+.eprCatBtn.activities.diamond.active {
+    background-image: url("../../../Assets/icons/baseball/baseball-diamond.png");
+}
+
+.eprCatBtn.activities.gray:hover {
+    background-image: url("../../../Assets/icons/baseball/baseball-gray-lgt.png");
+}
+
+.eprCatBtn.activities.gray.active {
+    background-image: url("../../../Assets/icons/baseball/baseball-gray.png");
+}
+
+.eprCatBtn.objects {
+    background-image: url("../../../Assets/icons/umbrella/umbrella-base.png");
+}
+
+.eprCatBtn.objects.masculine:hover {
+    background-image: url("../../../Assets/icons/umbrella/umbrella-masculine-lgt.png");
+}
+
+.eprCatBtn.objects.masculine.active {
+    background-image: url("../../../Assets/icons/umbrella/umbrella-masculine.png");
+}
+
+.eprCatBtn.objects.feminine:hover {
+    background-image: url("../../../Assets/icons/umbrella/umbrella-feminine-lgt.png");
+}
+
+.eprCatBtn.objects.feminine.active {
+    background-image: url("../../../Assets/icons/umbrella/umbrella-feminine.png");
+}
+
+.eprCatBtn.objects.ruby:hover {
+    background-image: url("../../../Assets/icons/umbrella/umbrella-ruby-lgt.png");
+}
+
+.eprCatBtn.objects.ruby.active {
+    background-image: url("../../../Assets/icons/umbrella/umbrella-ruby.png");
+}
+
+.eprCatBtn.objects.orange:hover {
+    background-image: url("../../../Assets/icons/umbrella/umbrella-orange-lgt.png");
+}
+
+.eprCatBtn.objects.orange.active {
+    background-image: url("../../../Assets/icons/umbrella/umbrella-orange.png");
+}
+
+.eprCatBtn.objects.sun:hover {
+    background-image: url("../../../Assets/icons/umbrella/umbrella-sun-lgt.png");
+}
+
+.eprCatBtn.objects.sun.active {
+    background-image: url("../../../Assets/icons/umbrella/umbrella-sun.png");
+}
+
+.eprCatBtn.objects.emerald:hover {
+    background-image: url("../../../Assets/icons/umbrella/umbrella-emerald-lgt.png");
+}
+
+.eprCatBtn.objects.emerald.active {
+    background-image: url("../../../Assets/icons/umbrella/umbrella-emerald.png");
+}
+
+.eprCatBtn.objects.blue:hover {
+    background-image: url("../../../Assets/icons/umbrella/umbrella-blue-lgt.png");
+}
+
+.eprCatBtn.objects.blue.active {
+    background-image: url("../../../Assets/icons/umbrella/umbrella-blue.png");
+}
+
+.eprCatBtn.objects.indigo:hover {
+    background-image: url("../../../Assets/icons/umbrella/umbrella-indigo-lgt.png");
+}
+
+.eprCatBtn.objects.indigo.active {
+    background-image: url("../../../Assets/icons/umbrella/umbrella-indigo.png");
+}
+
+.eprCatBtn.objects.violet:hover {
+    background-image: url("../../../Assets/icons/umbrella/umbrella-violet-lgt.png");
+}
+
+.eprCatBtn.objects.violet.active {
+    background-image: url("../../../Assets/icons/umbrella/umbrella-violet.png");
+}
+
+.eprCatBtn.objects.rainbow:hover {
+    background-image: url("../../../Assets/icons/umbrella/umbrella-rainbow-lgt.png");
+}
+
+.eprCatBtn.objects.rainbow.active {
+    background-image: url("../../../Assets/icons/umbrella/umbrella-rainbow.png");
+}
+
+.eprCatBtn.objects.silver:hover {
+    background-image: url("../../../Assets/icons/umbrella/umbrella-silver-lgt.png");
+}
+
+.eprCatBtn.objects.silver.active {
+    background-image: url("../../../Assets/icons/umbrella/umbrella-silver.png");
+}
+
+.eprCatBtn.objects.gold:hover {
+    background-image: url("../../../Assets/icons/umbrella/umbrella-gold-lgt.png");
+}
+
+.eprCatBtn.objects.gold.active {
+    background-image: url("../../../Assets/icons/umbrella/umbrella-gold.png");
+}
+
+.eprCatBtn.objects.platinum:hover {
+    background-image: url("../../../Assets/icons/umbrella/umbrella-platinum-lgt.png");
+}
+
+.eprCatBtn.objects.platinum.active {
+    background-image: url("../../../Assets/icons/umbrella/umbrella-platinum.png");
+}
+
+.eprCatBtn.objects.diamond:hover {
+    background-image: url("../../../Assets/icons/umbrella/umbrella-diamond-lgt.png");
+}
+
+.eprCatBtn.objects.diamond.active {
+    background-image: url("../../../Assets/icons/umbrella/umbrella-diamond.png");
+}
+
+.eprCatBtn.objects.gray:hover {
+    background-image: url("../../../Assets/icons/umbrella/umbrella-gray-lgt.png");
+}
+
+.eprCatBtn.objects.gray.active {
+    background-image: url("../../../Assets/icons/umbrella/umbrella-gray.png");
+}
+
+.eprCatBtn.suggested {
+    background-image: url("../../../Assets/icons/pastTense/pastTense-base.png");
+}
+
+.eprCatBtn.suggested.masculine:hover {
+    background-image: url("../../../Assets/icons/pastTense/pastTense-masculine-lgt.png");
+}
+
+.eprCatBtn.suggested.masculine.active {
+    background-image: url("../../../Assets/icons/pastTense/pastTense-masculine.png");
+}
+
+.eprCatBtn.suggested.feminine:hover {
+    background-image: url("../../../Assets/icons/pastTense/pastTense-feminine-lgt.png");
+}
+
+.eprCatBtn.suggested.feminine.active {
+    background-image: url("../../../Assets/icons/pastTense/pastTense-feminine.png");
+}
+
+.eprCatBtn.suggested.ruby:hover {
+    background-image: url("../../../Assets/icons/pastTense/pastTense-ruby-lgt.png");
+}
+
+.eprCatBtn.suggested.ruby.active {
+    background-image: url("../../../Assets/icons/pastTense/pastTense-ruby.png");
+}
+
+.eprCatBtn.suggested.orange:hover {
+    background-image: url("../../../Assets/icons/pastTense/pastTense-orange-lgt.png");
+}
+
+.eprCatBtn.suggested.orange.active {
+    background-image: url("../../../Assets/icons/pastTense/pastTense-orange.png");
+}
+
+.eprCatBtn.suggested.sun:hover {
+    background-image: url("../../../Assets/icons/pastTense/pastTense-sun-lgt.png");
+}
+
+.eprCatBtn.suggested.sun.active {
+    background-image: url("../../../Assets/icons/pastTense/pastTense-sun.png");
+}
+
+.eprCatBtn.suggested.emerald:hover {
+    background-image: url("../../../Assets/icons/pastTense/pastTense-emerald-lgt.png");
+}
+
+.eprCatBtn.suggested.emerald.active {
+    background-image: url("../../../Assets/icons/pastTense/pastTense-emerald.png");
+}
+
+.eprCatBtn.suggested.blue:hover {
+    background-image: url("../../../Assets/icons/pastTense/pastTense-blue-lgt.png");
+}
+
+.eprCatBtn.suggested.blue.active {
+    background-image: url("../../../Assets/icons/pastTense/pastTense-blue.png");
+}
+
+.eprCatBtn.suggested.indigo:hover {
+    background-image: url("../../../Assets/icons/pastTense/pastTense-indigo-lgt.png");
+}
+
+.eprCatBtn.suggested.indigo.active {
+    background-image: url("../../../Assets/icons/pastTense/pastTense-indigo.png");
+}
+
+.eprCatBtn.suggested.violet:hover {
+    background-image: url("../../../Assets/icons/pastTense/pastTense-violet-lgt.png");
+}
+
+.eprCatBtn.suggested.violet.active {
+    background-image: url("../../../Assets/icons/pastTense/pastTense-violet.png");
+}
+
+.eprCatBtn.suggested.rainbow:hover {
+    background-image: url("../../../Assets/icons/pastTense/pastTense-rainbow-lgt.png");
+}
+
+.eprCatBtn.suggested.rainbow.active {
+    background-image: url("../../../Assets/icons/pastTense/pastTense-rainbow.png");
+}
+
+.eprCatBtn.suggested.silver:hover {
+    background-image: url("../../../Assets/icons/pastTense/pastTense-silver-lgt.png");
+}
+
+.eprCatBtn.suggested.silver.active {
+    background-image: url("../../../Assets/icons/pastTense/pastTense-silver.png");
+}
+
+.eprCatBtn.suggested.gold:hover {
+    background-image: url("../../../Assets/icons/pastTense/pastTense-gold-lgt.png");
+}
+
+.eprCatBtn.suggested.gold.active {
+    background-image: url("../../../Assets/icons/pastTense/pastTense-gold.png");
+}
+
+.eprCatBtn.suggested.platinum:hover {
+    background-image: url("../../../Assets/icons/pastTense/pastTense-platinum-lgt.png");
+}
+
+.eprCatBtn.suggested.platinum.active {
+    background-image: url("../../../Assets/icons/pastTense/pastTense-platinum.png");
+}
+
+.eprCatBtn.suggested.diamond:hover {
+    background-image: url("../../../Assets/icons/pastTense/pastTense-diamond-lgt.png");
+}
+
+.eprCatBtn.suggested.diamond.active {
+    background-image: url("../../../Assets/icons/pastTense/pastTense-diamond.png");
+}
+
+.eprCatBtn.suggested.gray:hover {
+    background-image: url("../../../Assets/icons/pastTense/pastTense-gray-lgt.png");
+}
+
+.eprCatBtn.suggested.gray.active {
+    background-image: url("../../../Assets/icons/pastTense/pastTense-gray.png");
+}
+
+

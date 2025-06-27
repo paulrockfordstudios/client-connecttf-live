@@ -1,0 +1,114 @@
+.anchor {
+    text-decoration: none;
+}
+
+.BLURRED6 {
+    -webkit-filter: blur(6px);
+    -moz-filter: blur(6px);
+    -o-filter: blur(6px);
+    -ms-filter: blur(6px);
+    filter: blur(6px);
+    background-size: cover;
+}
+
+.PORTAL {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    top: 0; 
+    left: 0; 
+    overflow-y: auto;
+}
+
+.PORTAL_BACKDROP {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    opacity: 0.7;
+    overflow: auto;
+    transition: opacity 325ms ease-in-out;
+}
+
+.PORTAL_BACKDROP.expand {
+    opacity: 0;
+}
+
+.PORTAL_BACKDROP.contract {
+    opacity: 0;
+}
+
+.MODAL {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: auto;
+}
+
+.justAlignCenter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dynamicContainer {
+    opacity: 1;
+    transition: opacity 325ms, transform 325ms cubic-bezier(0.43,-0.35, 0.14, 1.35);
+    -webkit-transition: opacity 325ms, transform 325ms cubic-bezier(0.43,-0.35, 0.14, 1.35);
+    -moz-transition: opacity 325ms, transform 325ms cubic-bezier(0.43,-0.35, 0.14, 1.35);
+    transform-origin: center;
+}
+
+.dynamicContainer.expand {
+    transform: scale(0.001);
+    opacity: 0;
+}
+
+.dynamicContainer.contract {
+    transform: scale(0.001);
+    opacity: 0;
+}
+
+.inheritParentFont {
+    font: inherit;
+}
+
+.fontBold {
+    font-weight: 500;
+}
+
+
+
+
+.ctf-connect {
+    color: var(--masculine-sat-brt);
+}
+
+.ctf-twinFlame {
+    color: var(--feminine-sat-brt);
+}
+
+.PNG_IMG {
+    display: flex;
+    flex-shrink: 0;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+@media (max-height: 600px) and (orientation: landscape) {
+
+    .PORTAL {
+        height: 100vw;
+    }
+
+    .PORTAL_BACKDROP {
+        height: 100vw;
+    }
+
+    .MODAL {
+        height: 100vw;
+    }
+
+}

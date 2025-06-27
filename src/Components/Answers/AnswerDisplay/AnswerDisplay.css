@@ -1,0 +1,217 @@
+.answerDisplay {
+    width: 100%; 
+    border-radius: 0.625rem; /*10px*/
+    margin: 0;
+    background-color: transparent;
+    transition-delay: 325ms;
+    transition: background-color 4000ms linear;
+    -webkit-transition: background-color 4000ms linear;
+    -moz-transition: background-color 4000ms linear;
+}
+
+/*
+.answerDisplay.bc {
+    transition-delay: 325ms;
+    transition: background-color 4000ms linear;
+    -webkit-transition: background-color 4000ms linear;
+    -moz-transition: background-color 4000ms linear;
+}
+*/
+
+.answerDisplay.new { 
+    transition-delay: 325ms;
+    transition: background-color 4000ms linear;
+    -webkit-transition: background-color 4000ms linear;
+    -moz-transition: background-color 4000ms linear;
+}
+
+.answerDisplay.new.rainbow { 
+    background-color: #4a76fd;
+ }
+
+.answerDisplay-container {
+    padding: 0.625rem; /*10px*/
+}
+
+/* ------- answer Top ------- */
+
+.answerDisplayTop {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.answerDisplayTopLeft {
+    display: flex;
+    align-items: center; 
+}
+
+.answerDisplayDateTime {
+    font-size: 0.75rem; /*12px*/
+    color: #bfc2c7;
+    margin-top: 0.125rem; /*2px*/
+}
+
+.answerDisplayTopRight {
+    position: relative;
+}
+
+.answerDisplayOptions {
+    cursor: pointer;
+}
+
+.answerDisplayProfileLinkDropdown {
+    position: absolute;
+    margin: -2rem 0 0 -1.25rem; /*-32px -20px*/
+}
+
+.answerDisplayAODropdown {
+    position: absolute;
+    right: 1.25rem; /*20px*/
+    top: 0;
+}
+
+/* ------- answer Center ------- */
+
+.answerDisplayCenter {
+    margin: 1.563rem 0 1.25rem 0; /*25px 20px*/
+}
+
+.answerDisplayText {
+    display: flex;
+    font-size: 0.75rem; /*12px*/
+    margin-bottom: 0.625rem; /*10px*/
+}
+
+.answerDisplayHashtagList {
+    margin-top: 1.25rem; /*20px*/
+    width: 40%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.answerDisplayhashtags {
+    font-size: 0.75rem; /*12px*/
+    margin-right: 0.5rem; /*8px*/
+}
+
+.answerDisplayhashtags:hover {
+    font-weight: 500;
+}
+
+.photoList {
+    margin-right: 2.5rem; /*40px*/;
+}
+
+.photos {
+    list-style: none;
+}
+
+.postImg {
+    margin-top: 1.25rem; /*20px*/
+    width: 100%;
+    max-height: 31.25rem; /*500px*/
+    object-fit: contain;
+}
+
+/* ------- answer Bottom ------- */
+
+.answerDisplayBottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.answerDisplayBottomLeft {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.answerDisplayInfoBubblePopup {
+    position: absolute; 
+    top: 1.563rem; /*25px*/
+}
+
+.answerDisplayInfoBubble {
+    position: absolute;
+    top: 0;
+}
+
+.answerDisplayInfoBubble.left {
+    right: 0;
+}
+
+.answerDisplayInfoBubble.right {
+    left: 0;
+}
+
+.answerDisplayCountItem {
+    display: flex;
+    align-items: center;
+}
+
+.answerDisplayCountItem.left {
+    margin-right: 1.125rem; /*18px*/
+}
+
+.answerDisplaySVGIconDiv {
+    display: flex;
+    align-items: center;
+}
+
+.answerDisplayPNGIcon {
+    margin-right: 0.313rem; /*5px*/
+    cursor: pointer;
+    background-size: contain;
+}
+
+.answerDisplaySVGIcon {
+    margin-right: 0.313rem; /*5px*/
+    cursor: pointer;
+}
+
+.answerDisplayPNGIcon.left {
+    height: 1.125rem; /*18px*/
+    width: 1.125rem; /*18px*/
+    margin-right: 0.313rem; /*5px*/
+    cursor: pointer;
+}
+
+.answerDisplaySVGIcon.left {
+    height: 1.5rem; /*24px*/ 
+    width: 1.5rem; /*24px*/ 
+    margin-right: 0.313rem; /*5px*/
+    cursor: pointer;
+}
+
+.answerDisplayBottomMiddle {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 100%;
+}
+
+.answerDisplayShowReplies {
+    font-size: 0.75rem; /*12px*/
+    font-weight: 500;
+    background-color: transparent;
+    border: none;
+    padding-top: 0.625rem; /*10px*/
+    cursor: pointer;
+}
+
+.answerDisplayPNGIcon.right {
+    height: 1.5rem; /*24px*/ 
+    width: 1.5rem; /*24px*/ 
+}
+
+.answerDisplaySVGIcon.right {
+    height: 2rem; /*32px*/
+    width: 2rem; /*32px*/
+}
+
+.answerDisplayCounter {
+    font-size: 0.75rem; /*12px*/
+    margin-right: 1.25rem; /*20px*/
+}

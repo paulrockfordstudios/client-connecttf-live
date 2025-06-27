@@ -1,0 +1,13 @@
+{
+    "flare-production": {
+        "answer": "Answer",
+        "comment": "Comment",
+        "blog": "Blog",
+        "flag": "Flag",
+        "post": "Post",
+        "question": "question",
+        "reply": "Reply",
+        "report": "Report",
+        "share": "Share"
+    }
+} 

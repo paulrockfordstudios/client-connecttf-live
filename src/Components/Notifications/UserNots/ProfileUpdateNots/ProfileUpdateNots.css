@@ -1,0 +1,343 @@
+.profileUpdateNots {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+    height: 89px;
+}
+
+.profileUpdateNotsBackgroundTheme {
+    display: flex;
+    position: absolute;
+    width: 350px;
+    height: 89px;
+    transition-delay: 325ms;
+    transition: opacity 4000ms ease-in-out;
+    -webkit-transition: opacity 4000ms ease-in-out;
+    -moz-transition: opacity 4000ms ease-in-out;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.profileUpdateNotsContainer {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    cursor: pointer;
+    align-items: center;
+    width: 350px;
+    height: 85px;
+    top: 2px;
+}
+
+.profileUpdateNotsBackgroundTheme.unseen {
+    opacity: 1;   
+}
+
+
+.profileUpdateNotsBackgroundTheme.seen {
+    opacity: 0;   
+}
+
+
+.profileUpdateNotsBackgroundTheme.masculine {
+    background-color: #d8e1fe;
+    
+}
+
+.profileUpdateNotsBackgroundTheme.feminine {
+    background-color: #fde1ef;
+}
+
+.profileUpdateNotsBackgroundTheme.ruby {
+    background-color: #d4a6ad;
+}
+
+.profileUpdateNotsBackgroundTheme.orange {
+    background-color: #ffdab3;
+}
+
+.profileUpdateNotsBackgroundTheme.sun {
+    background-color: #fff9bf;
+}
+
+.profileUpdateNotsBackgroundTheme.emerald {
+    background-color: #caeed6;
+}
+
+.profileUpdateNotsBackgroundTheme.blue {
+    background-color: #cee8fb;
+}
+
+.profileUpdateNotsBackgroundTheme.indigo {
+    background-color: #babad4;
+}
+
+.profileUpdateNotsBackgroundTheme.violet {
+    background-color: #dcbff6;
+}
+
+.profileUpdateNotsBackgroundTheme.rainbow {
+    background: -webkit-linear-gradient(left, #d4a6ad, #ffdab3 , #fff9bf, #caeed6, #cee8fb, #babad4, #dcbff6); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, #d4a6ad, #ffdab3 , #fff9bf, #caeed6, #cee8fb, #babad4, #dcbff6); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, #d4a6ad, #ffdab3 , #fff9bf, #caeed6, #cee8fb, #babad4, #dcbff6); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, #d4a6ad, #ffdab3 , #fff9bf, #caeed6, #cee8fb, #babad4, #dcbff6); /* Standard syntax (must be last) */
+}
+
+.profileUpdateNotsBackgroundTheme.silver {
+    background: -webkit-linear-gradient(left, #f4f4f4 , #dddddd, #f4f4f4); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, #f4f4f4 , #dddddd, #f4f4f4); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, #f4f4f4 , #dddddd, #f4f4f4); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, #f4f4f4 , #dddddd, #f4f4f4); /* Standard syntax (must be last) */
+}
+
+.profileUpdateNotsBackgroundTheme.gold {
+    background: -webkit-linear-gradient(left, #e6d6bb , #faf1d0, #e6d6bb); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, #e6d6bb , #faf1d0, #e6d6bb); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, #e6d6bb , #faf1d0, #e6d6bb); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, #e6d6bb , #faf1d0, #e6d6bb); /* Standard syntax (must be last) */
+}
+
+.profileUpdateNotsBackgroundTheme.platinum {
+    background: -webkit-linear-gradient(left, #f2f8fc, #d2dcdf, #cccfd1, #dddddd, #d3cfd2,  #e7dfe0, #f4f4f4); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, #f2f8fc, #d2dcdf, #cccfd1, #dddddd, #d3cfd2,  #e7dfe0, #f4f4f4); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, #f2f8fc, #d2dcdf, #cccfd1, #dddddd, #d3cfd2,  #e7dfe0, #f4f4f4); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, #f2f8fc, #d2dcdf, #cccfd1, #dddddd, #d3cfd2,  #e7dfe0, #f4f4f4); /* Standard syntax (must be last) */
+}
+
+.profileUpdateNotsBackgroundTheme.gray {
+    background-color: #e4e6e7;
+}
+
+.profileUpdateNotsHr {
+    height: 2px;
+    width: 100%;
+    border: none;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.profileUpdateNotsHr.bottom {
+    margin-top: 85px;
+}
+
+.profileUpdateNotsHr.masculine {
+    background-color: #4a76fd;
+}
+
+.profileUpdateNotsHr.feminine {
+    background-color: #e639af;
+}
+
+.profileUpdateNotsHr.ruby {
+    background-color: #850014;   
+}
+
+.profileUpdateNotsHr.orange { 
+    background-color: #ff8303; 
+}
+
+.profileUpdateNotsHr.sun {
+    background-color: #ffe700;  
+}
+
+.profileUpdateNotsHr.emerald { 
+    background-color: #50c878; 
+}
+
+.profileUpdateNotsHr.blue {
+    background-color: #098de9; 
+}
+
+.profileUpdateNotsHr.indigo { 
+    background-color: #30307e; 
+}
+
+.profileUpdateNotsHr.violet { 
+    background-color: #8a2be2; 
+}
+
+.profileUpdateNotsHr.rainbow {
+    background: -webkit-linear-gradient(right, #850014, #ff8303, #ffe700, #50c878, #098de9, #30307e, #8a2be2); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, #850014, #ff8303, #ffe700, #50c878, #098de9, #30307e, #8a2be2); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, #850014, #ff8303, #ffe700, #50c878, #098de9, #30307e, #8a2be2); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, #850014, #ff8303, #ffe700, #50c878, #098de9, #30307e, #8a2be2); /* Standard syntax (must be last) */
+}
+
+.profileUpdateNotsHr.silver {
+    background: -webkit-linear-gradient(left, #dadada , #8e8e8e, #dadada); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, #dadada , #8e8e8e, #dadada); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, #dadada , #8e8e8e, #dadada); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, #dadada , #8e8e8e, #dadada); /* Standard syntax (must be last) */
+}
+
+.profileUpdateNotsHr.gold {
+    background: -webkit-linear-gradient(left, #ab781d , #eed264, #ab781d); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, #ab781d , #eed264, #ab781d); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, #ab781d , #eed264, #ab781d); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, #ab781d , #eed264, #ab781d); /* Standard syntax (must be last) */
+}
+
+.profileUpdateNotsHr.platinum {
+    background: -webkit-linear-gradient(left, #d3e9f6, #6b8c95, #566167, #8e8e8e, #6d606a,  #af9499, #dadada); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, #d3e9f6, #6b8c95, #566167, #8e8e8e, #6d606a,  #af9499, #dadada); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, #d3e9f6, #6b8c95, #566167, #8e8e8e, #6d606a,  #af9499, #dadada); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, #d3e9f6, #6b8c95, #566167, #8e8e8e, #6d606a,  #af9499, #dadada); /* Standard syntax (must be last) */
+}
+
+.profileUpdateNotsHr.gray {
+    background-color: #aeb4b7;
+}
+
+.profileUpdateNotsLeft {
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 100%;
+}
+
+.profileUpdateNotsProfilePic {
+    display: flex; 
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    object-fit: cover;    
+}
+
+.profileUpdateNotsIcon {
+    display: flex;
+    flex-shrink: 0; 
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    height: 22px;
+    
+    right: 0;
+    bottom: 20px;
+}
+
+.profileUpdateNotsIcon.flame {
+    width: 14px;
+    margin-right: 7px;
+}
+
+.profileUpdateNotsRight {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: calc(100% - 75px);
+    height: 70px;
+    margin-left: 5px;
+    margin-right: 10px;
+}
+
+.profileUpdateNotsRightTop {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+    height: auto; 
+}
+
+.profileUpdateNotsTitle {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    width: auto;
+    height: auto;
+}
+
+.profileUpdateNotsTitleLeft {
+    display: flex;
+    white-space: pre-wrap;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 233px;
+    height: auto;
+}
+
+.profileUpdateNotsTitleLeftPhrase {
+    display: flex;
+    white-space: pre-wrap;
+    align-items: baseline;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 233px;
+    height: auto;
+}
+
+.profileUpdateNotsTitleRight {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin-left: 10px;
+    width: 32px;
+    height: 32px;
+}
+
+.profileUpdateNotsTitleRightPNGIcon {
+    height: 32px;
+    width: 32px;
+    cursor: pointer;
+    background-size: contain;
+}
+
+.profileUpdateNotsName {
+    font-size: 15px;
+    font-weight: bold;   
+}
+
+.profileUpdateNotsName.masculine {
+    color: #4a76fd;
+}
+
+.profileUpdateNotsName.feminine {
+    color: #e639af;
+}
+
+.profileUpdateNotsName.grey {
+    color: #aeb4b7;
+}
+
+.profileUpdateNotsRightCenter {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    height: 20px;   
+}
+
+.profileUpdateNotsAction {
+    white-space: pre-wrap;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.profileUpdateNotsRightBottom {
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.profileUpdateNotsRetort {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    color: #7a7e80;
+    width: 85%;
+    overflow: hidden; 
+    font-size: 12px;
+    font-weight: 500;
+    opacity: 75%;
+}

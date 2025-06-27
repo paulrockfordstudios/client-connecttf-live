@@ -1,0 +1,150 @@
+.mentionsPopup {
+    position: absolute;
+    z-index: 9999;
+}
+
+.mentionsPopupBackgroundTheme {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0%;
+    left: 0%;
+    border-radius: 20px;
+    -webkit-filter: blur(2px);
+    -moz-filter: blur(2px);
+    -o-filter: blur(2px);
+    -ms-filter: blur(2px);
+    filter: blur(2px);
+    opacity: .75;
+}
+
+.mentionsPopupContainer {  
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    background-color: white;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.mentionsPopupItem {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 10px 10px;
+    padding:  0;
+    height: 36px;
+    cursor: pointer;
+}
+
+.mentionsPopupItem:hover {
+    width: calc(100% - 20px);
+    border-top-left-radius: 18px;
+    border-bottom-left-radius: 18px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.mentionsPopupItem.masculine:hover {
+    background-color: #d8e1fe;
+}
+
+.mentionsPopupItem.feminine:hover {
+    background-color: #fde1e7;
+}
+
+.mentionsPopupItem.ruby:hover {
+    background-color: #d4a6ad;
+}
+
+.mentionsPopupItem.orange:hover {
+    background-color: #ffdab3;
+}
+
+.mentionsPopupItem.sun:hover {
+    background-color: #fff9bf;
+}
+
+.mentionsPopupItem.emerald:hover {
+    background-color: #caeed6;
+}
+
+.mentionsPopupItem.blue:hover {
+    background-color: #cee8fb;
+}
+
+.mentionsPopupItem.indigo:hover {
+    background-color: #babad4;
+}
+
+.mentionsPopupItem.violet:hover {
+    background-color: #dcbff6;
+}
+
+.mentionsPopupItem.rainbow:hover {
+    background: -webkit-linear-gradient(left, #d4a6ad, #ffdab3 , #fff9bf, #caeed6, #cee8fb, #babad4, #dcbff6); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, #d4a6ad, #ffdab3 , #fff9bf, #caeed6, #cee8fb, #babad4, #dcbff6); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, #d4a6ad, #ffdab3 , #fff9bf, #caeed6, #cee8fb, #babad4, #dcbff6); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, #d4a6ad, #ffdab3 , #fff9bf, #caeed6, #cee8fb, #babad4, #dcbff6); /* Standard syntax (must be last) */
+}
+
+.mentionsPopupItem.silver:hover {
+    background: -webkit-linear-gradient(left, #f4f4f4 , #dddddd, #f4f4f4); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, #f4f4f4 , #dddddd, #f4f4f4); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, #f4f4f4 , #dddddd, #f4f4f4); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, #f4f4f4 , #dddddd, #f4f4f4); /* Standard syntax (must be last) */
+}
+
+.mentionsPopupItem.gold:hover {
+    background: -webkit-linear-gradient(left, #e6d6bb , #faf1d0, #e6d6bb); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, #e6d6bb , #faf1d0, #e6d6bb); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, #e6d6bb , #faf1d0, #e6d6bb); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, #e6d6bb , #faf1d0, #e6d6bb); /* Standard syntax (must be last) */
+}
+
+.mentionsPopupItem.platinum:hover {
+    background: -webkit-linear-gradient(left, #f2f8fc, #d2dcdf, #cccfd1, #dddddd, #d3cfd2,  #e7dfe0, #f4f4f4); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, #f2f8fc, #d2dcdf, #cccfd1, #dddddd, #d3cfd2,  #e7dfe0, #f4f4f4); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, #f2f8fc, #d2dcdf, #cccfd1, #dddddd, #d3cfd2,  #e7dfe0, #f4f4f4); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, #f2f8fc, #d2dcdf, #cccfd1, #dddddd, #d3cfd2,  #e7dfe0, #f4f4f4); /* Standard syntax (must be last) */
+}
+
+.mentionsPopupItem.grey:hover {
+    background-color: #e4e6e7;
+}
+
+.mentionsPopupAvatar {
+    display: flex;
+    flex-shrink: 0;
+    flex-grow: 0;
+    height: 36px;
+    width: 36px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 5px;
+}
+
+.mentionsPopupIcon {
+    display: flex;
+    flex-shrink: 0;
+    flex-grow: 0;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-right: 3px;
+    height: 24px;
+}
+
+.mentionsPopupIcon.flame {
+    width: 14px;
+}
+
+.mentionsPopupIcon.union {
+    width: 24px;
+}
+
+.mentionsPopupName {
+    margin-right: 3px;
+    white-space: nowrap;
+}
+

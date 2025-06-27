@@ -1,0 +1,81 @@
+.registrationGate { 
+    max-width: 450px; /*600px*/
+    width: 90%;
+    border-radius: 60px;
+}
+
+.registrationGate.light {
+    background-color: white;
+}
+
+.registrationGate.dark {
+    background-color: black;
+}
+
+.registrationGateborderBg {
+    width: 100%;
+    margin: 6px; 
+    border-radius: 54px;
+}
+
+.registrationGateContainer {
+    width: 100%;
+    margin: 6px;
+    border-radius: 48px;
+    position: relative;
+}
+
+.registrationGateContainer.light {
+    background-color: white;
+}
+
+.registrationGateContainer.dark {
+    background-color: black;
+}
+
+.registrationGateCloseBtn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.registrationGateCloseBtn.light {
+    color: #c6cacc;
+}
+
+.registrationGateCloseBtn.dark {
+    color: #7a7e80;
+}
+
+.registrationGateCloseBtn:hover {
+    color: #aeb4b7;
+}
+
+.registrationGateCloseBtn.light:active {
+    color: #7a7e80;
+}
+
+.registrationGateCloseBtn.dark:active {
+    color: #cac6cc;
+}
+
+.registrationGateContent {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 2.5rem; /*40px*/
+}
+
+.registrationGateLogo {
+    height: 2.75rem; /*30px*/
+    width: 2.5rem; /*27px*/
+    margin-bottom: 0.938rem; /*15px*/
+    align-self: center;
+}
+
+.registrationForm {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    z-index: 999;
+}

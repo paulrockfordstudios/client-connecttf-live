@@ -1,0 +1,61 @@
+.editCoach {
+    display: flex;
+}
+
+.editCoach-container {
+    margin-top: 74px;
+    width: 100%;
+    padding: 20px 20% 30px 15%;
+    overflow-x: hidden;  
+}
+
+.editCoachAd {
+    margin: 0 20px;
+}
+
+.editCoachRight {
+    margin: 0 60px 0 20px;
+}
+
+.editCoachDisplayContainer {
+    width: 100%;
+    position: relative;
+}
+
+.editCoachDisplayBackgroundTheme {
+    width: 100%;
+    padding-right: 40px;
+    border-radius: 20px;
+    -webkit-filter: blur(2px);
+    -moz-filter: blur(2px);
+    -o-filter: blur(2px);
+    -ms-filter: blur(2px);
+    filter: blur(2px);
+    position: absolute;
+    opacity: 0.75;
+}
+
+.editCoachDisplay-container {
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+    background-color: white;
+    padding: 20px; 
+    
+}
+
+.editCoachDisplay-container.union {
+    position: sticky;
+}
+
+.editCoachDisplay-container.flame {
+    width: calc(100% - 20px);
+}
+
+.editCoachDisplayList {
+    padding-left: 0;
+}
+
+.editCoachDisplayListItem {
+    list-style: none;
+}

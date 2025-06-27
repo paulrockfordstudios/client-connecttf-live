@@ -1,0 +1,37 @@
+.nvAvatarBtn {
+    position: relative;
+    border-radius: 50%;
+    height: 3rem; /*48px*/
+    width: 3rem; /*48px*/
+}
+
+.nvAvatarBtnBackground {
+    background-size: contain;
+}
+
+.nvAvatarBtnBackground, 
+.nvAvatarBtnAvatarBg, 
+.nvAvatarBtnAvatarImg, 
+.nvAvatarBtnAltAvatarImg {
+    position: absolute;
+    border-radius: 50%;
+}
+
+.nvAvatarBtnBackground, 
+.nvAvatarBtnAvatarBg.nbg, 
+.nvAvatarBtnAvatarImg.nbg, 
+.nvAvatarBtnAltAvatarImg.nbg {
+    height: 3rem; /*48px*/
+    width: 3rem; /*48px*/
+    top: 0;
+    left: 0;
+}
+
+.nvAvatarBtnAvatarBg.bg, 
+.nvAvatarBtnAvatarImg.bg, 
+.nvAvatarBtnAltAvatarImg.bg {
+    height: 2.5rem; /*40px*/
+    width: 2.5rem; /*40px*/
+    top: 0.25rem; /*4px*/
+    left: 0.25rem; /*4px*/
+}

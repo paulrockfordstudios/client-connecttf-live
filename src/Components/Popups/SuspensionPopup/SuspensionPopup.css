@@ -1,0 +1,75 @@
+/*.suspensionPopupPortal {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+*/
+.suspensionPopupModal {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.suspensionPopupContainer {
+    border-radius: 40px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    -webkit-box-shadow: 0px 10px 50px -20px rgba(0,0,0,0.75); 
+    box-shadow: 0px 10px 50px -20px rgba(0,0,0,0.75);
+    padding: 100px;
+}
+
+.suspensionPopupConnectTFLogo {
+    display: flex;
+    flex-shrink: 0;
+    align-self: center;
+    width: 80px;
+    margin-bottom: 20px;
+}
+
+.suspensionPopupTextHeaderOne {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    font-size: 36px;
+    font-weight: 900;
+    margin-bottom: 20px;
+}
+
+.suspensionPopupTextHeaderTwo {
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.suspensionPopupTextAppealInfo {
+   text-align: center;
+}
+
+.suspensionPopupTextAppealInfoLink {
+    color: #4a76fd;
+}
+
+.suspensionPopupTextAppealInfoLink:hover {
+    color: #4a76fd;
+    font-weight: 500;
+}
+
+.suspensionPopupTextAppealInfoLink:active {
+    color: #e639af;
+}
+
+.suspensionPopupTextAppealInfoLink:visited {
+    color: purple;
+    font-weight: 500;
+}

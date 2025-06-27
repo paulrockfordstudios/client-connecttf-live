@@ -1,0 +1,168 @@
+.calendarDropdown-container { 
+    height: 2rem; /*32px*/
+    border-radius: 1rem; /*16px*/
+    z-index: 999;
+}
+
+.calendarDropdown-dropdown {
+    margin-top: 1rem; /*16px*/
+    border-bottom-left-radius: 1rem; /*16px*/
+    border-bottom-right-radius: 1rem; /*16px*/
+    transition: height 325ms cubic-bezier(0.43,-0.35, 0.14, 1.35);
+    overflow: hidden;
+    z-index: 0;
+}
+
+.calendarDropdown-dropdown.month {
+    width: 7.5rem; /*120px*/
+}
+
+.calendarDropdown-dropdown.year {
+    width: 4.375rem; /*70px*/
+}
+
+.calendarDropdown-dropdown.open {
+    height: 9.375rem; /*150px*/
+}
+
+.calendarDropdown-dropdown.close {
+    height: 0;
+}
+
+.calendarDropdownDD-container {
+    margin: 0.125rem; /*2px*/
+    border-bottom-left-radius: 0.875rem; /*14px*/
+    border-bottom-right-radius: 0.875rem; /*14px*/
+    transition: height 325ms cubic-bezier(0.43,-0.35, 0.14, 1.35);
+    overflow: hidden;
+}
+
+.calendarDropdownDD-container.month {
+    width: 7.25rem; /*116px*/
+}
+
+.calendarDropdownDD-container.year {
+    width: 4.125rem; /*66px*/
+}
+
+.calendarDropdownDD-container.open {
+    height: 9.125rem; /*146px*/
+}
+
+.calendarDropdownDD-container.close {
+    height: 0;
+}
+
+.calendarDropdownDD-fade {
+    margin-left: 1.375rem; /*22px*/
+    margin-top: 1.375rem; /*22px*/
+    width: calc(100% - 2.75rem); /*44px*/
+    height: 6.25rem; /*100px*/
+    opacity: 0.98;
+}
+
+.calendarDropdownDD-fade.light {
+    background-color: white;
+}
+
+.calendarDropdownDD-fade.dark {
+    background-color: black;
+}
+
+.calendarDropdownDD-content-container { 
+    height: 6.875rem; /*110px*/
+    display: flex;
+    flex-direction: column;
+    z-index: 998;
+    overflow-y: scroll;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+.calendarDropdownDD-content-container.month {
+    width: 6.25rem; /*100px*/
+    margin:  1.25rem 0.5rem; /*20px 8px*/
+}
+
+.calendarDropdownDD-content-container.year {
+    width: 3.5rem; /*56px*/
+    margin:  1.25rem 0.313rem; /*20px 5px*/
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.calendarDropdownDD-content-container::-webkit-scrollbar {
+    display: none;
+}
+
+.calendarDropdown-button { 
+    height: 2rem; /*32px*/
+    border-radius: 1rem; /*16px*/
+    border: none;
+    transition: opacity 325ms, transform 325ms cubic-bezier(0.43,-0.35, 0.14, 1.35);
+    -webkit-transition: opacity 325ms, transform 325ms cubic-bezier(0.43,-0.35, 0.14, 1.35);
+    -moz-transition: opacity 325ms, transform 325ms cubic-bezier(0.43,-0.35, 0.14, 1.35);
+    transform-origin: center;
+    z-index: 1;
+}
+
+.calendarDropdown-button.month {
+    width: 7.5rem; /*120px*/
+}
+
+.calendarDropdown-button.year {
+    width: 4.375rem; /*70px*/
+}
+
+.calendarDropdown-button.present {
+    transform: scale(1);
+    opacity: 1;
+}
+
+.calendarDropdown-button.absent {
+    transform: scale(0.001);
+    opacity: 0;
+}
+
+.calendarDropdownBtn-container {
+    margin: 0.125rem; /*2px*/ 
+    height: 1.75rem; /*28px*/
+    border-radius: 0.875rem; /*14px*/
+    overflow: hidden;
+}
+
+.calendarDropdownBtn-container.month {
+    width: 7.25rem; /*116px*/
+}
+
+.calendarDropdownBtn-container.year {
+    width: 4.125rem; /*66px*/
+}
+
+.calendarDropdownBtn-fade {
+    margin-left: 1.375rem; /*22px*/
+    margin-top: 1.375rem; /*22px*/
+    width: calc(100% - 2.75rem); /*44px*/
+    opacity: 0.98;
+}
+
+.calendarDropdownBtn-fade.light {
+    background-color: white;
+}
+
+.calendarDropdownBtn-fade.dark {
+    background-color: black;
+}
+
+.calendarDropdownBtn-label-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+}
+
+.calendarDropdownBtn-label {
+    background: transparent;
+    border: none;
+}

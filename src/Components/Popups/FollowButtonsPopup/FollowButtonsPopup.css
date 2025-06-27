@@ -1,0 +1,246 @@
+.folBtnsPopupPortal {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    z-index: 999;
+}
+
+.folBtnsPopupBackdropOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.folBtnsPopupModal {
+    position: fixed;
+    top: 30%;
+    bottom: 30%;
+    left: 30%;
+    right: 30%;
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.folBtnsPopupScreenContainer {
+    position: fixed;
+    z-index: 999;
+    top: 30%;
+    bottom: 30%;
+    left: 30%;
+    right: 30%;
+    width: 40%;
+    height: 20%;
+}
+
+.folBtnsPopupContainer {
+    width: 100%;
+    height: 40%;
+    border-radius: 40px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    -webkit-box-shadow: 0px 10px 50px -20px rgba(0,0,0,0.75); 
+    box-shadow: 0px 10px 50px -20px rgba(0,0,0,0.75);
+}
+
+.folBtnsPopupTop {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.folBtnsPopupLogo {
+    display: flex;
+    flex-shrink: 0;
+    flex-grow: 0;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 60px;
+    width: 54px;
+    
+}
+
+.folBtnsPopupBottom {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 40px ;
+}
+
+.folBtnsPopupButton {
+    height: 50px;
+    width: 400px;
+    border: none;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    background-color: white;
+}
+
+.folBtnsPopupButton:hover {
+    font-weight: 700;
+}
+
+.folBtnsPopupButton.TF:hover {
+    background: -webkit-linear-gradient(left, #e6d6bb , #faf1d0, #e6d6bb); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, #e6d6bb , #faf1d0, #e6d6bb); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, #e6d6bb , #faf1d0, #e6d6bb); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, #e6d6bb , #faf1d0, #e6d6bb); /* Standard syntax (must be last) */
+}
+
+.folBtnsPopupButton.ruby {
+    color: #850014;
+}
+
+.folBtnsPopupButton.orange {
+    color: #ff8303;
+}
+
+.folBtnsPopupButton.sun {
+    color: #ffe700;
+}
+
+.folBtnsPopupButton.emerald {
+    color: #50c878;
+}
+
+.folBtnsPopupButton.blue {
+    color: #098de9;
+}
+
+.folBtnsPopupButton.indigo {
+    color: #30307e;
+}
+
+.folBtnsPopupButton.violet {
+    color: #8a2be2;
+}
+
+
+.folBtnsPopupButton.gold {
+    background: -webkit-linear-gradient(left, #ab781d , #eed264, #ab781d); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, #ab781d , #eed264, #ab781d); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, #ab781d , #eed264, #ab781d); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, #ab781d , #eed264, #ab781d); /* Standard syntax (must be last) */
+    color: white;
+}
+
+.folBtnsPopupButton.silver {
+    background: -webkit-linear-gradient(left, #dadada , #8e8e8e, #dadada); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, #dadada , #8e8e8e, #dadada); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, #dadada , #8e8e8e, #dadada); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, #dadada , #8e8e8e, #dadada); /* Standard syntax (must be last) */
+    color: white;
+}
+
+.folBtnsPopupButton.platinum {
+    background: -webkit-linear-gradient(left, #d3e9f6, #6b8c95, #566167, #8e8e8e, #6d606a,  #af9499, #dadada); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, #d3e9f6, #6b8c95, #566167, #8e8e8e, #6d606a,  #af9499, #dadada); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, #d3e9f6, #6b8c95, #566167, #8e8e8e, #6d606a,  #af9499, #dadada); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, #d3e9f6, #6b8c95, #566167, #8e8e8e, #6d606a,  #af9499, #dadada); /* Standard syntax (must be last) */
+    color: white;
+}
+
+.folBtnsPopupButton.masculine {
+    color: #4a76fd;
+}
+
+.folBtnsPopupButton.feminine {
+    color: #e639af;
+}
+
+.folBtnsPopupButton.gray {
+    color: black;
+}
+
+.folBtnsPopupTwin {
+    color: #4a76fd;
+    font-size: 18px;
+}
+
+.folBtnsPopupFlame {
+    color: #e639af;
+    font-size: 18px;
+}
+
+.folBtnsPopupHr {
+    height: 1px;
+    border: none;
+    width: 100%;
+}
+
+.folBtnsPopupHr.masculine {
+    background-color: #4a76fd;
+}
+
+.folBtnsPopupHr.feminine {
+    background-color: #e639af;
+}
+
+.folBtnsPopupHr.ruby {
+    background-color: #850014;
+}
+
+.folBtnsPopupHr.orange {
+    background-color: #ff8303;
+}
+
+.folBtnsPopupHr.sun {
+    background-color: #ffe700;
+}
+
+.folBtnsPopupHr.emerald {
+    background-color: #50c878;
+}
+
+.folBtnsPopupHr.blue {
+    background-color: #098de9;
+}
+
+.folBtnsPopupHr.indigo {
+    background-color: #30307e;
+}
+
+.folBtnsPopupHr.violet {
+    background-color: #8a2be2;
+}
+
+.folBtnsPopupHr.rainbow {
+    background: -webkit-linear-gradient(left, #850014 , #ff8303, #ffe700, #50c878, #098de9, #30307e, #8a2be2); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, #850014 , #ff8303, #ffe700, #50c878, #098de9, #30307e, #8a2be2); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, #850014 , #ff8303, #ffe700, #50c878, #098de9, #30307e, #8a2be2); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, #850014 , #ff8303, #ffe700, #50c878, #098de9, #30307e, #8a2be2); /* Standard syntax (must be last) */
+}
+
+.folBtnsPopupHr.silver {
+    background: -webkit-linear-gradient(left, #dadada , #8e8e8e, #dadada); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, #dadada , #8e8e8e, #dadada); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, #dadada , #8e8e8e, #dadada); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, #dadada , #8e8e8e, #dadada); /* Standard syntax (must be last) */
+}
+
+.folBtnsPopupHr.gold {
+    background: -webkit-linear-gradient(left, #ab781d , #eed264, #ab781d); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, #ab781d , #eed264, #ab781d); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, #ab781d , #eed264, #ab781d); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, #ab781d , #eed264, #ab781d); /* Standard syntax (must be last) */
+}
+
+.folBtnsPopupHr.platinum {
+    background: -webkit-linear-gradient(left, #d3e9f6, #6b8c95, #566167, #8e8e8e, #6d606a,  #af9499, #dadada); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, #d3e9f6, #6b8c95, #566167, #8e8e8e, #6d606a,  #af9499, #dadada); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, #d3e9f6, #6b8c95, #566167, #8e8e8e, #6d606a,  #af9499, #dadada); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, #d3e9f6, #6b8c95, #566167, #8e8e8e, #6d606a,  #af9499, #dadada); /* Standard syntax (must be last) */
+}
+
+.folBtnsPopupHr.gray {
+    background-color: #aeb4b7;
+}

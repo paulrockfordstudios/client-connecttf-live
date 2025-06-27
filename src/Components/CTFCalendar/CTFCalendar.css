@@ -1,0 +1,215 @@
+.ctfCalendar {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    width: calc(100% - 2.5rem); /*40px*/
+    margin: 1.875rem 1.25rem 1.25rem 1.25rem; /*30px 20px 20px 20px*/
+}
+
+.ctfCalendar-nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 2rem; /*32px*/
+}
+
+.ctfCalendar-nav-btn-container.date-month-year {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: nowrap;
+    width: 12.5rem; /*190px*/
+}
+
+.ctfCalendar-nav-btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.25rem; /*20px*/
+    border: none;
+    background: transparent;
+    padding: 0;
+    height: 2rem; /*32px*/
+    font-weight: 500; 
+    cursor: pointer;
+}
+
+.ctfCalendar-nav-btn.light {
+    color: #7a7e80;
+}
+
+.ctfCalendar-nav-btn.light:focus-visible {
+    background-color: #7a7e80;
+    color: white;
+}
+
+.ctfCalendar-nav-btn.dark {
+    color: #c6cacc;
+}
+
+.ctfCalendar-nav-btn.dark:focus-visible {
+    background-color: #c6cacc;
+    color: black;
+}
+
+.ctfCalendar-nav-btn:hover {
+    color: #4a76fd;
+}
+
+.ctfCalendar-nav-btn.light:active {
+    color: #3453b2;
+}
+
+.ctfCalendar-nav-btn.dark:active {
+    color: #809ffe;
+}
+
+.ctfCalendar-nav-btn:focus-visible {
+    height: 32px;
+    border-radius: 16px;
+}
+
+.ctfCalendar-nav-btn.month:focus-visible {
+    width: 120px;
+}
+
+.ctfCalendar-nav-btn.year:focus-visible {
+    width: 70px;
+}
+
+.ctfCalendar-nav-btn.chevron {
+    width: 1.875rem; /*30px*/
+}
+
+.ctfCalendar-nav-chevron {
+    font-size: 1.125rem !important; /*18px*/
+    height: 1.125rem !important; /*18px*/
+    width: 0.563rem !important; /*9px*/
+}
+
+.ctfCalendar-body {
+    width: 100%;
+}
+
+.ctfCalendar-weekdays {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;  
+    margin-bottom: 0.125rem; /*2px*/ 
+}
+
+.ctfCalendar-weekdays span {
+    width: calc(100% / 7);
+    font-weight: 500;
+    text-decoration: underline dotted;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+}
+
+.ctfCalendar-weekdays.light {
+    color: #7a7e80;
+}
+
+.ctfCalendar-weekdays.dark {
+    color: #c6cacc;
+}
+
+.ctfCalendar-days {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.ctfCalendar-day-Container {
+    width: calc(100% / 7);
+    height: 1.375rem; /*22px*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ctfCalendar-day-span { 
+    font-size: 0.875rem; /*14px*/       
+}
+
+.ctfCalendar-day-span.light {
+    color: #c6cacc; 
+} 
+
+.ctfCalendar-day-span.dark {
+    color: #7a7e80; 
+} 
+
+.ctfCalendar-choice-btn {
+    height: 1.375rem; /*22px*/
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 1rem; /*16px*/
+}
+
+.ctfCalendar-choice-btn.light {
+    color: #7a7e80;
+}
+
+.ctfCalendar-choice-btn.dark {
+    color: #c6cacc;
+}
+
+.ctfCalendar-choice-btn:hover {
+    color: #4a76fd;
+}
+
+.ctfCalendar-choice-btn.light:active {
+    color: #3453b2;
+}
+
+.ctfCalendar-choice-btn.dark:active {
+    color: #809ffe;
+}
+
+.ctfCalendar-choice-btn.current, .ctfCalendar-choice-btn:focus-visible {
+    height: 1.375rem; /*22px*/
+    padding: 0 0.25rem; /*4px*/
+    border-radius: 0.688rem; /*11px*/
+}
+
+.ctfCalendar-choice-btn.current {
+    background-color: #4a76fd;
+}
+
+.ctfCalendar-choice-btn.light.current {
+    color: white;
+}
+
+.ctfCalendar-choice-btn.dark.current {
+    color: black;
+}
+
+.ctfCalendar-choice-btn.light:focus-visible {
+    background-color: #7a7e80;
+    color: white;
+}
+
+.ctfCalendar-choice-btn.dark:focus-visible {
+    background-color: #c6cacc;
+    color: black;
+}
+
+.ctfCalendar-choice-btn.light.current:focus-visible {
+    background-color: #3453b2;
+}
+
+.ctfCalendar-choice-btn.dark.current:focus-visible {
+    background-color: #809ffe;
+}

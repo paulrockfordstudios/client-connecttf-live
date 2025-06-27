@@ -1,0 +1,167 @@
+
+.login {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;  
+}
+
+.login-container {
+    display: flex;
+    flex-direction: column;
+    max-width: 56.25rem; /*900px*/
+    width: 80%;
+    height: 85%;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.loginDisplayContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    gap: 10%;
+}
+
+.loginLogoImg {
+    display: flex;
+    flex-shrink: 0;
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    object-fit: fill;
+}
+
+.loginDescription {
+    font-size: 24px;
+    max-width: 25rem; /*400px*/
+}
+
+.loginForm {
+    height: 300px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    -webkit-box-shadow: 0px 0px 16px -8px rgba(0,0,0,0.68); 
+    box-shadow: 0px 0px 16px -8px rgba(0,0,0,0.68);
+    max-width: 500px;
+}
+
+.loginInput {
+    height: 50px;
+    border-radius: 10px;
+    border: 1px solid #bfc2c7;
+    font-size: 18px;
+    padding-left: 20px;
+}
+
+.loginInput:focus {
+    outline: none;
+}
+
+.showPasswordLoginBtn {
+    font-size: 11px;
+    color: #4a76fd;
+    text-decoration: underline;
+    display: flex;
+    justify-content: right;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.loginBtn {
+    height: 50px;
+    border-radius: 10px;
+    border: none;
+    background-color: #4a76fd;
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.loginBtn:focus {
+    outline: none;
+}
+
+.loginBtn:disabled {
+    cursor: not-allowed;
+}
+
+.loginForgot {
+    text-align: center;
+    color: #4a76fd;
+}
+
+.loginRegisterBtn {
+    width: 45%;
+    align-self: center;
+    text-align: center;
+    height: 50px;
+    border-radius: 10px;
+    border: none;
+    background-color: #e639af;
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.loginDisclaimerPosted {
+    width: 100%;
+}
+
+@media (max-width: 1000px) {
+
+    .login-container {
+        width: 88%;  
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    .login-container.xlFont {
+        width: 96%;
+    }
+    
+    .loginDisplayContainer { 
+        flex-direction: column;
+        justify-content: space-evenly;
+        height: 85vh;
+    }
+
+    .loginSpacer {
+        display: none;
+    }
+/*
+    .loginDisclaimerPosted {
+        display: none;
+    }
+*/
+}
+
+@media (min-width: 601px) {
+/*
+    .loginDisclaimerBtn {
+        display: none;
+    }
+*/
+}
+
+
+@media (max-height: 600px) and (orientation: landscape) {
+
+    .login {
+        height: 100vw;
+    }
+
+}

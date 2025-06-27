@@ -1,0 +1,358 @@
+.fiiepPortal {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    z-index: 999;
+}
+
+.fiiepBackdropOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.fiiepModal {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*
+.fiiep {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+*/
+
+.fiiepScreenContainer {
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+    height: 100%;
+
+}
+
+.fiiepContainer {
+    width: 100%;
+    height: 100%;
+    border-radius: 40px;
+    background-color: white;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    -webkit-box-shadow: 0px 10px 50px -20px rgba(0,0,0,0.75); 
+    box-shadow: 0px 10px 50px -20px rgba(0,0,0,0.75);
+}
+
+.fiiepTop {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.fiiepHeader {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.fiiepLogo {
+    display: flex;
+    flex-shrink: 0;
+    width: 30px;
+    height: 36px;
+    justify-content: flex-end;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.fiiepTitle {
+    font-size: 36px;
+    font-weight: 500;
+}
+
+.fiiepTitle.masculine {
+    color:#4a76fd;
+}
+
+.fiiepTitle.feminine {
+    color:#e639af;
+}
+
+.fiiepCancelSVGIcon {
+    font-size: 36px !important;
+    margin-bottom: -2px;
+}
+
+.fiiepCancelSVGIcon.masculine {
+    color: #d8e1fe;
+}
+
+.fiiepCancelSVGIcon.masculine:hover {
+    color: #4a76fd;
+}
+
+.fiiepCancelSVGIcon.masculine:active {
+    color: #3453b2;
+}
+
+.fiiepCancelSVGIcon.feminine {
+    color: #fde1ef;
+}
+
+.fiiepCancelSVGIcon.feminine:hover {
+    color: #e639af;
+}
+
+.fiiepCancelSVGIcon.feminine:active {
+    color: #a1287b;
+}
+
+.fiiepCancelSVGIcon.gray {
+    color: #e4e6e7;
+}
+
+.fiiepCancelSVGIcon.gray:hover {
+    color: #aeb4b7;
+}
+
+.fiiepCancelSVGIcon.gray:active {
+    color: #7a7e80;
+}
+
+.fiiepAction.one, .fiiepAction.two {
+    margin-bottom: 20px;
+}
+
+.fiiepActionTitle {
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.fiiepActionDesc {
+    font-size: 14px;
+}
+
+.fiiepActionEditorContainer {
+    position: relative;
+    min-height: 48px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.fiiepActionEditorContainer.pName {
+    width: 40%;
+}
+
+.fiiepActionEditorContainer.sentence {
+    width: 100%;
+}
+
+.fiiepActionEditor {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    min-height: 48px;
+    border-radius: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+}
+
+.fiiepActionInput {
+    display: flex;
+    flex-wrap: wrap;
+    width: calc(100% - 50px);
+    margin-left: 20px;
+    font-size: 16px;
+    font-weight: 700;
+    border: none;
+    background: transparent;  
+}
+
+.fiiepActionInput::placeholder {
+    color: #858585;
+}
+
+.fiiepActionInput:focus {
+    outline: none;
+}
+
+.fiiepActionRequirementText {
+    font-size: 12px;
+    cursor: initial;
+    margin: 0 20px;
+    color: #858585;
+}
+
+.fiiepActionDisclaimer {
+    font-size: 13px;
+    color: #7a7e80;
+    margin-bottom: 10px;
+}
+
+.fiiepCheckboxField {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 5px;
+}
+
+.fiiepCheckboxFieldColumn {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin-top: 10px;
+}
+
+.fiiepCheckboxItem {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.fiiepCheckboxSelection.masculine {
+    accent-color: #4a76fd;
+}
+
+.fiiepCheckboxSelection.feminine {
+    accent-color: #e639af;
+}
+
+.fiiepCheckboxSelection.grey {
+    accent-color: #aeb4b7;
+}
+
+input[type="checkbox"] {
+    -ms-transform: scale(1.5); /* IE */
+    -moz-transform: scale(1.5); /* FF */
+    -webkit-transform: scale(1/5); /* Safari and Chrome */
+    -o-transform: scale(1.5); /* Opera */
+    transform: scale(1.5);
+}
+
+.fiiepCheckboxText {
+    margin-left: 10px;
+}
+
+.fiiepBottom {
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+.fiiepButtonBackground {
+    border: none;
+    border-radius: 10px;
+    font-weight: 500;
+    cursor: pointer;
+    width: 120px;
+    height: 36px;
+    background-size: cover;
+}
+
+.fiiepButtonBackground.disabled {
+    opacity: 0.3;
+}
+
+.fiiepButtonBackground.masculine {
+    background-color: #4a76fd;
+}
+
+.fiiepButtonBackground.feminine {
+    background-color: #e639af;
+}
+
+.fiiepButtonBackground.grey {
+    background-color: #aeb4b7;
+}
+
+
+.fiiepButton {
+    border: none;
+    border-radius: 10px;
+    font-weight: 500;
+    cursor: pointer;
+    width: 120px;
+    height: 36px;
+    font-size: 24px;
+    color: white;
+    background: transparent;
+}
+
+.fiiepButton.masculine {
+    background-color: #4a76fd;
+}
+
+.fiiepButton.masculine:hover {
+    color: #d8e1fe;
+}
+
+.fiiepButton.masculine:active {
+    background-color: #3453b2;
+    color: #c3cbe5;
+}
+
+.fiiepButton.feminine {
+    background-color: #e639af;
+}
+
+.fiiepButton.feminine:hover {
+    color: #fde1ef;
+}
+
+.fiiepButton.feminine:active {
+    background-color: #a1287b;
+    color: #e4cbd8;
+}
+
+.fiiepButton.grey {
+    background-color: #aeb4b7;
+}
+
+.fiiepButton.grey:hover {
+    color: #e4e6e7;
+}
+
+.fiiepButton.grey:active {
+    background-color: #7a7e80;
+    color: #cecfd0;
+}
+
+.fiiepHr {
+    width: 100%;
+    margin: 20px 0;
+    border: none;
+    height: 1px;
+    background-size: cover;
+}
+
+.fiiepHr.masculine {
+    background-color: #4a76fd;
+}
+
+.fiiepHr.feminine {
+    background-color: #e639af;
+}
+
+.fiiepHr.gray {
+    background-color: #aeb4b7;
+}

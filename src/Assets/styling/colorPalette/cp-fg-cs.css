@@ -1,0 +1,423 @@
+/* ------ Color Palette - Foreground Color - Colors & Shades ------ */
+
+
+/* --- Shades --- */
+
+
+/* - White - */
+
+.cp-fg-cs.element.light,
+.cp-fg-cs.secondary.light,
+.cp-fg-cs.white {
+    color: var(--white);
+}
+
+/* - Black - */
+
+.cp-fg-cs.element.dark,
+.cp-fg-cs.secondary.dark,
+.cp-fg-cs.black {
+    color: var(--black);
+}
+
+/* - Gray - */
+
+/* Saturated */
+
+/*light*/
+.cp-fg-cs.saturated.static.light.gray,
+.cp-fg-cs.saturated.dynamic.act.dark.gray:active {
+    color: var(--gray-sat-lgt);
+}
+/*bright*/
+.cp-fg-cs.saturated.static.bright.gray {
+    color: var(--gray-sat-brt);
+}
+/*dark*/
+.cp-fg-cs.saturated.static.dark.gray,
+.cp-fg-cs.saturated.dynamic.act.light.gray:active {
+    color: var(--gray-sat-drk);
+}
+
+/* Pastel */
+
+/*light*/
+.cp-fg-cs.pastel.dynamic.act.dark.gray:active {
+    color: var(--gray-pas-lgt);
+}
+/*bright*/
+.cp-fg-cs.pastel.static.bright.gray,
+.cp-fg-cs.pastel.dynamic.hov.gray:hover {
+    color: var(--gray-pas-brt);
+}
+/*dark*/
+.cp-fg-cs.pastel.dynamic.act.light.gray:active {
+    color: var(--gray-pas-drk);
+}
+
+
+/* --- Colors --- */
+
+
+/* -- Energy -- */
+
+
+/* - Masculine - */
+
+/* Saturated */
+
+/*light*/
+.cp-fg-cs.saturated.static.light.masculine,
+.cp-fg-cs.saturated.dynamic.act.dark.masculine:active {
+    color: var(--masculine-sat-lgt);
+}
+/*bright*/
+.cp-fg-cs.saturated.static.bright.masculine {
+    color: var(--masculine-sat-brt);
+}
+/*dark*/
+.cp-fg-cs.saturated.static.dark.masculine,
+.cp-fg-cs.saturated.dynamic.act.light.masculine:active {
+    color: var(--masculine-sat-drk);
+}
+
+/* Pastel */
+
+/*light*/
+.cp-fg-cs.pastel.dynamic.act.dark.masculine:active {
+    color: var(--masculine-pas-lgt);
+}
+/*bright*/
+.cp-fg-cs.pastel.static.bright.masculine,
+.cp-fg-cs.pastel.dynamic.hov.masculine:hover {
+    color: var(--masculine-pas-brt);
+}
+/*dark*/
+.cp-fg-cs.pastel.dynamic.act.light.masculine:active {
+    color: var(--masculine-pas-drk);
+}
+
+/* - Feminine - */
+
+/* Saturated */
+
+/*light*/
+.cp-fg-cs.saturated.static.light.feminine,
+.cp-fg-cs.saturated.dynamic.act.dark.feminine:active {
+    color: var(--feminine-sat-lgt);
+}
+/*bright*/
+.cp-fg-cs.saturated.static.feminine {
+    color: var(--feminine-sat-brt);
+}
+/*dark*/
+.cp-fg-cs.saturated.static.dark.feminine,
+.cp-fg-cs.saturated.dynamic.act.light.feminine:active {
+    color: var(--feminine-sat-drk);
+}
+
+/* Pastel */
+
+/*light*/
+.cp-fg-cs.pastel.dynamic.act.dark.feminine:active {
+    color: var(--feminine-pas-lgt);
+}
+/*bright*/
+.cp-fg-cs.pastel.static.bright.feminine,
+.cp-fg-cs.pastel.dynamic.hov.feminine:hover {
+    color: var(--feminine-pas-brt);
+}
+/*dark*/
+.cp-fg-cs.pastel.dynamic.act.light.feminine:active {
+    color: var(--feminine-pas-drk);
+}
+
+
+/* -- Spectrum (Lower Order)-- */
+
+
+/* - Ruby - */
+
+/* Saturated */
+
+/*light*/
+.cp-fg-cs.saturated.dynamic.act.dark.ruby:active {
+    color: var(--ruby-pas-lgt);
+}
+/*bright*/
+.cp-fg-cs.saturated.static.ruby {
+    color: var(--ruby-sat-brt);
+}
+/*dark*/
+.cp-fg-cs.saturated.dynamic.act.light.ruby:active {
+    color: var(--ruby-sat-drk);
+}
+
+/* Pastel */
+
+/*light*/
+.cp-fg-cs.pastel.dynamic.act.dark.ruby:active {
+    color: var(--ruby-pas-lgt);
+}
+/*bright*/
+.cp-fg-cs.pastel.static.bright.ruby,
+.cp-fg-cs.pastel.dynamic.hov.ruby:hover {
+    color: var(--ruby-pas-brt);
+}
+/*dark*/
+.cp-fg-cs.pastel.dynamic.act.light.ruby:active {
+    color: var(--ruby-pas-drk);
+}
+
+/* - Orange - */
+
+/* Saturated */
+
+/*light*/
+.cp-fg-cs.saturated.dynamic.act.dark.orange:active {
+    color: var(--orange-pas-lgt);
+}
+/*bright*/
+.cp-fg-cs.saturated.static.orange {
+    color: var(--orange-sat-brt);
+}
+/*dark*/
+.cp-fg-cs.saturated.dynamic.act.light.orange:active {
+    color: var(--orange-sat-drk);
+}
+
+/* Pastel */
+
+/*light*/
+.cp-fg-cs.pastel.dynamic.act.dark.orange:active {
+    color: var(--orange-pas-lgt);
+}
+/*bright*/
+.cp-fg-cs.pastel.static.bright.orange,
+.cp-fg-cs.pastel.dynamic.hov.orange:hover {
+    color: var(--orange-pas-brt);
+}
+/*dark*/
+.cp-fg-cs.pastel.dynamic.act.light.orange:active {
+    color: var(--orange-pas-drk);
+}
+
+/* - Sun - */
+
+/* Saturated */
+
+/*light*/
+.cp-fg-cs.saturated.dynamic.act.dark.sun:active {
+    color: var(--sun-pas-lgt);
+}
+/*bright*/
+.cp-fg-cs.saturated.static.sun {
+    color: var(--sun-sat-brt);
+}
+/*dark*/
+.cp-fg-cs.saturated.dynamic.act.light.sun:active {
+    color: var(--sun-sat-drk);
+}
+
+/* Pastel */
+
+/*light*/
+.cp-fg-cs.pastel.dynamic.act.dark.sun:active {
+    color: var(--sun-pas-lgt);
+}
+/*bright*/
+.cp-fg-cs.pastel.static.bright.sun,
+.cp-fg-cs.pastel.dynamic.hov.sun:hover {
+    color: var(--sun-pas-brt);
+}
+/*dark*/
+.cp-fg-cs.pastel.dynamic.act.light.sun:active {
+    color: var(--sun-pas-drk);
+}
+
+/* - Emerald - */
+
+/* Saturated */
+
+/*light*/
+.cp-fg-cs.saturated.dynamic.act.dark.emerald:active {
+    color: var(--emerald-pas-lgt);
+}
+/*bright*/
+.cp-fg-cs.saturated.static.emerald {
+    color: var(--emerald-sat-brt);
+}
+/*dark*/
+.cp-fg-cs.saturated.dynamic.act.light.emerald:active {
+    color: var(--emerald-sat-drk);
+}
+
+/* Pastel */
+
+/*light*/
+.cp-fg-cs.pastel.dynamic.act.dark.emerald:active {
+    color: var(--emerald-pas-lgt);
+}
+/*bright*/
+.cp-fg-cs.pastel.static.bright.emerald,
+.cp-fg-cs.pastel.dynamic.hov.emerald:hover {
+    color: var(--emerald-pas-brt);
+}
+/*dark*/
+.cp-fg-cs.pastel.dynamic.act.light.emerald:active {
+    color: var(--emerald-pas-drk);
+}
+
+/* - Blue - */
+
+/* Saturated */
+
+/*light*/
+.cp-fg-cs.saturated.dynamic.act.dark.blue:active {
+    color: var(--blue-pas-lgt);
+}
+/*bright*/
+.cp-fg-cs.saturated.static.blue {
+    color: var(--blue-sat-brt);
+}
+/*dark*/
+.cp-fg-cs.saturated.dynamic.act.light.blue:active {
+    color: var(--blue-sat-drk);
+}
+
+/* Pastel */
+
+/*light*/
+.cp-fg-cs.pastel.dynamic.act.dark.blue:active {
+    color: var(--blue-pas-lgt);
+}
+/*bright*/
+.cp-fg-cs.pastel.static.bright.blue,
+.cp-fg-cs.pastel.dynamic.hov.blue:hover {
+    color: var(--blue-pas-brt);
+}
+/*dark*/
+.cp-fg-cs.pastel.dynamic.act.light.blue:active {
+    color: var(--blue-pas-drk);
+}
+
+/* - Indigo - */
+
+/* Saturated */
+
+/*light*/
+.cp-fg-cs.saturated.dynamic.act.dark.indigo:active {
+    color: var(--indigo-pas-lgt);
+}
+/*bright*/
+.cp-fg-cs.saturated.static.indigo {
+    color: var(--indigo-sat-brt);
+}
+/*dark*/
+.cp-fg-cs.saturated.dynamic.act.light.indigo:active {
+    color: var(--indigo-sat-drk);
+}
+
+/* Pastel */
+
+/*light*/
+.cp-fg-cs.pastel.dynamic.act.dark.indigo:active {
+    color: var(--indigo-pas-lgt);
+}
+/*bright*/
+.cp-fg-cs.pastel.static.bright.indigo,
+.cp-fg-cs.pastel.dynamic.hov.indigo:hover {
+    color: var(--indigo-pas-brt);
+}
+/*dark*/
+.cp-fg-cs.pastel.dynamic.act.light.indigo:active {
+    color: var(--indigo-pas-drk);
+}
+
+/* - Violet - */
+
+/* Saturated */
+
+/*light*/
+.cp-fg-cs.saturated.dynamic.act.dark.violet:active {
+    color: var(--violet-pas-lgt);
+}
+/*bright*/
+.cp-fg-cs.saturated.static.violet {
+    color: var(--violet-sat-brt);
+}
+/*dark*/
+.cp-fg-cs.saturated.dynamic.act.light.violet:active {
+    color: var(--violet-sat-drk);
+}
+
+/* Pastel */
+
+/*light*/
+.cp-fg-cs.pastel.dynamic.act.dark.violet:active {
+    color: var(--violet-pas-lgt);
+}
+/*bright*/
+.cp-fg-cs.pastel.static.bright.violet,
+.cp-fg-cs.pastel.dynamic.hov.violet:hover {
+    color: var(--violet-pas-brt);
+}
+/*dark*/
+.cp-fg-cs.pastel.dynamic.act.light.violet:active {
+    color: var(--violet-pas-drk);
+}
+
+
+/* --- Colors --- */
+
+/* -- Alternate -- */
+
+/* - Facebook - */
+
+/* Saturated */
+
+/*light*/
+.cp-fg-cs.saturated.dynamic.act.dark.facebook:active {
+    color: var(--facebook-pas-lgt);
+}
+/*bright*/
+.cp-fg-cs.saturated.static.facebook {
+    color: var(--facebook-sat-brt);
+}
+/*dark*/
+.cp-fg-cs.saturated.dynamic.act.light.facebook:active {
+    color: var(--facebook-sat-drk);
+}
+
+/* Pastel */
+
+/*light*/
+.cp-fg-cs.pastel.dynamic.act.dark.facebook:active {
+    color: var(--facebook-pas-lgt);
+}
+/*bright*/
+.cp-fg-cs.pastel.static.bright.facebook,
+.cp-fg-cs.pastel.dynamic.hov.facebook:hover {
+    color: var(--facebook-pas-brt);
+}
+/*dark*/
+.cp-fg-cs.pastel.dynamic.act.light.facebook:active {
+    color: var(--facebook-pas-drk);
+}
+
+
+
+
+
+
+.cp-fg-cs.anchor:link {
+    color: var(--anchorBlue);
+}
+
+.cp-fg-cs.anchor:active {
+    color: var(--anchorRed);
+}
+
+.cp-fg-cs.anchor:visited {
+    color: var(--anchorPurple);
+}

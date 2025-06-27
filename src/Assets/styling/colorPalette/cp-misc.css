@@ -1,0 +1,54 @@
+/* - Platinum - */
+
+/*-Gradient 1-*/
+
+/* Saturated */
+
+/*light*/
+.cp-bg-gi-ho.saturated.dynamic.act.dark.platinum:active {
+    background: var(--platinum-g1-sat-lgt-safari); /* For Safari 5.1 to 6.0 */
+    background: var(--platinum-g1-sat-lgt-opera); /* For Opera 11.1 to 12.0 */
+    background: var(--platinum-g1-sat-lgt-firefox); /* For Firefox 3.6 to 15 */
+    background: var(--platinum-g1-sat-lgt-standard); /* Standard syntax (must be last) */
+}
+/*bright*/
+.cp-bg-gi-ho.saturated.static.platinum {
+    background: var(--platinum-g1-sat-brt-safari); /* For Safari 5.1 to 6.0 */
+    background: var(--platinum-g1-sat-brt-opera); /* For Opera 11.1 to 12.0 */
+    background: var(--platinum-g1-sat-brt-firefox); /* For Firefox 3.6 to 15 */
+    background: var(--platinum-g1-sat-brt-standard); /* Standard syntax (must be last) */
+}
+/*dark*/
+.cp-bg-gi-ho.saturated.dynamic.act.light.platinum:active {
+    background: var(--platinum-g1-sat-drk-safari); /* For Safari 5.1 to 6.0 */
+    background: var(--platinum-g1-sat-drk-opera); /* For Opera 11.1 to 12.0 */
+    background: var(--platinum-g1-sat-drk-firefox); /* For Firefox 3.6 to 15 */
+    background: var(--platinum-g1-sat-drk-standard); /* Standard syntax (must be last) */
+}
+
+/* Pastel */
+
+/*bright*/
+.cp-bg-gi-ho.pastel.dynamic.act.dark.platinum:active {
+    background: var(--platinum-g1-pas-brt-safari); /* For Safari 5.1 to 6.0 */
+    background: var(--platinum-g1-pas-brt-opera); /* For Opera 11.1 to 12.0 */
+    background: var(--platinum-g1-pas-brt-firefox); /* For Firefox 3.6 to 15 */
+    background: var(--platinum-g1-pas-brt-standard); /* Standard syntax (must be last) */
+}
+/*bright*/
+.cp-bg-gi-ho.pastel.static.light.platinum,
+.cp-bg-gi-ho.pastel.dynamic.hov.light.platinum:hover {
+    background: var(--platinum-g1-pas-brt-safari); /* For Safari 5.1 to 6.0 */
+    background: var(--platinum-g1-pas-brt-opera); /* For Opera 11.1 to 12.0 */
+    background: var(--platinum-g1-pas-brt-firefox); /* For Firefox 3.6 to 15 */
+    background: var(--platinum-g1-pas-brt-standard); /* Standard syntax (must be last) */
+}
+/*dark*/
+.cp-bg-gi-ho.pastel.dynamic.act.light.platinum:active {
+    background: var(--platinum-g1-pas-drk-safari); /* For Safari 5.1 to 6.0 */
+    background: var(--platinum-g1-pas-drk-opera); /* For Opera 11.1 to 12.0 */
+    background: var(--platinum-g1-pas-drk-firefox); /* For Firefox 3.6 to 15 */
+    background: var(--platinum-g1-pas-drk-standard); /* Standard syntax (must be last) */
+}
+
+

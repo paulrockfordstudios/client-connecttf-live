@@ -1,0 +1,1045 @@
+.createReplyPortal {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.createReplyBackdropOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.createReplyModal {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.createReply {
+    border-radius: 2.5rem; /*40px*/
+    background-color: white;
+    padding: 1.25rem; /*20px*/
+    position: relative;
+    opacity: 1;
+    -webkit-box-shadow: 0rem 0.625rem 3.125rem -1.25rem rgba(0,0,0,0.75); /*0px 10px 50px -20px*/
+    box-shadow: 0rem 0.625rem 3.125rem -1.25rem rgba(0,0,0,0.75); /*0px 10px 50px -20px*/
+}
+
+.createReply.union {
+    position: absolute;
+}
+
+.createReply.flame {
+    margin-bottom: 1.875rem; /*30px*/
+}
+
+.createReply-container {
+    padding: 0.625rem; /*10px*/
+}
+
+.createReplyTop {
+    display: flex;
+    flex-direction: column;
+}
+
+.createReplyTopUpper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.createReplyLogo {
+    display: flex;
+    flex-shrink: 0;
+    flex-grow: 0;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 1.875rem; /*30px*/
+    width: 1.688rem; /*27px*/
+}
+
+.createReplyTitle {
+    font-size: 1.75rem; /*28px*/
+    font-weight: 900;
+}
+
+.createReplyCancelPNGIcon {
+    height: 2.25rem; /*36px*/
+    width: 2.25rem; /*36px*/
+    display: flex;
+    flex-shrink: 0;
+    flex-grow: 0;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-right: -0.313rem; /*-5px*/
+    margin-bottom: -0.125rem; /*-2px*/
+}
+
+.createReplyCancelSVGIcon {
+    font-size: 2.25rem !important; /*36px*/
+    margin-right: -0.313rem; /*-5px*/
+    margin-bottom: -0.125rem; /*-2px*/
+}
+
+.createReplyTopLower {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.createReplyEditorContainerContainer {
+    position: relative;
+    width: 100%;
+    width: 38.125rem; /*610px*/
+    height: 15.875rem; /*254px*/
+    border-radius: 1.25rem; /*20px*/ 
+}
+
+.createReplyEditorContainerContainer.editor {
+    position: relative;
+    margin-bottom: 1.25rem; /*20px*/
+}
+
+.createReplyEditorContainerContainer.imgDZ {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 38.125rem; /*610px*/
+    height: 15.875rem; /*254px*/
+    overflow: hidden;
+    transition: height 325ms cubic-bezier(0.43,-0.35, 0.14, 1.35);
+}
+
+.createReplyHigherSpectrumBackground {
+    position: absolute;
+    width: 100%;
+    height: 16rem; /*256px*/
+    height: 15.875rem;
+    border-radius: 1.25rem; /*20px*/
+    top: 0;
+    left: 0;
+    transition: height 325ms cubic-bezier(0.43,-0.35, 0.14, 1.35);
+    background-size: 100% 16rem; /*256px*/
+    opacity: 30%;
+}
+
+.createReplyWhiteBackground {
+    position: absolute;
+    margin: 3.125rem; /*50px*/
+    width: calc(100% - 6.25rem); /*100px*/
+    height: 9.625rem; /*154px*/
+    border-radius: 1.25rem; /*20px*/
+    top: 0;
+    left: 0;
+    background-color: white;
+    -webkit-box-shadow: 0rem 0rem 1.875rem 3.125rem white; /*0px 0px 30px 50px*/
+    box-shadow: 0rem 0rem 1.875rem 3.125rem white; /*0px 0px 30px 50px*/
+}
+
+.createReplyEditor {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: calc(100% - 2.75rem); /*44px*/
+    height: 13.375rem; /*214px*/
+    max-height: 15.875rem; /*254px*/
+    padding:  1.25rem 1.188rem 1.25rem 1.563rem; /*20px 19px 20px 25px*/
+    font-size: 0.875rem; /*14px*/
+    border-radius: 1.25rem; /*20px*/
+    overflow: hidden;
+
+}
+
+.creatReplyImgDropzoneContainer {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: -0.125rem; /*-2px*/
+    left: 0;
+    z-index: 2;
+    width: 100%;
+    overflow: hidden;
+    transition: height 325ms cubic-bezier(0.43,-0.35, 0.14, 1.35);
+    border-radius: 1.25rem; /*20px*/
+}
+
+.createReplyImgDZContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 13.875rem; /*222px*/
+    width: 35.625rem; /*570px*/ 
+    margin: 1.25rem; /*20px*/  
+    border-radius: 1.25rem; /*20px*/
+}
+
+.createReplyImgDZContainer.rainbow {
+    background: -webkit-linear-gradient(right, #d4a6ad, #ffdab3, #fff9bf, #caeed6, #cee8fb, #babad4, #dcbff6); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, #d4a6ad, #ffdab3, #fff9bf, #caeed6, #cee8fb, #babad4, #dcbff6); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, #d4a6ad, #ffdab3, #fff9bf, #caeed6, #cee8fb, #babad4, #dcbff6); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, #d4a6ad, #ffdab3, #fff9bf, #caeed6, #cee8fb, #babad4, #dcbff6); /* Standard syntax (must be last) */
+}
+
+
+.createReplyImgDZContainer.silver {
+    background: -webkit-linear-gradient(left, #f4f4f4, #dddddd, #f4f4f4); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, #f4f4f4, #dddddd, #f4f4f4); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, #f4f4f4, #dddddd, #f4f4f4); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, #f4f4f4, #dddddd, #f4f4f4); /* Standard syntax (must be last) */
+}
+
+.createReplyImgDZContainer.gold {
+    background: -webkit-linear-gradient(left, #e6d6bb , #faf1d0, #e6d6bb); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, #e6d6bb , #faf1d0, #e6d6bb); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, #e6d6bb , #faf1d0, #e6d6bb); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, #e6d6bb , #faf1d0, #e6d6bb); /* Standard syntax (must be last) */
+}
+
+.createReplyImgDZContainer.platinum {
+    background: -webkit-linear-gradient(left, #f2f8fc, #d2dcdf, #cccfd1, #dddddd, #d3cfd2, #e7dfe0, #f4f4f4); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, #f2f8fc, #d2dcdf, #cccfd1, #dddddd, #d3cfd2, #e7dfe0, #f4f4f4); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, #f2f8fc, #d2dcdf, #cccfd1, #dddddd, #d3cfd2, #e7dfe0, #f4f4f4); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, #f2f8fc, #d2dcdf, #cccfd1, #dddddd, #d3cfd2, #e7dfe0, #f4f4f4); /* Standard syntax (must be last) */
+}
+
+.createReplyImgDZBorder {
+    display: flex;
+    flex-shrink: 0;
+    flex-grow: 0;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 13.875rem; /*222px*/
+    width: 35.625rem; /*570px*/ 
+    position: absolute;
+    top: 1.063rem; /*17px*/
+    left: 1.25rem; /*20px*/
+}
+
+.createReplyImgDropzone {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 35.25rem; /*564px*/
+    height: 13.5rem; /*216px*/
+    border-radius: 1.25rem; /*20px*/
+    z-index: 2;
+}
+
+.createReplyImgDropzone.masculine {
+    background-color: #d8e1ef; 
+    border: dashed 0.188rem #4a76fd;
+}
+
+.createReplyImgDropzone.feminine {
+    background-color: #fde1ef; 
+    border: dashed 0.188rem #e639af;
+}
+
+.createReplyImgDropzone.ruby {
+    background-color: #d4a6ad; 
+    border: dashed 0.188rem #850014;
+}
+
+.createReplyImgDropzone.orange {
+    background-color: #ffdab3; 
+    border: dashed 0.188rem #ff8303;
+}
+
+.createReplyImgDropzone.sun {
+    background-color: #fff9bf; 
+    border: dashed 0.188rem #ff3700;
+}
+
+.createReplyImgDropzone.emerald {
+    background-color: #caeed6; 
+    border: dashed 0.188rem #50c878;
+}
+
+.createReplyImgDropzone.blue {
+    background-color: #cee8fb; 
+    border: dashed 0.188rem #098de9;
+}
+
+.createReplyImgDropzone.indigo {
+    background-color: #babad4; 
+    border: dashed 0.188rem #30307e;
+}
+
+.createReplyImgDropzone.violet {
+    background-color: #dcbff6; 
+    border: dashed 0.188rem #8a2be2;
+}
+
+.createReplyImgDropzone.violet {
+    background-color: #dcbff6; 
+    border: dashed 0.188rem #8a2be2;
+}
+
+.createReplyImgDropzone.gray {
+    background-color: #e4e6e7; 
+    border: dashed 0.188rem #aeb4b7;
+}
+
+.createReplyImgDropzone.diamond {
+    background-image: url("../../../Assets/misc/diamond-background-lgt.jpg");
+}
+
+.createReplyImgDZCancelPNGIcon {
+    position: absolute;
+    top: 1.563rem; /*25px*/
+    right: 1.688rem; /*27px*/
+    height: 1.25rem; /*20px*/
+    width: 1.25rem; /*20px*/
+    z-index: 3;
+}
+
+.createReplyImgDZCancelSVGIcon {
+    position: absolute;
+    top: 0.188rem; /*3px*/
+    right: 1.563rem; /*25px*/
+    z-index: 3;
+}
+
+.createReplyImgDZCancelSVGIcon.masculine {
+    color: #4a76fd;
+}
+
+.createReplyImgDZCancelSVGIcon.feminine {
+    color: #e639af;
+}
+
+.createReplyImgDZCancelSVGIcon.ruby {
+    color: #850014;
+}
+
+.createReplyImgDZCancelSVGIcon.orange {
+    color: #ff8303;
+}
+
+.createReplyImgDZCancelSVGIcon.sun {
+    color: #ffe700;
+}
+
+.createReplyImgDZCancelSVGIcon.emerald {
+    color: #50c878;
+}
+
+.createReplyImgDZCancelSVGIcon.blue {
+    color: #098de9;
+}
+
+.createReplyImgDZCancelSVGIcon.indigo {
+    color: #30307e;
+}
+
+.createReplyImgDZCancelSVGIcon.violet {
+    color: #8a2be2;
+}
+
+.createReplyImgDZCancelSVGIcon.gray {
+    color: #aeb4b7;
+}
+
+.createReplyEditorContainer {
+    height: 100%;
+    overflow-y: auto;
+}
+
+.createReplyHashtagEditor {
+    width: 100%;
+    padding-right: 1.25rem; /*20px*/
+}
+
+/*
+div.public-DraftEditorPlaceholder-inner {
+    font-size: 12px;
+}
+*/
+
+.createReplyInput {
+    border: none;
+    width: 80%;
+    white-space: pre-wrap;
+}
+
+.createReplyInput:focus {
+    outline: none;
+}
+
+.createReplyHr {
+    width: 100%;
+    margin: 1.25rem 0; /*20px 0px*/
+    border: none;
+    height: 0.063rem; /*1px*/
+    background-size: cover;
+}
+
+.createReplyHr.masculine {
+    background-color: #4a76fd;
+}
+
+.createReplyHr.feminine {
+    background-color: #e639af;
+}
+
+.createReplyHr.ruby {
+    background-color: #850014;   
+}
+
+.createReplyHr.orange { 
+    background-color: #ff8303; 
+}
+
+.createReplyHr.sun {
+    background-color: #ffe700;  
+}
+
+.createReplyHr.emerald { 
+    background-color: #50c878; 
+}
+
+.createReplyHr.blue {
+    background-color: #098de9; 
+}
+
+.createReplyHr.indigo { 
+    background-color: #30307e; 
+}
+
+.createReplyHr.violet { 
+    background-color: #8a2be2; 
+}
+
+.createReplyHr.rainbow {
+    background: -webkit-linear-gradient(right, #850014, #ff8303, #ffe700, #50c878, #098de9, #30307e, #8a2be2); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, #850014, #ff8303, #ffe700, #50c878, #098de9, #30307e, #8a2be2); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, #850014, #ff8303, #ffe700, #50c878, #098de9, #30307e, #8a2be2); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, #850014, #ff8303, #ffe700, #50c878, #098de9, #30307e, #8a2be2); /* Standard syntax (must be last) */
+}
+
+.createReplyHr.silver {
+    background: -webkit-linear-gradient(left, #dadada , #8e8e8e, #dadada); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, #dadada , #8e8e8e, #dadada); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, #dadada , #8e8e8e, #dadada); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, #dadada , #8e8e8e, #dadada); /* Standard syntax (must be last) */
+}
+
+.createReplyHr.gold {
+    background: -webkit-linear-gradient(left, #ab781d , #eed264, #ab781d); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, #ab781d , #eed264, #ab781d); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, #ab781d , #eed264, #ab781d); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, #ab781d , #eed264, #ab781d); /* Standard syntax (must be last) */
+}
+
+.createReplyHr.platinum {
+    background: -webkit-linear-gradient(left, #d3e9f6, #6b8c95, #566167, #8e8e8e, #6d606a,  #af9499, #dadada); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, #d3e9f6, #6b8c95, #566167, #8e8e8e, #6d606a,  #af9499, #dadada); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, #d3e9f6, #6b8c95, #566167, #8e8e8e, #6d606a,  #af9499, #dadada); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, #d3e9f6, #6b8c95, #566167, #8e8e8e, #6d606a,  #af9499, #dadada); /* Standard syntax (must be last) */
+}
+
+.createReplyHr.gray {
+    background-color: #aeb4b7;
+}
+
+.createReplyImages-container {
+    display: flex;
+    flex-direction: column;
+    max-height: 15.625rem; /*250px*/
+}
+
+.createReplyImageContainer {
+    position: relative;
+    margin-top: 0.625rem; /*10px*/
+}
+
+.createReplyImageContainer.top {
+    margin-top: 0;
+}
+
+.createReplyImg {
+    width: 100%;
+    position: relative;
+    object-fit: cover;
+    opacity: 0.3;
+}
+
+.createReplyCancelImgPNGBtn {
+    height: 1.25rem; /*20px*/
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+   
+}
+
+.createReplyCancelImgSVGBtn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+   
+}
+
+.createReplyCancelImgSVGBtn.masculine {
+    color: #4a76fd;
+}
+
+.createReplyCancelImgSVGBtn.feminine {
+    color: #e639af;
+}
+
+.createReplyCancelImgSVGBtn.ruby {
+    color: #850014;
+}
+
+.createReplyCancelImgSVGBtn.orange {
+    color: #ff8303;
+}
+
+.createReplyCancelImgSVGBtn.sun {
+    color: #ffe700;
+}
+
+.createReplyCancelImgSVGBtn.emerald {
+    color: #50c878;
+}
+
+.createReplyCancelImgSVGBtn.blue {
+    color: #098de9;
+}
+
+.createReplyCancelImgSVGBtn.indigo {
+    color: #30307e;
+}
+
+.createReplyCancelImgSVGBtn.violet {
+    color: #8a2be2;
+}
+
+.createReplyCancelImgSVGBtn.gray {
+    color: #aeb4b7;
+}
+
+.createReplyBottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    overflow: visible;
+}
+
+.createReplyOptions {
+    display: flex;
+    flex-direction: row;
+    height: 2.25rem; /*36px*/
+    max-width: 6.25rem; /*100px*/
+    overflow: visible;
+}
+
+.createReplyOption {
+    display: flex;
+    align-items: center;
+    margin-right: 0.938rem; /*15px*/
+    max-width: 2.25rem; /*36px*/
+    cursor: pointer;
+}
+
+.createReplyAddPhotoSVGIcon {
+    font-size: 2.25rem !important; /*36px*/
+    color: #858585;
+}
+
+.createReplyAddPhotoPNGIcon {
+    width: 2.25rem; /*36px*/
+}
+
+.createReplyCancelButton {
+    border: none;
+    padding: 0.438rem; /*7px*/
+    border-radius: 0.313rem; /*5px*/
+    font-weight: 500;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+.createReplyShareButtonBackground {
+    border: none;
+    border-radius: 0.625rem; /*10px*/
+    font-weight: 500;
+    cursor: pointer;
+    height: 2.25rem; /*36px*/
+    background-size: cover;
+}
+
+.createReplyShareButtonBackground.disabled {
+    opacity: 0.3;
+}
+
+.createReplyShareButtonBackground.masculine {
+    background-color: #4a76fd;
+}
+
+.createReplyShareButtonBackground.feminine {
+    background-color: #e639af;
+}
+
+.createReplyShareButtonBackground.ruby {
+    background-color: #850014;
+}
+
+.createReplyShareButtonBackground.orange {
+    background-color: #ff8303;
+}
+
+.createReplyShareButtonBackground.sun {
+    background-color: #ffe700;
+}
+
+.createReplyShareButtonBackground.emerald {
+    background-color: #50c878;
+}
+
+.createReplyShareButtonBackground.blue {
+    background-color: #098de9;
+}
+
+.createReplyShareButtonBackground.indigo {
+    background-color: #30307e;
+}
+
+.createReplyShareButtonBackground.violet {
+    background-color: #8a2be2;
+}
+
+.createReplyShareButtonBackground.rainbow {
+    background: -webkit-linear-gradient(left, #850014, #ff8303, #ffe700, #50c878, #098de9, #30307e, #8a2be2); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, #850014, #ff8303, #ffe700, #50c878, #098de9, #30307e, #8a2be2); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, #850014, #ff8303, #ffe700, #50c878, #098de9, #30307e, #8a2be2); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, #850014, #ff8303, #ffe700, #50c878, #098de9, #30307e, #8a2be2); /* Standard syntax (must be last) */
+}
+
+.createReplyShareButtonBackground.rainbow:active {
+    background: -webkit-linear-gradient(left, #5d000e, #b35c02, #b3a200, #388c54, #0663a4, #222258, #611e9f); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, #5d000e, #b35c02, #b3a200, #388c54, #0663a4, #222258, #611e9f); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, #5d000e, #b35c02, #b3a200, #388c54, #0663a4, #222258, #611e9f); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, #5d000e, #b35c02, #b3a200, #388c54, #0663a4, #222258, #611e9f); /* Standard syntax (must be last) */
+}
+
+.createReplyShareButtonBackground.silver {
+    background: -webkit-linear-gradient(left, #dadada, #8e8e8e, #dadada); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, #dadada, #8e8e8e, #dadada); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, #dadada, #8e8e8e, #dadada); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, #dadada, #8e8e8e, #dadada); /* Standard syntax (must be last) */
+}
+
+.createReplyShareButtonBackground.silver:active {
+    background: -webkit-linear-gradient(left, #999999, #646464 , #999999); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, #999999, #646464 , #999999); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, #999999, #646464 , #999999); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, #999999, #646464 , #999999); /* Standard syntax (must be last) */
+}
+
+.createReplyShareButtonBackground.gold {
+    background: -webkit-linear-gradient(left, #ab781d , #eed264, #ab781d); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, #ab781d , #eed264, #ab781d); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, #ab781d , #eed264, #ab781d); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, #ab781d , #eed264, #ab781d); /* Standard syntax (must be last) */
+}
+
+.createReplyShareButtonBackground.gold:active {
+    background: -webkit-linear-gradient(left, #785414, #a79346 , #785414); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, #785414, #a79346 , #785414); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, #785414, #a79346 , #785414); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, #785414, #a79346 , #785414); /* Standard syntax (must be last) */
+}
+
+.createReplyShareButtonBackground.platinum{
+    background: -webkit-linear-gradient(left, #d3e9f6, #6b8c95, #566167, #8e8e8e, #6d606a, #af9499, #dadada); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, #d3e9f6, #6b8c95, #566167, #8e8e8e, #6d606a, #af9499, #dadada); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, #d3e9f6, #6b8c95, #566167, #8e8e8e, #6d606a, #af9499, #dadada); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, #d3e9f6, #6b8c95, #566167, #8e8e8e, #6d606a, #af9499, #dadada); /* Standard syntax (must be last) */
+}
+
+.createReplyShareButtonBackground.platinum:active {
+    background: -webkit-linear-gradient(left, #94a4ad, #4b6269, #3c4448, #646464, #4d434a, #7b686b, #999999); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, #94a4ad, #4b6269, #3c4448, #646464, #4d434a, #7b686b, #999999); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, #94a4ad, #4b6269, #3c4448, #646464, #4d434a, #7b686b, #999999); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, #94a4ad, #4b6269, #3c4448, #646464, #4d434a, #7b686b, #999999); /* Standard syntax (must be last) */
+}
+
+.createReplyShareButton {
+    border: none;
+    border-radius: 0.625rem; /*10px*/
+    font-weight: 500;
+    cursor: pointer;
+    padding: 0rem 1.563rem; /*0px 25px*/
+    height: 2.25rem; /*36px*/
+    font-size: 1.563rem; /*25px*/
+    color: white;
+    background: transparent;
+}
+
+.createReplyShareButton.masculine {
+    background-color: #4a76fd;
+}
+
+.createReplyShareButton.masculine:hover {
+    color: #d8e1fe;
+}
+
+.createReplyShareButton.masculine:active {
+    background-color: #3453b2;
+    color: #c3cbe5;
+}
+
+.createReplyShareButton.feminine {
+    background-color: #e639af;
+}
+
+.createReplyShareButton.feminine:hover {
+    color: #fde1ef;
+}
+
+.createReplyShareButton.feminine:active {
+    background-color: #a1287b;
+    color: #e4cbd8;
+}
+
+.createReplyShareButton.ruby {
+    background-color: #850014; 
+}
+
+.createReplyShareButton.ruby:hover {
+    color: #d4a6ad;
+}
+
+.createReplyShareButton.ruby:active {
+    background-color: #5d000e;
+    color: #be959b;
+}
+
+.createReplyShareButton.orange { 
+    background-color: #ff8303; 
+}
+
+.createReplyShareButton.orange:hover {
+    color: #ffdab3;
+}
+
+.createReplyShareButton.orange:active {
+    background-color: #b35c02;
+    color: #e6c1ac;
+}
+
+.createReplyShareButton.sun {
+    background-color: #ffe700; 
+}
+
+.createReplyShareButton.sun:hover {
+    color: #fff9bf;
+}
+
+.createReplyShareButton.sun:active {
+    background-color: #b3a200;
+    color: #e6e1ac;
+}
+
+.createReplyShareButton.emerald { 
+    background-color: #50c878; 
+}
+
+.createReplyShareButton.emerald:hover {
+    color: #caeed6;
+}
+
+.createReplyShareButton.emerald:active {
+    background-color: #388c54;
+    color: #b6d7c1;
+}
+
+.createReplyShareButton.blue {
+    background-color: #098de9;
+}
+
+.createReplyShareButton.blue:hover {
+    color: #cee8fb;
+}
+
+.createReplyShareButton.blue:active {
+    background-color: #0663a4;
+    color: #bad1e2;
+}
+
+.createReplyShareButton.indigo { 
+    background-color: #30307e; 
+}
+
+.createReplyShareButton.indigo:hover {
+    color: #babad4;
+}
+
+.createReplyShareButton.indigo:active {
+    background-color: #222258;
+    color: #a8a8bf;
+}
+
+.createReplyShareButton.violet { 
+    background-color: #8a2be2; 
+}
+
+.createReplyShareButton.violet:hover {
+    color: #dcbff6;
+}
+
+.createReplyShareButton.violet:active {
+    background-color: #611e9f;
+    color: #c6acde;
+}
+
+.createReplyShareButton.rainbow,
+.createReplyShareButton.silver,
+.createReplyShareButton.gold,
+.createReplyShareButton.platinum {
+    background: transparent;
+    color: white;
+}
+
+.createReplyShareButton.rainbow:hover {
+    background: -webkit-linear-gradient(right, #d4a6ad, #ffdab3, #fff9bf, #caeed6, #cee8fb, #babad4, #dcbff6); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, #d4a6ad, #ffdab3, #fff9bf, #caeed6, #cee8fb, #babad4, #dcbff6); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, #d4a6ad, #ffdab3, #fff9bf, #caeed6, #cee8fb, #babad4, #dcbff6); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, #d4a6ad, #ffdab3, #fff9bf, #caeed6, #cee8fb, #babad4, #dcbff6); /* Standard syntax (must be last) */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.createReplyShareButton.rainbow:active {
+    background: -webkit-linear-gradient(right, #be959b, #e6c5a1, #e6e1ac, #b6d7c1, #bad1e2, #a8a8bf, #c6acde); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, #be959b, #e6c5a1, #e6e1ac, #b6d7c1, #bad1e2, #a8a8bf, #c6acde); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, #be959b, #e6c5a1, #e6e1ac, #b6d7c1, #bad1e2, #a8a8bf, #c6acde); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, #be959b, #e6c5a1, #e6e1ac, #b6d7c1, #bad1e2, #a8a8bf, #c6acde); /* Standard syntax (must be last) */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.createReplyShareButton.silver:hover {
+    background: -webkit-linear-gradient(left, #f4f4f4, #dddddd, #f4f4f4); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, #f4f4f4, #dddddd, #f4f4f4); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, #f4f4f4, #dddddd, #f4f4f4); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to left, #f4f4f4, #dddddd, #f4f4f4); /* Standard syntax (must be last) */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.createReplyShareButton.silver:active {
+    background: -webkit-linear-gradient(left, #dcdcdc, #c7c7c7 , #dcdcdc); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, #dcdcdc, #c7c7c7 , #dcdcdc); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, #dcdcdc, #c7c7c7 , #dcdcdc); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to left, #dcdcdc, #c7c7c7 , #dcdcdc); /* Standard syntax (must be last) */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.createReplyShareButton.gold:hover {
+    background: -webkit-linear-gradient(left, #e6d6bb , #faf1d0, #e6d6bb); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, #e6d6bb , #faf1d0, #e6d6bb); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, #e6d6bb , #faf1d0, #e6d6bb); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, #e6d6bb , #faf1d0, #e6d6bb); /* Standard syntax (must be last) */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.createReplyShareButton.gold:active {
+    background: -webkit-linear-gradient(left, #cfc1a9, #e1d9bc , #cfc1a9); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, #cfc1a9, #e1d9bc , #cfc1a9); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, #cfc1a9, #e1d9bc , #cfc1a9); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, #cfc1a9, #e1d9bc , #cfc1a9); /* Standard syntax (must be last) */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.createReplyShareButton.platinum:hover {
+    background: -webkit-linear-gradient(left, #f2f8fc, #d2dcdf, #cccfd1, #dddddd, #d3cfd2, #e7dfe0, #f4f4f4); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, #f2f8fc, #d2dcdf, #cccfd1, #dddddd, #d3cfd2, #e7dfe0, #f4f4f4); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, #f2f8fc, #d2dcdf, #cccfd1, #dddddd, #d3cfd2, #e7dfe0, #f4f4f4); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, #f2f8fc, #d2dcdf, #cccfd1, #dddddd, #d3cfd2, #e7dfe0, #f4f4f4); /* Standard syntax (must be last) */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.createReplyShareButton.platinum:active {
+    background: -webkit-linear-gradient(left, #dae0e3, #bdc6c9, #b8bbbd, #c7c7c7, #bebbbd, #d0c9ca, #dcdcdc); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, #dae0e3, #bdc6c9, #b8bbbd, #c7c7c7, #bebbbd, #d0c9ca, #dcdcdc); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, #dae0e3, #bdc6c9, #b8bbbd, #c7c7c7, #bebbbd, #d0c9ca, #dcdcdc); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, #dae0e3, #bdc6c9, #b8bbbd, #c7c7c7, #bebbbd, #d0c9ca, #dcdcdc); /* Standard syntax (must be last) */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.createReplyShareButton.diamond {
+    background: -webkit-linear-gradient(left, #ab781d , #eed264, #ab781d); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, #ab781d , #eed264, #ab781d); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, #ab781d , #eed264, #ab781d); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, #ab781d , #eed264, #ab781d); /* Standard syntax (must be last) */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 900;
+}
+
+.createReplyShareButton.diamond.lgt {
+    background: -webkit-linear-gradient(left, #e6d6bb, #faf1d0, #e6d6bb); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, #e6d6bb, #faf1d0, #e6d6bb); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, #e6d6bb, #faf1d0, #e6d6bb); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, #e6d6bb, #faf1d0, #e6d6bb); /* Standard syntax (must be last) */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 900;
+}
+
+.createReplyShareButton.diamond:hover {
+    background: -webkit-linear-gradient(left, #785414, #a79346 , #785414); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, #785414, #a79346 , #785414); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, #785414, #a79346 , #785414); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, #785414, #a79346 , #785414); /* Standard syntax (must be last) */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 900;
+}
+
+.createReplyShareButton.diamond:active {
+    background: -webkit-linear-gradient(left, #785414, #a79346 , #785414); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, #785414, #a79346 , #785414); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, #785414, #a79346 , #785414); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, #785414, #a79346 , #785414); /* Standard syntax (must be last) */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 900;
+}
+
+.createReplyShareButton.gray {
+    background-color: #bfc2c7;
+    color: black;
+}
+
+.createReplyShareButton.lgt:hover {
+    color: white;
+}
+
+.EmojiPickerReact.epr-main {
+    /*width: 38.125rem !important; /*610px*//**/
+    /*height: 16rem !important; /*256px*//**/
+    width: 100% !important;
+    height: 100% !important;
+    border-radius: 1.25rem !important; /*20px*/
+    overflow: hidden;
+    border: none !important;
+    top: 0rem !important; /*0px*/
+    --epr-hover-bg-color: none;
+    --epr-focus-bg-color: none;
+    --epr-search-input-bg-color: transparent;
+    --epr-search-border-color: none;
+    --epr-picker-border-radius: 0.625rem; /*10px*/
+}
+
+.Flex.epr-header-overlay.FlexRow {
+    position: relative;
+    width: 100%;
+    padding: 0.625rem 0.625rem 0rem 0.625rem !important; /*10px 10px 0px 10px*/
+}
+
+.emojiSearchBackgroundTheme {
+    position: absolute;
+    border-radius: 0.625rem; /*10px*/
+    width: 32.625rem; /*522px*/
+    height: 3rem; /*48px*/
+}
+
+.emojiSearchBackgroundTheme.rainbow {
+    background: -webkit-linear-gradient(left, #d4a6ad, #ffdab3, #fff9bf, #caeed6, #cee8fb, #babad4, #dcbff6); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, #d4a6ad, #ffdab3, #fff9bf, #caeed6, #cee8fb, #babad4, #dcbff6); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, #d4a6ad, #ffdab3, #fff9bf, #caeed6, #cee8fb, #babad4, #dcbff6); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, #d4a6ad, #ffdab3, #fff9bf, #caeed6, #cee8fb, #babad4, #dcbff6); /* Standard syntax (must be last) */
+}
+
+.emojiSearchBackgroundTheme.diamond {
+    background-image: url('../../../Assets/misc/diamond-background-lgt.jpg');
+    background-size: cover;
+}
+
+.emojiSearchWhiteBackground {
+    position: absolute;
+    margin: 1.5rem 1.875rem; /*24px 30px*/
+    width: calc(100% - 3.75rem); /*60px*/
+    height: 0rem; /*0px*/
+    border-radius: 1.25rem; /*20px*/
+    top: 0;
+    left: 0;
+    background-color: white;
+    -webkit-box-shadow: 0rem 0rem 1.875rem 1.875rem white; /*0px 0px 30px 30px*/ 
+    box-shadow: 0rem 0rem 1.875rem 1.875rem white; /*0px 0px 30px 30px*/
+}
+
+.epr-category-nav {
+    padding: 0.625rem !important; /*10px*/
+}
+
+.epr-emoji-category-label {
+    height: 1.875rem !important; /*30px*/
+}
+
+.epr-body {
+    height: 9.688rem !important; /*155px*/
+}
+
+.Flex.epr-preview.FlexRow {
+    height: 0rem !important; /*0px*/
+    overflow: hidden;
+}
+
+.__EmojiPicker__.epr-emoji-img {
+    height: 2.188rem !important; /*35px*/
+    width: 2.188rem !important; /*35px*/
+}
+
+.crpEmojiPickerBtn {
+    display: flex;
+    flex-shrink: 0;
+    flex-grow: 0;
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    height: 2.25rem; /*36px*/
+    width: 2.25rem; /*36px*/
+    cursor: pointer;
+}
+
+.crpEmojiPickerContainer {
+    position: absolute;
+    width: 37.875rem; /*606px*/
+    overflow: hidden;
+    left: 0.125rem; /*2px*/
+    bottom: 0.125rem; /*2px*/
+    transition: height 325ms cubic-bezier(0.43,-0.35, 0.14, 1.35);
+    z-index: 1;
+    border-radius: 0.938rem; /*15px*/
+}
+
+.crpMentionContainer {
+    position: absolute;
+}

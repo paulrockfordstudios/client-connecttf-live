@@ -1,0 +1,47 @@
+.flareLikeButton {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.flareLikeButtonPNGIcon { 
+    cursor: pointer;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-right: 5px;
+    border-radius: 50%;
+}
+
+.flareLikeButtonPNGIcon.post,
+.flareLikeButtonPNGIcon.question,
+.flareLikeButtonPNGIcon.blog
+{
+    height: 20px;
+    width: 20px;
+}
+
+.flareLikeButtonPNGIcon.comment,
+.flareLikeButtonPNGIcon.answer
+{
+    height: 18px;
+    width: 18px;
+}
+
+.flareLikeButtonPNGIcon.reply {
+    height: 16px;
+    width: 16px;
+}
+
+.flareLikeButtonCounter.post,
+.flareLikeButtonCounter.question,
+.flareLikeButtonCounter.blog
+{
+    font-size: 15px;
+}
+
+.flareLikeButtonCounter.comment,
+.flareLikeButtonCounter.answer,
+.flareLikeButtonCounter.reply
+{
+    font-size: 12px;
+}

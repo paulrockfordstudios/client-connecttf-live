@@ -1,0 +1,47 @@
+
+
+export const componentClasses = {
+    //1: <span className={lngObj.script ? lngObj.script : ""}/>,
+    2: <b className="inheritParentFont fontBold cp-fg-cs saturated static bright feminine"/>,
+    3: <b className="inheritParentFont fontBold cp-fg-cs saturated static light feminine"/>, 
+    4: <b className="inheritParentFont fontBold cp-fg-cs saturated static bright masculine"/>,
+    5: <b className="inheritParentFont fontBold cp-fg-cs saturated static light masculine"/>,
+    6: <b style={{fontSize: "0.875rem" /*14px*/}}/>,
+    //7: <p style={{opacity: "0.7", marginLeft: "0.125rem" /*2px*/}}/>,
+    8: <span style={{marginRight: "0.25rem" /*4px*/}}/>,
+
+
+    11: <a className="inheritParentFont cp-fg-cs anchor" href="/terms_of_use" target="_blank"/>,
+    12: <a className="inheritParentFont cp-fg-cs anchor" href="/privacy_policy" target="_blank"/>,
+    13: <a className="inheritParentFont cp-fg-cs anchor" href="/cookies" target="_blank"/>,
+    14: <a className="inheritParentFont cp-fg-cs anchor" href="/languages" target="_blank"/>,
+    15: <a className="inheritParentFont cp-fg-cs anchor" href="/appeal_form" target="_blank"/>,
+
+    20: <b className="inheritParentFont alienese1"/>,
+    21: <b className="inheritParentFont alienese2"/>,
+    22: <b className="inheritParentFont ancient"/>,
+    23: <b className="inheritParentFont tengwar-annatar"/>,
+    24: <b className="inheritParentFont asguard"/>,
+    25: <b className="inheritParentFont aurek"/>,
+    26: <b className="inheritParentFont Bajoran"/>,
+    27: <b className="inheritParentFont borg"/>,
+    28: <b className="inheritParentFont Cardassian"/>,
+    29: <b className="inheritParentFont Dunny"/>,
+    30: <b className="inheritParentFont ferengi"/>,
+    31: <b className="inheritParentFont furling"/>,
+    32: <b className="inheritParentFont goongan"/>,
+    33: <b className="inheritParentFont klingon"/>,
+    34: <b className="inheritParentFont aurek"/>,
+    35: <b className="inheritParentFont Mandalor"/>,
+    36: <b className="inheritParentFont nox"/>,
+    37: <b className="inheritParentFont ongunkan"/>,
+    38: <b className="inheritParentFont tengwar-quenya"/>,
+    39: <b className="inheritParentFont romulan"/>,
+    40: <b className="inheritParentFont roboto"/>,
+    41: <b className="inheritParentFont sinescript"/>,
+    42: <b className="inheritParentFont tanaf"/>,
+    43: <b className="inheritParentFont trill"/>,
+    44: <b className="inheritParentFont urKittat"/>,
+
+    200: <a className="inheritParentFont cp-fg-cs anchor" href="/privacy_policy" target="_blank"/>,
+};

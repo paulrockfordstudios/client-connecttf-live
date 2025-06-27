@@ -1,0 +1,70 @@
+.dobInputContainer {
+    height: 4.188rem; /*67px*/
+}
+
+.dobInputCalendarDropdown {
+    margin-top: 1.375rem; /*22px*/
+    overflow: hidden;
+    transition: height 325ms cubic-bezier(0.43,-0.35, 0.14, 1.35);
+    -webkit-transition: height 325ms cubic-bezier(0.43,-0.35, 0.14, 1.35);
+    -moz-transition: height 325ms cubic-bezier(0.43,-0.35, 0.14, 1.35);
+    border-bottom-left-radius: 26px;
+    border-bottom-right-radius: 26px;
+    z-index: 998;
+}
+
+.dobInputCalendarDropdown.close {
+    height: 0;  
+}
+
+.dobInputCalendarDropdown.open {
+    height: 226px;    
+}
+
+.dobInputCalendarContainer {
+    width: calc(100% - 8px);   
+    border-bottom-left-radius: 22px;
+    border-bottom-right-radius: 22px;
+    transition: height 325ms cubic-bezier(0.43,-0.35, 0.14, 1.35);
+    -webkit-transition: height 325ms cubic-bezier(0.43,-0.35, 0.14, 1.35);
+    -moz-transition: height 325ms cubic-bezier(0.43,-0.35, 0.14, 1.35);
+    overflow: hidden;   
+    margin: 4px; 
+}
+
+.dobInputCalendarContainer.close {
+    height: 0  
+}
+
+.dobInputCalendarContainer.open {
+    height: 218px; 
+}
+
+.dobInputCalendarFade {
+    margin-left: 22px;
+    margin-top: 22px;
+    width: calc(100% - 44px);
+    height: 174px;
+    transition: height 325ms cubic-bezier(0.43,-0.35, 0.14, 1.35);
+    -webkit-transition: height 325ms cubic-bezier(0.43,-0.35, 0.14, 1.35);
+    -moz-transition: height 325ms cubic-bezier(0.43,-0.35, 0.14, 1.35);
+    opacity: 0.98;
+}
+
+.dobInputCalendarFade.light {
+    background-color: white;
+}
+
+.dobInputCalendarFade.dark {
+    background-color: black;
+}
+
+.dobInputPersonalInfoInputContainer {
+    z-index: 999;
+    height: 2.75rem; /*44px*/
+}
+
+.dobInputMessageContainer {
+    margin-top: 3.063rem; /*49px*/
+    height: 1.313rem; /*21px*/
+}

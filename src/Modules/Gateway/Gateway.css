@@ -1,0 +1,140 @@
+
+.gateway {
+    max-width: 400px;
+    width: 100%;
+    display: flex;
+    border-radius: 60px;
+}
+
+.gateway.xlFont {
+    max-width: 500px;
+}
+
+.gatewayForeground {
+    border-radius: 54px;
+    width: calc(100% - 12px);
+    background-color: var(--white);
+    margin: 6px;
+}
+
+.gatewayForeground.light {
+    background-color: var(--white);
+}
+
+.gatewayForeground.dark {
+    background-color: var(--black);
+}
+
+.gatewayContentContainer {
+    width: calc(100% - 60px);
+    margin: 30px;
+    gap: 20px;
+}
+
+.gatewayWelcomeUpper {
+    font-size: 2rem; /*32px*/
+    font-weight: 500;
+    margin-bottom: 20px; /*20px*/
+    display: flex;
+    justify-content: center;
+}
+
+.gatewayWelcomeUpper.light {
+    color: var(--black);
+}
+
+.gatewayWelcomeUpper.dark {
+    color: var(--white);
+}
+
+.gatewayWelcomeLower {
+    font-size: 1.125rem; /*18px*/
+    font-weight: 500;
+    margin-bottom: 16px; 
+}
+
+.gatewayWelcomeLower.light {
+    color: var(--black);
+}
+
+.gatewayWelcomeLower.dark {
+    color: var(--white);
+}
+
+.gatewayHRContainer {
+    width: inherit;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 16px 0;
+    height: 0.75rem; /*12px*/
+}
+
+.gatewayHr {
+    width: 40%;
+    height: 0.125rem; /*3px*/
+    border: none;    
+}
+
+.gatewayHrText {
+    font-size: 1.125rem; /*18px*/
+    font-weight: 500;
+}
+
+.gatewayHrText.light {
+    color: var(--black);
+}
+
+.gatewayHrText.dark {
+    color: var(--white);
+}
+
+.gatewayRegisterBtnContainer {
+    margin-top: 20px;
+}
+
+.textInputEditorContainer {
+    height: 3.125rem; /*50px*/
+    width: calc(100% - 2.5rem); /*100% - 40px*/
+    margin: 1.25rem; /*20px*/
+    border-radius: 1.563rem; /*25px*/
+    overflow: hidden;
+}
+
+.textInputEditorColorBackground {
+    height: 3.125rem; /*50px*/
+    width: 100%;
+    border-radius: 1.563rem; /*25px*/
+}
+
+.textInputEditorFadeBackground.HU {
+    margin: 1.25rem 1.875rem; /*20px 30px*/
+    width: calc(100% - 3.75rem); /*100% - 60px*/
+    height: 0;
+    border-radius: 1.563rem; /*25px*/
+}
+
+@media (max-height: 850px) {
+
+    .gatewayContentContainer.xlFont {
+        width: calc(100% - 30px);
+        margin: 30px 15px;
+    }
+
+    .gatewayWelcomeUpper {
+        display: none;
+    }
+
+    .gatewayWelcomeLower {
+        font-size: 1rem; /*14px*/
+        margin-bottom: 0.625rem; /*10px*/  
+    }
+
+    .gatewayHrText {
+        font-size: 1rem; /*14px*/
+    }
+
+
+}
+

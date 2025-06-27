@@ -1,0 +1,62 @@
+.healers {
+    display: flex;
+}
+
+.healers-container {
+    margin-top: 74px;
+    width: 100%;
+    padding: 20px 20% 30px 15%;
+    overflow-x: hidden;  
+}
+
+.healersAd {
+    margin: 0 20px;
+}
+
+.healersRight {
+    margin: 0 60px 0 20px;
+}
+
+.healersDisplayContainer {
+    width: 100%;
+    position: relative;
+}
+
+.healersDisplayBackgroundTheme {
+    width: 100%;
+    padding-right: 40px;
+    border-radius: 20px;
+    -webkit-filter: blur(2px);
+    -moz-filter: blur(2px);
+    -o-filter: blur(2px);
+    -ms-filter: blur(2px);
+    filter: blur(2px);
+    position: absolute;
+    opacity: 0.75;
+    background-size: 100%;
+    background-repeat: repeat;
+}
+
+.healersDisplay-container {
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+    background-color: white;
+    padding: 20px; 
+}
+
+.healersDisplay-container.union {
+    position: sticky;
+}
+
+.healersDisplay-container.flame {
+    width: calc(100% - 20px);
+}
+
+.healersDisplayList {
+    padding: 30px 20px 0 20px;
+}
+
+.healersDisplayListItem {
+    list-style: none;
+}

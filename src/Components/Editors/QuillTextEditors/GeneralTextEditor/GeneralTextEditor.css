@@ -1,0 +1,53 @@
+.quillTextEditorContainer {
+    position: relative;
+    height: 100%;
+
+}
+
+.quillEditor {
+    position: absolute;
+}
+
+.quillEditor.ql-container.ql-snow {
+    z-index: 1;
+    border: none;
+    width: 100%;
+    font-size: 14px;
+}
+
+.ql-container {
+    border: none;
+}
+
+.quill {
+    border: none;
+}
+
+.ql-container.ql-snow {
+    
+    border: none;
+    width: 100%;
+}
+
+.ql-editor {
+    padding: 2px 0 !important;
+    min-height: 18px;
+    width: calc(100% - 20px);
+    /* Hide scrollbar for IE, Edge and Firefox */
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.ql-editor::-webkit-scrollbar {
+    display: none;
+}
+
+.ql-mention-list-container.highSpectrum {
+    background-color: transparent;  
+}
+
+p {
+    margin: 0;
+}
+

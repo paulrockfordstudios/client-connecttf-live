@@ -1,0 +1,37 @@
+{
+    "label": {
+        "buttons": {
+            "close_btn": {
+                "access": "Close Sign In Portal",
+                "lng_select": "Close Language Select Portal",
+                "reg_a": "Close Name and Age Registration Portal",
+                "reg_b": "Close Username, Email, and Password Registration Portal",
+                "revoke_notice": "Close User's Account Revocation Notice",
+                "suspend_notice": "Close User's Account Suspension Notice",
+                "user_agreement": "Close User Agreement"
+            },
+            "gateway_btns": {
+                "i_agree": "I Agree Button",
+                "i_disagree": "I Disagree Button",
+                "create_account": "Create New Account",
+                "sign_in": "Sign In",
+                "fb_gate": "Sign In with Facebook",
+                "google_gate": "Sign In with Google"
+            },
+            "calendar_btns" : {
+                "prev_year": "Previous Year",
+                "prev_month": "Previous Month",
+                "next_month": "Next Month",
+                "next_year": "Next Year"
+            },
+            "misc": {
+                "forgot_password": "Forgot your password?"
+            }
+        },
+        "dropdowns": {
+            "lng_cat": "Languages Category Dropdown",
+            "month": "Month Dropdown",
+            "year": "Year Dropdown"
+        }
+    }
+}

@@ -1,0 +1,510 @@
+.shareNots {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+    height: 89px;
+}
+
+.shareNotsBackgroundTheme {
+    display: flex;
+    position: absolute;
+    width: 350px;
+    height: 89px;
+    transition-delay: 325ms;
+    transition: opacity 4000ms ease-in-out;
+    -webkit-transition: opacity 4000ms ease-in-out;
+    -moz-transition: opacity 4000ms ease-in-out;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.shareNotsContainer {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    cursor: pointer;
+    align-items: center;
+    width: 350px;
+    height: 85px;
+    top: 2px;
+}
+
+.shareNotsBackgroundTheme.unseen {
+    opacity: 1;   
+}
+
+
+.shareNotsBackgroundTheme.seen {
+    opacity: 0;   
+}
+
+
+.shareNotsBackgroundTheme.masculine {
+    background-color: #d8e1fe;
+    
+}
+
+.shareNotsBackgroundTheme.feminine {
+    background-color: #fde1ef;
+}
+
+.shareNotsBackgroundTheme.ruby {
+    background-color: #d4a6ad;
+}
+
+.shareNotsBackgroundTheme.orange {
+    background-color: #ffdab3;
+}
+
+.shareNotsBackgroundTheme.sun {
+    background-color: #fff9bf;
+}
+
+.shareNotsBackgroundTheme.emerald {
+    background-color: #caeed6;
+}
+
+.shareNotsBackgroundTheme.blue {
+    background-color: #cee8fb;
+}
+
+.shareNotsBackgroundTheme.indigo {
+    background-color: #babad4;
+}
+
+.shareNotsBackgroundTheme.violet {
+    background-color: #dcbff6;
+}
+
+.shareNotsBackgroundTheme.rainbow {
+    background: -webkit-linear-gradient(left, #d4a6ad, #ffdab3 , #fff9bf, #caeed6, #cee8fb, #babad4, #dcbff6); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, #d4a6ad, #ffdab3 , #fff9bf, #caeed6, #cee8fb, #babad4, #dcbff6); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, #d4a6ad, #ffdab3 , #fff9bf, #caeed6, #cee8fb, #babad4, #dcbff6); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, #d4a6ad, #ffdab3 , #fff9bf, #caeed6, #cee8fb, #babad4, #dcbff6); /* Standard syntax (must be last) */
+}
+
+.shareNotsBackgroundTheme.silver {
+    background: -webkit-linear-gradient(left, #f4f4f4 , #dddddd, #f4f4f4); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, #f4f4f4 , #dddddd, #f4f4f4); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, #f4f4f4 , #dddddd, #f4f4f4); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, #f4f4f4 , #dddddd, #f4f4f4); /* Standard syntax (must be last) */
+}
+
+.shareNotsBackgroundTheme.gold {
+    background: -webkit-linear-gradient(left, #e6d6bb , #faf1d0, #e6d6bb); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, #e6d6bb , #faf1d0, #e6d6bb); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, #e6d6bb , #faf1d0, #e6d6bb); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, #e6d6bb , #faf1d0, #e6d6bb); /* Standard syntax (must be last) */
+}
+
+.shareNotsBackgroundTheme.platinum {
+    background: -webkit-linear-gradient(left, #f2f8fc, #d2dcdf, #cccfd1, #dddddd, #d3cfd2,  #e7dfe0, #f4f4f4); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, #f2f8fc, #d2dcdf, #cccfd1, #dddddd, #d3cfd2,  #e7dfe0, #f4f4f4); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, #f2f8fc, #d2dcdf, #cccfd1, #dddddd, #d3cfd2,  #e7dfe0, #f4f4f4); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, #f2f8fc, #d2dcdf, #cccfd1, #dddddd, #d3cfd2,  #e7dfe0, #f4f4f4); /* Standard syntax (must be last) */
+}
+
+.shareNotsBackgroundTheme.gray {
+    background-color: #e4e6e7;
+}
+
+.shareNotsHr {
+    height: 2px;
+    width: 100%;
+    border: none;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.shareNotsHr.bottom {
+    margin-top: 85px;
+}
+
+.shareNotsHr.masculine {
+    background-color: #4a76fd;
+}
+
+.shareNotsHr.feminine {
+    background-color: #e639af;
+}
+
+.shareNotsHr.ruby {
+    background-color: #850014;   
+}
+
+.shareNotsHr.orange { 
+    background-color: #ff8303; 
+}
+
+.shareNotsHr.sun {
+    background-color: #ffe700;  
+}
+
+.shareNotsHr.emerald { 
+    background-color: #50c878; 
+}
+
+.shareNotsHr.blue {
+    background-color: #098de9; 
+}
+
+.shareNotsHr.indigo { 
+    background-color: #30307e; 
+}
+
+.shareNotsHr.violet { 
+    background-color: #8a2be2; 
+}
+
+.shareNotsHr.rainbow {
+    background: -webkit-linear-gradient(right, #850014, #ff8303, #ffe700, #50c878, #098de9, #30307e, #8a2be2); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, #850014, #ff8303, #ffe700, #50c878, #098de9, #30307e, #8a2be2); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, #850014, #ff8303, #ffe700, #50c878, #098de9, #30307e, #8a2be2); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, #850014, #ff8303, #ffe700, #50c878, #098de9, #30307e, #8a2be2); /* Standard syntax (must be last) */
+}
+
+.shareNotsHr.silver {
+    background: -webkit-linear-gradient(left, #dadada , #8e8e8e, #dadada); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, #dadada , #8e8e8e, #dadada); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, #dadada , #8e8e8e, #dadada); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, #dadada , #8e8e8e, #dadada); /* Standard syntax (must be last) */
+}
+
+.shareNotsHr.gold {
+    background: -webkit-linear-gradient(left, #ab781d , #eed264, #ab781d); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, #ab781d , #eed264, #ab781d); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, #ab781d , #eed264, #ab781d); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, #ab781d , #eed264, #ab781d); /* Standard syntax (must be last) */
+}
+
+.shareNotsHr.platinum {
+    background: -webkit-linear-gradient(left, #d3e9f6, #6b8c95, #566167, #8e8e8e, #6d606a,  #af9499, #dadada); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, #d3e9f6, #6b8c95, #566167, #8e8e8e, #6d606a,  #af9499, #dadada); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, #d3e9f6, #6b8c95, #566167, #8e8e8e, #6d606a,  #af9499, #dadada); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, #d3e9f6, #6b8c95, #566167, #8e8e8e, #6d606a,  #af9499, #dadada); /* Standard syntax (must be last) */
+}
+
+.shareNotsHr.gray {
+    background-color: #aeb4b7;
+}
+
+.shareNotsLeft {
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 100%;
+}
+
+.shareNotsProfilePic {
+    display: flex; 
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    object-fit: cover;    
+}
+
+.shareNotsIcon {
+    display: flex;
+    flex-shrink: 0; 
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    height: 22px;
+    
+    right: 0;
+    bottom: 20px;
+}
+
+.shareNotsIcon.flame {
+    width: 14px;
+    margin-right: 7px;
+}
+
+.shareNotsIcon.union {
+    width: 22px;
+    margin-right: 5px;
+}
+
+.shareNotsRight {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: calc(100% - 75px);
+    height: 70px;
+    margin-left: 5px;
+    margin-right: 10px;
+}
+
+.shareNotsRightTop {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+    height: auto; 
+}
+
+.shareNotsTitle {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    width: auto;
+    height: auto;
+}
+
+.shareNotsTitleLeft {
+    display: flex;
+    white-space: pre-wrap;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 233px;
+    height: auto;
+}
+
+.shareNotsTitleLeftPhrase {
+    display: flex;
+    white-space: pre-wrap;
+    align-items: baseline;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 233px;
+    height: auto;
+}
+
+.shareNotsTitleRight {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin-left: 10px;
+    width: 32px;
+    height: 32px;
+}
+
+.shareNotsTitleRightPNGIcon {
+    height: 32px;
+    width: 32px;
+    cursor: pointer;
+    background-size: contain;
+}
+
+.shareNotsTitleRight.masculine {
+    color: #4a76fd;
+}
+
+.shareNotsTitleRight.feminine {
+    color: #e639af;
+}
+
+.shareNotsTitleRight.gray {
+    color: #aeb4b7;
+}
+
+.shareNotsName {
+    font-size: 15px;
+    font-weight: bold;   
+}
+
+.shareNotsName.masculine {
+    color: #4a76fd;
+}
+
+.shareNotsName.feminine {
+    color: #e639af;
+}
+
+.shareNotsName.ruby {
+    color: #850014;
+}
+
+.shareNotsName.orange {
+    color: #ff8303;
+}
+
+.shareNotsName.sun {
+    color: #ffe700;
+}
+
+.shareNotsName.emerald {
+    color: #50c878;
+}
+
+.shareNotsName.blue {
+    color: #098de9;
+}
+
+.shareNotsName.indigo {
+    color: #30307e;
+}
+
+.shareNotsName.violet {
+    color: #8a2be2;
+}
+
+.shareNotsName.rainbow {
+    background: -webkit-linear-gradient(left, #850014, #ff8303, #ffe700, #50c878, #098de9, #30307e, #8a2be2); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, #850014, #ff8303, #ffe700, #50c878, #098de9, #30307e, #8a2be2); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, #850014, #ff8303, #ffe700, #50c878, #098de9, #30307e, #8a2be2); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, #850014, #ff8303, #ffe700, #50c878, #098de9, #30307e, #8a2be2); /* Standard syntax (must be last) */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.shareNotsName.silver {
+    background: -webkit-linear-gradient(left, #dadada, #8e8e8e, #dadada); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, #dadada, #8e8e8e, #dadada); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, #dadada, #8e8e8e, #dadada); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, #dadada, #8e8e8e, #dadada); /* Standard syntax (must be last) */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.shareNotsName.gold {
+    background: -webkit-linear-gradient(left, #ab781d, #eed264, #ab781d); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, #ab781d, #eed264, #ab781d); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, #ab781d, #eed264, #ab781d); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, #ab781d, #eed264, #ab781d); /* Standard syntax (must be last) */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.shareNotsName.platinum {
+    background: -webkit-linear-gradient(left, #d3e9f6, #6b8c95, #566167, #8e8e8e, #6d606a, #af9499, #dadada); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, #d3e9f6, #6b8c95, #566167, #8e8e8e, #6d606a, #af9499, #dadada); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, #d3e9f6, #6b8c95, #566167, #8e8e8e, #6d606a, #af9499, #dadada); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, #d3e9f6, #6b8c95, #566167, #8e8e8e, #6d606a, #af9499, #dadada); /* Standard syntax (must be last) */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.shareNotsName.diamond {
+    background: -webkit-linear-gradient(-15deg, white,#314373, #314373, #7b9ebe, #7b9ebe, #dadada, #faf1d0, #dadada, #7b9ebe, #7b9ebe, #314373, #314373, white); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(-15deg, white,#314373, #314373, #7b9ebe, #7b9ebe, #dadada, #faf1d0, #dadada, #7b9ebe, #7b9ebe, #314373, #314373, white); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(-15deg, white,#314373, #314373, #7b9ebe, #7b9ebe, #dadada, #faf1d0, #dadada, #7b9ebe, #7b9ebe, #314373, #314373, white); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(-15deg, white,#314373, #314373, #7b9ebe, #7b9ebe, #dadada, #faf1d0, #dadada, #7b9ebe, #7b9ebe, #314373, #314373, white); /* Standard syntax (must be last) */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.shareNotsName.grey {
+    color: #aeb4b7;
+}
+
+.shareNotsRightCenter {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    height: 20px;   
+}
+
+.shareNotsAction {
+    white-space: pre-wrap;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.shareNotsRightBottom {
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.shareNotsRetort {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    font-size: 12px;
+    color: #7a7e80;
+    width: 85%;
+    overflow: hidden;   
+}
+
+.shareNotsRetort.title {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.shareNotsRetort.question {
+    font-size: 14px;
+    font-weight: 500;  
+}
+
+.shareNotsRetort.description {
+    font-size: 12px;
+    font-weight: 500;
+    opacity: 75%;
+}
+
+.shareNotsRetort.request {
+    justify-content: space-evenly;
+}
+
+.shareNotsRetortLeft.friendship {
+    width: calc(100% - 75px);
+    padding-right: 10px;
+}
+
+.shareNotsRetortRight.friendship {
+    width: 75px;
+}
+
+.shareNotsRetortLeft.befriend {
+    width: calc(100% - 90px);
+    padding-right: 10px;
+}
+
+.shareNotsRetortRight.befriend {
+    width: 90px;  
+}
+
+.shareNotsBtn {
+    font-size: 12px;
+    font-weight: 500;
+    border: none;
+    height: 24px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.shareNotsBtn.befriend {
+    width: 90px;
+}
+
+.shareNotsBtn.message {
+    width: 75px;
+}
+
+.shareNotsBtn.accept {
+    width: 100px;
+}
+
+.shareNotsBtn.reject {
+    width: 100px;
+}
+
+
+.shareNotsBtn.masculine {
+    background-color: #4a76fd;
+    color: white;
+}
+
+.shareNotsBtn.feminine {
+    background-color: #e639af;
+    color: white;
+}
+
+.shareNotsBtn.gray {
+    background-color: #bfc2c7;
+    color: black;
+}

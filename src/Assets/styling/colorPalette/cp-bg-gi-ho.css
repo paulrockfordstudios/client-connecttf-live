@@ -1,0 +1,298 @@
+/* ------ Color Palette - Gradients & Images - Higher Order ------ */
+
+
+/* --- Gradients --- */
+
+
+/* -- Spectrum (Higher Order) -- */
+
+
+/* - Rainbow - */
+
+/*-Gradient 1-*/
+
+/* Saturated */
+
+/*light*/
+.cp-bg-gi-ho.saturated.dynamic.act.dark.rainbow:active {
+    background: var(--rainbow-g1-sat-lgt-safari); /* For Safari 5.1 to 6.0 */
+    background: var(--rainbow-g1-sat-lgt-opera); /* For Opera 11.1 to 12.0 */
+    background: var(--rainbow-g1-sat-lgt-firefox); /* For Firefox 3.6 to 15 */
+    background: var(--rainbow-g1-sat-lgt-standard); /* Standard syntax (must be last) */
+}
+/*bright*/
+.cp-bg-gi-ho.saturated.static.rainbow {
+    background: var(--rainbow-g1-sat-brt-safari); /* For Safari 5.1 to 6.0 */
+    background: var(--rainbow-g1-sat-brt-opera); /* For Opera 11.1 to 12.0 */
+    background: var(--rainbow-g1-sat-brt-firefox); /* For Firefox 3.6 to 15 */
+    background: var(--rainbow-g1-sat-brt-standard); /* Standard syntax (must be last) */
+}
+/*dark*/
+.cp-bg-gi-ho.saturated.dynamic.act.light.rainbow:active {
+    background: var(--rainbow-g1-sat-drk-safari); /* For Safari 5.1 to 6.0 */
+    background: var(--rainbow-g1-sat-drk-opera); /* For Opera 11.1 to 12.0 */
+    background: var(--rainbow-g1-sat-drk-firefox); /* For Firefox 3.6 to 15 */
+    background: var(--rainbow-g1-sat-drk-standard); /* Standard syntax (must be last) */
+}
+
+/* Pastel */
+
+/*bright*/
+.cp-bg-gi-ho.pastel.dynamic.act.dark.rainbow:active {
+    background: var(--rainbow-g1-pas-brt-safari); /* For Safari 5.1 to 6.0 */
+    background: var(--rainbow-g1-pas-brt-opera); /* For Opera 11.1 to 12.0 */
+    background: var(--rainbow-g1-pas-brt-firefox); /* For Firefox 3.6 to 15 */
+    background: var(--rainbow-g1-pas-brt-standard); /* Standard syntax (must be last) */
+}
+/*bright*/
+.cp-bg-gi-ho.pastel.static.light.rainbow,
+.cp-bg-gi-ho.pastel.dynamic.hov.light.rainbow:hover {
+    background: var(--rainbow-g1-pas-brt-safari); /* For Safari 5.1 to 6.0 */
+    background: var(--rainbow-g1-pas-brt-opera); /* For Opera 11.1 to 12.0 */
+    background: var(--rainbow-g1-pas-brt-firefox); /* For Firefox 3.6 to 15 */
+    background: var(--rainbow-g1-pas-brt-standard); /* Standard syntax (must be last) */
+}
+/*dark*/
+.cp-bg-gi-ho.pastel.dynamic.act.light.rainbow:active {
+    background: var(--rainbow-g1-pas-drk-safari); /* For Safari 5.1 to 6.0 */
+    background: var(--rainbow-g1-pas-drk-opera); /* For Opera 11.1 to 12.0 */
+    background: var(--rainbow-g1-pas-drk-firefox); /* For Firefox 3.6 to 15 */
+    background: var(--rainbow-g1-pas-drk-standard); /* Standard syntax (must be last) */
+}
+
+/* - Silver - */
+
+/*-Gradient 1-*/
+
+/* Saturated */
+
+/*light*/
+.cp-bg-gi-ho.saturated.dynamic.act.dark.silver:active {
+    background: var(--silver-g1-sat-lgt-safari); /* For Safari 5.1 to 6.0 */
+    background: var(--silver-g1-sat-lgt-opera); /* For Opera 11.1 to 12.0 */
+    background: var(--silver-g1-sat-lgt-firefox); /* For Firefox 3.6 to 15 */
+    background: var(--silver-g1-sat-lgt-standard); /* Standard syntax (must be last) */
+}
+/*bright*/
+.cp-bg-gi-ho.saturated.static.silver {
+    background: var(--silver-g1-sat-brt-safari); /* For Safari 5.1 to 6.0 */
+    background: var(--silver-g1-sat-brt-opera); /* For Opera 11.1 to 12.0 */
+    background: var(--silver-g1-sat-brt-firefox); /* For Firefox 3.6 to 15 */
+    background: var(--silver-g1-sat-brt-standard); /* Standard syntax (must be last) */
+}
+/*dark*/
+.cp-bg-gi-ho.saturated.dynamic.act.light.silver:active {
+    background: var(--silver-g1-sat-drk-safari); /* For Safari 5.1 to 6.0 */
+    background: var(--silver-g1-sat-drk-opera); /* For Opera 11.1 to 12.0 */
+    background: var(--silver-g1-sat-drk-firefox); /* For Firefox 3.6 to 15 */
+    background: var(--silver-g1-sat-drk-standard); /* Standard syntax (must be last) */
+}
+
+/* Pastel */
+
+/*bright*/
+.cp-bg-gi-ho.pastel.dynamic.act.dark.silver:active {
+    background: var(--silver-g1-pas-brt-safari); /* For Safari 5.1 to 6.0 */
+    background: var(--silver-g1-pas-brt-opera); /* For Opera 11.1 to 12.0 */
+    background: var(--silver-g1-pas-brt-firefox); /* For Firefox 3.6 to 15 */
+    background: var(--silver-g1-pas-brt-standard); /* Standard syntax (must be last) */
+}
+/*bright*/
+.cp-bg-gi-ho.pastel.static.light.silver,
+.cp-bg-gi-ho.pastel.dynamic.hov.light.silver:hover {
+    background: var(--silver-g1-pas-brt-safari); /* For Safari 5.1 to 6.0 */
+    background: var(--silver-g1-pas-brt-opera); /* For Opera 11.1 to 12.0 */
+    background: var(--silver-g1-pas-brt-firefox); /* For Firefox 3.6 to 15 */
+    background: var(--silver-g1-pas-brt-standard); /* Standard syntax (must be last) */
+}
+/*dark*/
+.cp-bg-gi-ho.pastel.dynamic.act.light.silver:active {
+    background: var(--silver-g1-pas-drk-safari); /* For Safari 5.1 to 6.0 */
+    background: var(--silver-g1-pas-drk-opera); /* For Opera 11.1 to 12.0 */
+    background: var(--silver-g1-pas-drk-firefox); /* For Firefox 3.6 to 15 */
+    background: var(--silver-g1-pas-drk-standard); /* Standard syntax (must be last) */
+}
+
+/* - Gold - */
+
+/*-Gradient 1-*/
+
+/* Saturated */
+
+/*light*/
+.cp-bg-gi-ho.saturated.dynamic.act.dark.gold:active {
+    background: var(--gold-g1-sat-lgt-safari); /* For Safari 5.1 to 6.0 */
+    background: var(--gold-g1-sat-lgt-opera); /* For Opera 11.1 to 12.0 */
+    background: var(--gold-g1-sat-lgt-firefox); /* For Firefox 3.6 to 15 */
+    background: var(--gold-g1-sat-lgt-standard); /* Standard syntax (must be last) */
+}
+/*bright*/
+.cp-bg-gi-ho.saturated.static.gold {
+    background: var(--gold-g1-sat-brt-safari); /* For Safari 5.1 to 6.0 */
+    background: var(--gold-g1-sat-brt-opera); /* For Opera 11.1 to 12.0 */
+    background: var(--gold-g1-sat-brt-firefox); /* For Firefox 3.6 to 15 */
+    background: var(--gold-g1-sat-brt-standard); /* Standard syntax (must be last) */
+}
+/*dark*/
+.cp-bg-gi-ho.saturated.dynamic.act.light.gold:active {
+    background: var(--gold-g1-sat-drk-safari); /* For Safari 5.1 to 6.0 */
+    background: var(--gold-g1-sat-drk-opera); /* For Opera 11.1 to 12.0 */
+    background: var(--gold-g1-sat-drk-firefox); /* For Firefox 3.6 to 15 */
+    background: var(--gold-g1-sat-drk-standard); /* Standard syntax (must be last) */
+}
+
+/* Pastel */
+
+/*bright*/
+.cp-bg-gi-ho.pastel.dynamic.act.dark.gold:active {
+    background: var(--gold-g1-pas-brt-safari); /* For Safari 5.1 to 6.0 */
+    background: var(--gold-g1-pas-brt-opera); /* For Opera 11.1 to 12.0 */
+    background: var(--gold-g1-pas-brt-firefox); /* For Firefox 3.6 to 15 */
+    background: var(--gold-g1-pas-brt-standard); /* Standard syntax (must be last) */
+}
+/*bright*/
+.cp-bg-gi-ho.pastel.static.gold,
+.cp-bg-gi-ho.pastel.dynamic.hov.light.gold:hover {
+    background: var(--gold-g1-pas-brt-safari); /* For Safari 5.1 to 6.0 */
+    background: var(--gold-g1-pas-brt-opera); /* For Opera 11.1 to 12.0 */
+    background: var(--gold-g1-pas-brt-firefox); /* For Firefox 3.6 to 15 */
+    background: var(--gold-g1-pas-brt-standard); /* Standard syntax (must be last) */
+}
+/*dark*/
+.cp-bg-gi-ho.pastel.dynamic.act.light.gold:active {
+    background: var(--gold-g1-pas-drk-safari); /* For Safari 5.1 to 6.0 */
+    background: var(--gold-g1-pas-drk-opera); /* For Opera 11.1 to 12.0 */
+    background: var(--gold-g1-pas-drk-firefox); /* For Firefox 3.6 to 15 */
+    background: var(--gold-g1-pas-drk-standard); /* Standard syntax (must be last) */
+}
+
+/* - Platinum - */
+
+/*-Gradient 1-*/
+
+/* Saturated */
+
+/*light*/
+.cp-bg-gi-ho.saturated.dynamic.act.dark.platinum:active {
+    background: var(--platinum-g1-sat-lgt-safari); /* For Safari 5.1 to 6.0 */
+    background: var(--platinum-g1-sat-lgt-opera); /* For Opera 11.1 to 12.0 */
+    background: var(--platinum-g1-sat-lgt-firefox); /* For Firefox 3.6 to 15 */
+    background: var(--platinum-g1-sat-lgt-standard); /* Standard syntax (must be last) */
+}
+/*bright*/
+.cp-bg-gi-ho.saturated.static.platinum {
+    background: var(--platinum-g1-sat-brt-safari); /* For Safari 5.1 to 6.0 */
+    background: var(--platinum-g1-sat-brt-opera); /* For Opera 11.1 to 12.0 */
+    background: var(--platinum-g1-sat-brt-firefox); /* For Firefox 3.6 to 15 */
+    background: var(--platinum-g1-sat-brt-standard); /* Standard syntax (must be last) */
+}
+/*dark*/
+.cp-bg-gi-ho.saturated.dynamic.act.light.platinum:active {
+    background: var(--platinum-g1-sat-drk-safari); /* For Safari 5.1 to 6.0 */
+    background: var(--platinum-g1-sat-drk-opera); /* For Opera 11.1 to 12.0 */
+    background: var(--platinum-g1-sat-drk-firefox); /* For Firefox 3.6 to 15 */
+    background: var(--platinum-g1-sat-drk-standard); /* Standard syntax (must be last) */
+}
+
+/* Pastel */
+
+/*bright*/
+.cp-bg-gi-ho.pastel.dynamic.act.dark.platinum:active {
+    background: var(--platinum-g1-pas-brt-safari); /* For Safari 5.1 to 6.0 */
+    background: var(--platinum-g1-pas-brt-opera); /* For Opera 11.1 to 12.0 */
+    background: var(--platinum-g1-pas-brt-firefox); /* For Firefox 3.6 to 15 */
+    background: var(--platinum-g1-pas-brt-standard); /* Standard syntax (must be last) */
+}
+/*bright*/
+.cp-bg-gi-ho.pastel.static.light.platinum,
+.cp-bg-gi-ho.pastel.dynamic.hov.light.platinum:hover {
+    background: var(--platinum-g1-pas-brt-safari); /* For Safari 5.1 to 6.0 */
+    background: var(--platinum-g1-pas-brt-opera); /* For Opera 11.1 to 12.0 */
+    background: var(--platinum-g1-pas-brt-firefox); /* For Firefox 3.6 to 15 */
+    background: var(--platinum-g1-pas-brt-standard); /* Standard syntax (must be last) */
+}
+/*dark*/
+.cp-bg-gi-ho.pastel.dynamic.act.light.platinum:active {
+    background: var(--platinum-g1-pas-drk-safari); /* For Safari 5.1 to 6.0 */
+    background: var(--platinum-g1-pas-drk-opera); /* For Opera 11.1 to 12.0 */
+    background: var(--platinum-g1-pas-drk-firefox); /* For Firefox 3.6 to 15 */
+    background: var(--platinum-g1-pas-drk-standard); /* Standard syntax (must be last) */
+}
+
+
+/* --- Images --- */
+
+
+/* -- Spectrum (Higher Order) -- */
+
+
+/* - Rainbow - */
+
+/*-Pattern 1-*/
+
+/* Saturated */
+
+/*bright*/
+.cp-bg-gi-ho.saturated.static.rainbowAlt {
+    background-image: var(--rainbow-p1-sat-brt);
+}
+
+/* - Silver - */
+
+/* Saturated */
+
+/*bright*/
+.cp-bg-gi-ho.saturated.static.silverAlt {
+    background-image: var(--silver-p1-sat-brt);
+}
+
+/* Pastel */
+
+/*bright*/
+.cp-bg-gi-ho.pastel.static.light.silverAlt,
+.cp-bg-gi-ho.pastel.dynamic.hov.light.silverAlt:hover,
+.cp-bg-gi-ho.pastel.dynamic.act.dark.silverAlt:active {
+    background-image: var(--silver-p1-pas-brt);
+}
+
+/* - Gold - */
+
+/* Saturated */
+
+/*bright*/
+.cp-bg-gi-ho.saturated.static.goldAlt {
+    background-image: var(--gold-p1-sat-brt);
+}
+
+/* Pastel */
+
+/*bright*/
+.cp-bg-gi-ho.pastel.static.light.goldAlt,
+.cp-bg-gi-ho.pastel.dynamic.hov.light.goldAlt:hover,
+.cp-bg-gi-ho.pastel.dynamic.act.dark.goldAlt:active {
+    background-image: var(--gold-p1-pas-brt);
+}
+ 
+/* - Platinum - */
+
+/*bright*/
+.cp-bg-gi-ho.saturated.static.platinumAlt {
+    background-image: var(--platinum-p1-sat-brt);
+}
+
+
+/* - diamond - */
+
+/*bright*/
+.cp-bg-gi-ho.saturated.static.diamond {
+    background-image: var(--diamond-p1-sat-brt);
+}
+
+/* Pastel */
+
+/*bright*/
+.cp-bg-gi-ho.pastel.static.dark.diamond,
+.cp-bg-gi-ho.pastel.dynamic.hov.dark.diamond:hover,
+.cp-bg-gi-ho.pastel.dynamic.act.light.diamond:active {
+    background-image: var(--diamond-p1-pas-brt);
+}

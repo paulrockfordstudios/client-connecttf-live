@@ -1,0 +1,61 @@
+.createChannel {
+    display: flex;
+}
+
+.createChannel-container {
+    margin-top: 74px;
+    width: 100%;
+    padding: 20px 20% 30px 15%;
+    overflow-x: hidden;  
+}
+
+.createChannelAd {
+    margin: 0 20px;
+}
+
+.createChannelRight {
+    margin: 0 60px 0 20px;
+}
+
+.createChannelDisplayContainer {
+    width: 100%;
+    position: relative;
+}
+
+.createChannelDisplayBackgroundTheme {
+    width: 100%;
+    padding-right: 40px;
+    border-radius: 20px;
+    -webkit-filter: blur(2px);
+    -moz-filter: blur(2px);
+    -o-filter: blur(2px);
+    -ms-filter: blur(2px);
+    filter: blur(2px);
+    position: absolute;
+    opacity: 0.75;
+}
+
+.createChannelDisplay-container {
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+    background-color: white;
+    padding: 20px; 
+    
+}
+
+.createChannelDisplay-container.union {
+    position: sticky;
+}
+
+.createChannelDisplay-container.flame {
+    width: calc(100% - 20px);
+}
+
+.createChannelDisplayList {
+    padding-left: 0;
+}
+
+.createChannelDisplayListItem {
+    list-style: none;
+}

@@ -1,0 +1,217 @@
+{
+    "topic_1": {
+        "title": "Manifestation Traits",
+        "subTopics": {
+            "topic_1": {
+                "title": "Overview",
+                "description": {
+                    "sentence_1": "",
+                    "sentence_2": "",
+                    "sentence_3": ""
+                },
+                "subTopics": {
+                
+                }
+            },
+            "topic_2": {
+                "title": "Charge",
+                "subTopics": {
+                    "topic_1": {
+                        "title": "Overview",
+                        "description": {
+                            "sentence_1": "",
+                            "sentence_2": "",
+                            "sentence_3": ""
+                        }
+                    },
+                    "topic_2": {
+                        "title": "Yang Charge",
+                        "description": {
+                            "sentence_1": "",
+                            "sentence_2": "",
+                            "sentence_3": ""
+                        }
+                    },
+                    "topic_3": {
+                        "title": "Yin Charge",
+                        "description": {
+                            "sentence_1": "",
+                            "sentence_2": "",
+                            "sentence_3": ""
+                        }
+                    }
+                }
+            },
+            "topic_3": {
+                "title": "Energy",
+                "subTopics": {
+                    "topic_1": {
+                        "title": "Overview",
+                        "description": {
+                            "sentence_1": "",
+                            "sentence_2": "",
+                            "sentence_3": ""
+                        }
+                    },
+                    "topic_2": {
+                        "title": "Feminine Energy",
+                        "description": {
+                            "sentence_1": "",
+                            "sentence_2": "",
+                            "sentence_3": ""
+                        }
+                    },
+                    "topic_3": {
+                        "title": "Masculine Energy",
+                        "description": {
+                            "sentence_1": "",
+                            "sentence_2": "",
+                            "sentence_3": ""
+                        }
+                    }
+                }
+            },
+            "topic_4": {
+                "title": "Orientation",
+                "subTopics": {
+                
+                }
+            },
+            "topic_5": {
+                "title": "Spectrum",
+                "subTopics": {
+                    "topic_1": {
+                        "title": "Overview",
+                        "description": {
+                            "sentence_1": "",
+                            "sentence_2": "",
+                            "sentence_3": ""
+                        }
+                    },
+                    "topic_2": {
+                        "title": "Higher Order Spectrums",
+                        "subTopics": {
+                            "topic_1": {
+                                "title": "Overview",
+                                "description": {
+                                    "sentence_1": "",
+                                    "sentence_2": "",
+                                    "sentence_3": ""
+                                }
+                            },
+                            "topic_2": {
+                                "title": "Rainbow Ray",
+                                "description": {
+                                    "sentence_1": "",
+                                    "sentence_2": "",
+                                    "sentence_3": ""
+                                }
+                            },
+                            "topic_3": {
+                                "title": "Silver Ray",
+                                "description": {
+                                    "sentence_1": "",
+                                    "sentence_2": "",
+                                    "sentence_3": ""
+                                }
+                            },
+                            "topic_4": {
+                                "title": "Gold Ray",
+                                "description": {
+                                    "sentence_1": "",
+                                    "sentence_2": "",
+                                    "sentence_3": ""
+                                }
+                            },
+                            "topic_5": {
+                                "title": "Platinum Ray",
+                                "description": {
+                                    "sentence_1": "",
+                                    "sentence_2": "",
+                                    "sentence_3": ""
+                                }   
+                            },
+                            "topic_6": {
+                                "title": "Diamond Ray",
+                                "description": {
+                                    "sentence_1": "",
+                                    "sentence_2": "",
+                                    "sentence_3": ""
+                                }
+                            }
+                        }
+                    },
+                    "topic_3": {
+                        "title": "Lower Order Spectrums",
+                        "subTopics": {
+                            "topic_1": {
+                                "title": "Overview",
+                                "description": {
+                                    "sentence_1": "",
+                                    "sentence_2": "",
+                                    "sentence_3": ""
+                                }
+                            },
+                            "topic_2": {
+                                "title": "Ruby Ray",
+                                "description": {
+                                    "sentence_1": "",
+                                    "sentence_2": "",
+                                    "sentence_3": ""
+                                }
+                            },
+                            "topic_3": {
+                                "title": "Orange Ray",
+                                "description": {
+                                    "sentence_1": "",
+                                    "sentence_2": "",
+                                    "sentence_3": ""
+                                }
+                            },
+                            "topic_4": {
+                                "title": "Sun Ray",
+                                "description": {
+                                    "sentence_1": "",
+                                    "sentence_2": "",
+                                    "sentence_3": ""
+                                }
+                            },
+                            "topic_5": {
+                                "title": "Emerald Ray",
+                                "description": {
+                                    "sentence_1": "",
+                                    "sentence_2": "",
+                                    "sentence_3": ""
+                                }
+                            },
+                            "topic_6": {
+                                "title": "Blue Ray",
+                                "description": {
+                                    "sentence_1": "",
+                                    "sentence_2": "",
+                                    "sentence_3": ""
+                                }
+                            },
+                            "topic_7": {
+                                "title": "Indigo Ray",
+                                "description": {
+                                    "sentence_1": "",
+                                    "sentence_2": "",
+                                    "sentence_3": ""
+                                }
+                            },
+                            "topic_8": {
+                                "title": "Violet Ray",
+                                "description": {
+                                    "sentence_1": "",
+                                    "sentence_2": "",
+                                    "sentence_3": ""
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

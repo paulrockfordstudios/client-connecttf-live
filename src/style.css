@@ -1,0 +1,4978 @@
+* {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 32px;
+}
+
+body {
+    background: -webkit-linear-gradient(135deg, rgba(216,225,254,1) 30%, rgba(255,255,255,1) 60%, rgba(253,225,239,1) 100%); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(135deg, rgba(216,225,254,1) 30%, rgba(255,255,255,1) 60%, rgba(253,225,239,1) 100%); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(135deg, rgba(216,225,254,1) 30%, rgba(255,255,255,1) 60%, rgba(253,225,239,1) 100%); /* For Firefox 3.6 to 15 */
+    /*background: linear-gradient(135deg, rgba(216,225,254,1) 30%, rgba(255,255,255,1) 60%, rgba(253,225,239,1) 100%); /* Standard syntax (must be last) */ 
+    /*background: linear-gradient(135deg, #d8e1fe 30%, white 60%, #fde1ef 100%); /* Standard syntax (must be last) */
+    background: linear-gradient(135deg, #d8e1fe 30%, white 60%, #fde1ef 100%); /* Standard syntax (must be last) */
+    background-attachment: fixed;
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+
+button {
+    background: none;
+    color: inherit;
+    border: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+    all: unset;
+}
+
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #bfc2c7;
+    border-radius: 3px;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+input {
+    padding: 0;
+    margin: 0;
+}
+
+
+a {
+    text-decoration: none;
+    color: initial;
+}
+
+a:focus-visible {
+    outline: none;
+}
+
+/*
+b {
+    white-space: nowrap;
+}
+*/
+
+ul {
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0rem;
+    margin-inline-end: 0rem;
+    padding-inline-start: 0;
+}
+
+/*
+span {
+   white-space: nowrap; 
+}
+*/
+
+svg {
+    border: none;
+    overflow: hidden;
+}
+
+.mentionLink:hover {
+    font-weight: 500;
+}
+
+i, img {
+    display: flex;
+    flex-shrink: 0;
+    font-style: italic;
+    background-size: cover;
+    background-repeat: no-repeat;
+    vertical-align: middle;
+}
+
+.ap {
+    /*margin: 2px 0 -.125rem 0 !important;*/
+    font-size: 1.125rem !important;
+}
+
+.BS-HS {
+/*BOX_SHADOW-HIGHER_SPECTRUM*/
+    -webkit-filter: blur(0.125rem); /*2px*/
+    -moz-filter: blur(0.125rem); /*2px*/
+    -o-filter: blur(0.125rem); /*2px*/
+    -ms-filter: blur(0.125rem); /*2px*/
+    filter: blur(0.125rem); /*2px*/
+    opacity: 0.75;
+    background-size: cover;
+}
+
+.BASE {
+    position: relative;
+}
+
+.ANNEX {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+}
+
+
+
+
+
+
+.FADE_SHADOW.light {
+    -webkit-box-shadow: 0px 0px 30px 30px white; 
+    box-shadow: 0px 0px 30px 30px white;
+}
+
+.FADE_SHADOW.dark {
+    -webkit-box-shadow: 0px 0px 30px 26px black; 
+    box-shadow: 0px 0px 30px 26px black;
+}
+
+
+.BOX_SHADOW.masculine {
+    -webkit-box-shadow: 0rem 0rem .375rem -.125rem #4a76fd; 
+    box-shadow: 0rem 0rem .375rem -.125rem #4a76fd;
+}
+
+.BOX_SHADOW.feminine {
+    -webkit-box-shadow: 0rem 0rem .375rem -.125rem #e639af; 
+    box-shadow: 0rem 0rem .375rem -.125rem #e639af;
+}
+
+.BOX_SHADOW.ruby {
+    -webkit-box-shadow: 0rem 0rem .375rem -.125rem #850014; 
+    box-shadow: 0rem 0rem .375rem -.125rem #850014;
+}
+
+.BOX_SHADOW.orange {
+    -webkit-box-shadow: 0rem 0rem .375rem -.125rem #ff8303; 
+    box-shadow: 0rem 0rem .375rem -.125rem #ff8303;
+}
+
+.BOX_SHADOW.sun {
+    -webkit-box-shadow: 0rem 0rem .375rem -.125rem #ffe700; 
+    box-shadow: 0rem 0rem .375rem -.125rem #ffe700;
+}
+
+.BOX_SHADOW.emerald {
+    -webkit-box-shadow: 0rem 0rem .375rem -.125rem #50c878; 
+    box-shadow: 0rem 0rem .375rem -.125rem #50c878;
+}
+
+.BOX_SHADOW.blue {
+    -webkit-box-shadow: 0rem 0rem .375rem -.125rem #098de9; 
+    box-shadow: 0rem 0rem .375rem -.125rem #098de9;
+}
+
+.BOX_SHADOW.indigo {
+    -webkit-box-shadow: 0rem 0rem .375rem -.125rem #30307e; 
+    box-shadow: 0rem 0rem .375rem -.125rem #30307e;
+}
+
+.BOX_SHADOW.violet {
+    -webkit-box-shadow: 0rem 0rem .375rem -.125rem #8a2be2; 
+    box-shadow: 0rem 0rem .375rem -.125rem #8a2be2;
+}
+
+.BOX_SHADOW.gray {
+    -webkit-box-shadow: 0rem 0rem .375rem -.125rem #aeb4b7; 
+    box-shadow: 0rem 0rem .375rem -.125rem #aeb4b7;
+}
+
+.BOX_SHADOW.rainbow, 
+.BOX_SHADOW.silver, 
+.BOX_SHADOW.gold, 
+.BOX_SHADOW.platinum, 
+.BOX_SHADOW.diamond {
+    box-shadow: none;
+}
+
+.INNER_BOX_SHADOW.masculine {
+    -webkit-box-shadow: inset 0rem 0rem 3.125rem -1.875rem #4A76FD; 
+    box-shadow: inset 0rem 0rem 3.125rem -1.875rem #4A76FD;
+}
+
+.INNER_BOX_SHADOW.feminine {
+    -webkit-box-shadow: inset 0rem 0rem 3.125rem -1.875rem #e639af; 
+    box-shadow: inset 0rem 0rem 3.125rem -1.875rem #e639af;
+}
+
+.INNER_BOX_SHADOW.ruby {
+    -webkit-box-shadow: inset 0rem 0rem 3.125rem -1.875rem #850014; 
+    box-shadow: inset 0rem 0rem 3.125rem -1.875rem #850014;
+}
+
+.INNER_BOX_SHADOW.orange {
+    -webkit-box-shadow: inset 0rem 0rem 3.125rem -1.875rem #ff8303; 
+    box-shadow: inset 0rem 0rem 3.125rem -1.875rem #ff8303;
+}
+
+.INNER_BOX_SHADOW.sun {
+    -webkit-box-shadow: inset 0rem 0rem 3.125rem -1.875rem #ffe700; 
+    box-shadow: inset 0rem 0rem 3.125rem -1.875rem #ff3700;
+}
+
+.INNER_BOX_SHADOW.emerald {
+    -webkit-box-shadow: inset 0rem 0rem 3.125rem -1.875rem #50c878; 
+    box-shadow: inset 0rem 0rem 3.125rem -1.875rem #50c878;
+}
+
+.INNER_BOX_SHADOW.blue {
+    -webkit-box-shadow: inset 0rem 0rem 3.125rem -1.875rem #098de9; 
+    box-shadow: inset 0rem 0rem 3.125rem -1.875rem #098de9;
+}
+
+.INNER_BOX_SHADOW.indigo {
+    -webkit-box-shadow: inset 0rem 0rem 3.125rem -1.875rem #30307e; 
+    box-shadow: inset 0rem 0rem 3.125rem -1.875rem #30307e;
+}
+
+.INNER_BOX_SHADOW.violet {
+    -webkit-box-shadow: inset 0rem 0rem 3.125rem -1.875rem #8a2be2; 
+    box-shadow: inset 0rem 0rem 3.125rem -1.875rem #8a2be2;
+}
+
+.INNER_BOX_SHADOW.rainbow, 
+.INNER_BOX_SHADOW.silver, 
+.INNER_BOX_SHADOW.gold, 
+.INNER_BOX_SHADOW.platinum, 
+.INNER_BOX_SHADOW.diamond {
+    box-shadow: none;
+}
+
+.INNER_BOX_SHADOW.gray {
+    -webkit-box-shadow: inset 0rem 0rem 3.125rem -1.875rem #aeb4b7; 
+    box-shadow: inset 0rem 0rem 3.125rem -1.875rem #aeb4b7;
+}
+
+.BTN_CLR {
+    color: white;
+}
+
+.BTN_CLR.masculine {
+    background-color: #4a76fd;
+}
+
+.BTN_CLR.masculine:hover {
+    color: #d8e1fe;
+}
+
+.BTN_CLR.masculine:active {
+    background-color: #3453b2;
+    color: #c3cbe5;
+}
+
+.BTN_CLR.feminine {
+    background-color: #e639af;
+}
+
+.BTN_CLR.feminine:hover {
+    color: #fde1ef;
+}
+
+.BTN_CLR.feminine:active {
+    background-color: #a1287b;
+    color: #e4cbd8;
+}
+
+.BTN_CLR.ruby {
+    background-color: #850014;
+}
+
+.BTN_CLR.ruby:hover {
+    color: #d4a6ad;
+}
+
+.BTN_CLR.ruby:active {
+    background-color: #5d000e;
+    color: #be959b;
+}
+
+.BTN_CLR.orange {
+    background-color: #ff8303;
+}
+
+.BTN_CLR.orange:hover {
+    color: #ffdab3;
+}
+
+.BTN_CLR.orange:active {
+    background-color: #b35c02;
+    color: #e6c5a1;
+}
+
+.BTN_CLR.sun {
+    background-color: #ffe700;
+}
+
+.BTN_CLR.sun:hover {
+    color: #fff9bf;
+}
+
+.BTN_CLR.sun:active {
+    background-color: #b3a200;
+    color: #e6e1ac;
+}
+
+.BTN_CLR.emerald {
+    background-color: #50c878;
+}
+
+.BTN_CLR.emerald:hover {
+    color: #caeed6;
+}
+
+.BTN_CLR.emerald:active {
+    background-color: #388c54;
+    color: #b6d7c1;
+}
+
+.BTN_CLR.blue {
+    background-color: #098de9;
+}
+
+.BTN_CLR.blue:hover {
+    color: #cee8fb;
+}
+
+.BTN_CLR.blue:active {
+    background-color: #0663a4;
+    color: #bad1e2;
+}
+
+.BTN_CLR.indigo {
+    background-color: #30307e;
+}
+
+.BTN_CLR.indigo:hover {
+    color: #babad4;
+}
+
+.BTN_CLR.indigo:active {
+    background-color: #222258;
+    color: #a8a8bf;
+}
+
+.BTN_CLR.violet {
+    background-color: #8a2be2;
+}
+
+.BTN_CLR.violet:hover {
+    color: #dcbff6;
+}
+
+.BTN_CLR.violet:active {
+    background-color: #611e9f;
+    color: #c6acde;
+}
+
+.BTN_CLR.gray {
+    background-color: #aeb4b7;
+}
+
+.BTN_CLR.gray:hover {
+    color: #e4e6e7;
+}
+
+.BTN_CLR.gray:active {
+    background-color: #7a7e80;
+    color: #cecfd0;
+}
+
+.SCREEN {
+    position: fixed;
+    Width: 100%;
+    height: calc(100% + 94px);
+    top: 0;
+    z-index: 998;
+}
+
+.POPUP_BACKGROUND {
+    position: fixed;
+    Width: 100%;
+    height: calc(100% + 94px); 
+    opacity: 30%;
+    top: 0;
+    left: 0;
+}
+
+.POPUP_BACKGROUND.masculine {
+    background-color: #4a76fd;
+}
+
+.POPUP_BACKGROUND.feminine {
+    background-color: #e639af;
+}
+
+.POPUP_BACKGROUND.ruby {
+    background-color: #850014;
+}
+
+.POPUP_BACKGROUND.orange {
+    background-color: #ff8303;
+}
+
+.POPUP_BACKGROUND.sun {
+    background-color: #ffe700;
+}
+
+.POPUP_BACKGROUND.emerald {
+    background-color: #50c878;
+}
+
+.POPUP_BACKGROUND.blue {
+    background-color: #098de9;
+}
+
+.POPUP_BACKGROUND.indigo {
+    background-color: #30307e;
+}
+
+.POPUP_BACKGROUND.violet {
+    background-color: #8a2be2;
+}
+
+.POPUP_BACKGROUND.rainbow {
+    background: -webkit-linear-gradient(right, #850014, #ff8303, #ffe700, #50c878, #098de9, #30307e, #8a2be2); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, #850014, #ff8303, #ffe700, #50c878, #098de9, #30307e, #8a2be2); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, #850014, #ff8303, #ffe700, #50c878, #098de9, #30307e, #8a2be2); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, #850014, #ff8303, #ffe700, #50c878, #098de9, #30307e, #8a2be2); /* Standard syntax (must be last) */
+}
+
+.POPUP_BACKGROUND.silver {
+    background: -webkit-linear-gradient(left, #dadada , #8e8e8e, #dadada); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, #dadada , #8e8e8e, #dadada); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, #dadada , #8e8e8e, #dadada); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to left, #dadada , #8e8e8e, #dadada); /* Standard syntax (must be last) */
+}
+
+.POPUP_BACKGROUND.gold {
+    background: -webkit-linear-gradient(left, #ab781d , #eed264, #ab781d); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, #ab781d , #eed264, #ab781d); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, #ab781d , #eed264, #ab781d); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, #ab781d , #eed264, #ab781d); /* Standard syntax (must be last) */
+}
+
+.POPUP_BACKGROUND.platinum {
+    background: -webkit-linear-gradient(left, #d3e9f6, #6b8c95, #566167, #8e8e8e, #6d606a,  #af9499, #dadada); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, #d3e9f6, #6b8c95, #566167, #8e8e8e, #6d606a,  #af9499, #dadada); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, #d3e9f6, #6b8c95, #566167, #8e8e8e, #6d606a,  #af9499, #dadada); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, #d3e9f6, #6b8c95, #566167, #8e8e8e, #6d606a,  #af9499, #dadada); /* Standard syntax (must be last) */
+}
+
+.POPUP_BACKGROUND.diamond {
+    background-image: url('./Assets/misc/diamond-background.jpg');
+}
+
+.POPUP_BACKGROUND.gray {
+    background-color: #aeb4b7;
+}
+
+.visibilityIconSecondary {
+    font-size: 14px !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ---------- COLOR PALETTE ---------- */ /* lines 400 - ? */
+
+
+/* - BACKGROUND - */ /* lines - 403 - ? */
+
+/* screen mode */ /* color palette - background color - screen */
+
+.cp-bgc.light {
+    background-color: white;
+}
+
+.cp-bgc.dark {
+    background-color: black;
+}
+
+
+/* bright */ 
+/* color palette - background color - bright */
+/* lines - 406 - 478 */
+ 
+.cp-bgc-brt.static.masculine {
+    background-color: #4a76fd;
+}
+
+.cp-bgc-brt.static.feminine {
+    background-color: #e639af;
+}
+
+.cp-bgc-brt.static.ruby {
+    background-color: #850014;   
+}
+ 
+.cp-bgc-brt.static.orange { 
+    background-color: #ff8303; 
+}
+
+.cp-bgc-brt.static.sun {
+    background-color: #ffe700;  
+}
+
+.cp-bgc-brt.static.emerald { 
+    background-color: #50c878; 
+}
+
+.cp-bgc-brt.static.blue {
+    background-color: #098de9; 
+}
+
+.cp-bgc-brt.static.indigo { 
+    background-color: #30307e; 
+}
+ 
+.cp-bgc-brt.static.violet { 
+    background-color: #8a2be2; 
+}
+ 
+.cp-bgc-brt.static.rainbow {
+    background: -webkit-linear-gradient(right, #850014, #ff8303, #ffe700, #50c878, #098de9, #30307e, #8a2be2); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, #850014, #ff8303, #ffe700, #50c878, #098de9, #30307e, #8a2be2); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, #850014, #ff8303, #ffe700, #50c878, #098de9, #30307e, #8a2be2); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, #850014, #ff8303, #ffe700, #50c878, #098de9, #30307e, #8a2be2); /* Standard syntax (must be last) */
+}
+
+.cp-bgc-brt.static.rainbowAlt {
+    background-image: url('./Assets/misc/rainbow-background.jpg');
+}
+ 
+.cp-bgc-brt.static.silver {
+    background: -webkit-linear-gradient(left, #dadada , #8e8e8e, #dadada); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, #dadada , #8e8e8e, #dadada); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, #dadada , #8e8e8e, #dadada); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, #dadada , #8e8e8e, #dadada); /* Standard syntax (must be last) */
+}
+
+.cp-bgc-brt.static.silverAlt {
+    background-image: url('./Assets/misc/silver-background.jpg');
+}
+ 
+.cp-bgc-brt.static.gold {
+    background: -webkit-linear-gradient(left, #ab781d , #eed264, #ab781d); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, #ab781d , #eed264, #ab781d); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, #ab781d , #eed264, #ab781d); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, #ab781d , #eed264, #ab781d); /* Standard syntax (must be last) */
+}
+
+.cp-bgc-brt.static.goldAlt {
+    background-image: url('./Assets/misc/gold-background.jpg');
+}
+ 
+.cp-bgc-brt.static.platinum {
+    background: -webkit-linear-gradient(left, #d3e9f6, #6b8c95, #566167, #8e8e8e, #6d606a,  #af9499, #dadada); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, #d3e9f6, #6b8c95, #566167, #8e8e8e, #6d606a,  #af9499, #dadada); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, #d3e9f6, #6b8c95, #566167, #8e8e8e, #6d606a,  #af9499, #dadada); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, #d3e9f6, #6b8c95, #566167, #8e8e8e, #6d606a,  #af9499, #dadada); /* Standard syntax (must be last) */
+}
+
+.cp-bgc-brt.static.platinumAlt {
+    background-image: url('./Assets/misc/platinum-background.jpg');
+}
+ 
+.cp-bgc-brt.static.diamond {
+    background-image: url('./Assets/misc/diamond-background.jpg');
+}
+ 
+.cp-bgc-brt.static.gray {
+    background-color: #aeb4b7;
+}
+
+/* light */ /* lines 480 - 552 */
+ 
+.cp-bgc.static.light.masculine,
+.cp-bgc.dynamic.light.masculine:hover,
+.cp-bgc.dynamic.dark.masculine:active {
+    background-color: #d8e1fe;
+}
+ 
+.cp-bgc.static.light.feminine,
+.cp-bgc.dynamic.light.feminine:hover,
+.cp-bgc.dynamic.dark.feminine:active {
+    background-color: #fde1ef;
+}
+
+.cp-bgc.static.light.ruby,
+.cp-bgc.dynamic.light.ruby:hover,
+.cp-bgc.dynamic.dark.ruby:active {
+    background-color: #d4a6ad;
+}
+ 
+.cp-bgc.static.light.orange,
+.cp-bgc.dynamic.light.orange:hover,
+.cp-bgc.dynamic.dark.orange:active {
+    background-color: #ffdab3;
+}
+
+.cp-bgc.static.light.sun,
+.cp-bgc.dynamic.light.sun:hover,
+.cp-bgc.dynamic.dark.sun:active {
+    background-color: #fff9bf;
+}
+ 
+.cp-bgc.static.light.emerald,
+.cp-bgc.dynamic.light.emerald:hover,
+.cp-bgc.dynamic.dark.emerald:active {
+    background-color: #caeed6;
+}
+ 
+.cp-bgc.static.light.blue,
+.cp-bgc.dynamic.light.blue:hover,
+.cp-bgc.dynamic.dark.blue:active {
+    background-color: #cee8fb;
+}
+
+.cp-bgc.static.light.indigo,
+.cp-bgc.dynamic.light.indigo:hover,
+.cp-bgc.dynamic.dark.indigo:active {
+    background-color: #babad4;
+}
+
+.cp-bgc.static.light.violet,
+.cp-bgc.dynamic.light.violet:hover,
+.cp-bgc.dynamic.dark.violet:active {
+    background-color: #dcbff6;
+}
+ 
+.cp-bgc.static.light.rainbow,
+.cp-bgc.dynamic.light.rainbow:hover,
+.cp-bgc.dynamic.dark.rainbow:active {
+    background: -webkit-linear-gradient(right, #d4a6ad, #ffdab3, #fff9bf, #caeed6, #cee8fb, #babad4, #dcbff6); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, #d4a6ad, #ffdab3, #fff9bf, #caeed6, #cee8fb, #babad4, #dcbff6); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, #d4a6ad, #ffdab3, #fff9bf, #caeed6, #cee8fb, #babad4, #dcbff6); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, #d4a6ad, #ffdab3, #fff9bf, #caeed6, #cee8fb, #babad4, #dcbff6); /* Standard syntax (must be last) */
+}
+
+/*
+.cp-bgc.static.light.rainbowAlt,
+.cp-bgc.dynamic.light.rainbowAlt:hover,
+.cp-bgc.dynamic.dark.rainbowAlt:active {
+    background-image: url('./Assets/misc/rainbow-background-lgt.jpg');
+}
+*/
+ 
+.cp-bgc.static.light.silver,
+.cp-bgc.dynamic.light.silver:hover,
+.cp-bgc.dynamic.dark.silver:active {
+    background: -webkit-linear-gradient(left, #f4f4f4, #dddddd, #f4f4f4); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, #f4f4f4, #dddddd, #f4f4f4); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, #f4f4f4, #dddddd, #f4f4f4); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to left, #f4f4f4, #dddddd, #f4f4f4); /* Standard syntax (must be last) */
+}
+
+.cp-bgc.static.light.silverAlt,
+.cp-bgc.dynamic.light.silverAlt:hover,
+.cp-bgc.dynamic.dark.silverAlt:active {
+    background-image: url('./Assets/misc/silver-background-lgt.jpg');
+}
+
+.cp-bgc.static.light.gold,
+.cp-bgc.dynamic.light.gold:hover,
+.cp-bgc.dynamic.dark.gold:active {
+    background: -webkit-linear-gradient(left, #e6d6bb, #faf1d0, #e6d6bb); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, #e6d6bb, #faf1d0, #e6d6bb); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, #e6d6bb, #faf1d0, #e6d6bb); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, #e6d6bb, #faf1d0, #e6d6bb); /* Standard syntax (must be last) */
+}
+
+.cp-bgc.static.light.goldAlt,
+.cp-bgc.dynamic.light.goldAlt:hover,
+.cp-bgc.dynamic.dark.goldAlt:active {
+    background-image: url('./Assets/misc/gold-background-lgt.jpg');
+}
+ 
+.cp-bgc.static.light.platinum,
+.cp-bgc.dynamic.light.platinum:hover,
+.cp-bgc.dynamic.dark.platinum:active {
+    background: -webkit-linear-gradient(left, #f2f8fc, #d2dcdf, #cccfd1, #dddddd, #d3cfd2, #e7dfe0, #f4f4f4); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, #f2f8fc, #d2dcdf, #cccfd1, #dddddd, #d3cfd2, #e7dfe0, #f4f4f4); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, #f2f8fc, #d2dcdf, #cccfd1, #dddddd, #d3cfd2, #e7dfe0, #f4f4f4); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, #f2f8fc, #d2dcdf, #cccfd1, #dddddd, #d3cfd2, #e7dfe0, #f4f4f4); /* Standard syntax (must be last) */
+}
+
+/*
+.cp-bgc.static.light.platinumAlt,
+.cp-bgc.dynamic.light.platinumAlt:hover,
+.cp-bgc.dynamic.dark.platinumAlt:active {
+    background-image: url('./Assets/misc/platinum-background-lgt.jpg');
+}
+*/
+ 
+.cp-bgc.static.light.diamond,
+.cp-bgc.dynamic.light.diamond:hover,
+.cp-bgc.dynamic.dark.diamond:active {
+    background-image: url('./Assets/misc/diamond-background-lgt.jpg');
+}
+ 
+.cp-bgc.static.light.gray,
+.cp-bgc.dynamic.light.gray:hover,
+.cp-bgc.dynamic.dark.gray:active {
+    background-color: #f1f1f1;
+}
+
+/* dark */ /* lines - ? - ? */
+
+.cp-bgc-drk.dynamic.feminine:active {
+    background-color: #3453b2;
+}
+
+.cp-bgc-drk.dynamic.feminine:active {
+    background-color: #a1287b;
+}
+
+.cp-bgc-drk.dynamic.ruby:active {
+    background-color: #5d000e;
+}
+
+.cp-bgc-drk.dynamic.orange:active {
+    background-color: #b35c02;
+}
+
+.cp-bgc-drk.dynamic.sun:active {
+    background-color: #b3a200;
+}
+
+.cp-bgc-drk.dynamic.emerald:active {
+    background-color: #388c54;
+}
+
+.cp-bgc-drk.dynamic.blue:active {
+    background-color: #0663a4;
+}
+
+.cp-bgc-drk.dynamic.indigo:active {
+    background-color: #222258;
+}
+
+.cp-bgc-drk.dynamic.violet:active {
+    background-color: #611e9f;
+}
+
+.cp-bgc-drk.dynamic.rainbow:active {
+    background: -webkit-linear-gradient(left, #5d000e, #b35c02, #b3a200, #388c54, #0663a4, #222258, #611e9f); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, #5d000e, #b35c02, #b3a200, #388c54, #0663a4, #222258, #611e9f); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, #5d000e, #b35c02, #b3a200, #388c54, #0663a4, #222258, #611e9f); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, #5d000e, #b35c02, #b3a200, #388c54, #0663a4, #222258, #611e9f); /* Standard syntax (must be last) */
+}
+
+.cp-bgc-drk.dynamic.silver:active {
+    background: -webkit-linear-gradient(right, #999999, #646464 , #999999); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, #999999, #646464 , #999999); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, #999999, #646464 , #999999); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, #999999, #646464 , #999999); /* Standard syntax (must be last) */
+}
+
+.cp-bgc-drk.dynamic.platinum:active {
+    background: -webkit-linear-gradient(left, #94a4ad, #4b6269, #3c4448, #646464, #4d434a, #7b686b, #999999); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, #94a4ad, #4b6269, #3c4448, #646464, #4d434a, #7b686b, #999999); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, #94a4ad, #4b6269, #3c4448, #646464, #4d434a, #7b686b, #999999); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, #94a4ad, #4b6269, #3c4448, #646464, #4d434a, #7b686b, #999999); /* Standard syntax (must be last) */
+}
+
+.cp-bgc-drk.dynamic.gold:active, .cp-bgc-drk.dynamic.diamond:active {
+    background: -webkit-linear-gradient(right, #785414, #a79346 , #785414); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, #785414, #a79346 , #785414); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, #785414, #a79346 , #785414); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, #785414, #a79346 , #785414); /* Standard syntax (must be last) */
+}
+
+.cp-c-drk.dynamic.gray:active {
+    background-color: #7a7e80;
+}
+
+
+
+
+
+
+
+
+
+/* - FOREGROUND - */ /* lines - ? - ? */
+
+/* screen mode */
+
+.FOREGROUND_SCREEN.light {
+    color: black;
+}
+
+.FOREGROUND_SCREEN.dark {
+    color: white;
+}
+
+/* bright */ /* lines - ? - ? */
+
+.cp-c-brt.static.masculine, 
+.cp-c-brt.dynamic.masculine:focus {
+    color: #4a76fd;
+}
+
+.cp-c-brt.static.feminine, 
+.cp-c-brt.dynamic.feminine:focus {
+    color: #e639af;
+}
+
+.cp-c-brt.static.ruby, 
+.cp-c-brt.dynamic.ruby:focus {
+    color: #850014;
+}
+
+.cp-c-brt.static.orange, 
+.cp-c-brt.dynamic.orange:focus {
+    color: #ff8303;
+}
+
+.cp-c-brt.static.sun, 
+.cp-c-brt.dynamic.sun:focus {
+    color: #ffe700;
+}
+
+.cp-c-brt.static.emerald, 
+.cp-c-brt.dynamic.emerald:focus {
+    color: #50c878;
+}
+
+.cp-c-brt.static.blue, 
+.cp-c-brt.dynamic.blue:focus {
+    color: #098de9;
+}
+
+.cp-c-brt.static.indigo, 
+.cp-c-brt.dynamic.indigo:focus {
+    color: #30307e;
+}
+
+.cp-c-brt.static.violet, 
+.cp-c-brt.dynamic.violet:focus {
+    color: #8a2be2;
+}
+
+.cp-c-brt.static.rainbow, 
+.cp-c-brt.dynamic.rainbow:focus {
+    background: -webkit-linear-gradient(right, #850014, #ff8303, #ffe700, #50c878, #098de9, #30307e, #8a2be2); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, #850014, #ff8303, #ffe700, #50c878, #098de9, #30307e, #8a2be2); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, #850014, #ff8303, #ffe700, #50c878, #098de9, #30307e, #8a2be2); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, #850014, #ff8303, #ffe700, #50c878, #098de9, #30307e, #8a2be2); /* Standard syntax (must be last) */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.cp-c-brt.static.silver, 
+.cp-c-brt.dynamic.silver:focus {
+    background: -webkit-linear-gradient(left, #dadada , #8e8e8e, #dadada); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, #dadada , #8e8e8e, #dadada); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, #dadada , #8e8e8e, #dadada); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, #dadada , #8e8e8e, #dadada); /* Standard syntax (must be last) */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.cp-c-brt.static.gold, 
+.cp-c-brt.dynamic.gold:focus {
+    background: -webkit-linear-gradient(left, #ab781d , #eed264, #ab781d); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, #ab781d , #eed264, #ab781d); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, #ab781d , #eed264, #ab781d); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, #ab781d , #eed264, #ab781d); /* Standard syntax (must be last) */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.cp-c-brt.static.platinum, 
+.cp-c-brt.dynamic.platinum:focus {
+    background: -webkit-linear-gradient(left, #d3e9f6, #6b8c95, #566167, #8e8e8e, #6d606a,  #af9499, #dadada); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, #d3e9f6, #6b8c95, #566167, #8e8e8e, #6d606a,  #af9499, #dadada); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, #d3e9f6, #6b8c95, #566167, #8e8e8e, #6d606a,  #af9499, #dadada); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, #d3e9f6, #6b8c95, #566167, #8e8e8e, #6d606a,  #af9499, #dadada); /* Standard syntax (must be last) */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.cp-c-brt.static.gray, 
+.cp-c-brt.dynamic.gray:focus {
+    color: #aeb4b7;
+}
+
+/* dark */ /* lines ? - ? */
+
+.cp-c-drk.dynamic.feminine:active {
+    color: #3453b2;
+}
+
+.cp-c-drk.dynamic.feminine:active {
+    color: #a1287b;
+}
+
+.cp-c-drk.dynamic.ruby:active {
+    color: #5d000e;
+}
+
+.cp-c-drk.dynamic.orange:active {
+    color: #b35c02;
+}
+
+.cp-c-drk.dynamic.sun:active {
+    color: #b3a200;
+}
+
+.cp-c-drk.dynamic.emerald:active {
+    color: #388c54;
+}
+
+.cp-c-drk.dynamic.blue:active {
+    color: #0663a4;
+}
+
+.cp-c-drk.dynamic.indigo:active {
+    color: #222258;
+}
+
+.cp-c-drk.dynamic.violet:active {
+    color: #611e9f;
+}
+
+.cp-c-drk.dynamic.rainbow:active {
+    background: -webkit-linear-gradient(left, #5d000e, #b35c02, #b3a200, #388c54, #0663a4, #222258, #611e9f); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, #5d000e, #b35c02, #b3a200, #388c54, #0663a4, #222258, #611e9f); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, #5d000e, #b35c02, #b3a200, #388c54, #0663a4, #222258, #611e9f); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, #5d000e, #b35c02, #b3a200, #388c54, #0663a4, #222258, #611e9f); /* Standard syntax (must be last) */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.cp-c-drk.dynamic.silver:active {
+    background: -webkit-linear-gradient(right, #999999, #646464 , #999999); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, #999999, #646464 , #999999); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, #999999, #646464 , #999999); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, #999999, #646464 , #999999); /* Standard syntax (must be last) */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.cp-c-drk.dynamic.platinum:active {
+    background: -webkit-linear-gradient(left, #94a4ad, #4b6269, #3c4448, #646464, #4d434a, #7b686b, #999999); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, #94a4ad, #4b6269, #3c4448, #646464, #4d434a, #7b686b, #999999); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, #94a4ad, #4b6269, #3c4448, #646464, #4d434a, #7b686b, #999999); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, #94a4ad, #4b6269, #3c4448, #646464, #4d434a, #7b686b, #999999); /* Standard syntax (must be last) */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.cp-c-drk.dynamic.gold:active, .cp-c-drk.dynamic.diamond:active {
+    background: -webkit-linear-gradient(right, #785414, #a79346 , #785414); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, #785414, #a79346 , #785414); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, #785414, #a79346 , #785414); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, #785414, #a79346 , #785414); /* Standard syntax (must be last) */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.cp-c-drk.dynamic.gray:active {
+    color: #7a7e80;
+}
+
+
+
+
+
+.COLOR_HR.masculine {
+    background-color: #4a76fd;
+}
+
+.COLOR_HR.feminine {
+    background-color: #e639af;
+}
+
+.COLOR_HR.ruby {
+    background-color: #850014;   
+}
+
+.COLOR_HR.orange { 
+    background-color: #ff8303; 
+}
+
+.COLOR_HR.sun {
+    background-color: #ffe700;  
+}
+
+.COLOR_HR.emerald { 
+    background-color: #50c878; 
+}
+
+.COLOR_HR.blue {
+    background-color: #098de9; 
+}
+
+.COLOR_HR.indigo { 
+    background-color: #30307e; 
+}
+
+.COLOR_HR.violet { 
+    background-color: #8a2be2; 
+}
+
+.COLOR_HR.rainbow {
+    background: -webkit-linear-gradient(right, #850014, #ff8303, #ffe700, #50c878, #098de9, #30307e, #8a2be2); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, #850014, #ff8303, #ffe700, #50c878, #098de9, #30307e, #8a2be2); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, #850014, #ff8303, #ffe700, #50c878, #098de9, #30307e, #8a2be2); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, #850014, #ff8303, #ffe700, #50c878, #098de9, #30307e, #8a2be2); /* Standard syntax (must be last) */
+}
+
+.COLOR_HR.silver {
+    background: -webkit-linear-gradient(left, #dadada , #8e8e8e, #dadada); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, #dadada , #8e8e8e, #dadada); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, #dadada , #8e8e8e, #dadada); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, #dadada , #8e8e8e, #dadada); /* Standard syntax (must be last) */
+}
+
+.COLOR_HR.gold {
+    background: -webkit-linear-gradient(left, #ab781d , #eed264, #ab781d); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, #ab781d , #eed264, #ab781d); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, #ab781d , #eed264, #ab781d); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, #ab781d , #eed264, #ab781d); /* Standard syntax (must be last) */
+}
+
+.COLOR_HR.platinum {
+    background: -webkit-linear-gradient(left, #d3e9f6, #6b8c95, #566167, #8e8e8e, #6d606a,  #af9499, #dadada); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, #d3e9f6, #6b8c95, #566167, #8e8e8e, #6d606a,  #af9499, #dadada); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, #d3e9f6, #6b8c95, #566167, #8e8e8e, #6d606a,  #af9499, #dadada); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, #d3e9f6, #6b8c95, #566167, #8e8e8e, #6d606a,  #af9499, #dadada); /* Standard syntax (must be last) */
+}
+
+.COLOR_HR.diamond {
+    background-image: url('./Assets/misc/diamond-background.jpg');
+}
+
+.COLOR_HR.gray {
+    background-color: #aeb4b7;
+}
+
+.BCKGRND_LGT.masculine {
+    background-color: #d8e1fe;
+}
+
+.BCKGRND_LGT.feminine {
+    background-color: #fde1ef;
+}
+
+.BCKGRND_LGT.ruby {
+    background-color: #d4a6ad;
+}
+
+.BCKGRND_LGT.orange {
+    background-color: #ffdab3;
+}
+
+.BCKGRND_LGT.sun {
+    background-color: #fff9bf;
+}
+
+.BCKGRND_LGT.emerald {
+    background-color: #caeed6;
+}
+
+.BCKGRND_LGT.blue {
+    background-color: #cee8fb;
+}
+
+.BCKGRND_LGT.indigo {
+    background-color: #babad4;
+}
+
+.BCKGRND_LGT.violet {
+    background-color: #dcbff6;
+}
+
+.BCKGRND_LGT.rainbow {
+    background: -webkit-linear-gradient(right, #d4a6ad, #ffdab3, #fff9bf, #caeed6, #cee8fb, #babad4, #dcbff6); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, #d4a6ad, #ffdab3, #fff9bf, #caeed6, #cee8fb, #babad4, #dcbff6); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, #d4a6ad, #ffdab3, #fff9bf, #caeed6, #cee8fb, #babad4, #dcbff6); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, #d4a6ad, #ffdab3, #fff9bf, #caeed6, #cee8fb, #babad4, #dcbff6); /* Standard syntax (must be last) */
+}
+
+.BCKGRND_LGT.silver {
+    background: -webkit-linear-gradient(left, #f4f4f4, #dddddd, #f4f4f4); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, #f4f4f4, #dddddd, #f4f4f4); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, #f4f4f4, #dddddd, #f4f4f4); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to left, #f4f4f4, #dddddd, #f4f4f4); /* Standard syntax (must be last) */
+}
+
+.BCKGRND_LGT.gold {
+    background: -webkit-linear-gradient(left, #e6d6bb, #faf1d0, #e6d6bb); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, #e6d6bb, #faf1d0, #e6d6bb); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, #e6d6bb, #faf1d0, #e6d6bb); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, #e6d6bb, #faf1d0, #e6d6bb); /* Standard syntax (must be last) */
+}
+
+.BCKGRND_LGT.platinum {
+    background: -webkit-linear-gradient(left, #f2f8fc, #d2dcdf, #cccfd1, #dddddd, #d3cfd2, #e7dfe0, #f4f4f4); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, #f2f8fc, #d2dcdf, #cccfd1, #dddddd, #d3cfd2, #e7dfe0, #f4f4f4); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, #f2f8fc, #d2dcdf, #cccfd1, #dddddd, #d3cfd2, #e7dfe0, #f4f4f4); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, #f2f8fc, #d2dcdf, #cccfd1, #dddddd, #d3cfd2, #e7dfe0, #f4f4f4); /* Standard syntax (must be last) */
+}
+
+.BCKGRND_LGT.diamond {
+    background-color: white;
+}
+
+.BCKGRND_LGT.gray {
+    background-color: #f1f1f1;
+}
+
+.TEXT_COLOR.masculine {
+    color: #4a76fd;
+}
+
+.TEXT_COLOR.feminine {
+    color: #e639af;
+}
+
+.TEXT_COLOR.ruby {
+    color: #850014;
+}
+
+.TEXT_COLOR.orange {
+    color: #ff8303;
+}
+
+.TEXT_COLOR.sun {
+    color: #ffe700;
+}
+
+.TEXT_COLOR.emerald {
+    color: #50c878;
+}
+
+.TEXT_COLOR.blue {
+    color: #098de9;
+}
+
+.TEXT_COLOR.indigo {
+    color: #30307e;
+}
+
+.TEXT_COLOR.violet {
+    color: #8a2be2;
+}
+
+.TEXT_COLOR.rainbow {
+    background: -webkit-linear-gradient(right, #850014, #ff8303, #ffe700, #50c878, #098de9, #30307e, #8a2be2); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, #850014, #ff8303, #ffe700, #50c878, #098de9, #30307e, #8a2be2); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, #850014, #ff8303, #ffe700, #50c878, #098de9, #30307e, #8a2be2); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, #850014, #ff8303, #ffe700, #50c878, #098de9, #30307e, #8a2be2); /* Standard syntax (must be last) */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.TEXT_COLOR.silver {
+    background: -webkit-linear-gradient(left, #dadada , #8e8e8e, #dadada); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, #dadada , #8e8e8e, #dadada); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, #dadada , #8e8e8e, #dadada); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, #dadada , #8e8e8e, #dadada); /* Standard syntax (must be last) */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.TEXT_COLOR.gold {
+    background: -webkit-linear-gradient(left, #ab781d , #eed264, #ab781d); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, #ab781d , #eed264, #ab781d); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, #ab781d , #eed264, #ab781d); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, #ab781d , #eed264, #ab781d); /* Standard syntax (must be last) */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.TEXT_COLOR.platinum {
+    background: -webkit-linear-gradient(left, #d3e9f6, #6b8c95, #566167, #8e8e8e, #6d606a,  #af9499, #dadada); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, #d3e9f6, #6b8c95, #566167, #8e8e8e, #6d606a,  #af9499, #dadada); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, #d3e9f6, #6b8c95, #566167, #8e8e8e, #6d606a,  #af9499, #dadada); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, #d3e9f6, #6b8c95, #566167, #8e8e8e, #6d606a,  #af9499, #dadada); /* Standard syntax (must be last) */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.TEXT_COLOR.gray {
+    color: #aeb4b7;
+}
+
+
+
+.SVG_ICON.masculine { 
+    color: #4a76fd;
+}
+
+.SVG_ICON.feminine { 
+    color: #e639af;
+}
+
+.SVG_ICON.ruby {
+    color: #850014;   
+}
+
+.SVG_ICON.orange { 
+    color: #ff8303; 
+}
+
+.SVG_ICON.sun {
+    color: #ffe700;  
+}
+
+.SVG_ICON.emerald { 
+    color: #50c878; 
+}
+
+.SVG_ICON.blue {
+    color: #098de9; 
+}
+
+.SVG_ICON.indigo { 
+    color: #30307e; 
+}
+
+.SVG_ICON.violet { 
+    color: #8a2be2; 
+}
+
+.SVG_ICON.gray { 
+    color: #bfc2c7;
+}
+
+
+.SVG_ICON_REACTIVE.masculine {
+    color: #d8e1fe;
+}
+
+.SVG_ICON_REACTIVE.masculine:hover {
+    color: #4a76fd;
+}
+
+.SVG_ICON_REACTIVE.masculine:active {
+    color: #3453b2;
+}
+
+.SVG_ICON_REACTIVE.feminine {
+    color: #fde1ef;
+}
+
+.SVG_ICON_REACTIVE.feminine:hover {
+    color: #e639af;
+}
+
+.SVG_ICON_REACTIVE.feminine:active {
+    color: #a1287b;
+}
+
+.SVG_ICON_REACTIVE.ruby {
+    color: #d4a6ad;
+}
+
+.SVG_ICON_REACTIVE.ruby:hover {
+    color: #850014;
+}
+
+.SVG_ICON_REACTIVE.ruby:active {
+    color: #5d000e;
+}
+
+.SVG_ICON_REACTIVE.orange {
+    color: #ffdab3;
+}
+
+.SVG_ICON_REACTIVE.orange:hover {
+    color: #ff8303;
+}
+
+.SVG_ICON_REACTIVE.orange:active {
+    color: #b35c02;
+}
+
+.SVG_ICON_REACTIVE.sun {
+    color: #fff9bf;
+}
+
+.SVG_ICON_REACTIVE.sun:hover {
+    color: #ffe700;
+}
+
+.SVG_ICON_REACTIVE.sun:active {
+    color: #b3a200;
+}
+
+.SVG_ICON_REACTIVE.emerald {
+    color: #caeed6;
+}
+
+.SVG_ICON_REACTIVE.emerald:hover {
+    color: #50c878;
+}
+
+.SVG_ICON_REACTIVE.emerald:active {
+    color: #388c54;
+}
+
+.SVG_ICON_REACTIVE.blue {
+    color: #cee8fb;
+}
+
+.SVG_ICON_REACTIVE.blue:hover {
+    color: #098de9;
+}
+
+.SVG_ICON_REACTIVE.blue:active {
+    color: #0663a4;
+}
+
+.SVG_ICON_REACTIVE.indigo {
+    color: #babad4;
+}
+
+.SVG_ICON_REACTIVE.indigo:hover {
+    color: #30307e;
+}
+
+.SVG_ICON_REACTIVE.indigo:active {
+    color: #222258;
+}
+
+.SVG_ICON_REACTIVE.violet {
+    color: #dcbff6;
+}
+
+.SVG_ICON_REACTIVE.violet:hover {
+    color: #8a2be2;
+}
+
+.SVG_ICON_REACTIVE.violet:active {
+    color: #611e9f;
+}
+
+.SVG_ICON_REACTIVE.gray {
+    color: #e4e6e7;
+}
+
+.SVG_ICON_REACTIVE.gray:hover {
+    color: #aeb4b7;
+}
+
+.SVG_ICON_REACTIVE.gray:active {
+    color: #7a7e80;
+}
+
+
+.PNG_LOGO_ONE {
+    background-image: url('./Assets/logo/ConnectTF-logo-1.png');
+}
+
+.PNG_LOGO_TWO {
+    background-image: url('./Assets/logo/ConnectTF-logo-2.png');
+}
+
+.PNG_LOGO_THREE {
+    background-image: url('./Assets/logo/ConnectTF-logo-Icon.png');
+}
+
+.HIGHER_BACKGROUND.rainbow {
+    background-image: url('./Assets/misc/rainbow-background.jpg');
+}
+
+.HIGHER_BACKGROUND.silver {
+    background-image: url('./Assets/misc/silver-background.jpg');
+}
+
+.HIGHER_BACKGROUND.gold {
+    background-image: url('./Assets/misc/gold-background.jpg');
+}
+
+.HIGHER_BACKGROUND.platinum {
+    background-image: url('./Assets/misc/platinum-background.jpg');
+}
+
+.HIGHER_BACKGROUND.diamond {
+    background-image: url('./Assets/misc/diamond-background.jpg');
+}
+
+.HIGHER_BACKGROUND.diamond.drk {
+    background-image: url('./Assets/misc/diamond-background-drk.jpg');
+}
+
+.HIGHER_BACKGROUND.diamond.lgt {
+    background-image: url('./Assets/misc/diamond-background-lgt.jpg');
+}
+
+.HIGHER_BACKGROUND.diamond.drk.lgt {
+    background-image: url('./Assets/misc/diamond-background-drk-lgt.jpg');
+}
+
+.DIAMOND_BTN1 {
+    background-image: url('./Assets/misc/diamond-btn1.jpg');
+}
+
+.DIAMOND_BTN2 {
+    background-image: url('./Assets/misc/diamond-btn2.jpg');
+}
+
+.DIAMOND_BTN3 {
+    background-image: url('./Assets/misc/diamond-btn3.jpg');
+}
+
+.DIAMOND_BTN4 {
+    background-image: url('./Assets/misc/diamond-btn4.jpg');
+}
+
+.DIAMOND_BTN5 {
+    background-image: url('./Assets/misc/diamond-btn5.jpg');
+}
+
+.DIAMOND_BTN6 {
+    background-image: url('./Assets/misc/diamond-btn6.jpg');
+}
+
+.DIAMOND_BTN7 {
+    background-image: url('./Assets/misc/diamond-btn7.jpg');
+}
+
+.DIAMOND_BTN8 {
+    background-image: url('./Assets/misc/diamond-btn8.jpg');
+}
+
+.CONNECT_LINK {
+    background-image: url('./Assets/misc/connect.png');
+}
+
+.CONNECT_LINK.drk {
+    background-image: url('./Assets/misc/connect-drk.png');
+}
+
+.DZ_BORDER.rainbow {
+    background-image: url('./Assets/misc/img-dz-border-rainbow.png');
+}
+
+.DZ_BORDER.silver {
+    background-image: url('./Assets/misc/img-dz-border-silver.png');
+}
+
+.DZ_BORDER.gold {
+    background-image: url('./Assets/misc/img-dz-border-gold.png');
+}
+
+.DZ_BORDER.platinum {
+    background-image: url('./Assets/misc/img-dz-border-platinum.png');
+}
+
+.DZ_BORDER.diamond {
+    background-image: url('./Assets/misc/img-dz-border-diamond.png');
+}
+
+
+.PNG_ICON_LOGO {
+    background-image: url('./Assets/icons/logo/logo.png');
+}
+
+.PNG_ICON_SEEN {
+    background-image: url('./Assets/icons/interactions/seen.png');
+}
+
+.PNG_ICON_UNSEEN {
+    background-image: url('./Assets/icons/interactions/unseen.png');
+}
+
+.PNG_ICON_LIKE {
+    background-image: url('./Assets/icons/interactions/like.png');
+}
+
+.PNG_ICON_LIKE_LGT {
+    background-image: url('./Assets/icons/interactions/like-lgt.png');
+}
+
+.PNG_ICON_LIKED {
+    background-image: url('./Assets/icons/interactions/liked.png');
+}
+
+.PNG_ICON_LIKED_LGT {
+    background-image: url('./Assets/icons/interactions/liked-lgt.png');
+}
+
+.PNG_ICON_LOVE {
+    background-image: url('./Assets/icons/interactions/love.png');
+}
+
+.PNG_ICON_LOVE_LGT {
+    background-image: url('./Assets/icons/interactions/love-lgt.png');
+}
+
+.PNG_ICON_LOVED {
+    background-image: url('./Assets/icons/interactions/loved.png');
+}
+
+.PNG_ICON_LOVED_LGT {
+    background-image: url('./Assets/icons/interactions/loved-lgt.png');
+}
+
+.PNG_ICON_ENERGY.masculine {
+    background-image: url('./Assets/icons/flameEnergy/masculine-flame.png');
+}
+
+.PNG_ICON_ENERGY.feminine {
+    background-image: url('./Assets/icons/flameEnergy/feminine-flame.png');
+}
+
+.PNG_ICON_SPECTRUM.ruby {
+    background-image: url('./Assets/icons/spectrum/ruby.png');
+}
+
+.PNG_ICON_SPECTRUM.orange {
+    background-image: url('./Assets/icons/spectrum/orange.png');
+}
+
+.PNG_ICON_SPECTRUM.sun {
+    background-image: url('./Assets/icons/spectrum/sun.png');
+}
+
+.PNG_ICON_SPECTRUM.emerald {
+    background-image: url('./Assets/icons/spectrum/emerald.png');
+}
+
+.PNG_ICON_SPECTRUM.blue {
+    background-image: url('./Assets/icons/spectrum/blue.png');
+}
+
+.PNG_ICON_SPECTRUM.indigo {
+    background-image: url('./Assets/icons/spectrum/indigo.png');
+}
+
+.PNG_ICON_SPECTRUM.violet {
+    background-image: url('./Assets/icons/spectrum/violet.png');
+}
+
+.PNG_ICON_SPECTRUM.rainbow {
+    background-image: url('./Assets/icons/spectrum/rainbow.png');
+}
+
+.PNG_ICON_SPECTRUM.silver {
+    background-image: url('./Assets/icons/spectrum/silver.png');
+}
+
+.PNG_ICON_SPECTRUM.gold {
+    background-image: url('./Assets/icons/spectrum/gold.png');
+}
+
+.PNG_ICON_SPECTRUM.platinum {
+    background-image: url('./Assets/icons/spectrum/platinum.png');
+}
+
+.PNG_ICON_SPECTRUM.diamond {
+    background-image: url('./Assets/icons/spectrum/diamond.png');
+}
+
+.PNG_ICON_HEALTH.masculine {
+    background-image: url('./Assets/icons/health/health-masculine.png');
+}
+
+.PNG_ICON_HEALTH.feminine {
+    background-image: url('./Assets/icons/health/health-feminine.png');
+}
+
+.PNG_ICON_HEALTH.ruby {
+    background-image: url('./Assets/icons/health/health-ruby.png');
+}
+
+.PNG_ICON_HEALTH.orange {
+    background-image: url('./Assets/icons/health/health-orange.png');
+}
+
+.PNG_ICON_HEALTH.sun {
+    background-image: url('./Assets/icons/health/health-sun.png');
+}
+
+.PNG_ICON_HEALTH.emerald {
+    background-image: url('./Assets/icons/health/health-emerald.png');
+}
+
+.PNG_ICON_HEALTH.blue {
+    background-image: url('./Assets/icons/health/health-blue.png');
+}
+
+.PNG_ICON_HEALTH.indigo {
+    background-image: url('./Assets/icons/health/health-indigo.png');
+}
+
+.PNG_ICON_HEALTH.violet {
+    background-image: url('./Assets/icons/health/health-violet.png');
+}
+
+.PNG_ICON_HEALTH.rainbow {
+    background-image: url('./Assets/icons/health/health-rainbow.png');
+}
+
+.PNG_ICON_HEALTH.silver {
+    background-image: url('./Assets/icons/health/health-silver.png');
+}
+
+.PNG_ICON_HEALTH.gold {
+    background-image: url('./Assets/icons/health/health-gold.png');
+}
+
+.PNG_ICON_HEALTH.platinum {
+    background-image: url('./Assets/icons/health/health-platinum.png');
+}
+
+.PNG_ICON_HEALTH.diamond {
+    background-image: url('./Assets/icons/health/health-diamond.png');
+}
+
+.PNG_ICON_HEALTH.gray {
+    background-image: url('./Assets/icons/health/health-gray.png');
+}
+
+.PNG_ICON_MENTIONS.masculine {
+    background-image: url('./Assets/icons/mentions/mentions-masculine.png');
+}
+
+.PNG_ICON_MENTIONS.feminine {
+    background-image: url('./Assets/icons/mentions/mentions-feminine.png');
+}
+
+.PNG_ICON_MENTIONS.ruby {
+    background-image: url('./Assets/icons/mentions/mentions-ruby.png');
+}
+
+.PNG_ICON_MENTIONS.orange {
+    background-image: url('./Assets/icons/mentions/mentions-orange.png');
+}
+
+.PNG_ICON_MENTIONS.sun {
+    background-image: url('./Assets/icons/mentions/mentions-sun.png');
+}
+
+.PNG_ICON_MENTIONS.emerald {
+    background-image: url('./Assets/icons/mentions/mentions-emerald.png');
+}
+
+.PNG_ICON_MENTIONS.blue {
+    background-image: url('./Assets/icons/mentions/mentions-blue.png');
+}
+
+.PNG_ICON_MENTIONS.indigo {
+    background-image: url('./Assets/icons/mentions/mentions-indigo.png');
+}
+
+.PNG_ICON_MENTIONS.violet {
+    background-image: url('./Assets/icons/mentions/mentions-violet.png');
+}
+
+.PNG_ICON_MENTIONS.rainbow {
+    background-image: url('./Assets/icons/mentions/mentions-rainbow.png');
+}
+
+.PNG_ICON_MENTIONS.silver {
+    background-image: url('./Assets/icons/mentions/mentions-silver.png');
+}
+
+.PNG_ICON_MENTIONS.gold {
+    background-image: url('./Assets/icons/mentions/mentions-gold.png');
+}
+
+.PNG_ICON_MENTIONS.platinum {
+    background-image: url('./Assets/icons/mentions/mentions-platinum.png');
+}
+
+.PNG_ICON_MENTIONS.diamond {
+    background-image: url('./Assets/icons/mentions/mentions-diamond.png');
+}
+
+.PNG_ICON_MENTIONS.gray {
+    background-image: url('./Assets/icons/mentions/mentions-gray.png');
+}
+
+.PNG_ICON_CHARGE.yin {
+    background-image: url('./Assets/icons/tao-charge/yin.png');
+}
+
+.PNG_ICON_CHARGE.yang {
+    background-image: url('./Assets/icons/tao-charge/yang.png');
+}
+
+.PNG_ICON_SEX.male {
+    background-image: url('./Assets/icons/sex-orientation/male.png');
+}
+
+.PNG_ICON_SEX.female {
+    background-image: url('./Assets/icons/sex-orientation/female.png');
+}
+
+.PNG_ICON_SEX.bigender {
+    background-image: url('./Assets/icons/sex-orientation/bigender.png');
+}
+
+.PNG_ICON_SEX.transgender {
+    background-image: url('./Assets/icons/sex-orientation/transgender.png');
+}
+
+.PNG_ICON_ORIENTATION.straight {
+    background-image: url('./Assets/icons/sex-orientation/straight.png');
+}
+
+.PNG_ICON_ORIENTATION.gay {
+    background-image: url('./Assets/icons/sex-orientation/gay.png');
+}
+
+.PNG_ICON_ORIENTATION.lesbian {
+    background-image: url('./Assets/icons/sex-orientation/lesbian.png');
+}
+
+.PNG_ICON_ORIENTATION.lesbian {
+    background-image: url('./Assets/icons/sex-orientation/lesbian.png');
+}
+
+.PNG_ICON_ORIENTATION.pan {
+    background-image: url('./Assets/icons/sex-orientation/pan.png');
+}
+
+.PNG_ICON_ORIENTATION.male.bisexual {
+    background-image: url('./Assets/icons/sex-orientation/bi-male.png');
+}
+
+.PNG_ICON_ORIENTATION.female.bisexual {
+    background-image: url('./Assets/icons/sex-orientation/bi-female.png');
+}
+
+.PNG_ICON_ZODIAC.aquarius {
+    background-image: url('./Assets/icons/zodiac-signs/aquarius.png');
+}
+
+.PNG_ICON_ZODIAC.aries {
+    background-image: url('./Assets/icons/zodiac-signs/aries.png');
+}
+
+.PNG_ICON_ZODIAC.cancer {
+    background-image: url('./Assets/icons/zodiac-signs/cancer.png');
+}
+
+.PNG_ICON_ZODIAC.capricorn {
+    background-image: url('./Assets/icons/zodiac-signs/capricorn.png');
+}
+
+.PNG_ICON_ZODIAC.gemini {
+    background-image: url('./Assets/icons/zodiac-signs/gemini.png');
+}
+
+.PNG_ICON_ZODIAC.leo {
+    background-image: url('./Assets/icons/zodiac-signs/leo.png');
+}
+
+.PNG_ICON_ZODIAC.libra {
+    background-image: url('./Assets/icons/zodiac-signs/libra.png');
+}
+
+.PNG_ICON_ZODIAC.pisces {
+    background-image: url('./Assets/icons/zodiac-signs/pisces.png');
+}
+
+.PNG_ICON_ZODIAC.sagittarius {
+    background-image: url('./Assets/icons/zodiac-signs/sagittarius.png');
+}
+
+.PNG_ICON_ZODIAC.scorpio {
+    background-image: url('./Assets/icons/zodiac-signs/scorpio.png');
+}
+
+.PNG_ICON_ZODIAC.taurus {
+    background-image: url('./Assets/icons/zodiac-signs/taurus.png');
+}
+
+.PNG_ICON_ZODIAC.virgo {
+    background-image: url('./Assets/icons/zodiac-signs/virgo.png');
+}
+
+.PNG_ICON_COMPASS.north {
+    background-image: url('./Assets/icons/compass/north.png');
+}
+
+.PNG_ICON_COMPASS.northeast {
+    background-image: url('./Assets/icons/compass/northeast.png');
+}
+
+.PNG_ICON_COMPASS.east {
+    background-image: url('./Assets/icons/compass/east.png');
+}
+
+.PNG_ICON_COMPASS.southeast {
+    background-image: url('./Assets/icons/compass/southeast.png');
+}
+
+.PNG_ICON_COMPASS.south {
+    background-image: url('./Assets/icons/compass/south.png');
+}
+
+.PNG_ICON_COMPASS.southwest {
+    background-image: url('./Assets/icons/compass/southwest.png');
+}
+
+.PNG_ICON_COMPASS.west {
+    background-image: url('./Assets/icons/compass/west.png');
+}
+
+.PNG_ICON_COMPASS.northwest {
+    background-image: url('./Assets/icons/compass/northwest.png');
+}
+
+.PNG_ICON_CHAT_BUBBLE.diamond {
+    background-image: url('./Assets/icons/middlebar/chat-bubble.png');
+}
+
+.PNG_ICON_QN_ANSWER.diamond {
+    background-image: url('./Assets/icons/middlebar/qn-answer.png');
+}
+
+.PNG_ICON_REPLY.diamond {
+    background-image: url('./Assets/icons/middlebar/reply.png');
+}
+
+.PNG_ICON_SHARE.masculine {
+    background-image: url('./Assets/icons/share/masculine.png');
+}
+
+.PNG_ICON_SHARE.feminine {
+    background-image: url('./Assets/icons/share/feminine.png');
+}
+
+.PNG_ICON_SHARE.ruby {
+    background-image: url('./Assets/icons/share/ruby.png');
+}
+
+.PNG_ICON_SHARE.orange {
+    background-image: url('./Assets/icons/share/orange.png');
+}
+
+.PNG_ICON_SHARE.sun {
+    background-image: url('./Assets/icons/share/sun.png');
+}
+
+.PNG_ICON_SHARE.emerald {
+    background-image: url('./Assets/icons/share/emerald.png');
+}
+
+.PNG_ICON_SHARE.blue {
+    background-image: url('./Assets/icons/share/blue.png');
+}
+
+.PNG_ICON_SHARE.indigo {
+    background-image: url('./Assets/icons/share/indigo.png');
+}
+
+.PNG_ICON_SHARE.violet {
+    background-image: url('./Assets/icons/share/violet.png');
+}
+
+.PNG_ICON_SHARE.rainbow {
+    background-image: url('./Assets/icons/share/rainbow.png');
+}
+
+.PNG_ICON_SHARE.silver {
+    background-image: url('./Assets/icons/share/silver.png');
+}
+
+.PNG_ICON_SHARE.gold {
+    background-image: url('./Assets/icons/share/gold.png');
+}
+
+.PNG_ICON_SHARE.platinum {
+    background-image: url('./Assets/icons/share/platinum.png');
+}
+
+.PNG_ICON_SHARE.diamond {
+    background-image: url('./Assets/icons/share/diamond.png');
+}
+
+.PNG_ICON_SHARE.gray {
+    background-image: url('./Assets/icons/share/gray.png');
+}
+
+.PNG_ICON_HASHTAG.masculine {
+    background-image: url('./Assets/icons/hashtag/hashtag-masculine.png');
+}
+
+.PNG_ICON_HASHTAG.feminine {
+    background-image: url('./Assets/icons/hashtag/hashtag-feminine.png');
+}
+
+.PNG_ICON_HASHTAG.ruby {
+    background-image: url('./Assets/icons/hashtag/hashtag-ruby.png');
+}
+
+.PNG_ICON_HASHTAG.orange {
+    background-image: url('./Assets/icons/hashtag/hashtag-orange.png');
+}
+
+.PNG_ICON_HASHTAG.sun {
+    background-image: url('./Assets/icons/hashtag/hashtag-sun.png');
+}
+
+.PNG_ICON_HASHTAG.emerald {
+    background-image: url('./Assets/icons/hashtag/hashtag-emerald.png');
+}
+
+.PNG_ICON_HASHTAG.blue {
+    background-image: url('./Assets/icons/hashtag/hashtag-blue.png');
+}
+
+.PNG_ICON_HASHTAG.indigo {
+    background-image: url('./Assets/icons/hashtag/hashtag-indigo.png');
+}
+
+.PNG_ICON_HASHTAG.violet {
+    background-image: url('./Assets/icons/hashtag/hashtag-violet.png');
+}
+
+.PNG_ICON_HASHTAG.rainbow {
+    background-image: url('./Assets/icons/hashtag/hashtag-rainbow.png');
+}
+
+.PNG_ICON_HASHTAG.silver {
+    background-image: url('./Assets/icons/hashtag/hashtag-silver.png');
+}
+
+.PNG_ICON_HASHTAG.gold {
+    background-image: url('./Assets/icons/hashtag/hashtag-gold.png');
+}
+
+.PNG_ICON_HASHTAG.platinum {
+    background-image: url('./Assets/icons/hashtag/hashtag-platinum.png');
+}
+
+.PNG_ICON_HASHTAG.diamond {
+    background-image: url('./Assets/icons/hashtag/hashtag-diamond.png');
+}
+
+.PNG_ICON_HASHTAG.gray {
+    background-image: url('./Assets/icons/hashtag/hashtag-gray.png');
+}
+
+
+.PNG_ICON_AIRPLANE {
+    background-image: url('./Assets/icons/airplane/airplane-white.png');
+}
+
+.PNG_ICON_AIRPLANE.masculine.lgt {
+    background-image: url('./Assets/icons/airplane/airplane-masculine-lgt.png');
+}
+
+.PNG_ICON_AIRPLANE.feminine.lgt {
+    background-image: url('./Assets/icons/airplane/airplane-feminine-lgt.png');
+}
+
+.PNG_ICON_AIRPLANE.ruby.lgt {
+    background-image: url('./Assets/icons/airplane/airplane-ruby-lgt.png');
+}
+
+.PNG_ICON_AIRPLANE.orange.lgt {
+    background-image: url('./Assets/icons/airplane/airplane-orange-lgt.png');
+}
+
+.PNG_ICON_AIRPLANE.sun.lgt {
+    background-image: url('./Assets/icons/airplane/airplane-sun-lgt.png');
+}
+
+.PNG_ICON_AIRPLANE.emerald.lgt {
+    background-image: url('./Assets/icons/airplane/airplane-emerald-lgt.png');
+}
+
+.PNG_ICON_AIRPLANE.blue.lgt {
+    background-image: url('./Assets/icons/airplane/airplane-blue-lgt.png');
+}
+
+.PNG_ICON_AIRPLANE.indigo.lgt {
+    background-image: url('./Assets/icons/airplane/airplane-indigo-lgt.png');
+}
+
+.PNG_ICON_AIRPLANE.violet.lgt {
+    background-image: url('./Assets/icons/airplane/airplane-violet-lgt.png');
+}
+
+.PNG_ICON_AIRPLANE.rainbow.lgt {
+    background-image: url('./Assets/icons/airplane/airplane-rainbow-lgt.png');
+}
+
+.PNG_ICON_AIRPLANE.silver.lgt {
+    background-image: url('./Assets/icons/airplane/airplane-silver-lgt.png');
+}
+
+.PNG_ICON_AIRPLANE.gold.lgt {
+    background-image: url('./Assets/icons/airplane/airplane-gold-lgt.png');
+}
+
+.PNG_ICON_AIRPLANE.platinum.lgt {
+    background-image: url('./Assets/icons/airplane/airplane-platinum-lgt.png');
+}
+
+.PNG_ICON_AIRPLANE.diamond.lgt {
+    background-image: url('./Assets/icons/airplane/airplane-diamond-lgt.png');
+}
+
+.PNG_ICON_AIRPLANE.gray.lgt {
+    background-image: url('./Assets/icons/airplane/airplane-gray-lgt.png');
+}
+
+.PNG_ICON_EMOJI {
+    background-image: url('./Assets/icons/emoji/emoji.png');
+}
+
+.PNG_ICON_FRIENDS.masculine {
+    background-image: url('./Assets/icons/friendRequests/friends-masculine.png');
+}
+
+.PNG_ICON_FRIENDS_DRK.masculine {
+    background-image: url('./Assets/icons/friendRequests/friends-masculine-drk.png');
+}
+
+.PNG_ICON_FRIENDS.masculine.ruby {
+    background-image: url('./Assets/icons/friendRequests/friends-masculine-ruby.png');
+}
+
+.PNG_ICON_FRIENDS_DRK.masculine.ruby {
+    background-image: url('./Assets/icons/friendRequests/friends-masculine-ruby-drk.png');
+}
+
+.PNG_ICON_FRIENDS.masculine.orange {
+    background-image: url('./Assets/icons/friendRequests/friends-masculine-orange.png');
+}
+
+.PNG_ICON_FRIENDS_DRK.masculine.orange {
+    background-image: url('./Assets/icons/friendRequests/friends-masculine-orange-drk.png');
+}
+
+.PNG_ICON_FRIENDS.masculine.sun {
+    background-image: url('./Assets/icons/friendRequests/friends-masculine-sun.png');
+}
+
+.PNG_ICON_FRIENDS_DRK.masculine.sun {
+    background-image: url('./Assets/icons/friendRequests/friends-masculine-sun-drk.png');
+}
+
+.PNG_ICON_FRIENDS.masculine.emerald {
+    background-image: url('./Assets/icons/friendRequests/friends-masculine-emerald.png');
+}
+
+.PNG_ICON_FRIENDS_DRK.masculine.emerald {
+    background-image: url('./Assets/icons/friendRequests/friends-masculine-emerald-drk.png');
+}
+
+.PNG_ICON_FRIENDS.masculine.blue {
+    background-image: url('./Assets/icons/friendRequests/friends-masculine-blue.png');
+}
+
+.PNG_ICON_FRIENDS_DRK.masculine.blue {
+    background-image: url('./Assets/icons/friendRequests/friends-masculine-blue-drk.png');
+}
+
+.PNG_ICON_FRIENDS.masculine.indigo {
+    background-image: url('./Assets/icons/friendRequests/friends-masculine-indigo.png');
+}
+
+.PNG_ICON_FRIENDS_DRK.masculine.indigo {
+    background-image: url('./Assets/icons/friendRequests/friends-masculine-indigo-drk.png');
+}
+
+.PNG_ICON_FRIENDS.masculine.violet {
+    background-image: url('./Assets/icons/friendRequests/friends-masculine-violet.png');
+}
+
+.PNG_ICON_FRIENDS_DRK.masculine.violet {
+    background-image: url('./Assets/icons/friendRequests/friends-masculine-violet-drk.png');
+}
+
+.PNG_ICON_FRIENDS.masculine.rainbow {
+    background-image: url('./Assets/icons/friendRequests/friends-masculine-rainbow.png');
+}
+
+.PNG_ICON_FRIENDS_DRK.masculine.rainbow {
+    background-image: url('./Assets/icons/friendRequests/friends-masculine-rainbow-drk.png');
+}
+
+.PNG_ICON_FRIENDS.masculine.silver {
+    background-image: url('./Assets/icons/friendRequests/friends-masculine-silver.png');
+}
+
+.PNG_ICON_FRIENDS_DRK.masculine.silver {
+    background-image: url('./Assets/icons/friendRequests/friends-masculine-silver-drk.png');
+}
+
+.PNG_ICON_FRIENDS.masculine.gold {
+    background-image: url('./Assets/icons/friendRequests/friends-masculine-gold.png');
+}
+
+.PNG_ICON_FRIENDS_DRK.masculine.gold {
+    background-image: url('./Assets/icons/friendRequests/friends-masculine-gold-drk.png');
+}
+
+.PNG_ICON_FRIENDS.masculine.platinum {
+    background-image: url('./Assets/icons/friendRequests/friends-masculine-platinum.png');
+}
+
+.PNG_ICON_FRIENDS_DRK.masculine.platinum {
+    background-image: url('./Assets/icons/friendRequests/friends-masculine-platinum-drk.png');
+}
+
+.PNG_ICON_FRIENDS.masculine.diamond {
+    background-image: url('./Assets/icons/friendRequests/friends-masculine-diamond.png');
+}
+
+.PNG_ICON_FRIENDS_DRK.masculine.diamond {
+    background-image: url('./Assets/icons/friendRequests/friends-masculine-diamond-drk.png');
+}
+
+.PNG_ICON_FRIENDS.masculine.gray {
+    background-image: url('./Assets/icons/friendRequests/friends-masculine-gray.png');
+}
+
+.PNG_ICON_FRIENDS_DRK.masculine.gray {
+    background-image: url('./Assets/icons/friendRequests/friends-masculine-gray-drk.png');
+}
+
+.PNG_ICON_FRIENDS.feminine {
+    background-image: url('./Assets/icons/friendRequests/friends-feminine.png');
+}
+
+.PNG_ICON_FRIENDS_DRK.feminine {
+    background-image: url('./Assets/icons/friendRequests/friends-feminine-drk.png');
+}
+
+.PNG_ICON_FRIENDS.feminine.ruby {
+    background-image: url('./Assets/icons/friendRequests/friends-feminine-ruby.png');
+}
+
+.PNG_ICON_FRIENDS_DRK.feminine.ruby {
+    background-image: url('./Assets/icons/friendRequests/friends-feminine-ruby-drk.png');
+}
+
+.PNG_ICON_FRIENDS.feminine.orange {
+    background-image: url('./Assets/icons/friendRequests/friends-feminine-orange.png');
+}
+
+.PNG_ICON_FRIENDS_DRK.feminine.orange {
+    background-image: url('./Assets/icons/friendRequests/friends-feminine-orange-drk.png');
+}
+
+.PNG_ICON_FRIENDS.feminine.sun {
+    background-image: url('./Assets/icons/friendRequests/friends-feminine-sun.png');
+}
+
+.PNG_ICON_FRIENDS_DRK.feminine.sun {
+    background-image: url('./Assets/icons/friendRequests/friends-feminine-sun-drk.png');
+}
+
+.PNG_ICON_FRIENDS.feminine.emerald {
+    background-image: url('./Assets/icons/friendRequests/friends-feminine-emerald.png');
+}
+
+.PNG_ICON_FRIENDS_DRK.feminine.emerald {
+    background-image: url('./Assets/icons/friendRequests/friends-feminine-emerald-drk.png');
+}
+
+.PNG_ICON_FRIENDS.feminine.blue {
+    background-image: url('./Assets/icons/friendRequests/friends-feminine-blue.png');
+}
+
+.PNG_ICON_FRIENDS_DRK.feminine.blue {
+    background-image: url('./Assets/icons/friendRequests/friends-feminine-blue-drk.png');
+}
+
+.PNG_ICON_FRIENDS.feminine.indigo {
+    background-image: url('./Assets/icons/friendRequests/friends-feminine-indigo.png');
+}
+
+.PNG_ICON_FRIENDS_DRK.feminine.indigo {
+    background-image: url('./Assets/icons/friendRequests/friends-feminine-indigo-drk.png');
+}
+
+.PNG_ICON_FRIENDS.feminine.violet {
+    background-image: url('./Assets/icons/friendRequests/friends-feminine-violet.png');
+}
+
+.PNG_ICON_FRIENDS_DRK.feminine.violet {
+    background-image: url('./Assets/icons/friendRequests/friends-feminine-violet-drk.png');
+}
+
+.PNG_ICON_FRIENDS.feminine.rainbow {
+    background-image: url('./Assets/icons/friendRequests/friends-feminine-rainbow.png');
+}
+
+.PNG_ICON_FRIENDS_DRK.feminine.rainbow {
+    background-image: url('./Assets/icons/friendRequests/friends-feminine-rainbow-drk.png');
+}
+
+.PNG_ICON_FRIENDS.feminine.silver {
+    background-image: url('./Assets/icons/friendRequests/friends-feminine-silver.png');
+}
+
+.PNG_ICON_FRIENDS_DRK.feminine.silver {
+    background-image: url('./Assets/icons/friendRequests/friends-feminine-silver-drk.png');
+}
+
+.PNG_ICON_FRIENDS.feminine.gold {
+    background-image: url('./Assets/icons/friendRequests/friends-feminine-gold.png');
+}
+
+.PNG_ICON_FRIENDS_DRK.feminine.gold {
+    background-image: url('./Assets/icons/friendRequests/friends-feminine-gold-drk.png');
+}
+
+.PNG_ICON_FRIENDS.feminine.platinum {
+    background-image: url('./Assets/icons/friendRequests/friends-feminine-platinum.png');
+}
+
+.PNG_ICON_FRIENDS_DRK.feminine.platinum {
+    background-image: url('./Assets/icons/friendRequests/friends-feminine-platinum-drk.png');
+}
+
+.PNG_ICON_FRIENDS.feminine.diamond {
+    background-image: url('./Assets/icons/friendRequests/friends-feminine-diamond.png');
+}
+
+.PNG_ICON_FRIENDS_DRK.feminine.diamond {
+    background-image: url('./Assets/icons/friendRequests/friends-feminine-diamond-drk.png');
+}
+
+.PNG_ICON_FRIENDS.feminine.gray {
+    background-image: url('./Assets/icons/friendRequests/friends-feminine-gray.png');
+}
+
+.PNG_ICON_FRIENDS_DRK.feminine.gray {
+    background-image: url('./Assets/icons/friendRequests/friends-feminine-gray-drk.png');
+}
+
+.PNG_ICON_CHAT.masculine {
+    background-image: url('./Assets/icons/chat/chat-tf-message-masculine.png');
+}
+
+.PNG_ICON_CHAT_DRK.masculine {
+    background-image: url('./Assets/icons/chat/chat-tf-message-masculine-drk.png');
+}
+
+.PNG_ICON_CHAT.feminine {
+    background-image: url('./Assets/icons/chat/chat-tf-message-feminine.png');
+}
+
+.PNG_ICON_CHAT_DRK.feminine {
+    background-image: url('./Assets/icons/chat/chat-tf-message-feminine-drk.png');
+}
+
+.PNG_ICON_CHAT.ruby {
+    background-image: url('./Assets/icons/chat/chat-tf-message-ruby.png');
+}
+
+.PNG_ICON_CHAT_DRK.ruby {
+    background-image: url('./Assets/icons/chat/chat-tf-message-ruby-drk.png');
+}
+
+.PNG_ICON_CHAT.orange {
+    background-image: url('./Assets/icons/chat/chat-tf-message-orange.png');
+}
+
+.PNG_ICON_CHAT_DRK.orange {
+    background-image: url('./Assets/icons/chat/chat-tf-message-orange-drk.png');
+}
+
+.PNG_ICON_CHAT.sun {
+    background-image: url('./Assets/icons/chat/chat-tf-message-sun.png');
+}
+
+.PNG_ICON_CHAT_DRK.sun {
+    background-image: url('./Assets/icons/chat/chat-tf-message-sun-drk.png');
+}
+
+.PNG_ICON_CHAT.emerald {
+    background-image: url('./Assets/icons/chat/chat-tf-message-emerald.png');
+}
+
+.PNG_ICON_CHAT_DRK.emerald {
+    background-image: url('./Assets/icons/chat/chat-tf-message-emerald-drk.png');
+}
+
+.PNG_ICON_CHAT.blue {
+    background-image: url('./Assets/icons/chat/chat-tf-message-blue.png');
+}
+
+.PNG_ICON_CHAT_DRK.blue {
+    background-image: url('./Assets/icons/chat/chat-tf-message-blue-drk.png');
+}
+
+.PNG_ICON_CHAT.indigo {
+    background-image: url('./Assets/icons/chat/chat-tf-message-indigo.png');
+}
+
+.PNG_ICON_CHAT_DRK.indigo {
+    background-image: url('./Assets/icons/chat/chat-tf-message-indigo-drk.png');
+}
+
+.PNG_ICON_CHAT.violet {
+    background-image: url('./Assets/icons/chat/chat-tf-message-violet.png');
+}
+
+.PNG_ICON_CHAT_DRK.violet {
+    background-image: url('./Assets/icons/chat/chat-tf-message-violet-drk.png');
+}
+
+.PNG_ICON_CHAT.rainbow {
+    background-image: url('./Assets/icons/chat/chat-tf-message-rainbow.png');
+}
+
+.PNG_ICON_CHAT_DRK.rainbow {
+    background-image: url('./Assets/icons/chat/chat-tf-message-rainbow-drk.png');
+}
+
+.PNG_ICON_CHAT.silver {
+    background-image: url('./Assets/icons/chat/chat-tf-message-silver.png');
+}
+
+.PNG_ICON_CHAT_DRK.silver {
+    background-image: url('./Assets/icons/chat/chat-tf-message-silver-drk.png');
+}
+
+.PNG_ICON_CHAT.gold {
+    background-image: url('./Assets/icons/chat/chat-tf-message-gold.png');
+}
+
+.PNG_ICON_CHAT_DRK.gold {
+    background-image: url('./Assets/icons/chat/chat-tf-message-gold-drk.png');
+}
+
+.PNG_ICON_CHAT.platinum {
+    background-image: url('./Assets/icons/chat/chat-tf-message-platinum.png');
+}
+
+.PNG_ICON_CHAT_DRK.platinum {
+    background-image: url('./Assets/icons/chat/chat-tf-message-platinum-drk.png');
+}
+
+.PNG_ICON_CHAT.diamond {
+    background-image: url('./Assets/icons/chat/chat-tf-message-diamond.png');
+}
+
+.PNG_ICON_CHAT_DRK.diamond {
+    background-image: url('./Assets/icons/chat/chat-tf-message-diamond-drk.png');
+}
+
+.PNG_ICON_CHAT.gray {
+    background-image: url('./Assets/icons/chat/chat-tf-message-gray.png');
+}
+
+.PNG_ICON_CHAT_DRK.gray {
+    background-image: url('./Assets/icons/chat/chat-tf-message-gray-drk.png');
+}
+
+.PNG_ICON_LB_.masculine {
+    background-image: url('./Assets/icons/lotusBell/lotusBell-masculine.png');
+}
+
+.PNG_ICON_LB_DRK.masculine {
+    background-image: url('./Assets/icons/lotusBell/lotusBell-masculine-drk.png');
+}
+
+.PNG_ICON_LB_WHT.masculine {
+    background-image: url('./Assets/icons/lotusBell/lotusBell-masculine-wht.png');
+}
+
+.PNG_ICON_LB_.feminine {
+    background-image: url('./Assets/icons/lotusBell/lotusBell-feminine.png');
+}
+
+.PNG_ICON_LB_DRK.feminine {
+    background-image: url('./Assets/icons/lotusBell/lotusBell-feminine-drk.png');
+}
+
+.PNG_ICON_LB_WHT.feminine {
+    background-image: url('./Assets/icons/lotusBell/lotusBell-feminine-wht.png');
+}
+
+.PNG_ICON_LB_.ruby {
+    background-image: url('./Assets/icons/lotusBell/lotusBell-ruby.png');
+}
+
+.PNG_ICON_LB_DRK.ruby {
+    background-image: url('./Assets/icons/lotusBell/lotusBell-ruby-drk.png');
+}
+
+.PNG_ICON_LB_WHT.ruby {
+    background-image: url('./Assets/icons/lotusBell/lotusBell-ruby-wht.png');
+}
+
+.PNG_ICON_LB_.orange {
+    background-image: url('./Assets/icons/lotusBell/lotusBell-orange.png');
+}
+
+.PNG_ICON_LB_DRK.orange {
+    background-image: url('./Assets/icons/lotusBell/lotusBell-orange-drk.png');
+}
+
+.PNG_ICON_LB_WHT.orange {
+    background-image: url('./Assets/icons/lotusBell/lotusBell-orange-wht.png');
+}
+
+.PNG_ICON_LB_.sun {
+    background-image: url('./Assets/icons/lotusBell/lotusBell-sun.png');
+}
+
+.PNG_ICON_LB_DRK.sun {
+    background-image: url('./Assets/icons/lotusBell/lotusBell-sun-drk.png');
+}
+
+.PNG_ICON_LB_WHT.sun {
+    background-image: url('./Assets/icons/lotusBell/lotusBell-sun-wht.png');
+}
+
+.PNG_ICON_LB_.emerald {
+    background-image: url('./Assets/icons/lotusBell/lotusBell-emerald.png');
+}
+
+.PNG_ICON_LB_DRK.emerald {
+    background-image: url('./Assets/icons/lotusBell/lotusBell-emerald-drk.png');
+}
+
+.PNG_ICON_LB_WHT.emerald {
+    background-image: url('./Assets/icons/lotusBell/lotusBell-emerald-wht.png');
+}
+
+.PNG_ICON_LB_.blue {
+    background-image: url('./Assets/icons/lotusBell/lotusBell-blue.png');
+}
+
+.PNG_ICON_LB_DRK.blue {
+    background-image: url('./Assets/icons/lotusBell/lotusBell-blue-drk.png');
+}
+
+.PNG_ICON_LB_WHT.blue {
+    background-image: url('./Assets/icons/lotusBell/lotusBell-blue-wht.png');
+}
+
+.PNG_ICON_LB_.indigo {
+    background-image: url('./Assets/icons/lotusBell/lotusBell-indigo.png');
+}
+
+.PNG_ICON_LB_DRK.indigo {
+    background-image: url('./Assets/icons/lotusBell/lotusBell-indigo-drk.png');
+}
+
+.PNG_ICON_LB_WHT.indigo {
+    background-image: url('./Assets/icons/lotusBell/lotusBell-indigo-wht.png');
+}
+
+.PNG_ICON_LB_.violet {
+    background-image: url('./Assets/icons/lotusBell/lotusBell-violet.png');
+}
+
+.PNG_ICON_LB_DRK.violet {
+    background-image: url('./Assets/icons/lotusBell/lotusBell-violet-drk.png');
+}
+
+.PNG_ICON_LB_WHT.violet {
+    background-image: url('./Assets/icons/lotusBell/lotusBell-violet-wht.png');
+}
+
+.PNG_ICON_LB_.rainbow {
+    background-image: url('./Assets/icons/lotusBell/lotusBell-rainbow.png');
+}
+
+.PNG_ICON_LB_DRK.rainbow {
+    background-image: url('./Assets/icons/lotusBell/lotusBell-rainbow-drk.png');
+}
+
+.PNG_ICON_LB_WHT.rainbow {
+    background-image: url('./Assets/icons/lotusBell/lotusBell-rainbow-wht.png');
+}
+
+.PNG_ICON_LB_.silver {
+    background-image: url('./Assets/icons/lotusBell/lotusBell-silver.png');
+}
+
+.PNG_ICON_LB_DRK.silver {
+    background-image: url('./Assets/icons/lotusBell/lotusBell-silver-drk.png');
+}
+
+.PNG_ICON_LB_WHT.silver {
+    background-image: url('./Assets/icons/lotusBell/lotusBell-silver-wht.png');
+}
+
+.PNG_ICON_LB_.gold {
+    background-image: url('./Assets/icons/lotusBell/lotusBell-gold.png');
+}
+
+.PNG_ICON_LB_DRK.gold {
+    background-image: url('./Assets/icons/lotusBell/lotusBell-gold-drk.png');
+}
+
+.PNG_ICON_LB_WHT.gold {
+    background-image: url('./Assets/icons/lotusBell/lotusBell-gold-wht.png');
+}
+
+.PNG_ICON_LB_.platinum {
+    background-image: url('./Assets/icons/lotusBell/lotusBell-platinum.png');
+}
+
+.PNG_ICON_LB_DRK.platinum {
+    background-image: url('./Assets/icons/lotusBell/lotusBell-platinum-drk.png');
+}
+
+.PNG_ICON_LB_WHT.platinum {
+    background-image: url('./Assets/icons/lotusBell/lotusBell-platinum-wht.png');
+}
+
+.PNG_ICON_LB_.diamond {
+    background-image: url('./Assets/icons/lotusBell/lotusBell-diamond.png');
+}
+
+.PNG_ICON_LB_DRK.diamond {
+    background-image: url('./Assets/icons/lotusBell/lotusBell-diamond-drk.png');
+}
+
+.PNG_ICON_LB_WHT.diamond {
+    background-image: url('./Assets/icons/lotusBell/lotusBell-diamond-wht.png');
+}
+
+.PNG_ICON_LB_.gray {
+    background-image: url('./Assets/icons/lotusBell/lotusBell-gray.png');
+}
+
+.PNG_ICON_LB_DRK.gray {
+    background-image: url('./Assets/icons/lotusBell/lotusBell-gray-drk.png');
+}
+
+.PNG_ICON_LB_WHT.gray {
+    background-image: url('./Assets/icons/lotusBell/lotusBell-gray-wht.png');
+}
+
+.PNG_ICON_SEARCH.rainbow {
+    background-image: url('./Assets/icons/search/search-rainbow.png');
+}
+
+.PNG_ICON_SEARCH_DRK.rainbow {
+    background-image: url('./Assets/icons/search/search-rainbow-drk.png');
+}
+
+.PNG_ICON_SEARCH_LGT.rainbow {
+    background-image: url('./Assets/icons/search/search-rainbow-lgt.png');
+}
+
+.PNG_ICON_SEARCH.silver {
+    background-image: url('./Assets/icons/search/search-silver.png');
+}
+
+.PNG_ICON_SEARCH_DRK.silver {
+    background-image: url('./Assets/icons/search/search-silver-drk.png');
+}
+
+.PNG_ICON_SEARCH_LGT.silver {
+    background-image: url('./Assets/icons/search/search-silver-lgt.png');
+}
+
+.PNG_ICON_SEARCH.gold {
+    background-image: url('./Assets/icons/search/search-gold.png');
+}
+
+.PNG_ICON_SEARCH_DRK.gold {
+    background-image: url('./Assets/icons/search/search-gold-drk.png');
+}
+
+.PNG_ICON_SEARCH_LGT.gold {
+    background-image: url('./Assets/icons/search/search-gold-lgt.png');
+}
+
+.PNG_ICON_SEARCH.platinum {
+    background-image: url('./Assets/icons/search/search-platinum.png');
+}
+
+.PNG_ICON_SEARCH_DRK.platinum {
+    background-image: url('./Assets/icons/search/search-platinum-drk.png');
+}
+
+.PNG_ICON_SEARCH_LGT.platinum {
+    background-image: url('./Assets/icons/search/search-platinum-lgt.png');
+}
+
+.PNG_ICON_SEARCH.diamond {
+    background-image: url('./Assets/icons/search/search-diamond.png');
+}
+
+.PNG_ICON_SEARCH_DRK.diamond {
+    background-image: url('./Assets/icons/search/search-diamond-drk.png');
+}
+
+.PNG_ICON_SEARCH_LGT.diamond {
+    background-image: url('./Assets/icons/search/search-diamond-lgt.png');
+}
+
+.PNG_ICON_SEARCH_BTN.rainbow {
+    background-image: url('./Assets/icons/search/search-btn-rainbow.png');
+}
+
+.PNG_ICON_SEARCH_BTN.rainbow.hov {
+    background-image: url('./Assets/icons/search/search-btn-rainbow-hover.png');
+}
+
+.PNG_ICON_SEARCH_BTN.rainbow.act {
+    background-image: url('./Assets/icons/search/search-btn-rainbow-active.png');
+}
+
+.PNG_ICON_SEARCH_BTN.silver {
+    background-image: url('./Assets/icons/search/search-btn-silver.png');
+}
+
+.PNG_ICON_SEARCH_BTN.silver.hov {
+    background-image: url('./Assets/icons/search/search-btn-silver-hover.png');
+}
+
+.PNG_ICON_SEARCH_BTN.silver.act {
+    background-image: url('./Assets/icons/search/search-btn-silver-active.png');
+}
+
+.PNG_ICON_SEARCH_BTN.gold {
+    background-image: url('./Assets/icons/search/search-btn-gold.png');
+}
+
+.PNG_ICON_SEARCH_BTN.gold.hov {
+    background-image: url('./Assets/icons/search/search-btn-gold-hover.png');
+}
+
+.PNG_ICON_SEARCH_BTN.gold.act {
+    background-image: url('./Assets/icons/search/search-btn-gold-active.png');
+}
+
+.PNG_ICON_SEARCH_BTN.platinum {
+    background-image: url('./Assets/icons/search/search-btn-platinum.png');
+}
+
+.PNG_ICON_SEARCH_BTN.platinum.hov {
+    background-image: url('./Assets/icons/search/search-btn-platinum-hover.png');
+}
+
+.PNG_ICON_SEARCH_BTN.platinum.act {
+    background-image: url('./Assets/icons/search/search-btn-platinum-active.png');
+}
+
+.PNG_ICON_SEARCH_BTN.diamond {
+    background-image: url('./Assets/icons/search/search-btn-diamond.png');
+}
+
+.PNG_ICON_SEARCH_BTN.diamond.hov {
+    background-image: url('./Assets/icons/search/search-btn-diamond-hover.png');
+}
+
+.PNG_ICON_SEARCH_BTN.diamond.act {
+    background-image: url('./Assets/icons/search/search-btn-diamond-active.png');
+}
+
+.PNG_ICON_FOL.masculine {
+    background-image: url('./Assets/icons/fol/fol-masculine.png');
+}
+
+.PNG_ICON_FOL.feminine {
+    background-image: url('./Assets/icons/fol/fol-feminine.png');
+}
+
+.PNG_ICON_FOL.ruby {
+    background-image: url('./Assets/icons/fol/fol-ruby.png');
+}
+
+.PNG_ICON_FOL.orange {
+    background-image: url('./Assets/icons/fol/fol-orange.png');
+}
+
+.PNG_ICON_FOL.sun {
+    background-image: url('./Assets/icons/fol/fol-sun.png');
+}
+
+.PNG_ICON_FOL.emerald {
+    background-image: url('./Assets/icons/fol/fol-emerald.png');
+}
+
+.PNG_ICON_FOL.blue {
+    background-image: url('./Assets/icons/fol/fol-blue.png');
+}
+
+.PNG_ICON_FOL.indigo {
+    background-image: url('./Assets/icons/fol/fol-indigo.png');
+}
+
+.PNG_ICON_FOL.violet {
+    background-image: url('./Assets/icons/fol/fol-violet.png');
+}
+
+.PNG_ICON_FOL.rainbow {
+    background-image: url('./Assets/icons/fol/fol-rainbow.png');
+}
+
+.PNG_ICON_FOL.silver {
+    background-image: url('./Assets/icons/fol/fol-silver.png');
+}
+
+.PNG_ICON_FOL.gold {
+    background-image: url('./Assets/icons/fol/fol-gold.png');
+}
+
+.PNG_ICON_FOL.platinum {
+    background-image: url('./Assets/icons/fol/fol-platinum.png');
+}
+
+.PNG_ICON_FOL.diamond {
+    background-image: url('./Assets/icons/fol/fol-diamond.png');
+}
+
+.PNG_ICON_FOL.gray {
+    background-image: url('./Assets/icons/fol/fol-gray.png');
+}
+
+.PNG_ICON_HOME.masculine {
+    background-image: url('./Assets/icons/home/home-masculine.png');
+}
+
+.PNG_ICON_HOME.masculine.ruby {
+    background-image: url('./Assets/icons/home/home-masculine-ruby.png');
+}
+
+.PNG_ICON_HOME.masculine.orange {
+    background-image: url('./Assets/icons/home/home-masculine-orange.png');
+}
+
+.PNG_ICON_HOME.masculine.sun {
+    background-image: url('./Assets/icons/home/home-masculine-sun.png');
+}
+
+.PNG_ICON_HOME.masculine.emerald {
+    background-image: url('./Assets/icons/home/home-masculine-emerald.png');
+}
+
+.PNG_ICON_HOME.masculine.blue {
+    background-image: url('./Assets/icons/home/home-masculine-blue.png');
+}
+
+.PNG_ICON_HOME.masculine.indigo {
+    background-image: url('./Assets/icons/home/home-masculine-indigo.png');
+}
+
+.PNG_ICON_HOME.masculine.violet {
+    background-image: url('./Assets/icons/home/home-masculine-violet.png');
+}
+
+.PNG_ICON_HOME.masculine.rainbow {
+    background-image: url('./Assets/icons/home/home-masculine-rainbow.png');
+}
+
+.PNG_ICON_HOME.masculine.silver {
+    background-image: url('./Assets/icons/home/home-masculine-silver.png');
+}
+
+.PNG_ICON_HOME.masculine.gold {
+    background-image: url('./Assets/icons/home/home-masculine-gold.png');
+}
+
+.PNG_ICON_HOME.masculine.platinum {
+    background-image: url('./Assets/icons/home/home-masculine-platinum.png');
+}
+
+.PNG_ICON_HOME.masculine.diamond {
+    background-image: url('./Assets/icons/home/home-masculine-diamond.png');
+}
+
+.PNG_ICON_HOME.masculine.gray {
+    background-image: url('./Assets/icons/home/home-masculine-gray.png');
+}
+
+.PNG_ICON_HOME.feminine {
+    background-image: url('./Assets/icons/home/home-feminine.png');
+}
+
+.PNG_ICON_HOME.feminine.ruby {
+    background-image: url('./Assets/icons/home/home-feminine-ruby.png');
+}
+
+.PNG_ICON_HOME.feminine.orange {
+    background-image: url('./Assets/icons/home/home-feminine-orange.png');
+}
+
+.PNG_ICON_HOME.feminine.sun {
+    background-image: url('./Assets/icons/home/home-feminine-sun.png');
+}
+
+.PNG_ICON_HOME.feminine.emerald {
+    background-image: url('./Assets/icons/home/home-feminine-emerald.png');
+}
+
+.PNG_ICON_HOME.feminine.blue {
+    background-image: url('./Assets/icons/home/home-feminine-blue.png');
+}
+
+.PNG_ICON_HOME.feminine.indigo {
+    background-image: url('./Assets/icons/home/home-feminine-indigo.png');
+}
+
+.PNG_ICON_HOME.feminine.violet {
+    background-image: url('./Assets/icons/home/home-feminine-violet.png');
+}
+
+.PNG_ICON_HOME.feminine.rainbow {
+    background-image: url('./Assets/icons/home/home-feminine-rainbow.png');
+}
+
+.PNG_ICON_HOME.feminine.silver {
+    background-image: url('./Assets/icons/home/home-feminine-silver.png');
+}
+
+.PNG_ICON_HOME.feminine.gold {
+    background-image: url('./Assets/icons/home/home-feminine-gold.png');
+}
+
+.PNG_ICON_HOME.feminine.platinum {
+    background-image: url('./Assets/icons/home/home-feminine-platinum.png');
+}
+
+.PNG_ICON_HOME.feminine.diamond {
+    background-image: url('./Assets/icons/home/home-feminine-diamond.png');
+}
+
+.PNG_ICON_HOME.feminine.gray {
+    background-image: url('./Assets/icons/home/home-feminine-gray.png');
+}
+
+.PNG_ICON_NEW.masculine {
+    background-image: url('./Assets/icons/new/new-masculine.png');
+}
+
+.PNG_ICON_NEW.feminine {
+    background-image: url('./Assets/icons/new/new-feminine.png');
+}
+
+.PNG_ICON_NEW.ruby {
+    background-image: url('./Assets/icons/new/new-ruby.png');
+}
+
+.PNG_ICON_NEW.orange {
+    background-image: url('./Assets/icons/new/new-orange.png');
+}
+
+.PNG_ICON_NEW.sun {
+    background-image: url('./Assets/icons/new/new-sun.png');
+}
+
+.PNG_ICON_NEW.emerald {
+    background-image: url('./Assets/icons/new/new-emerald.png');
+}
+
+.PNG_ICON_NEW.blue {
+    background-image: url('./Assets/icons/new/new-blue.png');
+}
+
+.PNG_ICON_NEW.indigo {
+    background-image: url('./Assets/icons/new/new-indigo.png');
+}
+
+.PNG_ICON_NEW.violet {
+    background-image: url('./Assets/icons/new/new-violet.png');
+}
+
+.PNG_ICON_NEW.rainbow {
+    background-image: url('./Assets/icons/new/new-rainbow.png');
+}
+
+.PNG_ICON_NEW.silver {
+    background-image: url('./Assets/icons/new/new-silver.png');
+}
+
+.PNG_ICON_NEW.gold {
+    background-image: url('./Assets/icons/new/new-gold.png');
+}
+
+.PNG_ICON_NEW.platinum {
+    background-image: url('./Assets/icons/new/new-platinum.png');
+}
+
+.PNG_ICON_NEW.diamond {
+    background-image: url('./Assets/icons/new/new-diamond.png');
+}
+
+.PNG_ICON_NEW.gray {
+    background-image: url('./Assets/icons/new/new-gray.png');
+}
+
+.PNG_ICON_POPULAR.masculine {
+    background-image: url('./Assets/icons/popular/popular-masculine.png');
+}
+
+.PNG_ICON_POPULAR.feminine {
+    background-image: url('./Assets/icons/popular/popular-feminine.png');
+}
+
+.PNG_ICON_POPULAR.ruby {
+    background-image: url('./Assets/icons/popular/popular-ruby.png');
+}
+
+.PNG_ICON_POPULAR.orange {
+    background-image: url('./Assets/icons/popular/popular-orange.png');
+}
+
+.PNG_ICON_POPULAR.sun {
+    background-image: url('./Assets/icons/popular/popular-sun.png');
+}
+
+.PNG_ICON_POPULAR.emerald {
+    background-image: url('./Assets/icons/popular/popular-emerald.png');
+}
+
+.PNG_ICON_POPULAR.blue {
+    background-image: url('./Assets/icons/popular/popular-blue.png');
+}
+
+.PNG_ICON_POPULAR.indigo {
+    background-image: url('./Assets/icons/popular/popular-indigo.png');
+}
+
+.PNG_ICON_POPULAR.violet {
+    background-image: url('./Assets/icons/popular/popular-violet.png');
+}
+
+.PNG_ICON_POPULAR.rainbow {
+    background-image: url('./Assets/icons/popular/popular-rainbow.png');
+}
+
+.PNG_ICON_POPULAR.silver {
+    background-image: url('./Assets/icons/popular/popular-silver.png');
+}
+
+.PNG_ICON_POPULAR.gold {
+    background-image: url('./Assets/icons/popular/popular-gold.png');
+}
+
+.PNG_ICON_POPULAR.platinum {
+    background-image: url('./Assets/icons/popular/popular-platinum.png');
+}
+
+.PNG_ICON_POPULAR.diamond {
+    background-image: url('./Assets/icons/popular/popular-diamond.png');
+}
+
+.PNG_ICON_POPULAR.gray {
+    background-image: url('./Assets/icons/popular/popular-gray.png');
+}
+
+.PNG_ICON_CONNECT {
+    background-image: url('./Assets/icons/sidebar/people-connect.png');
+}
+
+.PNG_ICON_GROUPS {
+    background-image: url('./Assets/icons/sidebar/people-color.png');
+}
+
+.PNG_ICON_EVENTS.masculine {
+    background-image: url('./Assets/icons/events/events-masculine.png');
+}
+
+.PNG_ICON_EVENTS.feminine {
+    background-image: url('./Assets/icons/events/events-feminine.png');
+}
+
+.PNG_ICON_EVENTS.ruby {
+    background-image: url('./Assets/icons/events/events-ruby.png');
+}
+
+.PNG_ICON_EVENTS.orange {
+    background-image: url('./Assets/icons/events/events-orange.png');
+}
+
+.PNG_ICON_EVENTS.sun {
+    background-image: url('./Assets/icons/events/events-sun.png');
+}
+
+.PNG_ICON_EVENTS.emerald {
+    background-image: url('./Assets/icons/events/events-emerald.png');
+}
+
+.PNG_ICON_EVENTS.blue {
+    background-image: url('./Assets/icons/events/events-blue.png');
+}
+
+.PNG_ICON_EVENTS.indigo {
+    background-image: url('./Assets/icons/events/events-indigo.png');
+}
+
+.PNG_ICON_EVENTS.violet {
+    background-image: url('./Assets/icons/events/events-violet.png');
+}
+
+.PNG_ICON_EVENTS.rainbow {
+    background-image: url('./Assets/icons/events/events-rainbow.png');
+}
+
+.PNG_ICON_EVENTS.silver {
+    background-image: url('./Assets/icons/events/events-silver.png');
+}
+
+.PNG_ICON_EVENTS.gold {
+    background-image: url('./Assets/icons/events/events-gold.png');
+}
+
+.PNG_ICON_EVENTS.platinum {
+    background-image: url('./Assets/icons/events/events-platinum.png');
+}
+
+.PNG_ICON_EVENTS.diamond {
+    background-image: url('./Assets/icons/events/events-diamond.png');
+}
+
+.PNG_ICON_EVENTS.gray {
+    background-image: url('./Assets/icons/events/events-gray.png');
+}
+
+.PNG_ICON_CANCEL.masculine {
+    background-image: url('./Assets/icons/cancel/cancel-masculine.png');
+}
+
+.PNG_ICON_CANCEL.feminine {
+    background-image: url('./Assets/icons/cancel/cancel-feminine.png');
+}
+
+.PNG_ICON_CANCEL.ruby {
+    background-image: url('./Assets/icons/cancel/cancel-ruby.png');
+}
+
+.PNG_ICON_CANCEL.orange {
+    background-image: url('./Assets/icons/cancel/cancel-orange.png');
+}
+
+.PNG_ICON_CANCEL.sun {
+    background-image: url('./Assets/icons/cancel/cancel-sun.png');
+}
+
+.PNG_ICON_COACH.emerald {
+    background-image: url('./Assets/icons/coach/coach2-emerald.png');
+}
+
+.PNG_ICON_CANCEL.blue {
+    background-image: url('./Assets/icons/cancel/cancel-blue.png');
+}
+
+.PNG_ICON_CANCEL.indigo {
+    background-image: url('./Assets/icons/cancel/cancel-indigo.png');
+}
+
+.PNG_ICON_CANCEL.violet {
+    background-image: url('./Assets/icons/cancel/cancel-violet.png');
+}
+
+.PNG_ICON_CANCEL.gray {
+    background-image: url('./Assets/icons/cancel/cancel-gray.png');
+}
+
+.PNG_ICON_CANCEL.rainbow {
+    background-image: url('./Assets/icons/cancel/cancel-rainbow.png');
+}
+
+.PNG_ICON_CANCEL.rainbow.lgt {
+    background-image: url('./Assets/icons/cancel/cancel-rainbow-lgt.png');
+}
+
+.PNG_ICON_CANCEL.rainbow.drk {
+    background-image: url('./Assets/icons/cancel/cancel-rainbow-drk.png');
+}
+
+.PNG_ICON_CANCEL.silver {
+    background-image: url('./Assets/icons/cancel/cancel-silver.png');
+}
+
+.PNG_ICON_CANCEL.silver.lgt {
+    background-image: url('./Assets/icons/cancel/cancel-silver-lgt.png');
+}
+
+.PNG_ICON_CANCEL.silver.drk {
+    background-image: url('./Assets/icons/cancel/cancel-silver-drk.png');
+}
+
+.PNG_ICON_CANCEL.gold {
+    background-image: url('./Assets/icons/cancel/cancel-gold.png');
+}
+
+.PNG_ICON_CANCEL.gold.lgt {
+    background-image: url('./Assets/icons/cancel/cancel-gold-lgt.png');
+}
+
+.PNG_ICON_CANCEL.gold.drk {
+    background-image: url('./Assets/icons/cancel/cancel-gold-drk.png');
+}
+
+.PNG_ICON_CANCEL.platinum {
+    background-image: url('./Assets/icons/cancel/cancel-platinum.png');
+}
+
+.PNG_ICON_CANCEL.platinum.lgt {
+    background-image: url('./Assets/icons/cancel/cancel-platinum-lgt.png');
+}
+
+.PNG_ICON_CANCEL.platinum.drk {
+    background-image: url('./Assets/icons/cancel/cancel-platinum-drk.png');
+}
+
+.PNG_ICON_CANCEL.diamond {
+    background-image: url('./Assets/icons/cancel/cancel-diamond.png');
+}
+
+.PNG_ICON_CANCEL.diamond.lgt {
+    background-image: url('./Assets/icons/cancel/cancel-diamond-lgt.png');
+}
+
+.PNG_ICON_CANCEL.diamond.drk {
+    background-image: url('./Assets/icons/cancel/cancel-diamond-drk.png');
+}
+
+.PNG_ICON_COACH.masculine {
+    background-image: url('./Assets/icons/coach/coach2-masculine.png');
+}
+
+.PNG_ICON_COACH.feminine {
+    background-image: url('./Assets/icons/coach/coach2-feminine.png');
+}
+
+.PNG_ICON_COACH.ruby {
+    background-image: url('./Assets/icons/coach/coach2-ruby.png');
+}
+
+.PNG_ICON_COACH.orange {
+    background-image: url('./Assets/icons/coach/coach2-orange.png');
+}
+
+.PNG_ICON_COACH.sun {
+    background-image: url('./Assets/icons/coach/coach2-sun.png');
+}
+
+.PNG_ICON_COACH.emerald {
+    background-image: url('./Assets/icons/coach/coach2-emerald.png');
+}
+
+.PNG_ICON_COACH.blue {
+    background-image: url('./Assets/icons/coach/coach2-blue.png');
+}
+
+.PNG_ICON_COACH.indigo {
+    background-image: url('./Assets/icons/coach/coach2-indigo.png');
+}
+
+.PNG_ICON_COACH.violet {
+    background-image: url('./Assets/icons/coach/coach2-violet.png');
+}
+
+.PNG_ICON_COACH.rainbow {
+    background-image: url('./Assets/icons/coach/coach2-rainbow.png');
+}
+
+.PNG_ICON_COACH.silver {
+    background-image: url('./Assets/icons/coach/coach2-silver.png');
+}
+
+.PNG_ICON_COACH.gold {
+    background-image: url('./Assets/icons/coach/coach2-gold.png');
+}
+
+.PNG_ICON_COACH.platinum {
+    background-image: url('./Assets/icons/coach/coach2-platinum.png');
+}
+
+.PNG_ICON_COACH.diamond {
+    background-image: url('./Assets/icons/coach/coach2-diamond.png');
+}
+
+.PNG_ICON_COACH.gray {
+    background-image: url('./Assets/icons/coach/coach2-gray.png');
+}
+
+.PNG_ICON_TORCH.masculine {
+    background-image: url('./Assets/icons/torch/torch-flame-masculine.png');
+}
+
+.PNG_ICON_TORCH.feminine {
+    background-image: url('./Assets/icons/torch/torch-flame-feminine.png');
+}
+
+.PNG_ICON_TORCH.ruby {
+    background-image: url('./Assets/icons/torch/torch-union-ruby.png');
+}
+
+.PNG_ICON_TORCH.orange {
+    background-image: url('./Assets/icons/torch/torch-union-orange.png');
+}
+
+.PNG_ICON_TORCH.sun {
+    background-image: url('./Assets/icons/torch/torch-union-sun.png');
+}
+
+.PNG_ICON_TORCH.emerald {
+    background-image: url('./Assets/icons/torch/torch-union-emerald.png');
+}
+
+.PNG_ICON_TORCH.blue {
+    background-image: url('./Assets/icons/torch/torch-union-blue.png');
+}
+
+.PNG_ICON_TORCH.indigo {
+    background-image: url('./Assets/icons/torch/torch-union-indigo.png');
+}
+
+.PNG_ICON_TORCH.violet {
+    background-image: url('./Assets/icons/torch/torch-union-violet.png');
+}
+
+.PNG_ICON_TORCH.rainbow {
+    background-image: url('./Assets/icons/torch/torch-union-rainbow.png');
+}
+
+.PNG_ICON_TORCH.silver {
+    background-image: url('./Assets/icons/torch/torch-union-silver.png');
+}
+
+.PNG_ICON_TORCH.gold {
+    background-image: url('./Assets/icons/torch/torch-union-gold.png');
+}
+
+.PNG_ICON_TORCH.platinum {
+    background-image: url('./Assets/icons/torch/torch-union-platinum.png');
+}
+
+.PNG_ICON_TORCH.diamond {
+    background-image: url('./Assets/icons/torch/torch-union-diamond.png');
+}
+
+.PNG_ICON_YOUTUBE {
+    background-image: url('./Assets/icons/sidebar/youtube.png');
+}
+
+.PNG_ICON_TAROT {
+    background-image: url('./Assets/icons/sidebar/tarot.png');
+}
+
+.PNG_ICON_BLOG.masculine {
+    background-image: url('./Assets/icons/blog/blog-masculine.png');
+}
+
+.PNG_ICON_BLOG.masculine.ruby {
+    background-image: url('./Assets/icons/blog/blog-masculine-ruby.png');
+}
+
+.PNG_ICON_BLOG.masculine.orange {
+    background-image: url('./Assets/icons/blog/blog-masculine-orange.png');
+}
+
+.PNG_ICON_BLOG.masculine.sun {
+    background-image: url('./Assets/icons/blog/blog-masculine-sun.png');
+}
+
+.PNG_ICON_BLOG.masculine.emerald {
+    background-image: url('./Assets/icons/blog/blog-masculine-emerald.png');
+}
+
+.PNG_ICON_BLOG.masculine.blue {
+    background-image: url('./Assets/icons/blog/blog-masculine-blue.png');
+}
+
+.PNG_ICON_BLOG.masculine.indigo {
+    background-image: url('./Assets/icons/blog/blog-masculine-indigo.png');
+}
+
+.PNG_ICON_BLOG.masculine.violet {
+    background-image: url('./Assets/icons/blog/blog-masculine-violet.png');
+}
+
+.PNG_ICON_BLOG.masculine.rainbow {
+    background-image: url('./Assets/icons/blog/blog-masculine-rainbow.png');
+}
+
+.PNG_ICON_BLOG.masculine.silver {
+    background-image: url('./Assets/icons/blog/blog-masculine-silver.png');
+}
+
+.PNG_ICON_BLOG.masculine.gold {
+    background-image: url('./Assets/icons/blog/blog-masculine-gold.png');
+}
+
+.PNG_ICON_BLOG.masculine.platinum {
+    background-image: url('./Assets/icons/blog/blog-masculine-platinum.png');
+}
+
+.PNG_ICON_BLOG.masculine.diamond {
+    background-image: url('./Assets/icons/blog/blog-masculine-diamond.png');
+}
+
+.PNG_ICON_BLOG.masculine.gray {
+    background-image: url('./Assets/icons/blog/blog-masculine-gray.png');
+}
+
+.PNG_ICON_BLOG.feminine {
+    background-image: url('./Assets/icons/blog/blog-feminine.png');
+}
+
+.PNG_ICON_BLOG.feminine.ruby {
+    background-image: url('./Assets/icons/blog/blog-feminine-ruby.png');
+}
+
+.PNG_ICON_BLOG.feminine.orange {
+    background-image: url('./Assets/icons/blog/blog-feminine-orange.png');
+}
+
+.PNG_ICON_BLOG.feminine.sun {
+    background-image: url('./Assets/icons/blog/blog-feminine-sun.png');
+}
+
+.PNG_ICON_BLOG.feminine.emerald {
+    background-image: url('./Assets/icons/blog/blog-feminine-emerald.png');
+}
+
+.PNG_ICON_BLOG.feminine.blue {
+    background-image: url('./Assets/icons/blog/blog-feminine-blue.png');
+}
+
+.PNG_ICON_BLOG.feminine.indigo {
+    background-image: url('./Assets/icons/blog/blog-feminine-indigo.png');
+}
+
+.PNG_ICON_BLOG.feminine.violet {
+    background-image: url('./Assets/icons/blog/blog-feminine-violet.png');
+}
+
+.PNG_ICON_BLOG.feminine.rainbow {
+    background-image: url('./Assets/icons/blog/blog-feminine-rainbow.png');
+}
+
+.PNG_ICON_BLOG.feminine.silver {
+    background-image: url('./Assets/icons/blog/blog-feminine-silver.png');
+}
+
+.PNG_ICON_BLOG.feminine.gold {
+    background-image: url('./Assets/icons/blog/blog-feminine-gold.png');
+}
+
+.PNG_ICON_BLOG.feminine.platinum {
+    background-image: url('./Assets/icons/blog/blog-feminine-platinum.png');
+}
+
+.PNG_ICON_BLOG.feminine.diamond {
+    background-image: url('./Assets/icons/blog/blog-feminine-diamond.png');
+}
+
+.PNG_ICON_BLOG.feminine.gray {
+    background-image: url('./Assets/icons/blog/blog-feminine-gray.png');
+}
+
+.PNG_ICON_AIRPLANE.masculine {
+    background-image: url('./Assets/icons/airplane/airplane-masculine.png');
+}
+
+.PNG_ICON_AIRPLANE.feminine {
+    background-image: url('./Assets/icons/airplane/airplane-feminine.png');
+}
+
+.PNG_ICON_AIRPLANE.ruby {
+    background-image: url('./Assets/icons/airplane/airplane-ruby.png');
+}
+
+.PNG_ICON_AIRPLANE.orange {
+    background-image: url('./Assets/icons/airplane/airplane-orange.png');
+}
+
+.PNG_ICON_AIRPLANE.sun {
+    background-image: url('./Assets/icons/airplane/airplane-sun.png');
+}
+
+.PNG_ICON_AIRPLANE.emerald {
+    background-image: url('./Assets/icons/airplane/airplane-emerald.png');
+}
+
+.PNG_ICON_AIRPLANE.blue {
+    background-image: url('./Assets/icons/airplane/airplane-blue.png');
+}
+
+.PNG_ICON_AIRPLANE.indigo {
+    background-image: url('./Assets/icons/airplane/airplane-indigo.png');
+}
+
+.PNG_ICON_AIRPLANE.violet {
+    background-image: url('./Assets/icons/airplane/airplane-violet.png');
+}
+
+.PNG_ICON_AIRPLANE.rainbow {
+    background-image: url('./Assets/icons/airplane/airplane-rainbow.png');
+}
+
+.PNG_ICON_AIRPLANE.silver {
+    background-image: url('./Assets/icons/airplane/airplane-silver.png');
+}
+
+.PNG_ICON_AIRPLANE.gold {
+    background-image: url('./Assets/icons/airplane/airplane-gold.png');
+}
+
+.PNG_ICON_AIRPLANE.platinum {
+    background-image: url('./Assets/icons/airplane/airplane-platinum.png');
+}
+
+.PNG_ICON_AIRPLANE.diamond {
+    background-image: url('./Assets/icons/airplane/airplane-diamond.png');
+}
+
+.PNG_ICON_AIRPLANE.gray {
+    background-image: url('./Assets/icons/airplane/airplane-gray.png');
+}
+
+.PNG_ICON_QMARK.masculine {
+    background-image: url('./Assets/icons/questionMark/qmark-masculine.png');
+}
+
+.PNG_ICON_QMARK.feminine {
+    background-image: url('./Assets/icons/questionMark/qmark-feminine.png');
+}
+
+.PNG_ICON_QMARK.ruby {
+    background-image: url('./Assets/icons/questionMark/qmark-ruby.png');
+}
+
+.PNG_ICON_QMARK.orange {
+    background-image: url('./Assets/icons/questionMark/qmark-orange.png');
+}
+
+.PNG_ICON_QMARK.sun {
+    background-image: url('./Assets/icons/questionMark/qmark-sun.png');
+}
+
+.PNG_ICON_QMARK.emerald {
+    background-image: url('./Assets/icons/questionMark/qmark-emerald.png');
+}
+
+.PNG_ICON_QMARK.blue {
+    background-image: url('./Assets/icons/questionMark/qmark-blue.png');
+}
+
+.PNG_ICON_QMARK.indigo {
+    background-image: url('./Assets/icons/questionMark/qmark-indigo.png');
+}
+
+.PNG_ICON_QMARK.violet {
+    background-image: url('./Assets/icons/questionMark/qmark-violet.png');
+}
+
+.PNG_ICON_QMARK.rainbow {
+    background-image: url('./Assets/icons/questionMark/qmark-rainbow.png');
+}
+
+.PNG_ICON_QMARK.silver {
+    background-image: url('./Assets/icons/questionMark/qmark-silver.png');
+}
+
+.PNG_ICON_QMARK.gold {
+    background-image: url('./Assets/icons/questionMark/qmark-gold.png');
+}
+
+.PNG_ICON_QMARK.platinum {
+    background-image: url('./Assets/icons/questionMark/qmark-platinum.png');
+}
+
+.PNG_ICON_QMARK.diamond {
+    background-image: url('./Assets/icons/questionMark/qmark-diamond.png');
+}
+
+.PNG_ICON_QMARK.gray {
+    background-image: url('./Assets/icons/questionMark/qmark-gray.png');
+}
+
+.PNG_ICON_QMARK2.diamond {
+    background-image: url('./Assets/icons/questionMark/qmark2-diamond.png');
+}
+
+.PNG_ICON_QMARK2.diamond.hov {
+    background-image: url('./Assets/icons/questionMark/qmark2-diamond-hov.png');
+}
+
+.PNG_ICON_QMARK2.diamond.act {
+    background-image: url('./Assets/icons/questionMark/qmark2-diamond-act.png');
+}
+
+.PNG_ICON_BIRTHDAY {
+    background-image: url('./Assets/icons/friendNews/Birthday.png');
+}
+
+.PNG_ICON_RELATIONSHIP {
+    background-image: url('./Assets/icons/friendNews/relationship.png');
+}
+
+.PNG_ICON_JOURNEY {
+    background-image: url('./Assets/icons/friendNews/journey.png');
+}
+
+.PNG_ICON_PROFILE {
+    background-image: url('./Assets/icons/friendNews/profile.png');
+}
+
+.PNG_ICON_STORY {
+    background-image: url('./Assets/icons/friendNews/story.png');
+}
+
+.PNG_ICON_WRITE.masculine {
+    background-image: url('./Assets/icons/write/write-message-masculine.png');
+}
+
+.PNG_ICON_WRITE.masculine.drk {
+    background-image: url('./Assets/icons/write/write-message-masculine-drk.png');
+}
+
+.PNG_ICON_WRITE.feminine {
+    background-image: url('./Assets/icons/write/write-message-feminine.png');
+}
+
+.PNG_ICON_WRITE.feminine.drk {
+    background-image: url('./Assets/icons/write/write-message-feminine-drk.png');
+}
+
+.PNG_ICON_WRITE.ruby {
+    background-image: url('./Assets/icons/write/write-message-ruby.png');
+}
+
+.PNG_ICON_WRITE.ruby.drk {
+    background-image: url('./Assets/icons/write/write-message-ruby-drk.png');
+}
+
+.PNG_ICON_WRITE.orange {
+    background-image: url('./Assets/icons/write/write-message-orange.png');
+}
+
+.PNG_ICON_WRITE.orange.drk {
+    background-image: url('./Assets/icons/write/write-message-orange-drk.png');
+}
+
+.PNG_ICON_WRITE.sun {
+    background-image: url('./Assets/icons/write/write-message-sun.png');
+}
+
+.PNG_ICON_WRITE.sun.drk {
+    background-image: url('./Assets/icons/write/write-message-sun-drk.png');
+}
+
+.PNG_ICON_WRITE.emerald {
+    background-image: url('./Assets/icons/write/write-message-emerald.png');
+}
+
+.PNG_ICON_WRITE.emerald.drk {
+    background-image: url('./Assets/icons/write/write-message-emerald-drk.png');
+}
+
+.PNG_ICON_WRITE.blue {
+    background-image: url('./Assets/icons/write/write-message-blue.png');
+}
+
+.PNG_ICON_WRITE.blue.drk {
+    background-image: url('./Assets/icons/write/write-message-blue-drk.png');
+}
+
+.PNG_ICON_WRITE.indigo {
+    background-image: url('./Assets/icons/write/write-message-indigo.png');
+}
+
+.PNG_ICON_WRITE.indigo.drk {
+    background-image: url('./Assets/icons/write/write-message-indigo-drk.png');
+}
+
+.PNG_ICON_WRITE.violet {
+    background-image: url('./Assets/icons/write/write-message-violet.png');
+}
+
+.PNG_ICON_WRITE.violet.drk {
+    background-image: url('./Assets/icons/write/write-message-violet-drk.png');
+}
+
+.PNG_ICON_WRITE.rainbow {
+    background-image: url('./Assets/icons/write/write-message-rainbow.png');
+}
+
+.PNG_ICON_WRITE.rainbow.drk {
+    background-image: url('./Assets/icons/write/write-message-rainbow-drk.png');
+}
+
+.PNG_ICON_WRITE.silver {
+    background-image: url('./Assets/icons/write/write-message-silver.png');
+}
+
+.PNG_ICON_WRITE.silver.drk {
+    background-image: url('./Assets/icons/write/write-message-silver-drk.png');
+}
+
+.PNG_ICON_WRITE.gold {
+    background-image: url('./Assets/icons/write/write-message-gold.png');
+}
+
+.PNG_ICON_WRITE.gold.drk {
+    background-image: url('./Assets/icons/write/write-message-gold-drk.png');
+}
+
+.PNG_ICON_WRITE.platinum {
+    background-image: url('./Assets/icons/write/write-message-platinum.png');
+}
+
+.PNG_ICON_WRITE.platinum.drk {
+    background-image: url('./Assets/icons/write/write-message-platinum-drk.png');
+}
+
+.PNG_ICON_WRITE.diamond {
+    background-image: url('./Assets/icons/write/write-message-diamond.png');
+}
+
+.PNG_ICON_WRITE.diamond.drk {
+    background-image: url('./Assets/icons/write/write-message-diamond-drk.png');
+}
+
+.PNG_ICON_WRITE.gray {
+    background-image: url('./Assets/icons/write/write-message-gray.png');
+}
+
+.PNG_ICON_WRITE.gray.drk {
+    background-image: url('./Assets/icons/write/write-message-gray-drk.png');
+}
+
+.PNG_ICON_STOP {
+    background-image: url('./Assets/icons/stopHand/stopHand.png');
+}
+
+.PNG_ICON_RADIOBTN.rainbow {
+    background-image: url('./Assets/icons/radioBtn/radioBtn-rainbow.png');
+}
+
+.PNG_ICON_RADIOBTN.silver {
+    background-image: url('./Assets/icons/radioBtn/radioBtn-silver.png');
+}
+
+.PNG_ICON_RADIOBTN.gold {
+    background-image: url('./Assets/icons/radioBtn/radioBtn-gold.png');
+}
+
+.PNG_ICON_RADIOBTN.platinum {
+    background-image: url('./Assets/icons/radioBtn/radioBtn-platinum.png');
+}
+
+.PNG_ICON_RADIOBTN.diamond {
+    background-image: url('./Assets/icons/radioBtn/radioBtn-diamond.png');
+}
+
+.PNG_ICON_CHECKBOX.rainbow {
+    background-image: url('./Assets/icons/checkbox/checkbox-rainbow.png');
+}
+
+.PNG_ICON_CHECKBOX.silver {
+    background-image: url('./Assets/icons/checkbox/checkbox-silver.png');
+}
+
+.PNG_ICON_CHECKBOX.gold {
+    background-image: url('./Assets/icons/checkbox/checkbox-gold.png');
+}
+
+.PNG_ICON_CHECKBOX.platinum {
+    background-image: url('./Assets/icons/checkbox/checkbox-platinum.png');
+}
+
+.PNG_ICON_CHECKBOX.diamond {
+    background-image: url('./Assets/icons/checkbox/checkbox-diamond.png');
+}
+
+
+/* ID/class based landscape mode on/off
+
+//#container { display:block; }
+@media only screen and (orientation:landscape){
+  body {  
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+}
+@media only screen and (orientation:portrait){
+  body {  
+     -webkit-transform: rotate(0deg);
+     -moz-transform: rotate(0deg);
+     -o-transform: rotate(0deg);
+     -ms-transform: rotate(0deg);
+     transform: rotate(0deg);
+  }
+}
+*/
+
+.epr-search.feminine:focus {
+    border-color: #e638af !important;   
+}
+
+
+
+/* emoji background hover (picker) */
+
+.epr-emoji-img.masculine:hover {
+    background-color: #d8e1fe !important;
+}
+
+.epr-emoji-img.feminine:hover {
+    background-color: #fde1ef !important;
+}
+
+.epr-emoji-img.ruby:hover {
+    background-color: #d4a6ad !important;
+}
+
+.epr-emoji-img.orange:hover {
+    background-color: #ffdab3 !important;
+}
+
+.epr-emoji-img.sun:hover {
+    background-color: #fff9bf !important;
+}
+
+.epr-emoji-img.emerald:hover {
+    background-color: #caeed6 !important;
+}
+
+.epr-emoji-img.blue:hover {
+    background-color: #cee8fb !important;
+}
+
+.epr-emoji-img.indigo:hover {
+    background-color: #babad4 !important;
+}
+
+.epr-emoji-img.violet:hover {
+    background-color: #dcbff6 !important;
+}
+
+.epr-emoji-img.rainbow:hover {
+    background-image: url('./Assets/misc/rainbow-background-horizontal-lgt.jpg') !important;
+    background-size: contain;
+}
+
+.epr-emoji-img.silver:hover {
+    background-image: url('./Assets/misc/silver-background-lgt.jpg') !important;
+    background-size: contain;
+}
+
+.epr-emoji-img.gold:hover {
+    background-image: url('./Assets/misc/gold-background-lgt.jpg') !important;
+    background-size: contain;
+}
+
+.epr-emoji-img.platinum:hover {
+    background-image: url('./Assets/misc/platinum-background-horizontal-lgt.jpg') !important;
+    background-size: contain;
+}
+
+.epr-emoji-img.diamond:hover {
+    background-image: url('./Assets/misc/diamond-background-lgt.jpg') !important;
+    background-size: contain;
+}
+
+.epr-emoji-img.gray:hover {
+    background-color: #e4e6e7 !important;
+}
+
+
+.epr-search-container {
+    z-index: 10;
+}
+
+.EmojiPickerReact .epr-search-container input.epr-search {
+    background-color: transparent;
+    border: none;
+    height: 3rem; /*48px*/
+    font-size: 0.875rem; /*14px*/
+}
+
+.epr-btn .epr-btn-clear-search .epr-visible-on-search-only{
+    z-index: 10;
+}
+
+.emojiCancelBtn {
+    position: relative;
+}
+
+.emojiCancelPNGIcon {
+    display: flex;
+    width: 1.625rem; /*26px*/
+    height: 1.625rem; /*26px*/
+    margin-left: 0.625rem; /*10px*/
+    margin-top: 0.688rem; /*11px*/
+    background-size: contain;
+    background-repeat: no-repeat;
+    flex-shrink: 0;
+    flex-grow: 0;
+    opacity: 30%;
+}
+
+.emojiCancelPNGIcon:hover {
+    opacity: 100%;
+}
+
+.emojiCancelShade {
+    height: 1.625rem; /*26px*/
+    width: 1.625rem; /*26px*/
+    border-radius: 50%;
+    background-color: black;
+    opacity: 0;
+}
+
+.emojiCancelShade:active {
+    opacity: 30%;
+}
+
+.epr-cat-btn {
+    width: 100%;
+    height: 100%;
+}
+
+.eprCatBtn {
+    width: 1.875rem; /*30px*/
+    height: 1.875rem; /*30px*/
+    background-image: url("./Assets/icons/airplane/airplane-blue.png");
+    background-size: calc(100% - 0.625rem) /*10px*/, calc(100% - 0.625rem) /*10px*/;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.eprCatBtn.animals_nature {
+    background-image: url("./Assets/icons/pawPrint/pawPrint-base.png");
+}
+
+.eprCatBtn.animals_nature.masculine:hover {
+    background-image: url("./Assets/icons/pawPrint/pawPrint-masculine-lgt.png");
+}
+
+.eprCatBtn.animals_nature.masculine.active {
+    background-image: url("./Assets/icons/pawPrint/pawPrint-masculine.png");
+}
+
+.eprCatBtn.animals_nature.feminine:hover {
+    background-image: url("./Assets/icons/pawPrint/pawPrint-feminine-lgt.png");
+}
+
+.eprCatBtn.animals_nature.feminine.active {
+    background-image: url("./Assets/icons/pawPrint/pawPrint-feminine.png");
+}
+
+.eprCatBtn.animals_nature.ruby:hover {
+    background-image: url("./Assets/icons/pawPrint/pawPrint-ruby-lgt.png");
+}
+
+.eprCatBtn.animals_nature.ruby.active {
+    background-image: url("./Assets/icons/pawPrint/pawPrint-ruby.png");
+}
+
+.eprCatBtn.animals_nature.orange:hover {
+    background-image: url("./Assets/icons/pawPrint/pawPrint-orange-lgt.png");
+}
+
+.eprCatBtn.animals_nature.orange.active {
+    background-image: url("./Assets/icons/pawPrint/pawPrint-orange.png");
+}
+
+.eprCatBtn.animals_nature.sun:hover {
+    background-image: url("./Assets/icons/pawPrint/pawPrint-sun-lgt.png");
+}
+
+.eprCatBtn.animals_nature.sun.active {
+    background-image: url("./Assets/icons/pawPrint/pawPrint-sun.png");
+}
+
+.eprCatBtn.animals_nature.emerald:hover {
+    background-image: url("./Assets/icons/pawPrint/pawPrint-emerald-lgt.png");
+}
+
+.eprCatBtn.animals_nature.emerald.active {
+    background-image: url("./Assets/icons/pawPrint/pawPrint-emerald.png");
+}
+
+.eprCatBtn.animals_nature.blue:hover {
+    background-image: url("./Assets/icons/pawPrint/pawPrint-blue-lgt.png");
+}
+
+.eprCatBtn.animals_nature.blue.active {
+    background-image: url("./Assets/icons/pawPrint/pawPrint-blue.png");
+}
+
+.eprCatBtn.animals_nature.indigo:hover {
+    background-image: url("./Assets/icons/pawPrint/pawPrint-indigo-lgt.png");
+}
+
+.eprCatBtn.animals_nature.indigo.active {
+    background-image: url("./Assets/icons/pawPrint/pawPrint-indigo.png");
+}
+
+.eprCatBtn.animals_nature.violet:hover {
+    background-image: url("./Assets/icons/pawPrint/pawPrint-violet-lgt.png");
+}
+
+.eprCatBtn.animals_nature.violet.active {
+    background-image: url("./Assets/icons/pawPrint/pawPrint-violet.png");
+}
+
+.eprCatBtn.animals_nature.rainbow:hover {
+    background-image: url("./Assets/icons/pawPrint/pawPrint-rainbow-lgt.png");
+}
+
+.eprCatBtn.animals_nature.rainbow.active {
+    background-image: url("./Assets/icons/pawPrint/pawPrint-rainbow.png");
+}
+
+.eprCatBtn.animals_nature.silver:hover {
+    background-image: url("./Assets/icons/pawPrint/pawPrint-silver-lgt.png");
+}
+
+.eprCatBtn.animals_nature.silver.active {
+    background-image: url("./Assets/icons/pawPrint/pawPrint-silver.png");
+}
+
+.eprCatBtn.animals_nature.gold:hover {
+    background-image: url("./Assets/icons/pawPrint/pawPrint-gold-lgt.png");
+}
+
+.eprCatBtn.animals_nature.gold.active {
+    background-image: url("./Assets/icons/pawPrint/pawPrint-gold.png");
+}
+
+.eprCatBtn.animals_nature.platinum:hover {
+    background-image: url("./Assets/icons/pawPrint/pawPrint-platinum-lgt.png");
+}
+
+.eprCatBtn.animals_nature.platinum.active {
+    background-image: url("./Assets/icons/pawPrint/pawPrint-platinum.png");
+}
+
+.eprCatBtn.animals_nature.diamond:hover {
+    background-image: url("./Assets/icons/pawPrint/pawPrint-diamond-lgt.png");
+}
+
+.eprCatBtn.animals_nature.diamond.active {
+    background-image: url("./Assets/icons/pawPrint/pawPrint-diamond.png");
+}
+
+.eprCatBtn.animals_nature.gray:hover {
+    background-image: url("./Assets/icons/pawPrint/pawPrint-gray-lgt.png");
+}
+
+.eprCatBtn.animals_nature.gray.active {
+    background-image: url("./Assets/icons/pawPrint/pawPrint-gray.png");
+}
+
+.eprCatBtn.food_drink {
+    background-image: url("./Assets/icons/meal/meal-base.png");
+}
+
+.eprCatBtn.food_drink.masculine:hover {
+    background-image: url("./Assets/icons/meal/meal-masculine-lgt.png");
+}
+
+.eprCatBtn.food_drink.masculine.active {
+    background-image: url("./Assets/icons/meal/meal-masculine.png");
+}
+
+.eprCatBtn.food_drink.feminine:hover {
+    background-image: url("./Assets/icons/meal/meal-feminine-lgt.png");
+}
+
+.eprCatBtn.food_drink.feminine.active {
+    background-image: url("./Assets/icons/meal/meal-feminine.png");
+}
+
+.eprCatBtn.food_drink.ruby:hover {
+    background-image: url("./Assets/icons/meal/meal-ruby-lgt.png");
+}
+
+.eprCatBtn.food_drink.ruby.active {
+    background-image: url("./Assets/icons/meal/meal-ruby.png");
+}
+
+.eprCatBtn.food_drink.orange:hover {
+    background-image: url("./Assets/icons/meal/meal-orange-lgt.png");
+}
+
+.eprCatBtn.food_drink.orange.active {
+    background-image: url("./Assets/icons/meal/meal-orange.png");
+}
+
+.eprCatBtn.food_drink.sun:hover {
+    background-image: url("./Assets/icons/meal/meal-sun-lgt.png");
+}
+
+.eprCatBtn.food_drink.sun.active {
+    background-image: url("./Assets/icons/meal/meal-sun.png");
+}
+
+.eprCatBtn.food_drink.emerald:hover {
+    background-image: url("./Assets/icons/meal/meal-emerald-lgt.png");
+}
+
+.eprCatBtn.food_drink.emerald.active {
+    background-image: url("./Assets/icons/meal/meal-emerald.png");
+}
+
+.eprCatBtn.food_drink.blue:hover {
+    background-image: url("./Assets/icons/meal/meal-blue-lgt.png");
+}
+
+.eprCatBtn.food_drink.blue.active {
+    background-image: url("./Assets/icons/meal/meal-blue.png");
+}
+
+.eprCatBtn.food_drink.indigo:hover {
+    background-image: url("./Assets/icons/meal/meal-indigo-lgt.png");
+}
+
+.eprCatBtn.food_drink.indigo.active {
+    background-image: url("./Assets/icons/meal/meal-indigo.png");
+}
+
+.eprCatBtn.food_drink.violet:hover {
+    background-image: url("./Assets/icons/meal/meal-violet-lgt.png");
+}
+
+.eprCatBtn.food_drink.violet.active {
+    background-image: url("./Assets/icons/meal/meal-violet.png");
+}
+
+.eprCatBtn.food_drink.rainbow:hover {
+    background-image: url("./Assets/icons/meal/meal-rainbow-lgt.png");
+}
+
+.eprCatBtn.food_drink.rainbow.active {
+    background-image: url("./Assets/icons/meal/meal-rainbow.png");
+}
+
+.eprCatBtn.food_drink.silver:hover {
+    background-image: url("./Assets/icons/meal/meal-silver-lgt.png");
+}
+
+.eprCatBtn.food_drink.silver.active {
+    background-image: url("./Assets/icons/meal/meal-silver.png");
+}
+
+.eprCatBtn.food_drink.gold:hover {
+    background-image: url("./Assets/icons/meal/meal-gold-lgt.png");
+}
+
+.eprCatBtn.food_drink.gold.active {
+    background-image: url("./Assets/icons/meal/meal-gold.png");
+}
+
+.eprCatBtn.food_drink.platinum:hover {
+    background-image: url("./Assets/icons/meal/meal-platinum-lgt.png");
+}
+
+.eprCatBtn.food_drink.platinum.active {
+    background-image: url("./Assets/icons/meal/meal-platinum.png");
+}
+
+.eprCatBtn.food_drink.diamond:hover {
+    background-image: url("./Assets/icons/meal/meal-diamond-lgt.png");
+}
+
+.eprCatBtn.food_drink.diamond.active {
+    background-image: url("./Assets/icons/meal/meal-diamond.png");
+}
+
+.eprCatBtn.food_drink.gray:hover {
+    background-image: url("./Assets/icons/meal/meal-gray-lgt.png");
+}
+
+.eprCatBtn.food_drink.gray.active {
+    background-image: url("./Assets/icons/meal/meal-gray.png");
+}
+
+.eprCatBtn.smileys_people {
+    background-image: url("./Assets/icons/smiley/smiley-base.png");
+}
+
+.eprCatBtn.smileys_people.masculine:hover {
+    background-image: url("./Assets/icons/smiley/smiley-masculine-lgt.png");
+}
+
+.eprCatBtn.smileys_people.masculine.active {
+    background-image: url("./Assets/icons/smiley/smiley-masculine.png");
+}
+
+.eprCatBtn.smileys_people.feminine:hover {
+    background-image: url("./Assets/icons/smiley/smiley-feminine-lgt.png");
+}
+
+.eprCatBtn.smileys_people.feminine.active {
+    background-image: url("./Assets/icons/smiley/smiley-feminine.png");
+}
+
+.eprCatBtn.smileys_people.ruby:hover {
+    background-image: url("./Assets/icons/smiley/smiley-ruby-lgt.png");
+}
+
+.eprCatBtn.smileys_people.ruby.active {
+    background-image: url("./Assets/icons/smiley/smiley-ruby.png");
+}
+
+.eprCatBtn.smileys_people.orange:hover {
+    background-image: url("./Assets/icons/smiley/smiley-orange-lgt.png");
+}
+
+.eprCatBtn.smileys_people.orange.active {
+    background-image: url("./Assets/icons/smiley/smiley-orange.png");
+}
+
+.eprCatBtn.smileys_people.sun:hover {
+    background-image: url("./Assets/icons/smiley/smiley-sun-lgt.png");
+}
+
+.eprCatBtn.smileys_people.sun.active {
+    background-image: url("./Assets/icons/smiley/smiley-sun.png");
+}
+
+.eprCatBtn.smileys_people.emerald:hover {
+    background-image: url("./Assets/icons/smiley/smiley-emerald-lgt.png");
+}
+
+.eprCatBtn.smileys_people.emerald.active {
+    background-image: url("./Assets/icons/smiley/smiley-emerald.png");
+}
+
+.eprCatBtn.smileys_people.blue:hover {
+    background-image: url("./Assets/icons/smiley/smiley-blue-lgt.png");
+}
+
+.eprCatBtn.smileys_people.blue.active {
+    background-image: url("./Assets/icons/smiley/smiley-blue.png");
+}
+
+.eprCatBtn.smileys_people.indigo:hover {
+    background-image: url("./Assets/icons/smiley/smiley-indigo-lgt.png");
+}
+
+.eprCatBtn.smileys_people.indigo.active {
+    background-image: url("./Assets/icons/smiley/smiley-indigo.png");
+}
+
+.eprCatBtn.smileys_people.violet:hover {
+    background-image: url("./Assets/icons/smiley/smiley-violet-lgt.png");
+}
+
+.eprCatBtn.smileys_people.violet.active {
+    background-image: url("./Assets/icons/smiley/smiley-violet.png");
+}
+
+.eprCatBtn.smileys_people.rainbow:hover {
+    background-image: url("./Assets/icons/smiley/smiley-rainbow-lgt.png");
+}
+
+.eprCatBtn.smileys_people.rainbow.active {
+    background-image: url("./Assets/icons/smiley/smiley-rainbow.png");
+}
+
+.eprCatBtn.smileys_people.silver:hover {
+    background-image: url("./Assets/icons/smiley/smiley-silver-lgt.png");
+}
+
+.eprCatBtn.smileys_people.silver.active {
+    background-image: url("./Assets/icons/smiley/smiley-silver.png");
+}
+
+.eprCatBtn.smileys_people.gold:hover {
+    background-image: url("./Assets/icons/smiley/smiley-gold-lgt.png");
+}
+
+.eprCatBtn.smileys_people.gold.active {
+    background-image: url("./Assets/icons/smiley/smiley-gold.png");
+}
+
+.eprCatBtn.smileys_people.platinum:hover {
+    background-image: url("./Assets/icons/smiley/smiley-platinum-lgt.png");
+}
+
+.eprCatBtn.smileys_people.platinum.active {
+    background-image: url("./Assets/icons/smiley/smiley-platinum.png");
+}
+
+.eprCatBtn.smileys_people.diamond:hover {
+    background-image: url("./Assets/icons/smiley/smiley-diamond-lgt.png");
+}
+
+.eprCatBtn.smileys_people.diamond.active {
+    background-image: url("./Assets/icons/smiley/smiley-diamond.png");
+}
+
+.eprCatBtn.smileys_people.gray:hover {
+    background-image: url("./Assets/icons/smiley/smiley-gray-lgt.png");
+}
+
+.eprCatBtn.smileys_people.gray.active {
+    background-image: url("./Assets/icons/smiley/smiley-gray.png");
+}
+
+.eprCatBtn.travel_places {
+    background-image: url("./Assets/icons/globeMap/globeMap-base.png");
+}
+
+.eprCatBtn.travel_places.masculine:hover {
+    background-image: url("./Assets/icons/globeMap/globeMap-masculine-lgt.png");
+}
+
+.eprCatBtn.travel_places.masculine.active {
+    background-image: url("./Assets/icons/globeMap/globeMap-masculine.png");
+}
+
+.eprCatBtn.travel_places.feminine:hover {
+    background-image: url("./Assets/icons/globeMap/globeMap-feminine-lgt.png");
+}
+
+.eprCatBtn.travel_places.feminine.active {
+    background-image: url("./Assets/icons/globeMap/globeMap-feminine.png");
+}
+
+.eprCatBtn.travel_places.ruby:hover {
+    background-image: url("./Assets/icons/globeMap/globeMap-ruby-lgt.png");
+}
+
+.eprCatBtn.travel_places.ruby.active {
+    background-image: url("./Assets/icons/globeMap/globeMap-ruby.png");
+}
+
+.eprCatBtn.travel_places.orange:hover {
+    background-image: url("./Assets/icons/globeMap/globeMap-orange-lgt.png");
+}
+
+.eprCatBtn.travel_places.orange.active {
+    background-image: url("./Assets/icons/globeMap/globeMap-orange.png");
+}
+
+.eprCatBtn.travel_places.sun:hover {
+    background-image: url("./Assets/icons/globeMap/globeMap-sun-lgt.png");
+}
+
+.eprCatBtn.travel_places.sun.active {
+    background-image: url("./Assets/icons/globeMap/globeMap-sun.png");
+}
+
+.eprCatBtn.travel_places.emerald:hover {
+    background-image: url("./Assets/icons/globeMap/globeMap-emerald-lgt.png");
+}
+
+.eprCatBtn.travel_places.emerald.active {
+    background-image: url("./Assets/icons/globeMap/globeMap-emerald.png");
+}
+
+.eprCatBtn.travel_places.blue:hover {
+    background-image: url("./Assets/icons/globeMap/globeMap-blue-lgt.png");
+}
+
+.eprCatBtn.travel_places.blue.active {
+    background-image: url("./Assets/icons/globeMap/globeMap-blue.png");
+}
+
+.eprCatBtn.travel_places.indigo:hover {
+    background-image: url("./Assets/icons/globeMap/globeMap-indigo-lgt.png");
+}
+
+.eprCatBtn.travel_places.indigo.active {
+    background-image: url("./Assets/icons/globeMap/globeMap-indigo.png");
+}
+
+.eprCatBtn.travel_places.violet:hover {
+    background-image: url("./Assets/icons/globeMap/globeMap-violet-lgt.png");
+}
+
+.eprCatBtn.travel_places.violet.active {
+    background-image: url("./Assets/icons/globeMap/globeMap-violet.png");
+}
+
+.eprCatBtn.travel_places.rainbow:hover {
+    background-image: url("./Assets/icons/globeMap/globeMap-rainbow-lgt.png");
+}
+
+.eprCatBtn.travel_places.rainbow.active {
+    background-image: url("./Assets/icons/globeMap/globeMap-rainbow.png");
+}
+
+.eprCatBtn.travel_places.silver:hover {
+    background-image: url("./Assets/icons/globeMap/globeMap-silver-lgt.png");
+}
+
+.eprCatBtn.travel_places.silver.active {
+    background-image: url("./Assets/icons/globeMap/globeMap-silver.png");
+}
+
+.eprCatBtn.travel_places.gold:hover {
+    background-image: url("./Assets/icons/globeMap/globeMap-gold-lgt.png");
+}
+
+.eprCatBtn.travel_places.gold.active {
+    background-image: url("./Assets/icons/globeMap/globeMap-gold.png");
+}
+
+.eprCatBtn.travel_places.platinum:hover {
+    background-image: url("./Assets/icons/globeMap/globeMap-platinum-lgt.png");
+}
+
+.eprCatBtn.travel_places.platinum.active {
+    background-image: url("./Assets/icons/globeMap/globeMap-platinum.png");
+}
+
+.eprCatBtn.travel_places.diamond:hover {
+    background-image: url("./Assets/icons/globeMap/globeMap-diamond-lgt.png");
+}
+
+.eprCatBtn.travel_places.diamond.active {
+    background-image: url("./Assets/icons/globeMap/globeMap-diamond.png");
+}
+
+.eprCatBtn.travel_places.gray:hover {
+    background-image: url("./Assets/icons/globeMap/globeMap-gray-lgt.png");
+}
+
+.eprCatBtn.travel_places.gray.active {
+    background-image: url("./Assets/icons/globeMap/globeMap-gray.png");
+}
+
+.eprCatBtn.flags {
+    background-image: url("./Assets/icons/flag/flag-base.png");
+}
+
+.eprCatBtn.flags.masculine:hover {
+    background-image: url("./Assets/icons/flag/flag-masculine-lgt.png");
+}
+
+.eprCatBtn.flags.masculine.active {
+    background-image: url("./Assets/icons/flag/flag-masculine.png");
+}
+
+.eprCatBtn.flags.feminine:hover {
+    background-image: url("./Assets/icons/flag/flag-feminine-lgt.png");
+}
+
+.eprCatBtn.flags.feminine.active {
+    background-image: url("./Assets/icons/flag/flag-feminine.png");
+}
+
+.eprCatBtn.flags.ruby:hover {
+    background-image: url("./Assets/icons/flag/flag-ruby-lgt.png");
+}
+
+.eprCatBtn.flags.ruby.active {
+    background-image: url("./Assets/icons/flag/flag-ruby.png");
+}
+
+.eprCatBtn.flags.orange:hover {
+    background-image: url("./Assets/icons/flag/flag-orange-lgt.png");
+}
+
+.eprCatBtn.flags.orange.active {
+    background-image: url("./Assets/icons/flag/flag-orange.png");
+}
+
+.eprCatBtn.flags.sun:hover {
+    background-image: url("./Assets/icons/flag/flag-sun-lgt.png");
+}
+
+.eprCatBtn.flags.sun.active {
+    background-image: url("./Assets/icons/flag/flag-sun.png");
+}
+
+.eprCatBtn.flags.emerald:hover {
+    background-image: url("./Assets/icons/flag/flag-emerald-lgt.png");
+}
+
+.eprCatBtn.flags.emerald.active {
+    background-image: url("./Assets/icons/flag/flag-emerald.png");
+}
+
+.eprCatBtn.flags.blue:hover {
+    background-image: url("./Assets/icons/flag/flag-blue-lgt.png");
+}
+
+.eprCatBtn.flags.blue.active {
+    background-image: url("./Assets/icons/flag/flag-blue.png");
+}
+
+.eprCatBtn.flags.indigo:hover {
+    background-image: url("./Assets/icons/flag/flag-indigo-lgt.png");
+}
+
+.eprCatBtn.flags.indigo.active {
+    background-image: url("./Assets/icons/flag/flag-indigo.png");
+}
+
+.eprCatBtn.flags.violet:hover {
+    background-image: url("./Assets/icons/flag/flag-violet-lgt.png");
+}
+
+.eprCatBtn.flags.violet.active {
+    background-image: url("./Assets/icons/flag/flag-violet.png");
+}
+
+.eprCatBtn.flags.rainbow:hover {
+    background-image: url("./Assets/icons/flag/flag-rainbow-lgt.png");
+}
+
+.eprCatBtn.flags.rainbow.active {
+    background-image: url("./Assets/icons/flag/flag-rainbow.png");
+}
+
+.eprCatBtn.flags.silver:hover {
+    background-image: url("./Assets/icons/flag/flag-silver-lgt.png");
+}
+
+.eprCatBtn.flags.silver.active {
+    background-image: url("./Assets/icons/flag/flag-silver.png");
+}
+
+.eprCatBtn.flags.gold:hover {
+    background-image: url("./Assets/icons/flag/flag-gold-lgt.png");
+}
+
+.eprCatBtn.flags.gold.active {
+    background-image: url("./Assets/icons/flag/flag-gold.png");
+}
+
+.eprCatBtn.flags.platinum:hover {
+    background-image: url("./Assets/icons/flag/flag-platinum-lgt.png");
+}
+
+.eprCatBtn.flags.platinum.active {
+    background-image: url("./Assets/icons/flag/flag-platinum.png");
+}
+
+.eprCatBtn.flags.diamond:hover {
+    background-image: url("./Assets/icons/flag/flag-diamond-lgt.png");
+}
+
+.eprCatBtn.flags.diamond.active {
+    background-image: url("./Assets/icons/flag/flag-diamond.png");
+}
+
+.eprCatBtn.flags.gray:hover {
+    background-image: url("./Assets/icons/flag/flag-gray-lgt.png");
+}
+
+.eprCatBtn.flags.gray.active {
+    background-image: url("./Assets/icons/flag/flag-gray.png");
+}
+
+.eprCatBtn.symbols {
+    background-image: url("./Assets/icons/musicNote/musicNote-base.png");
+}
+
+.eprCatBtn.symbols.masculine:hover {
+    background-image: url("./Assets/icons/musicNote/musicNote-masculine-lgt.png");
+}
+
+.eprCatBtn.symbols.masculine.active {
+    background-image: url("./Assets/icons/musicNote/musicNote-masculine.png");
+}
+
+.eprCatBtn.symbols.feminine:hover {
+    background-image: url("./Assets/icons/musicNote/musicNote-feminine-lgt.png");
+}
+
+.eprCatBtn.symbols.feminine.active {
+    background-image: url("./Assets/icons/musicNote/musicNote-feminine.png");
+}
+
+.eprCatBtn.symbols.ruby:hover {
+    background-image: url("./Assets/icons/musicNote/musicNote-ruby-lgt.png");
+}
+
+.eprCatBtn.symbols.ruby.active {
+    background-image: url("./Assets/icons/musicNote/musicNote-ruby.png");
+}
+
+.eprCatBtn.symbols.orange:hover {
+    background-image: url("./Assets/icons/musicNote/musicNote-orange-lgt.png");
+}
+
+.eprCatBtn.symbols.orange.active {
+    background-image: url("./Assets/icons/musicNote/musicNote-orange.png");
+}
+
+.eprCatBtn.symbols.sun:hover {
+    background-image: url("./Assets/icons/musicNote/musicNote-sun-lgt.png");
+}
+
+.eprCatBtn.symbols.sun.active {
+    background-image: url("./Assets/icons/musicNote/musicNote-sun.png");
+}
+
+.eprCatBtn.symbols.emerald:hover {
+    background-image: url("./Assets/icons/musicNote/musicNote-emerald-lgt.png");
+}
+
+.eprCatBtn.symbols.emerald.active {
+    background-image: url("./Assets/icons/musicNote/musicNote-emerald.png");
+}
+
+.eprCatBtn.symbols.blue:hover {
+    background-image: url("./Assets/icons/musicNote/musicNote-blue-lgt.png");
+}
+
+.eprCatBtn.symbols.blue.active {
+    background-image: url("./Assets/icons/musicNote/musicNote-blue.png");
+}
+
+.eprCatBtn.symbols.indigo:hover {
+    background-image: url("./Assets/icons/musicNote/musicNote-indigo-lgt.png");
+}
+
+.eprCatBtn.symbols.indigo.active {
+    background-image: url("./Assets/icons/musicNote/musicNote-indigo.png");
+}
+
+.eprCatBtn.symbols.violet:hover {
+    background-image: url("./Assets/icons/musicNote/musicNote-violet-lgt.png");
+}
+
+.eprCatBtn.symbols.violet.active {
+    background-image: url("./Assets/icons/musicNote/musicNote-violet.png");
+}
+
+.eprCatBtn.symbols.rainbow:hover {
+    background-image: url("./Assets/icons/musicNote/musicNote-rainbow-lgt.png");
+}
+
+.eprCatBtn.symbols.rainbow.active {
+    background-image: url("./Assets/icons/musicNote/musicNote-rainbow.png");
+}
+
+.eprCatBtn.symbols.silver:hover {
+    background-image: url("./Assets/icons/musicNote/musicNote-silver-lgt.png");
+}
+
+.eprCatBtn.symbols.silver.active {
+    background-image: url("./Assets/icons/musicNote/musicNote-silver.png");
+}
+
+.eprCatBtn.symbols.gold:hover {
+    background-image: url("./Assets/icons/musicNote/musicNote-gold-lgt.png");
+}
+
+.eprCatBtn.symbols.gold.active {
+    background-image: url("./Assets/icons/musicNote/musicNote-gold.png");
+}
+
+.eprCatBtn.symbols.platinum:hover {
+    background-image: url("./Assets/icons/musicNote/musicNote-platinum-lgt.png");
+}
+
+.eprCatBtn.symbols.platinum.active {
+    background-image: url("./Assets/icons/musicNote/musicNote-platinum.png");
+}
+
+.eprCatBtn.symbols.diamond:hover {
+    background-image: url("./Assets/icons/musicNote/musicNote-diamond-lgt.png");
+}
+
+.eprCatBtn.symbols.diamond.active {
+    background-image: url("./Assets/icons/musicNote/musicNote-diamond.png");
+}
+
+.eprCatBtn.symbols.gray:hover {
+    background-image: url("./Assets/icons/musicNote/musicNote-gray-lgt.png");
+}
+
+.eprCatBtn.symbols.gray.active {
+    background-image: url("./Assets/icons/musicNote/musicNote-gray.png");
+}
+
+.eprCatBtn.activities {
+    background-image: url("./Assets/icons/baseball/baseball-base.png");
+}
+
+.eprCatBtn.activities.masculine:hover {
+    background-image: url("./Assets/icons/baseball/baseball-masculine-lgt.png");
+}
+
+.eprCatBtn.activities.masculine.active {
+    background-image: url("./Assets/icons/baseball/baseball-masculine.png");
+}
+
+.eprCatBtn.activities.feminine:hover {
+    background-image: url("./Assets/icons/baseball/baseball-feminine-lgt.png");
+}
+
+.eprCatBtn.activities.feminine.active {
+    background-image: url("./Assets/icons/baseball/baseball-feminine.png");
+}
+
+.eprCatBtn.activities.ruby:hover {
+    background-image: url("./Assets/icons/baseball/baseball-ruby-lgt.png");
+}
+
+.eprCatBtn.activities.ruby.active {
+    background-image: url("./Assets/icons/baseball/baseball-ruby.png");
+}
+
+.eprCatBtn.activities.orange:hover {
+    background-image: url("./Assets/icons/baseball/baseball-orange-lgt.png");
+}
+
+.eprCatBtn.activities.orange.active {
+    background-image: url("./Assets/icons/baseball/baseball-orange.png");
+}
+
+.eprCatBtn.activities.sun:hover {
+    background-image: url("./Assets/icons/baseball/baseball-sun-lgt.png");
+}
+
+.eprCatBtn.activities.sun.active {
+    background-image: url("./Assets/icons/baseball/baseball-sun.png");
+}
+
+.eprCatBtn.activities.emerald:hover {
+    background-image: url("./Assets/icons/baseball/baseball-emerald-lgt.png");
+}
+
+.eprCatBtn.activities.emerald.active {
+    background-image: url("./Assets/icons/baseball/baseball-emerald.png");
+}
+
+.eprCatBtn.activities.blue:hover {
+    background-image: url("./Assets/icons/baseball/baseball-blue-lgt.png");
+}
+
+.eprCatBtn.activities.blue.active {
+    background-image: url("./Assets/icons/baseball/baseball-blue.png");
+}
+
+.eprCatBtn.activities.indigo:hover {
+    background-image: url("./Assets/icons/baseball/baseball-indigo-lgt.png");
+}
+
+.eprCatBtn.activities.indigo.active {
+    background-image: url("./Assets/icons/baseball/baseball-indigo.png");
+}
+
+.eprCatBtn.activities.violet:hover {
+    background-image: url("./Assets/icons/baseball/baseball-violet-lgt.png");
+}
+
+.eprCatBtn.activities.violet.active {
+    background-image: url("./Assets/icons/baseball/baseball-violet.png");
+}
+
+.eprCatBtn.activities.rainbow:hover {
+    background-image: url("./Assets/icons/baseball/baseball-rainbow-lgt.png");
+}
+
+.eprCatBtn.activities.rainbow.active {
+    background-image: url("./Assets/icons/baseball/baseball-rainbow.png");
+}
+
+.eprCatBtn.activities.silver:hover {
+    background-image: url("./Assets/icons/baseball/baseball-silver-lgt.png");
+}
+
+.eprCatBtn.activities.silver.active {
+    background-image: url("./Assets/icons/baseball/baseball-silver.png");
+}
+
+.eprCatBtn.activities.gold:hover {
+    background-image: url("./Assets/icons/baseball/baseball-gold-lgt.png");
+}
+
+.eprCatBtn.activities.gold.active {
+    background-image: url("./Assets/icons/baseball/baseball-gold.png");
+}
+
+.eprCatBtn.activities.platinum:hover {
+    background-image: url("./Assets/icons/baseball/baseball-platinum-lgt.png");
+}
+
+.eprCatBtn.activities.platinum.active {
+    background-image: url("./Assets/icons/baseball/baseball-platinum.png");
+}
+
+.eprCatBtn.activities.diamond:hover {
+    background-image: url("./Assets/icons/baseball/baseball-diamond-lgt.png");
+}
+
+.eprCatBtn.activities.diamond.active {
+    background-image: url("./Assets/icons/baseball/baseball-diamond.png");
+}
+
+.eprCatBtn.activities.gray:hover {
+    background-image: url("./Assets/icons/baseball/baseball-gray-lgt.png");
+}
+
+.eprCatBtn.activities.gray.active {
+    background-image: url("./Assets/icons/baseball/baseball-gray.png");
+}
+
+.eprCatBtn.objects {
+    background-image: url("./Assets/icons/umbrella/umbrella-base.png");
+}
+
+.eprCatBtn.objects.masculine:hover {
+    background-image: url("./Assets/icons/umbrella/umbrella-masculine-lgt.png");
+}
+
+.eprCatBtn.objects.masculine.active {
+    background-image: url("./Assets/icons/umbrella/umbrella-masculine.png");
+}
+
+.eprCatBtn.objects.feminine:hover {
+    background-image: url("./Assets/icons/umbrella/umbrella-feminine-lgt.png");
+}
+
+.eprCatBtn.objects.feminine.active {
+    background-image: url("./Assets/icons/umbrella/umbrella-feminine.png");
+}
+
+.eprCatBtn.objects.ruby:hover {
+    background-image: url("./Assets/icons/umbrella/umbrella-ruby-lgt.png");
+}
+
+.eprCatBtn.objects.ruby.active {
+    background-image: url("./Assets/icons/umbrella/umbrella-ruby.png");
+}
+
+.eprCatBtn.objects.orange:hover {
+    background-image: url("./Assets/icons/umbrella/umbrella-orange-lgt.png");
+}
+
+.eprCatBtn.objects.orange.active {
+    background-image: url("./Assets/icons/umbrella/umbrella-orange.png");
+}
+
+.eprCatBtn.objects.sun:hover {
+    background-image: url("./Assets/icons/umbrella/umbrella-sun-lgt.png");
+}
+
+.eprCatBtn.objects.sun.active {
+    background-image: url("./Assets/icons/umbrella/umbrella-sun.png");
+}
+
+.eprCatBtn.objects.emerald:hover {
+    background-image: url("./Assets/icons/umbrella/umbrella-emerald-lgt.png");
+}
+
+.eprCatBtn.objects.emerald.active {
+    background-image: url("./Assets/icons/umbrella/umbrella-emerald.png");
+}
+
+.eprCatBtn.objects.blue:hover {
+    background-image: url("./Assets/icons/umbrella/umbrella-blue-lgt.png");
+}
+
+.eprCatBtn.objects.blue.active {
+    background-image: url("./Assets/icons/umbrella/umbrella-blue.png");
+}
+
+.eprCatBtn.objects.indigo:hover {
+    background-image: url("./Assets/icons/umbrella/umbrella-indigo-lgt.png");
+}
+
+.eprCatBtn.objects.indigo.active {
+    background-image: url("./Assets/icons/umbrella/umbrella-indigo.png");
+}
+
+.eprCatBtn.objects.violet:hover {
+    background-image: url("./Assets/icons/umbrella/umbrella-violet-lgt.png");
+}
+
+.eprCatBtn.objects.violet.active {
+    background-image: url("./Assets/icons/umbrella/umbrella-violet.png");
+}
+
+.eprCatBtn.objects.rainbow:hover {
+    background-image: url("./Assets/icons/umbrella/umbrella-rainbow-lgt.png");
+}
+
+.eprCatBtn.objects.rainbow.active {
+    background-image: url("./Assets/icons/umbrella/umbrella-rainbow.png");
+}
+
+.eprCatBtn.objects.silver:hover {
+    background-image: url("./Assets/icons/umbrella/umbrella-silver-lgt.png");
+}
+
+.eprCatBtn.objects.silver.active {
+    background-image: url("./Assets/icons/umbrella/umbrella-silver.png");
+}
+
+.eprCatBtn.objects.gold:hover {
+    background-image: url("./Assets/icons/umbrella/umbrella-gold-lgt.png");
+}
+
+.eprCatBtn.objects.gold.active {
+    background-image: url("./Assets/icons/umbrella/umbrella-gold.png");
+}
+
+.eprCatBtn.objects.platinum:hover {
+    background-image: url("./Assets/icons/umbrella/umbrella-platinum-lgt.png");
+}
+
+.eprCatBtn.objects.platinum.active {
+    background-image: url("./Assets/icons/umbrella/umbrella-platinum.png");
+}
+
+.eprCatBtn.objects.diamond:hover {
+    background-image: url("./Assets/icons/umbrella/umbrella-diamond-lgt.png");
+}
+
+.eprCatBtn.objects.diamond.active {
+    background-image: url("./Assets/icons/umbrella/umbrella-diamond.png");
+}
+
+.eprCatBtn.objects.gray:hover {
+    background-image: url("./Assets/icons/umbrella/umbrella-gray-lgt.png");
+}
+
+.eprCatBtn.objects.gray.active {
+    background-image: url("./Assets/icons/umbrella/umbrella-gray.png");
+}
+
+.eprCatBtn.suggested {
+    background-image: url("./Assets/icons/pastTense/pastTense-base.png");
+}
+
+.eprCatBtn.suggested.masculine:hover {
+    background-image: url("./Assets/icons/pastTense/pastTense-masculine-lgt.png");
+}
+
+.eprCatBtn.suggested.masculine.active {
+    background-image: url("./Assets/icons/pastTense/pastTense-masculine.png");
+}
+
+.eprCatBtn.suggested.feminine:hover {
+    background-image: url("./Assets/icons/pastTense/pastTense-feminine-lgt.png");
+}
+
+.eprCatBtn.suggested.feminine.active {
+    background-image: url("./Assets/icons/pastTense/pastTense-feminine.png");
+}
+
+.eprCatBtn.suggested.ruby:hover {
+    background-image: url("./Assets/icons/pastTense/pastTense-ruby-lgt.png");
+}
+
+.eprCatBtn.suggested.ruby.active {
+    background-image: url("./Assets/icons/pastTense/pastTense-ruby.png");
+}
+
+.eprCatBtn.suggested.orange:hover {
+    background-image: url("./Assets/icons/pastTense/pastTense-orange-lgt.png");
+}
+
+.eprCatBtn.suggested.orange.active {
+    background-image: url("./Assets/icons/pastTense/pastTense-orange.png");
+}
+
+.eprCatBtn.suggested.sun:hover {
+    background-image: url("./Assets/icons/pastTense/pastTense-sun-lgt.png");
+}
+
+.eprCatBtn.suggested.sun.active {
+    background-image: url("./Assets/icons/pastTense/pastTense-sun.png");
+}
+
+.eprCatBtn.suggested.emerald:hover {
+    background-image: url("./Assets/icons/pastTense/pastTense-emerald-lgt.png");
+}
+
+.eprCatBtn.suggested.emerald.active {
+    background-image: url("./Assets/icons/pastTense/pastTense-emerald.png");
+}
+
+.eprCatBtn.suggested.blue:hover {
+    background-image: url("./Assets/icons/pastTense/pastTense-blue-lgt.png");
+}
+
+.eprCatBtn.suggested.blue.active {
+    background-image: url("./Assets/icons/pastTense/pastTense-blue.png");
+}
+
+.eprCatBtn.suggested.indigo:hover {
+    background-image: url("./Assets/icons/pastTense/pastTense-indigo-lgt.png");
+}
+
+.eprCatBtn.suggested.indigo.active {
+    background-image: url("./Assets/icons/pastTense/pastTense-indigo.png");
+}
+
+.eprCatBtn.suggested.violet:hover {
+    background-image: url("./Assets/icons/pastTense/pastTense-violet-lgt.png");
+}
+
+.eprCatBtn.suggested.violet.active {
+    background-image: url("./Assets/icons/pastTense/pastTense-violet.png");
+}
+
+.eprCatBtn.suggested.rainbow:hover {
+    background-image: url("./Assets/icons/pastTense/pastTense-rainbow-lgt.png");
+}
+
+.eprCatBtn.suggested.rainbow.active {
+    background-image: url("./Assets/icons/pastTense/pastTense-rainbow.png");
+}
+
+.eprCatBtn.suggested.silver:hover {
+    background-image: url("./Assets/icons/pastTense/pastTense-silver-lgt.png");
+}
+
+.eprCatBtn.suggested.silver.active {
+    background-image: url("./Assets/icons/pastTense/pastTense-silver.png");
+}
+
+.eprCatBtn.suggested.gold:hover {
+    background-image: url("./Assets/icons/pastTense/pastTense-gold-lgt.png");
+}
+
+.eprCatBtn.suggested.gold.active {
+    background-image: url("./Assets/icons/pastTense/pastTense-gold.png");
+}
+
+.eprCatBtn.suggested.platinum:hover {
+    background-image: url("./Assets/icons/pastTense/pastTense-platinum-lgt.png");
+}
+
+.eprCatBtn.suggested.platinum.active {
+    background-image: url("./Assets/icons/pastTense/pastTense-platinum.png");
+}
+
+.eprCatBtn.suggested.diamond:hover {
+    background-image: url("./Assets/icons/pastTense/pastTense-diamond-lgt.png");
+}
+
+.eprCatBtn.suggested.diamond.active {
+    background-image: url("./Assets/icons/pastTense/pastTense-diamond.png");
+}
+
+.eprCatBtn.suggested.gray:hover {
+    background-image: url("./Assets/icons/pastTense/pastTense-gray-lgt.png");
+}
+
+.eprCatBtn.suggested.gray.active {
+    background-image: url("./Assets/icons/pastTense/pastTense-gray.png");
+}
+
+

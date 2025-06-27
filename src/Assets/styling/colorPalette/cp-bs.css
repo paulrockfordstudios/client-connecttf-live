@@ -1,0 +1,184 @@
+/* ------ Color Palette - Box Shadows ------ */
+
+
+.FADE_SHADOW.light {
+    -webkit-box-shadow: 0px 0px 1.875rem 1.875rem var(--white); /*30px 26px*/ 
+    box-shadow: 0px 0px 1.875rem 1.875rem var(--white); /*30px 26px*/ 
+}
+
+.FADE_SHADOW.dark {
+    -webkit-box-shadow: 0px 0px 1.875rem 1.625rem var(--black); /*30px 26px*/  
+    box-shadow: 0px 0px 1.875rem 1.625rem var(--black); /*30px 26px*/ 
+}
+
+/* - White - */
+
+/*inner*/
+.cp-bs.inner.white {
+    -webkit-box-shadow: inset 0rem 0rem 3.125rem -1.875rem var(--white); 
+    box-shadow: inset 0rem 0rem 3.125rem -1.875rem var(--white);
+}
+/*outer*/
+.cp-bs.outer.white {
+    -webkit-box-shadow: 0rem 0rem .375rem -.125rem var(--white); 
+    box-shadow: 0rem 0rem .375rem -.125rem var(--white);
+}
+
+/* - Black - */
+
+/*inner*/
+.cp-bs.inner.black {
+    -webkit-box-shadow: inset 0rem 0rem 3.125rem -1.875rem var(--black); 
+    box-shadow: inset 0rem 0rem 3.125rem -1.875rem var(--black);
+}
+/*outer*/
+.cp-bs.outer.black {
+    -webkit-box-shadow: 0rem 0rem .375rem -.125rem var(--black); 
+    box-shadow: 0rem 0rem .375rem -.125rem var(--black);
+}
+/*portal*/
+.cp-bs.portal.black {
+    -webkit-box-shadow: 0rem 0.625rem 3.125rem -1.25rem rgba(0,0,0,0.75); 
+    box-shadow: 0rem 0.625rem 3.125rem -1.25rem rgba(0,0,0,0.75);
+}
+
+/* - Gray - */
+
+/*inner*/
+.cp-bs.inner.gray {
+    -webkit-box-shadow: inset 0rem 0rem 3.125rem -1.875rem var(--gray-sat-brt); 
+    box-shadow: inset 0rem 0rem 3.125rem -1.875rem var(--gray-sat-brt);
+}
+/*outer*/
+.cp-bs.outer.gray {
+    -webkit-box-shadow: 0rem 0rem .375rem -.125rem var(--gray-sat-brt); 
+    box-shadow: 0rem 0rem .375rem -.125rem var(--gray-sat-brt);
+}
+
+/* - Masculine - */
+
+/*inner*/
+.cp-bs.inner.masculine {
+    -webkit-box-shadow: inset 0rem 0rem 3.125rem -1.875rem var(--masculine-sat-brt); 
+    box-shadow: inset 0rem 0rem 3.125rem -1.875rem var(--masculine-sat-brt);
+}
+/*outer*/
+.cp-bs.outer.masculine {
+    -webkit-box-shadow: 0rem 0rem .375rem -.125rem var(--masculine-sat-brt); 
+    box-shadow: 0rem 0rem .375rem -.125rem var(--masculine-sat-brt);
+}
+
+/* - Feminine - */
+
+/*inner*/
+.cp-bs.inner.feminine {
+    -webkit-box-shadow: inset 0rem 0rem 3.125rem -1.875rem var(--feminine-sat-brt); 
+    box-shadow: inset 0rem 0rem 3.125rem -1.875rem var(--feminine-sat-brt);
+}
+/*outer*/
+.cp-bs.outer.feminine {
+    -webkit-box-shadow: 0rem 0rem .375rem -.125rem var(--feminine-sat-brt); 
+    box-shadow: 0rem 0rem .375rem -.125rem var(--feminine-sat-brt);
+}
+
+/* - Ruby - */
+
+/*inner*/
+.cp-bs.inner.ruby {
+    -webkit-box-shadow: inset 0rem 0rem 3.125rem -1.875rem var(--ruby-sat-brt); 
+    box-shadow: inset 0rem 0rem 3.125rem -1.875rem var(--ruby-sat-brt);
+}
+/*outer*/
+.cp-bs.outer.ruby {
+    -webkit-box-shadow: 0rem 0rem .375rem -.125rem var(--ruby-sat-brt); 
+    box-shadow: 0rem 0rem .375rem -.125rem var(--ruby-sat-brt);
+}
+
+/* - Orange - */
+
+/*inner*/
+.cp-bs.inner.orange {
+    -webkit-box-shadow: inset 0rem 0rem 3.125rem -1.875rem var(--orange-sat-brt); 
+    box-shadow: inset 0rem 0rem 3.125rem -1.875rem var(--orange-sat-brt);
+}
+/*outer*/
+.cp-bs.outer.orange {
+    -webkit-box-shadow: 0rem 0rem .375rem -.125rem var(--orange-sat-brt); 
+    box-shadow: 0rem 0rem .375rem -.125rem var(--orange-sat-brt);
+}
+
+/* - Sun - */
+
+/*inner*/
+.cp-bs.inner.sun {
+    -webkit-box-shadow: inset 0rem 0rem 3.125rem -1.875rem var(--sun-sat-brt); 
+    box-shadow: inset 0rem 0rem 3.125rem -1.875rem var(--sun-sat-brt);
+}
+/*outer*/
+.cp-bs.outer.sun {
+    -webkit-box-shadow: 0rem 0rem .375rem -.125rem var(--sun-sat-brt); 
+    box-shadow: 0rem 0rem .375rem -.125rem var(--sun-sat-brt);
+}
+
+/* - Emerald - */
+
+/*inner*/
+.cp-bs.inner.emerald {
+    -webkit-box-shadow: inset 0rem 0rem 3.125rem -1.875rem var(--emerald-sat-brt); 
+    box-shadow: inset 0rem 0rem 3.125rem -1.875rem var(--emerald-sat-brt);
+}
+/*outer*/
+.cp-bs.outer.emerald {
+    -webkit-box-shadow: 0rem 0rem .375rem -.125rem var(--emerald-sat-brt); 
+    box-shadow: 0rem 0rem .375rem -.125rem var(--emerald-sat-brt);
+}
+
+/* - Blue - */
+
+/*inner*/
+.cp-bs.inner.blue {
+    -webkit-box-shadow: inset 0rem 0rem 3.125rem -1.875rem var(--blue-sat-brt); 
+    box-shadow: inset 0rem 0rem 3.125rem -1.875rem var(--blue-sat-brt);
+}
+/*outer*/
+.cp-bs.outer.blue {
+    -webkit-box-shadow: 0rem 0rem .375rem -.125rem var(--blue-sat-brt); 
+    box-shadow: 0rem 0rem .375rem -.125rem var(--blue-sat-brt);
+}
+
+/* - Indigo - */
+
+/*inner*/
+.cp-bs.inner.indigo {
+    -webkit-box-shadow: inset 0rem 0rem 3.125rem -1.875rem var(--indigo-sat-brt); 
+    box-shadow: inset 0rem 0rem 3.125rem -1.875rem var(--indigo-sat-brt);
+}
+/*outer*/
+.cp-bs.outer.indigo {
+    -webkit-box-shadow: 0rem 0rem .375rem -.125rem var(--indigo-sat-brt); 
+    box-shadow: 0rem 0rem .375rem -.125rem var(--indigo-sat-brt);
+}
+
+/* - Violet - */
+
+/*inner*/
+.cp-bs.inner.violet {
+    -webkit-box-shadow: inset 0rem 0rem 3.125rem -1.875rem var(--violet-sat-brt); 
+    box-shadow: inset 0rem 0rem 3.125rem -1.875rem var(--violet-sat-brt);
+}
+/*outer*/
+.cp-bs.outer.violet {
+    -webkit-box-shadow: 0rem 0rem .375rem -.125rem var(--violet-sat-brt); 
+    box-shadow: 0rem 0rem .375rem -.125rem var(--violet-sat-brt);
+}
+
+.cp-bs.rainbow, 
+.cp-bs.silver, 
+.cp-bs.gold, 
+.cp-bs.platinum, 
+.cp-bs.diamond {
+    box-shadow: none;
+}
+
+
+

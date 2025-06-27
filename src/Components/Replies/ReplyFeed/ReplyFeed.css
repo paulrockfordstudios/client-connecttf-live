@@ -1,0 +1,38 @@
+.replyFeed {
+    margin-bottom: 20px;
+}
+
+.replyFeedController {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.replyFeedController.one {
+    margin: 20px 50px 0 50px;
+}
+
+.replyFeedController.two {
+    margin: 20px 100px 0 100px;
+}
+
+.replyFeedController.three {
+    margin: 20px 150px 0 150px;
+}
+
+.replyFeedController.four {
+    margin: 20px 200px 0 200px;
+}
+
+.replyFeedCount {
+    font-size: 11px;
+}
+
+.replyFeedControllerBtn {
+    font-size: 11px;
+    font-weight: 500;
+    background-color: transparent;
+    border: none;
+    padding-top: 10px;
+    cursor: pointer;
+}

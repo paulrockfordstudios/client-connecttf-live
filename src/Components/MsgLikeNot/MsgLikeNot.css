@@ -1,0 +1,448 @@
+.msgLikeNots {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+    height: 89px;
+}
+
+.msgLikeNotsBackgroundTheme {
+    display: flex;
+    position: absolute;
+    width: 350px;
+    height: 89px;
+    transition-delay: 325ms;
+    transition: opacity 4000ms ease-in-out;
+    -webkit-transition: opacity 4000ms ease-in-out;
+    -moz-transition: opacity 4000ms ease-in-out;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.msgLikeNotsContainer {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    cursor: pointer;
+    align-items: center;
+    width: 350px;
+    height: 85px;
+    top: 2px;
+}
+
+.msgLikeNotsBackgroundTheme.unseen {
+    opacity: 1;   
+}
+
+
+.msgLikeNotsBackgroundTheme.seen {
+    opacity: 0;   
+}
+
+
+.msgLikeNotsBackgroundTheme.masculine {
+    background-color: #d8e1fe;
+    
+}
+
+.msgLikeNotsBackgroundTheme.feminine {
+    background-color: #fde1ef;
+}
+
+.msgLikeNotsBackgroundTheme.ruby {
+    background-color: #d4a6ad;
+}
+
+.msgLikeNotsBackgroundTheme.orange {
+    background-color: #ffdab3;
+}
+
+.msgLikeNotsBackgroundTheme.sun {
+    background-color: #fff9bf;
+}
+
+.msgLikeNotsBackgroundTheme.emerald {
+    background-color: #caeed6;
+}
+
+.msgLikeNotsBackgroundTheme.blue {
+    background-color: #cee8fb;
+}
+
+.msgLikeNotsBackgroundTheme.indigo {
+    background-color: #babad4;
+}
+
+.msgLikeNotsBackgroundTheme.violet {
+    background-color: #dcbff6;
+}
+
+.msgLikeNotsBackgroundTheme.rainbow {
+    background: -webkit-linear-gradient(left, #d4a6ad, #ffdab3 , #fff9bf, #caeed6, #cee8fb, #babad4, #dcbff6); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, #d4a6ad, #ffdab3 , #fff9bf, #caeed6, #cee8fb, #babad4, #dcbff6); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, #d4a6ad, #ffdab3 , #fff9bf, #caeed6, #cee8fb, #babad4, #dcbff6); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, #d4a6ad, #ffdab3 , #fff9bf, #caeed6, #cee8fb, #babad4, #dcbff6); /* Standard syntax (must be last) */
+}
+
+.msgLikeNotsBackgroundTheme.silver {
+    background: -webkit-linear-gradient(left, #f4f4f4 , #dddddd, #f4f4f4); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, #f4f4f4 , #dddddd, #f4f4f4); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, #f4f4f4 , #dddddd, #f4f4f4); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, #f4f4f4 , #dddddd, #f4f4f4); /* Standard syntax (must be last) */
+}
+
+.msgLikeNotsBackgroundTheme.gold {
+    background: -webkit-linear-gradient(left, #e6d6bb , #faf1d0, #e6d6bb); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, #e6d6bb , #faf1d0, #e6d6bb); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, #e6d6bb , #faf1d0, #e6d6bb); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, #e6d6bb , #faf1d0, #e6d6bb); /* Standard syntax (must be last) */
+}
+
+.msgLikeNotsBackgroundTheme.platinum {
+    background: -webkit-linear-gradient(left, #f2f8fc, #d2dcdf, #cccfd1, #dddddd, #d3cfd2,  #e7dfe0, #f4f4f4); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, #f2f8fc, #d2dcdf, #cccfd1, #dddddd, #d3cfd2,  #e7dfe0, #f4f4f4); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, #f2f8fc, #d2dcdf, #cccfd1, #dddddd, #d3cfd2,  #e7dfe0, #f4f4f4); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, #f2f8fc, #d2dcdf, #cccfd1, #dddddd, #d3cfd2,  #e7dfe0, #f4f4f4); /* Standard syntax (must be last) */
+}
+
+.msgLikeNotsBackgroundTheme.gray {
+    background-color: #e4e6e7;
+}
+
+.msgLikeNotsHr {
+    height: 2px;
+    width: 100%;
+    border: none;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.msgLikeNotsHr.bottom {
+    margin-top: 85px;
+}
+
+.msgLikeNotsHr.masculine {
+    background-color: #4a76fd;
+}
+
+.msgLikeNotsHr.feminine {
+    background-color: #e639af;
+}
+
+.msgLikeNotsHr.ruby {
+    background-color: #850014;   
+}
+
+.msgLikeNotsHr.orange { 
+    background-color: #ff8303; 
+}
+
+.msgLikeNotsHr.sun {
+    background-color: #ffe700;  
+}
+
+.msgLikeNotsHr.emerald { 
+    background-color: #50c878; 
+}
+
+.msgLikeNotsHr.blue {
+    background-color: #098de9; 
+}
+
+.msgLikeNotsHr.indigo { 
+    background-color: #30307e; 
+}
+
+.msgLikeNotsHr.violet { 
+    background-color: #8a2be2; 
+}
+
+.msgLikeNotsHr.rainbow {
+    background: -webkit-linear-gradient(right, #850014, #ff8303, #ffe700, #50c878, #098de9, #30307e, #8a2be2); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, #850014, #ff8303, #ffe700, #50c878, #098de9, #30307e, #8a2be2); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, #850014, #ff8303, #ffe700, #50c878, #098de9, #30307e, #8a2be2); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, #850014, #ff8303, #ffe700, #50c878, #098de9, #30307e, #8a2be2); /* Standard syntax (must be last) */
+}
+
+.msgLikeNotsHr.silver {
+    background: -webkit-linear-gradient(left, #dadada , #8e8e8e, #dadada); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, #dadada , #8e8e8e, #dadada); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, #dadada , #8e8e8e, #dadada); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, #dadada , #8e8e8e, #dadada); /* Standard syntax (must be last) */
+}
+
+.msgLikeNotsHr.gold {
+    background: -webkit-linear-gradient(left, #ab781d , #eed264, #ab781d); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, #ab781d , #eed264, #ab781d); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, #ab781d , #eed264, #ab781d); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, #ab781d , #eed264, #ab781d); /* Standard syntax (must be last) */
+}
+
+.msgLikeNotsHr.platinum {
+    background: -webkit-linear-gradient(left, #d3e9f6, #6b8c95, #566167, #8e8e8e, #6d606a,  #af9499, #dadada); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, #d3e9f6, #6b8c95, #566167, #8e8e8e, #6d606a,  #af9499, #dadada); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, #d3e9f6, #6b8c95, #566167, #8e8e8e, #6d606a,  #af9499, #dadada); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, #d3e9f6, #6b8c95, #566167, #8e8e8e, #6d606a,  #af9499, #dadada); /* Standard syntax (must be last) */
+}
+
+.msgLikeNotsHr.gray {
+    background-color: #aeb4b7;
+}
+
+.msgLikeNotsLeft {
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 100%;
+}
+
+.msgLikeNotsProfilePic {
+    display: flex; 
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    object-fit: cover;    
+}
+
+.msgLikeNotsIcon {
+    display: flex;
+    flex-shrink: 0; 
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    height: 22px;
+    
+    right: 0;
+    bottom: 20px;
+}
+
+.msgLikeNotsIcon.flame {
+    width: 14px;
+    margin-right: 7px;
+}
+
+.msgLikeNotsIcon.union {
+    width: 22px;
+    margin-right: 5px;
+}
+
+.msgLikeNotsRight {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: calc(100% - 75px);
+    height: 70px;
+    margin-left: 5px;
+    margin-right: 10px;
+}
+
+.msgLikeNotsRightTop {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+    height: auto; 
+}
+
+.msgLikeNotsTitle {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    width: auto;
+    height: auto;
+}
+
+.msgLikeNotsTitleLeft {
+    display: flex;
+    white-space: pre-wrap;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 233px;
+    height: auto;
+}
+
+.msgLikeNotsTitleLeftPhrase {
+    display: flex;
+    white-space: pre-wrap;
+    align-items: baseline;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 233px;
+    height: auto;
+}
+
+.msgLikeNotsTitleRight {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin-left: 10px;
+    width: 32px;
+    height: 32px;
+}
+
+.msgLikeNotsTitleRightPNGIcon {
+    height: 32px;
+    width: 32px;
+    cursor: pointer;
+    background-size: contain;
+}
+
+.msgLikeNotsTitleRight.masculine {
+    color: #4a76fd;
+}
+
+.msgLikeNotsTitleRight.feminine {
+    color: #e639af;
+}
+
+.msgLikeNotsTitleRight.gray {
+    color: #aeb4b7;
+}
+
+.msgLikeNotsName {
+    font-size: 15px;
+    font-weight: bold;   
+}
+
+.msgLikeNotsName.masculine {
+    color: #4a76fd;
+}
+
+.msgLikeNotsName.feminine {
+    color: #e639af;
+}
+
+.msgLikeNotsName.ruby {
+    color: #850014;
+}
+
+.msgLikeNotsName.orange {
+    color: #ff8303;
+}
+
+.msgLikeNotsName.sun {
+    color: #ffe700;
+}
+
+.msgLikeNotsName.emerald {
+    color: #50c878;
+}
+
+.msgLikeNotsName.blue {
+    color: #098de9;
+}
+
+.msgLikeNotsName.indigo {
+    color: #30307e;
+}
+
+.msgLikeNotsName.violet {
+    color: #8a2be2;
+}
+
+.msgLikeNotsName.rainbow {
+    background: -webkit-linear-gradient(left, #850014, #ff8303, #ffe700, #50c878, #098de9, #30307e, #8a2be2); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, #850014, #ff8303, #ffe700, #50c878, #098de9, #30307e, #8a2be2); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, #850014, #ff8303, #ffe700, #50c878, #098de9, #30307e, #8a2be2); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, #850014, #ff8303, #ffe700, #50c878, #098de9, #30307e, #8a2be2); /* Standard syntax (must be last) */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.msgLikeNotsName.silver {
+    background: -webkit-linear-gradient(left, #dadada, #8e8e8e, #dadada); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, #dadada, #8e8e8e, #dadada); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, #dadada, #8e8e8e, #dadada); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, #dadada, #8e8e8e, #dadada); /* Standard syntax (must be last) */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.msgLikeNotsName.gold {
+    background: -webkit-linear-gradient(left, #ab781d, #eed264, #ab781d); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, #ab781d, #eed264, #ab781d); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, #ab781d, #eed264, #ab781d); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, #ab781d, #eed264, #ab781d); /* Standard syntax (must be last) */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.msgLikeNotsName.platinum {
+    background: -webkit-linear-gradient(left, #d3e9f6, #6b8c95, #566167, #8e8e8e, #6d606a, #af9499, #dadada); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, #d3e9f6, #6b8c95, #566167, #8e8e8e, #6d606a, #af9499, #dadada); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, #d3e9f6, #6b8c95, #566167, #8e8e8e, #6d606a, #af9499, #dadada); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, #d3e9f6, #6b8c95, #566167, #8e8e8e, #6d606a, #af9499, #dadada); /* Standard syntax (must be last) */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.msgLikeNotsName.diamond {
+    background: -webkit-linear-gradient(-15deg, white,#314373, #314373, #7b9ebe, #7b9ebe, #dadada, #faf1d0, #dadada, #7b9ebe, #7b9ebe, #314373, #314373, white); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(-15deg, white,#314373, #314373, #7b9ebe, #7b9ebe, #dadada, #faf1d0, #dadada, #7b9ebe, #7b9ebe, #314373, #314373, white); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(-15deg, white,#314373, #314373, #7b9ebe, #7b9ebe, #dadada, #faf1d0, #dadada, #7b9ebe, #7b9ebe, #314373, #314373, white); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(-15deg, white,#314373, #314373, #7b9ebe, #7b9ebe, #dadada, #faf1d0, #dadada, #7b9ebe, #7b9ebe, #314373, #314373, white); /* Standard syntax (must be last) */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.msgLikeNotsName.grey {
+    color: #aeb4b7;
+}
+
+.msgLikeNotsRightCenter {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    height: 20px;   
+}
+
+.msgLikeNotsAction {
+    white-space: pre-wrap;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.msgLikeNotsRightBottom {
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.msgLikeNotsRetort {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    font-size: 12px;
+    color: #7a7e80;
+    width: 85%;
+    overflow: hidden;
+    max-height: 28px;   
+}
+
+.msgLikeNotsRetort.title {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.msgLikeNotsRetort.question {
+    font-size: 14px;
+    font-weight: 500;  
+}
+
+.msgLikeNotsRetort.description {
+    font-size: 12px;
+    font-weight: 500;
+    opacity: 75%;
+}

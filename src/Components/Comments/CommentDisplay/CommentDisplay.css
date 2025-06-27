@@ -1,0 +1,217 @@
+.commentDisplay {
+    width: 100%; 
+    border-radius: 0.625rem; /*10px*/
+    margin: 0;
+    background-color: transparent;
+    transition-delay: 325ms;
+    transition: background-color 4000ms linear;
+    -webkit-transition: background-color 4000ms linear;
+    -moz-transition: background-color 4000ms linear;
+}
+
+/*
+.commentDisplay.bc {
+    transition-delay: 325ms;
+    transition: background-color 4000ms linear;
+    -webkit-transition: background-color 4000ms linear;
+    -moz-transition: background-color 4000ms linear;
+}
+*/
+
+.commentDisplay.new { 
+    transition-delay: 325ms;
+    transition: background-color 4000ms linear;
+    -webkit-transition: background-color 4000ms linear;
+    -moz-transition: background-color 4000ms linear;
+}
+
+.commentDisplay.new.rainbow { 
+    background-color: #4a76fd;
+ }
+
+.commentDisplay-container {
+    padding: 0.625rem; /*10px*/
+}
+
+/* ------- Comment Top ------- */
+
+.commentDisplayTop {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.commentDisplayTopLeft {
+    display: flex;
+    align-items: center; 
+}
+
+.commentDisplayDateTime {
+    font-size: 0.75rem; /*12px*/
+    color: #bfc2c7;
+    margin-top: 0.125rem; /*2px*/
+}
+
+.commentDisplayTopRight {
+    position: relative;
+}
+
+.commentDisplayOptions {
+    cursor: pointer;
+}
+
+.commentDisplayProfileLinkDropdown {
+    position: absolute;
+    margin: -2rem 0 0 -1.25rem; /*-32px -20px*/
+}
+
+.commentDisplayAODropdown {
+    position: absolute;
+    right: 1.25rem; /*20px*/
+    top: 0;
+}
+
+/* ------- Comment Center ------- */
+
+.commentDisplayCenter {
+    margin: 1.563rem 0 1.25rem 0; /*25px 20px*/
+}
+
+.commentDisplayText {
+    display: flex;
+    font-size: 0.75rem; /*12px*/
+    margin-bottom: 0.625rem; /*10px*/
+}
+
+.commentDisplayHashtagList {
+    margin-top: 1.25rem; /*20px*/
+    width: 40%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.commentDisplayhashtags {
+    font-size: 0.75rem; /*12px*/
+    margin-right: 0.5rem; /*8px*/
+}
+
+.commentDisplayhashtags:hover {
+    font-weight: 500;
+}
+
+.photoList {
+    margin-right: 2.5rem; /*40px*/;
+}
+
+.photos {
+    list-style: none;
+}
+
+.postImg {
+    margin-top: 1.25rem; /*20px*/
+    width: 100%;
+    max-height: 31.25rem; /*500px*/
+    object-fit: contain;
+}
+
+/* ------- Comment Bottom ------- */
+
+.commentDisplayBottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.commentDisplayBottomLeft {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.commentDisplayInfoBubblePopup {
+    position: absolute; 
+    top: 1.563rem; /*25px*/
+}
+
+.commentDisplayInfoBubble {
+    position: absolute;
+    top: 0;
+}
+
+.commentDisplayInfoBubble.left {
+    right: 0;
+}
+
+.commentDisplayInfoBubble.right {
+    left: 0;
+}
+
+.commentDisplayCountItem {
+    display: flex;
+    align-items: center;
+}
+
+.commentDisplayCountItem.left {
+    margin-right: 1.125rem; /*18px*/
+}
+
+.commentDisplaySVGIconDiv {
+    display: flex;
+    align-items: center;
+}
+
+.commentDisplayPNGIcon {
+    margin-right: 0.313rem; /*5px*/
+    cursor: pointer;
+    background-size: contain;
+}
+
+.commentDisplaySVGIcon {
+    margin-right: 0.313rem; /*5px*/
+    cursor: pointer;
+}
+
+.commentDisplayPNGIcon.left {
+    height: 1.125rem; /*18px*/
+    width: 1.125rem; /*18px*/
+    margin-right: 0.313rem; /*5px*/
+    cursor: pointer;
+}
+
+.commentDisplaySVGIcon.left {
+    height: 1.5rem; /*24px*/ 
+    width: 1.5rem; /*24px*/ 
+    margin-right: 0.313rem; /*5px*/
+    cursor: pointer;
+}
+
+.commentDisplayBottomMiddle {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 100%;
+}
+
+.commentDisplayShowReplies {
+    font-size: 0.75rem; /*12px*/
+    font-weight: 500;
+    background-color: transparent;
+    border: none;
+    padding-top: 0.625rem; /*10px*/
+    cursor: pointer;
+}
+
+.commentDisplayPNGIcon.right {
+    height: 1.5rem; /*24px*/ 
+    width: 1.5rem; /*24px*/ 
+}
+
+.commentDisplaySVGIcon.right {
+    height: 2rem; /*32px*/
+    width: 2rem; /*32px*/
+}
+
+.commentDisplayCounter {
+    font-size: 0.75rem; /*12px*/
+    margin-right: 1.25rem; /*20px*/
+}

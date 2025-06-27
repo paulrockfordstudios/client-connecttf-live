@@ -1,0 +1,185 @@
+.tfConPosPopupPortal {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    z-index: 999;
+}
+
+.tfConPosPopupBackdropOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.tfConPosPopupModal {
+    position: fixed;
+    top: 20%;
+    bottom: 20%;
+    left: 30%;
+    right: 30%;
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tfConPosPopupScreenContainer {
+    position: fixed;
+    z-index: 999;
+    top: 20%;
+    bottom: 20%;
+    left: 30%;
+    right: 30%;
+    width: 40%;
+    height: 20%;
+}
+
+.tfConPosPopupContainer {
+    width: 100%;
+    height: 40%;
+    border-radius: 40px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    -webkit-box-shadow: 0px 10px 50px -20px rgba(0,0,0,0.75); 
+    box-shadow: 0px 10px 50px -20px rgba(0,0,0,0.75);
+    padding: 40px;
+}
+
+.tfConPosPopupTop {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.tfConPosPopupDisclaimer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+}
+
+.tfConPosPopupDisclaimerHeader {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.tfcppdIcon {
+    display: flex;
+    flex-shrink: 0; 
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    height: 140px;
+    width: 140px;
+}
+
+.tfConPosPopupDisclaimerHeaderTextBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.tfConPosPopupDisclaimerHeaderIcon {
+    height: 140px;
+    width: 140px;
+}
+
+.tfcppdWait {
+    font-size: 36px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.tfcppdWait.masculine {
+    color: #e639af;
+}
+
+.tfcppdWait.feminine {
+    color: #4a76fd;
+}
+
+.tfcppdquestion {
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.tfcppdStatementTitle {
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.tfcppdStatementParagraph {
+    margin-bottom: 10px;
+}
+
+.tfcppdTwin {
+    color: #4a76fd;
+}
+
+.tfcppdFlame {
+    color: #e639af;
+}
+
+.tfcppdWarning {
+    font-size: 18px;
+    font-weight: 500;
+    color: red;
+}
+
+.tfConPosPopupBottom {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 30px;
+}
+
+.tfConPosPopupButton {
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    background-size: cover;
+    white-space: nowrap;
+}
+
+.tfConPosPopupButton.cancel {
+    width: 100px;
+    margin-right: 40px;
+}
+
+.tfConPosPopupButton.confirm {
+    width: 170px;
+}
+
+.tfConPosPopupButton.gold {
+    background: -webkit-linear-gradient(left, #ab781d , #eed264, #ab781d); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, #ab781d , #eed264, #ab781d); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, #ab781d , #eed264, #ab781d); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, #ab781d , #eed264, #ab781d); /* Standard syntax (must be last) */
+    color: white;
+}
+
+.tfConPosPopupButton.masculine {
+    background-color: #e639af;
+    color: white;
+}
+
+.tfConPosPopupButton.feminine {
+    background-color: #4a76fd;
+    color: white;
+}
+
+.tfConPosPopupButton.gray {
+    background-color: #a4b4b7;
+    color: black;
+}

@@ -1,0 +1,181 @@
+.secondaryNavBarBorder {
+    height: 4.375rem; /*70px*/
+    position: fixed;
+    z-index: 998;
+    width: 100%;
+    padding-bottom: 0.188rem; /*3px*/
+    top: 0;
+    background-size: cover;
+}
+
+/*
+.secondaryNavBarBorder.diamond {
+    background-size: auto;
+}
+*/
+
+.secondaryNavBar {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    height: 4.375rem; /*70px*/
+    position: sticky;
+    top: 0;
+    Width: 100%;
+    z-index: 999;
+}
+
+.secondaryNavBar.light {
+    background-color: white;
+}
+
+.secondaryNavBar.dark {
+    background-color: black;
+}
+
+.secondaryNavBarContainer {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 1.875rem; /*30px*/
+}
+
+.secondaryNavBarLogoLink {
+    text-decoration: none;
+    height: 2.75rem; /*44px*/
+    background-repeat: no-repeat;
+    background-position: center;
+    overflow: visible;
+}
+
+.secondaryNavBarLogoLink.logo1 {
+    background-size: 16.375rem 2.75rem; /*262px 44px*/
+    width: 16.375rem; /*262px*/
+}
+
+.secondaryNavBarLogoLink.logo2 {
+    background-size: 2.25rem 2.75rem; /*36px 44px*/
+    width: 2.25rem; /*36px*/
+}
+
+.secondaryNavBarTitle {
+    font-size: 2.75rem; /*44px*/
+    font-weight: 500;
+}
+
+.secondaryNavBarTitle.light {
+    color: black;
+}
+
+.secondaryNavBarTitle.dark {
+    color: white;
+}
+
+.hbt.masculine {
+    color: #4a76fd;
+    font-weight: 900;
+}
+
+.hbt.feminine {
+    color:#e639af;
+    font-weight: 900;
+}
+
+.secondaryNavBarMenu {
+    display: flex;
+    align-items: center;
+}
+
+.secondaryNavBarMenuIcon {
+    font-size: 2.75rem !important; /*44px*/
+}
+
+@media (max-width: 1000px) {
+
+    .secondaryNavBarContainer {
+        margin: 0 1.875rem; /*30px*/
+    }
+
+    .secondaryNavBarLogoLink.logo1 {
+        display: none;
+    }
+} 
+
+@media (min-width: 1000px) {
+
+    .secondaryNavBarMenu {
+        display: none;
+    }
+
+    .secondaryNavBarLogoLink.logo2 {
+        display: none;
+    }
+} 
+
+@media (max-width: 800px) {
+
+    .secondaryNavBarContainer {
+        margin: 0 1.5rem; /*24px*/
+    }
+} 
+
+@media (max-width: 600px) {
+
+    .secondaryNavBarBorder {
+        height: 3.125rem; /*50px*/
+    }
+
+    .secondaryNavBar {
+        height: 3.125rem; /*50px*/
+    }
+
+    .secondaryNavBarContainer {
+        height: 1.875rem; /*30px*/
+        margin: 0 1.25rem; /*20px*/
+    }
+
+    .secondaryNavBarMenuIcon {
+        font-size: 1.875rem !important; /*30px*/
+    }
+
+    .secondaryNavBarTitle {
+        font-size: 1.875rem; /*30px*/
+        font-weight: 500;
+    }
+
+    .secondaryNavBarLogoLink.logo2 {
+        background-size: 1.5rem 1.875rem; /*24px 30px*/
+        width: 1.5rem; /*24px*/
+    }
+} 
+
+@media (max-width: 350px) {
+
+    .secondaryNavBarBorder {
+        height: 2.5rem; /*40px*/
+    }
+
+    .secondaryNavBar {
+        height: 2.5rem; /*40px*/
+    }
+
+    .secondaryNavBarContainer {
+        height: 1.5rem; /*24px*/
+        margin: 0 0.875rem; /*14px*/
+    }
+
+    .secondaryNavBarMenuIcon {
+        font-size: 1.5rem !important; /*24px*/
+    }
+
+    .secondaryNavBarTitle {
+        font-size: 1.5rem; /*24px*/
+        font-weight: 500;
+    }
+
+    .secondaryNavBarLogoLink.logo2 {
+        background-size: 1.25rem 1.5rem; /*20px 24px*/
+        width: 1.25rem; /*20px*/
+    }
+} 

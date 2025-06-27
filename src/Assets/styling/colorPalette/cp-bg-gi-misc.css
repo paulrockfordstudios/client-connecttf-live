@@ -1,0 +1,56 @@
+/* ------ Color Palette - Gradients & Images - Misc. ------ */
+
+
+/* --- Primary Site - Backdrop --- */
+
+
+/* - Masculine - */
+
+/*light*/
+.cp-bg-gi-misc.backdrop.primary.light.masculine {
+    background: -webkit-linear-gradient(135deg, var(--feminine-pas-brt) 30%, var(--white) 60%, var(--masculine-pas-brt) 100%); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(135deg, var(--feminine-pas-brt) 30%, var(--white) 60%, var(--masculine-pas-brt) 100%); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(135deg, var(--feminine-pas-brt) 30%, var(--white) 60%, var(--masculine-pas-brt) 100%); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(135deg, var(--feminine-pas-brt) 30%, var(--white) 60%, var(--masculine-pas-brt) 100%); /* Standard syntax (must be last) */
+}
+/*bright*/
+.cp-bg-gi-misc.backdrop.primary.bright.masculine {
+    background: -webkit-linear-gradient(135deg, var(--feminine-sat-brt) 30%, var(--white) 60%, var(--masculine-sat-brt) 100%); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(135deg, var(--feminine-sat-brt) 30%, var(--white) 60%, var(--masculine-sat-brt) 100%); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(135deg, var(--feminine-sat-brt) 30%, var(--white) 60%, var(--masculine-sat-brt) 100%); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(135deg, var(--feminine-sat-brt) 30%, var(--white) 60%, var(--masculine-sat-brt) 100%); /* Standard syntax (must be last) */
+}
+/*dark*/
+.cp-bg-gi-misc.backdrop.primary.dark.masculine {
+    background: -webkit-linear-gradient(135deg, var(--feminine-pas-drk) 30%, var(--black) 60%, var(--masculine-pas-drk) 100%); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(135deg, var(--feminine-pas-drk) 30%, var(--black) 60%, var(--masculine-pas-drk) 100%); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(135deg, var(--feminine-pas-drk) 30%, var(--black) 60%, var(--masculine-pas-drk) 100%); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(135deg, var(--feminine-pas-drk) 30%, var(--black) 60%, var(--masculine-pas-drk) 100%); /* Standard syntax (must be last) */
+}
+
+/* - Feminine or gray - */
+
+/*light*/
+.cp-bg-gi-misc.pastel.static.feminine,
+.cp-bg-gi-misc.pastel.static.gray {
+    background: -webkit-linear-gradient(135deg, var(--masculine-pas-brt), var(--masculine-pas-brt), var(--masculine-pas-brt), var(--feminine-pas-brt), var(--feminine-pas-brt), var(--feminine-pas-brt)); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(135deg, var(--masculine-pas-brt), var(--masculine-pas-brt), var(--masculine-pas-brt), var(--feminine-pas-brt), var(--feminine-pas-brt), var(--feminine-pas-brt)); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(135deg, var(--masculine-pas-brt), var(--masculine-pas-brt), var(--masculine-pas-brt), var(--feminine-pas-brt), var(--feminine-pas-brt), var(--feminine-pas-brt)); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(170deg, var(--masculine-pas-brt), var(--masculine-pas-brt), var(--masculine-pas-brt), var(--feminine-pas-brt), var(--feminine-pas-brt), var(--feminine-pas-brt)); /* Standard syntax (must be last) */
+}
+/*bright*/
+.cp-bg-gi-misc.saturated.static.feminine,
+.cp-bg-gi-misc.saturated.static.gray {
+    background: -webkit-linear-gradient(135deg, var(--masculine-sat-brt), var(--masculine-sat-brt), var(--masculine-sat-brt), var(--feminine-sat-brt), var(--feminine-sat-brt), var(--feminine-sat-brt)); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(135deg, var(--masculine-sat-brt), var(--masculine-sat-brt), var(--masculine-sat-brt), var(--feminine-sat-brt), var(--feminine-sat-brt), var(--feminine-sat-brt)); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(135deg, var(--masculine-sat-brt), var(--masculine-sat-brt), var(--masculine-sat-brt), var(--feminine-sat-brt), var(--feminine-sat-brt), var(--feminine-sat-brt)); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(135deg, var(--masculine-sat-brt), var(--masculine-sat-brt), var(--masculine-sat-brt), var(--feminine-sat-brt), var(--feminine-sat-brt), var(--feminine-sat-brt)); /* Standard syntax (must be last) */
+}
+/*dark*/
+.cp-bg-gi-misc.backdrop.primary.dark.feminine,
+.cp-bg-gi-misc.backdrop.primary.dark.gray {
+    background: -webkit-linear-gradient(135deg, var(--masculine-pas-drk) 30%, var(--black) 60%, var(--feminine-pas-drk) 100%); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(135deg, var(--masculine-pas-drk) 30%, var(--black) 60%, var(--feminine-pas-drk) 100%); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(135deg, var(--masculine-pas-drk) 30%, var(--black) 60%, var(--feminine-pas-drk) 100%); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(135deg, var(--masculine-pas-drk) 30%, var(--black) 60%, var(--feminine-pas-drk) 100%); /* Standard syntax (must be last) */
+}

@@ -1,0 +1,36 @@
+.greeting {
+    max-width: 25rem; /*400px*/
+    width: 100%;
+}
+
+.greetingLogo { 
+    display: flex;
+    justify-content: center;
+}
+
+.greetingLogoImg { 
+    max-height: 7.375rem; /*118px*/
+    max-width: 25rem; /*400px*/
+    width: 100%;
+    height: auto;
+    aspect-ratio: 3.5;
+}
+
+.greetingSlogan {
+    font-size: 1.5rem; /*24px*/
+    max-width: 31.25rem; /*500px*/
+    margin-top: 1.25rem; /*20px*/
+    font-weight: normal; 
+}
+
+@media (max-width: 600px) {
+
+    .greetingLogoImg {
+        width: 70%;
+    }
+
+    .greetingSlogan {
+        display: none;
+    }
+
+}

@@ -1,0 +1,30 @@
+{
+    "login": {
+        "email": "E-mail",
+        "password": "Fjalëkalimi",
+        "show_password": "Shfaq Fjalëkalimin",
+        "hide_password": "Fshih Fjalëkalimin",
+        "forgot_password": "Fjalëkalimi I Harruar",
+        "sign_in": "Hyr",
+        "sign_in_google": "Regjistrohu me Google",
+        "sign_up_google": "Regjistrohu me Google",
+        "sign_in_apple": "Regjistrohu me Apple",
+        "sign_up_apple": "Regjistrohu me Apple",
+        "create_account": "Krijo Llogari Të Re",
+        "about": "Rreth <1>Connect</1><1>tf</1>",
+        "ctfwiki": "<1>C</1><1>TF</1>Wiki",
+        "ctffaqs":  "<1>C</1><1>TF</1> Faqs",
+        "terms_of_use": "Kushtet e Përdorimit",
+        "privacy_policy": "Politika e Privatësisë",
+        "cookies": "Biskota",
+        "advertising": "Reklamat",
+        "newsLetter": "Gazeta",
+        "contact": "Kontakt",
+        "language": "Gjuha",
+        "account": "Llogaria",
+        "settings": "Rregullimet",
+        "copyright": "Copyright 2025",
+        "slogan": "Një vend ku ata që janë në udhëtimin me <1>flakë binjake</1> mund të <1>lidhen</1>!",
+        "disclaimer": "<1>Përjashtimi:</1> Ky website është një forum publik i hapur për këdo që interesohet për flakët binjake dhe/ose lidhjet shpirtërore, miqësitë dhe marrëdhëniet. Në asnjë mënyrë kjo faqe interneti nuk është e lidhur me ndonjë kult apo praktikë kulti. Kjo faqe interneti në asnjë mënyrë nuk toleron ndonjë sjellje të tillë si ngacmimi apo ndjekja. Kjo faqe interneti ka për qëllim si një forum publik për invividualët me mendje të ngjashme për t'u lidhur me të tjerët që ndajnë besime të ngjashme me idenë për të ndihmuar në lehtësimin e rritjes së mëtejshme mendërisht, emocionalisht dhe shpirtërisht në të gjitha aspektet e jetës së tyre. Ky është një forum i montuar nga komuniteti; Të gjitha sistemet e besimit dhe ideologjitë duhet të respektohen. Sjellja ofenduese, si trolling, nuk do të tolerohet."
+    }
+}

@@ -1,0 +1,34 @@
+{
+    "words": {
+        "accessibility": "Accessibility",
+        "about": "About",
+        "account": "Account",
+        "advertising": "Advertising",
+        "contact": "Contact",
+        "cookies": "Cookies",
+        "copyright": "Copyright",
+        "faqs":  "Faqs",
+        "join": "Join",
+        "languages": "Languages",
+        "newsLetter": "Newsletter",
+        "or": "or",
+        "settings": "Settings",
+        "wiki": "Wiki",
+        "year": "2025",
+        "welcome!": "Welcome!"        
+    },
+    "phrases": {
+        "2long_password": "Password is too long.",
+        "2short_password": "Password is too short.",
+        "appeal_request_Link_sentence": "If you feel this is in error, you can file an appeal request <15>here</15>.",
+        "invalid_email": "Invalid email address.",
+        "invalid_password": "Invalid password.",
+        "password_rules": "Password must contain at least one lowercase, one uppercase, one number, and one special character.",
+        "privacy_policy": "Privacy Policy",
+        "required_email": "An email address is required.",
+        "required_password": "A password is required.",
+        "terms_of_use": "Terms of Use",
+        "wait_hold_on": "Wait! Hold On!",
+        "title_w_logo": "ConnectTTF.com title with logo"
+    }
+}

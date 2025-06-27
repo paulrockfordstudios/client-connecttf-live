@@ -1,0 +1,33 @@
+.commentFeed {
+    flex: 5.5;
+}
+
+.commentFeed-container {
+    padding: 1.25rem; /*20px*/
+}
+
+.commentFeedController {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 1.875rem; /*30px*/
+}
+
+.commentFeedTitle {
+    font-size: 1.5rem; /*24px*/ 
+    font-weight: 500; 
+    margin-right: 1.25rem; /*20px*/  
+}
+
+.commentFeedCount {
+    font-size: 0.75rem; /*12px*/
+}
+
+.commentFeedControllerBtn {
+    font-size: 0.75rem; /*12px*/
+    font-weight: 500;
+    background-color: transparent;
+    border: none;
+    padding-top: 0.625rem; /*10px*/
+    cursor: pointer;
+}

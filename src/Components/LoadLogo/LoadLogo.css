@@ -1,0 +1,18 @@
+.loadLogo {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loadLogoContainer {
+    width: 6rem; /*96px*/
+    height: 6.75rem; /*108px*/
+    animation: flip 1s linear infinite;
+}
+
+.loadLogoLogo {
+    width: 100%;
+    height: 100%;
+}
