@@ -21,6 +21,7 @@
         "2long_password": "Password is too long.",
         "2short_password": "Password is too short.",
         "appeal_request_Link_sentence": "If you feel this is in error, you can file an appeal request <15>here</15>.",
+        "identifier": "Email, Phone Number, or Username",
         "invalid_email": "Invalid email address.",
         "invalid_password": "Invalid password.",
         "password_rules": "Password must contain at least one lowercase, one uppercase, one number, and one special character.",

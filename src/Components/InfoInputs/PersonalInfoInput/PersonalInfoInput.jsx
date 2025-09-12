@@ -1,15 +1,15 @@
 import React, { useEffect, useRef, useState } from 'react';
-import { ctfbglgAngleBackdrop } from '../../Utils/calculateAngle';
-import { formik } from '../../Lib/formik/formik';
+import { ctfbglgAngleBackdrop } from '../../../Utils/calculateAngle';
+import { formik } from '../../../Lib/formik/formik';
 import { useDispatch, useSelector } from 'react-redux';
-import useElementSize from '../../Utils/crHooks/useElementSize';
+import useElementSize from '../../../Utils/crHooks/useElementSize';
 import { useTranslation } from 'react-i18next';
 import "./PersonalInfoInput.css";
-import { languages } from '../../Assets/localization/languages';
-import { setKeyHov } from '../../Redux/AuthSlice';
+import { languages } from '../../../Assets/localization/languages';
+import { setKeyHov } from '../../../Redux/AuthSlice';
 import cookies from "js-cookie";
-import { cakeIcon, lockIcon, personIcon, visOnIcon, visOffIcon, calendarTodayIcon, mailIcon } from '../../Lib/mui/icons';
-import useFocusVisible from '../../Utils/crHooks/useFocusVisible';
+import { cakeIcon, lockIcon, personIcon, visOnIcon, visOffIcon, calendarTodayIcon, mailIcon } from '../../../Lib/mui/icons';
+import useFocusVisible from '../../../Utils/crHooks/useFocusVisible';
 
 
 function PersonalInfoInput(
@@ -41,6 +41,9 @@ function PersonalInfoInput(
     useEffect(() => {
         const style="personalInfoInputIcon"
         switch (id) {
+            case "login":
+                setIcon(<div className={style}>{personIcon}</div>)
+                break; 
             case "email":
                 setIcon(<div className={style}>{mailIcon}</div>)
                 break;
@@ -146,8 +149,14 @@ function PersonalInfoInput(
                             onChange={(e) => id === 'dob' ? handleDateInputChange(e) : handleInputChange(e)}
                             onKeyUp={(e) => keyFocus(e)}
                             onBlur={(e) => handleInputBlur(e)}
-                            placeholder={id === 'dob' ? t(`dateFormat.${currentLanguage.dateFormat}`, {ns: "languages"}) : t(`pages.login.components.gateway.${id}`, "auxiliary")}
                             ref={inputRef}
+                            placeholder={
+                                id === 'dob' 
+                                    ? t(`dateFormat.${currentLanguage.dateFormat}`, {ns: "languages"}) 
+                                    : id === "login"
+                                        ? t("phrases.identifier", {ns: "common"})
+                                        : t(`pages.login.components.gateway.${id}`, {ns: "auxiliary"})
+                            }
                         />
 
                         {id.includes("password") &&

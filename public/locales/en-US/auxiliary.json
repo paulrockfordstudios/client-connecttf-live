@@ -24,6 +24,8 @@
                     "first_name": "First Name",
                     "last_name": "Last Name",
                     "email": "Email",
+                    "phone": "Phone",
+                    "username": "Username",
                     "password": "Password",
                     "re-enter_password": "Re-enter Password",
                     "dob": "Date of Birth",

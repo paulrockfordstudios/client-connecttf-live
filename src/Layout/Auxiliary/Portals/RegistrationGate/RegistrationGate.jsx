@@ -7,10 +7,10 @@ import useWindowSize from '../../../../Utils/crHooks/useWindowSize';
 import useElementSize from '../../../../Utils/crHooks/useElementSize';
 import "./RegistrationGate.css";
 import CreateAccountBtn from '../../../../Components/Buttons/GatewayBtns/CreateAccountBtn';
-import PersonalInfoInput from '../../../../Components/PersonalInfoInput/PersonalInfoInput';
+import PersonalInfoInput from '../../../../Components/InfoInputs/PersonalInfoInput/PersonalInfoInput';
 import { registerClose } from '../../../../Redux/AuthSlice';
 import useTimeout from '../../../../Utils/crHooks/useTimeout';
-import DOBInput from '../../../../Components/InfoInputs/PersonalInfoInputs/DOBInput/DOBInput';
+import DOBInput from '../../../../Components/InfoInputs/DOBInput/DOBInput';
 import { FocusScope } from 'react-aria';
 import { cancelIcon } from '../../../../Lib/mui/icons';
 

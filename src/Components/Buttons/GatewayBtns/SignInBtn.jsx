@@ -8,7 +8,7 @@ import useFocusVisible from '../../../Utils/crHooks/useFocusVisible';
 import { componentClasses } from '../../../Lib/i18n/componentClasses';
 
 
-function SignInBtn({ email, password, auth=false }) {
+function SignInBtn({ identifier, password, auth=false }) {
 
     const { t } = useTranslation(['auxiliary']);
 
@@ -23,9 +23,16 @@ function SignInBtn({ email, password, auth=false }) {
     const clickHandler = (e) => {
         if (auth) {
             e.preventDefault();
-            const userData = {
-                email: email.current.value, 
+            const userData = { 
                 password: password.current.value
+            }
+            // Determine the type of identifier for backend processing
+            if (identifier.includes('@')) {
+                Object.assign(userData, {email: identifier}) 
+            } else if (/^\d+$/.test(identifier)) { // Simple check for digits only
+                Object.assign(userData, {phoneNumber: identifier})
+            } else {
+                Object.assign(userData, {username: identifier})
             }
             dispatch(login(userData));
             !isLoading && dispatch(accessClose());

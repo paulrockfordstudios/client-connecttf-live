@@ -3,7 +3,7 @@
         "title": "About ConnectTF",
         "subTopics": {
             "topic_1": {
-                "title": "Overview",
+                "title": "",
                 "description": {
                     "sentence_1": "",
                     "sentence_2": "",
@@ -11,7 +11,7 @@
                 }
             },
             "topic_2": {
-                "title": "Flames",
+                "title": "",
                 "description": {
                     "sentence_1": "",
                     "sentence_2": "",
@@ -19,7 +19,7 @@
                 }
             },
             "topic_3": {
-                "title": "Unions",
+                "title": "",
                 "description": {
                     "sentence_1": "",
                     "sentence_2": "",

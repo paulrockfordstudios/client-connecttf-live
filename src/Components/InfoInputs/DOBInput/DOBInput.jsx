@@ -1,14 +1,14 @@
 import React, { useEffect, useRef, useState } from 'react';
 import './DOBInput.css';
 import { useSelector } from 'react-redux';
-import { ctfbglgAngleBackdrop } from '../../../../Utils/calculateAngle';
-import PersonalInfoInput from '../../../PersonalInfoInput/PersonalInfoInput';
-import useElementSize from '../../../../Utils/crHooks/useElementSize';
-import { formatLocaleDateInput } from '../../../../Utils/formatLocaleDateInput';
-import { formik } from '../../../../Lib/formik/formik';
-import { languages } from "../../../../Assets/localization/languages";
+import { ctfbglgAngleBackdrop } from '../../../Utils/calculateAngle';
+import PersonalInfoInput from '../PersonalInfoInput/PersonalInfoInput';
+import useElementSize from '../../../Utils/crHooks/useElementSize';
+import { formatLocaleDateInput } from '../../../Utils/formatLocaleDateInput';
+import { formik } from '../../../Lib/formik/formik';
+import { languages } from "../../../Assets/localization/languages";
 import cookies from "js-cookie";
-import CTFCalendar from '../../../CTFCalendar/CTFCalendar';
+import CTFCalendar from '../../CTFCalendar/CTFCalendar';
 import { Trans, useTranslation } from 'react-i18next';
 import { FocusScope } from 'react-aria';
 

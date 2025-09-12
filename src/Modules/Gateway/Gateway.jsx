@@ -25,8 +25,6 @@ function Gateway() {
     const refDims = useElementSize(ref);
 
     const {t} = useTranslation(['auxiliary', "common"]);
-
-    console.log(fontSize)
     
 
     return (

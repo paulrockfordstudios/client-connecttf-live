@@ -11,7 +11,7 @@ import GoogleGateBtn from '../../../../Components/Buttons/GatewayBtns/GoogleGate
 import { componentClasses } from '../../../../Lib/i18n/componentClasses';
 import CreateAccountBtn from '../../../../Components/Buttons/GatewayBtns/CreateAccountBtn';
 import { accessClose, setKeyHov } from "../../../../Redux/AuthSlice";
-import PersonalInfoInput from '../../../../Components/PersonalInfoInput/PersonalInfoInput';
+import PersonalInfoInput from '../../../../Components/InfoInputs/PersonalInfoInput/PersonalInfoInput';
 import "./AccessGate.css";
 import useTimeout from '../../../../Utils/crHooks/useTimeout';
 import { FocusScope } from 'react-aria';
@@ -21,7 +21,7 @@ import { cancelIcon } from '../../../../Lib/mui/icons';
 function AccessGate() {
 
     const ref = useRef();
-    const email = useRef();
+    const identifier = useRef();
     const password = useRef();
 
     const { screen, keyHov } = useSelector((state) => state.auth);
@@ -35,7 +35,6 @@ function AccessGate() {
 
     const [ expanding, setExpanding ] = useState(true);
     const [ contracting, setContracting ] = useState(false);
-    const [ backdrop, setBackdrop ] = useState();
 
     useTimeout(() => {
         setExpanding(false);
@@ -107,11 +106,11 @@ function AccessGate() {
                                 
                                         <form id="accessForm">
                                             <PersonalInfoInput
-                                                id={"email"}
+                                                id={"login"}
                                                 name={"agEmail"}
-                                                type={"email"}
+                                                type={"text"}
                                                 required={true}
-                                                refer={email}
+                                                refer={identifier}
                                             />
                                             <PersonalInfoInput
                                                 id={"password"}
@@ -133,7 +132,7 @@ function AccessGate() {
                                     <div className="gatewayAccessBtnsContainer">  
                                         <div className="gatewayBtnContainer">
                                             <SignInBtn
-                                                email={email} 
+                                                identifier={identifier} 
                                                 password={password}
                                                 auth={true}
                                             />
