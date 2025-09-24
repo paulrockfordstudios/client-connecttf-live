@@ -11,7 +11,7 @@ export const advertisementsSlice = apiSlice.injectEndpoints({
 
         // Queries
 
-        // @no. 5
+        // @Server advertisement no. 5
         // @crud r2
         // @desc Get all advertisements
         // @method Query/GET
@@ -22,7 +22,6 @@ export const advertisementsSlice = apiSlice.injectEndpoints({
             validateStatus: (response, result) => {
                 return response.status === 200 && !result.isError
             },
-            keepUnusedDataFor: 5,
             transformResponse: responseData => {
                 const loadedAdvertisements = responseData.map(advertisement => {
                     advertisement.id = advertisement._id
@@ -39,11 +38,65 @@ export const advertisementsSlice = apiSlice.injectEndpoints({
                 } else return [{ type: 'Advertisement', id: 'LIST' }];
             }
         }),
+
+        // @Server advertisement no. 1
+        // @crud c1
+        // @desc Create advertisement
+        // @method Mutation/POST
+        // @route /
+        // @access Private
+        createAdvertisement: builder.mutation({
+            query: initialAdvertisementData => ({
+                url: '/advertisements',
+                method: 'POST',
+                body: {...initialAdvertisementData,}
+            }),
+            invalidateTags: [
+                {type: 'Advertisement', id: "LIST"}
+            ]
+        }),
+
+        // @Server advertisement no. 2
+        // @crud u1
+        // @desc Update advertisement
+        // @method Mutation/PATCH
+        // @route /:id
+        // @access Private
+        updateAdvertisement: builder.mutation({
+            query: ({ id, ...patch}) => ({
+                url: `advertisements/${id}`,
+                method: 'PATCH',
+                body: patch,
+            }),
+            invalidateTags: (result, error, { id }) => [
+                {type: 'Advertisement', id: id}
+            ]
+        }),
+
+        // @Server advertisement no. 3
+        // @crud d1
+        // @desc Delete advertisement
+        // @method Mutation/DELETE
+        // @route /:id
+        // @access Private
+        creatNewAdvertisement: builder.mutation({
+            query: ({ id }) => ({
+                url: `advertisements/${id}`,
+                method: 'DELETE',
+                body: { id },
+            }),
+            invalidateTags: (result, error, { id }) => [
+                {type: 'Advertisement', id: id}
+            ]
+        }),
     }),   
 });
 
 export const {
     useGetAdvertisementsQuery,
+    useCreateAdvertisementMutation,
+    useUpdateAdvertisementMutation,
+    advertisementDeleteAdvertisementMutation,
 } = advertisementsSlice;
 
 // returns the query result object

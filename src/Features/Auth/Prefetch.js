@@ -7,11 +7,11 @@ import { usersSlice } from '../../Context/api/slice/userSlice';
 function Prefetch() {
 
     useEffect(() => {
-        //console.log('subscribing');
+        console.log('subscribing');
         const users = store.dispatch(usersSlice.endpoints.getUsers.initiate());
 
         return () => {
-            //console.log('unsubscribing');
+            console.log('unsubscribing');
             users.unsubscribe();
         }
     }, []);
