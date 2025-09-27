@@ -145,7 +145,7 @@ export const {
 } = appealsSlice;
 
 // returns the query result object
-export const selectAppealsResult = appealSlice.endpoints.getAppeals.select();
+export const selectAppealsResult = appealsSlice.endpoints.getAppeals.select();
 
 // creates memoized selector
 const selectAppealsData = createSelector(

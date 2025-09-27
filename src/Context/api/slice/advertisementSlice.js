@@ -125,7 +125,7 @@ export const {
 } = advertisementsSlice;
 
 // returns the query result object
-export const selectAdvertisementsResult = advertisementSlice.endpoints.getAdvertisements.select();
+export const selectAdvertisementsResult = advertisementsSlice.endpoints.getAdvertisements.select();
 
 // creates memoized selector
 const selectAdvertisementsData = createSelector(

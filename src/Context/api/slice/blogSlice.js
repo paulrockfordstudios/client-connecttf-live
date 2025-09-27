@@ -540,7 +540,7 @@ export const {
 } = blogsSlice;
 
 // returns the query result object
-export const selectBlogsResult = blogSlice.endpoints.getBlogs.select();
+export const selectBlogsResult = blogsSlice.endpoints.getBlogs.select();
 
 // creates memoized selector
 const selectBlogsData = createSelector(

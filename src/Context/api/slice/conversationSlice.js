@@ -11,33 +11,90 @@ export const conversationsSlice = apiSlice.injectEndpoints({
 
         // Queries
 
+        // @query 1
+        // @server conversation route no. 4
+        // @crud r1
+        // @desc Get conversation
+        // @method Query/GET
+        // @route /:id
+        // @access Private
+        getConversationById: builder.query({
+            query: ({ id }) => `/conversations/${id}`,
+        }),
+
+        // Query 2
         // @Server conversation route no. 5
         // @crud r2
-        // @desc Get all conversations
-        // @method Query/GET
-        // @route /all
-        // @access Private
-        getConversations: builder.query({
-            query: () => '/conversations/all',
+        // @desc Get flame user Conversation
+        // @method GET
+        // @route /flame/:userId
+        // @access private
+        getFlameConversations: builder.query({
+            query: ({ userId}) => `/conversations/flame/${userId}`,
             validateStatus: (response, result) => {
                 return response.status === 200 && !result.isError
             },
             transformResponse: responseData => {
-                const loadedConversations = responseData.map(conversation => {
+                const loadedFlameConversations = responseData.map(conversation => {
                     conversation.id = conversation._id
                     return conversation;
                 });
-                return conversationsAdapter.setAll(initialState, loadedConversations)
+                return conversationsAdapter.setAll(initialState, loadedFlameConversations)
             },
             providesTags: (result, error, arg) => {
                 if (result?.ids) {
                     return [
-                        { type: 'Conversation', id: 'LIST' },
+                        { type: 'flameConversation', id: 'LIST' },
                         ...result.ids.map(id => ({ type: 'Conversation', id }))
                     ]
-                } else return [{ type: 'Conversation', id: 'LIST' }];
+                } else return [{ type: 'flameConversation', id: 'LIST' }];
             }
         }),
+
+        // Query 3
+        // @Server conversation route no. 6
+        // @crud r3
+        // @desc Get union user Conversation
+        // @method GET
+        // @route /union/:unionId
+        // @access private
+        getUnionConversations: builder.query({
+            query: ({ unionId}) => `/conversations/union/${unionId}`,
+            validateStatus: (response, result) => {
+                return response.status === 200 && !result.isError
+            },
+            transformResponse: responseData => {
+                const loadedUnionConversations = responseData.map(conversation => {
+                    conversation.id = conversation._id
+                    return conversation;
+                });
+                return conversationsAdapter.setAll(initialState, loadedUnionConversations)
+            },
+            providesTags: (result, error, arg) => {
+                if (result?.ids) {
+                    return [
+                        { type: 'unionConversation', id: 'LIST' },
+                        ...result.ids.map(id => ({ type: 'Conversation', id }))
+                    ]
+                } else return [{ type: 'unionConversation', id: 'LIST' }];
+            }
+        }),
+
+        // @query 4
+        // @server conversation route no. 7
+        // @crud r4
+        // @desc Get Conversation (two statuses and two ids required)
+        // @method GET
+        // @route /findOne/:senderStatus/:receiverStatus/:senderId/:receiverId
+        // @access private
+        getConversationById: builder.query({
+            query: ({ senderStatus, receiverStatus, senderId, receiverId }) => ({
+                url: `/conversations/findOne/${senderStatus}/${receiverStatus}/${senderId}/${receiverId}`,
+                method: 'GET',
+            })
+        }),
+
+        // Mutations
 
         // @Server conversation route no. 1
         // @crud c1

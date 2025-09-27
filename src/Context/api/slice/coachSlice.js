@@ -1,11 +1,11 @@
 import { createSelector, createEntityAdapter } from '@reduxjs/toolkit';
 import { apiSlice } from '../Context/api/apiSlice';
 
-const coachsAdapter = createEntityAdapter({});
+const coachesAdapter = createEntityAdapter({});
 
-const initialState = coachsAdapter.getInitialState();
+const initialState = coachesAdapter.getInitialState();
 
-export const coachsSlice = apiSlice.injectEndpoints({
+export const coachesSlice = apiSlice.injectEndpoints({
 
     endpoints: builder => ({
 
@@ -29,7 +29,7 @@ export const coachsSlice = apiSlice.injectEndpoints({
         // @method Query/GET
         // @route /all
         // @access Private
-        getCoachs: builder.query({
+        getCoaches: builder.query({
             query: () => '/coachs/all',
             validateStatus: (response, result) => {
                 return response.status === 200 && !result.isError
@@ -97,7 +97,7 @@ export const coachsSlice = apiSlice.injectEndpoints({
         // @method Mutation/DELETE
         // @route /:id
         // @access Private
-        creatNewCoach: builder.mutation({
+        deleteCoach: builder.mutation({
             query: ({ id }) => ({
                 url: `coachs/${id}`,
                 method: 'DELETE',
@@ -115,30 +115,30 @@ export const {
     // Queries
 
     useGetCoachQuery,
-    useGetCoachsQuery,
+    useGetCoachesQuery,
 
     // Mutations 
 
     useCreateCoachMutation,
     useUpdateCoachMutation,
-    coachDeleteCoachMutation,
+    useDeleteCoachMutation,
     
-} = coachsSlice;
+} = coachesSlice;
 
 // returns the query result object
-export const selectCoachsResult = coachSlice.endpoints.getCoachs.select();
+export const selectCoachesResult = coachesSlice.endpoints.getCoachs.select();
 
 // creates memoized selector
-const selectCoachsData = createSelector(
-    selectCoachsResult,
-    coachsResult => coachsResult.data // normalized state object with ids and entities
+const selectCoachesData = createSelector(
+    selectCoachesResult,
+    coachesResult => coachesResult.data // normalized state object with ids and entities
 );
 
 //getSelectors creates selector
 // renamed destructured selectors with aliases
 export const {
-    selectAll: selectAllCoachs,
+    selectAll: selectAllCoaches,
     selectById: selectByCoachId,
     selectIds: selectCoachIds,
     // Pass in memoized selector that returns coachs slice state
-} = coachsAdapter.getSelectors(state => selectCoachsData(state) ?? initialState);
+} = coachesAdapter.getSelectors(state => selectCoachesData(state) ?? initialState);

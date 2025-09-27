@@ -97,7 +97,7 @@ export const channelsSlice = apiSlice.injectEndpoints({
         // @method Mutation/DELETE
         // @route /:id
         // @access Private
-        creatNewChannel: builder.mutation({
+        deleteChannel: builder.mutation({
             query: ({ id }) => ({
                 url: `channels/${id}`,
                 method: 'DELETE',
@@ -126,7 +126,7 @@ export const {
 } = channelsSlice;
 
 // returns the query result object
-export const selectChannelsResult = channelSlice.endpoints.getChannels.select();
+export const selectChannelsResult = channelsSlice.endpoints.getChannels.select();
 
 // creates memoized selector
 const selectChannelsData = createSelector(

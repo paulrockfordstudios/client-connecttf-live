@@ -402,7 +402,7 @@ export const {
 } = answersSlice;
 
 // returns the query result object
-export const selectAnswersResult = answerSlice.endpoints.getAnswers.select();
+export const selectAnswersResult = answersSlice.endpoints.getAnswers.select();
 
 // creates memoized selector
 const selectAnswersData = createSelector(
