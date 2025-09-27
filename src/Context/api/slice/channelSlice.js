@@ -11,6 +11,18 @@ export const channelsSlice = apiSlice.injectEndpoints({
 
         // Queries
 
+        // @query 1
+        // @server channel route no. 4
+        // @crud r1
+        // @desc Get channel
+        // @method Query/GET
+        // @route /:id
+        // @access Private
+        getChannel: builder.query({
+            query: ({ id }) => `/channels/${id}`,
+        }),
+
+        // Qquery 2
         // @Server channel route no. 5
         // @crud r2
         // @desc Get all channels
@@ -39,6 +51,10 @@ export const channelsSlice = apiSlice.injectEndpoints({
             }
         }),
 
+        // Mutations
+
+
+        // @mutation 1
         // @Server channel route no. 1
         // @crud c1
         // @desc Create channel
@@ -56,6 +72,7 @@ export const channelsSlice = apiSlice.injectEndpoints({
             ]
         }),
 
+        // @mutation 2
         // @Server channel route no. 2
         // @crud u1
         // @desc Update channel
@@ -73,6 +90,7 @@ export const channelsSlice = apiSlice.injectEndpoints({
             ]
         }),
 
+        // @mutation 3
         // @Server channel route no. 3
         // @crud d1
         // @desc Delete channel
@@ -93,10 +111,18 @@ export const channelsSlice = apiSlice.injectEndpoints({
 });
 
 export const {
+
+    // Queries
+
+    useGetChannelQuery,
     useGetChannelsQuery,
+
+    // Mutations 
+
     useCreateChannelMutation,
     useUpdateChannelMutation,
     channelDeleteChannelMutation,
+    
 } = channelsSlice;
 
 // returns the query result object

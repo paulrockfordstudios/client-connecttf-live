@@ -11,6 +11,18 @@ export const coachsSlice = apiSlice.injectEndpoints({
 
         // Queries
 
+        // @query 1
+        // @server coach route no. 4
+        // @crud r1
+        // @desc Get coach
+        // @method Query/GET
+        // @route /:id
+        // @access Private
+        getCoach: builder.query({
+            query: ({ id }) => `/coachs/${id}`,
+        }),
+
+        // Qquery 2
         // @Server coach route no. 5
         // @crud r2
         // @desc Get all coachs
@@ -39,6 +51,10 @@ export const coachsSlice = apiSlice.injectEndpoints({
             }
         }),
 
+        // Mutations
+
+
+        // @mutation 1
         // @Server coach route no. 1
         // @crud c1
         // @desc Create coach
@@ -56,6 +72,7 @@ export const coachsSlice = apiSlice.injectEndpoints({
             ]
         }),
 
+        // @mutation 2
         // @Server coach route no. 2
         // @crud u1
         // @desc Update coach
@@ -73,6 +90,7 @@ export const coachsSlice = apiSlice.injectEndpoints({
             ]
         }),
 
+        // @mutation 3
         // @Server coach route no. 3
         // @crud d1
         // @desc Delete coach
@@ -93,10 +111,18 @@ export const coachsSlice = apiSlice.injectEndpoints({
 });
 
 export const {
+
+    // Queries
+
+    useGetCoachQuery,
     useGetCoachsQuery,
+
+    // Mutations 
+
     useCreateCoachMutation,
     useUpdateCoachMutation,
     coachDeleteCoachMutation,
+    
 } = coachsSlice;
 
 // returns the query result object

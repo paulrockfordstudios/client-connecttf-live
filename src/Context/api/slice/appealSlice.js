@@ -11,7 +11,19 @@ export const appealsSlice = apiSlice.injectEndpoints({
 
         // Queries
 
-        // @Server appeal route no. 5
+        // @query 1
+        // @server appeal route no. 5
+        // @crud r1
+        // @desc Get appeal
+        // @method Query/GET
+        // @route /:id
+        // @access Private
+        getAppeal: builder.query({
+            query: ({ id }) => `/appeals/${id}`,
+        }),
+
+        // Query 2
+        // @Server appeal route no. 6
         // @crud r2
         // @desc Get all appeals
         // @method Query/GET
@@ -39,6 +51,9 @@ export const appealsSlice = apiSlice.injectEndpoints({
             }
         }),
 
+        // Mutations
+
+        // @Mutation 1
         // @Server appeal route no. 1
         // @crud c1
         // @desc Create appeal
@@ -56,6 +71,7 @@ export const appealsSlice = apiSlice.injectEndpoints({
             ]
         }),
 
+        // @Mutation 2
         // @Server appeal route no. 2
         // @crud u1
         // @desc Update appeal
@@ -73,13 +89,14 @@ export const appealsSlice = apiSlice.injectEndpoints({
             ]
         }),
 
+        // @Mutation 3
         // @Server appeal route no. 3
         // @crud d1
         // @desc Delete appeal
         // @method Mutation/DELETE
         // @route /:id
         // @access Private
-        creatNewAppeal: builder.mutation({
+        deleteAppeal: builder.mutation({
             query: ({ id }) => ({
                 url: `appeals/${id}`,
                 method: 'DELETE',
@@ -89,14 +106,42 @@ export const appealsSlice = apiSlice.injectEndpoints({
                 {type: 'Appeal', id: id}
             ]
         }),
+
+        // @Mutation 4
+        // @Server appeal route no. 4
+        // @crud d2
+        // @desc Delete appeal (verified)
+        // @method Mutation/DELETE
+        // @route /:id/verified
+        // @access Private
+        deleteAppeal: builder.mutation({
+            query: ({ id }) => ({
+                url: `appeals/${id}/verified`,
+                method: 'DELETE',
+                body: { id },
+            }),
+            invalidateTags: (result, error, { id }) => [
+                {type: 'Appeal', id: id}
+            ]
+        }),
+
     }),   
 });
 
 export const {
+
+    // Queries
+
+    useGetAppealQuery,
     useGetAppealsQuery,
+
+    // Mutations
+
     useCreateAppealMutation,
     useUpdateAppealMutation,
-    appealDeleteAppealMutation,
+    useDeleteAppealMutation,
+    useDeleteAppealVerifiedMutation,
+    
 } = appealsSlice;
 
 // returns the query result object

@@ -11,6 +11,18 @@ export const advertisementsSlice = apiSlice.injectEndpoints({
 
         // Queries
 
+        // @query 1
+        // @server advertisement route no. 4
+        // @crud r1
+        // @desc Get advertisement
+        // @method Query/GET
+        // @route /:id
+        // @access Private
+        getAdvertisement: builder.query({
+            query: ({ id }) => `/advertisements/${id}`,
+        }),
+
+        // @Query 2
         // @Server advertisement no. 5
         // @crud r2
         // @desc Get all advertisements
@@ -39,6 +51,9 @@ export const advertisementsSlice = apiSlice.injectEndpoints({
             }
         }),
 
+        // Mutations
+
+        // @Mutation 1
         // @Server advertisement no. 1
         // @crud c1
         // @desc Create advertisement
@@ -56,6 +71,7 @@ export const advertisementsSlice = apiSlice.injectEndpoints({
             ]
         }),
 
+        // @Mutation 2
         // @Server advertisement no. 2
         // @crud u1
         // @desc Update advertisement
@@ -73,6 +89,7 @@ export const advertisementsSlice = apiSlice.injectEndpoints({
             ]
         }),
 
+        // Mutation 3
         // @Server advertisement no. 3
         // @crud d1
         // @desc Delete advertisement
@@ -93,10 +110,18 @@ export const advertisementsSlice = apiSlice.injectEndpoints({
 });
 
 export const {
+
+    // Queries 
+
+    useGetAdvertisementQuery,
     useGetAdvertisementsQuery,
+
+    // Mutations
+
     useCreateAdvertisementMutation,
     useUpdateAdvertisementMutation,
     advertisementDeleteAdvertisementMutation,
+
 } = advertisementsSlice;
 
 // returns the query result object
