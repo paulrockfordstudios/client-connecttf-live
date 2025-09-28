@@ -11,6 +11,18 @@ export const mediumsSlice = apiSlice.injectEndpoints({
 
         // Queries
 
+        // @query 1
+        // @server medium route no. 4
+        // @crud r1
+        // @desc Get medium
+        // @method Query/GET
+        // @route /:id
+        // @access Private
+        getMedium: builder.query({
+            query: ({ id }) => `/mediums/${id}`,
+        }),
+
+        // Qquery 2
         // @Server medium route no. 5
         // @crud r2
         // @desc Get all mediums
@@ -39,6 +51,10 @@ export const mediumsSlice = apiSlice.injectEndpoints({
             }
         }),
 
+        // Mutations
+
+
+        // @mutation 1
         // @Server medium route no. 1
         // @crud c1
         // @desc Create medium
@@ -56,6 +72,7 @@ export const mediumsSlice = apiSlice.injectEndpoints({
             ]
         }),
 
+        // @mutation 2
         // @Server medium route no. 2
         // @crud u1
         // @desc Update medium
@@ -73,13 +90,14 @@ export const mediumsSlice = apiSlice.injectEndpoints({
             ]
         }),
 
+        // @mutation 3
         // @Server medium route no. 3
         // @crud d1
         // @desc Delete medium
         // @method Mutation/DELETE
         // @route /:id
         // @access Private
-        creatNewMedium: builder.mutation({
+        deleteMedium: builder.mutation({
             query: ({ id }) => ({
                 url: `mediums/${id}`,
                 method: 'DELETE',
@@ -93,14 +111,22 @@ export const mediumsSlice = apiSlice.injectEndpoints({
 });
 
 export const {
+
+    // Queries
+
+    useGetMediumQuery,
     useGetMediumsQuery,
+
+    // Mutations 
+
     useCreateMediumMutation,
     useUpdateMediumMutation,
-    mediumDeleteMediumMutation,
+    useDeleteMediumMutation,
+    
 } = mediumsSlice;
 
 // returns the query result object
-export const selectMediumsResult = mediumSlice.endpoints.getMediums.select();
+export const selectMediumsResult = mediumsSlice.endpoints.getMediums.select();
 
 // creates memoized selector
 const selectMediumsData = createSelector(

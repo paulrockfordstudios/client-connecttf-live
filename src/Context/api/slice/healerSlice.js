@@ -11,6 +11,18 @@ export const healersSlice = apiSlice.injectEndpoints({
 
         // Queries
 
+        // @query 1
+        // @server healer route no. 4
+        // @crud r1
+        // @desc Get healer
+        // @method Query/GET
+        // @route /:id
+        // @access Private
+        getHealer: builder.query({
+            query: ({ id }) => `/healers/${id}`,
+        }),
+
+        // Qquery 2
         // @Server healer route no. 5
         // @crud r2
         // @desc Get all healers
@@ -39,6 +51,10 @@ export const healersSlice = apiSlice.injectEndpoints({
             }
         }),
 
+        // Mutations
+
+
+        // @mutation 1
         // @Server healer route no. 1
         // @crud c1
         // @desc Create healer
@@ -56,6 +72,7 @@ export const healersSlice = apiSlice.injectEndpoints({
             ]
         }),
 
+        // @mutation 2
         // @Server healer route no. 2
         // @crud u1
         // @desc Update healer
@@ -73,13 +90,14 @@ export const healersSlice = apiSlice.injectEndpoints({
             ]
         }),
 
+        // @mutation 3
         // @Server healer route no. 3
         // @crud d1
         // @desc Delete healer
         // @method Mutation/DELETE
         // @route /:id
         // @access Private
-        creatNewHealer: builder.mutation({
+        deleteHealer: builder.mutation({
             query: ({ id }) => ({
                 url: `healers/${id}`,
                 method: 'DELETE',
@@ -93,14 +111,22 @@ export const healersSlice = apiSlice.injectEndpoints({
 });
 
 export const {
+
+    // Queries
+
+    useGetHealerQuery,
     useGetHealersQuery,
+
+    // Mutations 
+
     useCreateHealerMutation,
     useUpdateHealerMutation,
-    healerDeleteHealerMutation,
+    useDeleteHealerMutation,
+    
 } = healersSlice;
 
 // returns the query result object
-export const selectHealersResult = healerSlice.endpoints.getHealers.select();
+export const selectHealersResult = healersSlice.endpoints.getHealers.select();
 
 // creates memoized selector
 const selectHealersData = createSelector(

@@ -121,7 +121,7 @@ export const {
 
     useCreateChannelMutation,
     useUpdateChannelMutation,
-    channelDeleteChannelMutation,
+    useDeleteChannelMutation,
     
 } = channelsSlice;
 

@@ -32,7 +32,8 @@ export const imagesSlice = apiSlice.injectEndpoints({
 
 export const {
 
-    // Queries
-     s3UploadSingle,
+    // Mutations
+
+     useS3UploadSingleMutation: s3UploadSingle,
     
 } = imagesSlice;
