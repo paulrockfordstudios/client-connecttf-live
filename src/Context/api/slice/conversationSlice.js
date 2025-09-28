@@ -87,7 +87,7 @@ export const conversationsSlice = apiSlice.injectEndpoints({
         // @method GET
         // @route /findOne/:senderStatus/:receiverStatus/:senderId/:receiverId
         // @access private
-        getConversationById: builder.query({
+        getConversation: builder.query({
             query: ({ senderStatus, receiverStatus, senderId, receiverId }) => ({
                 url: `/conversations/findOne/${senderStatus}/${receiverStatus}/${senderId}/${receiverId}`,
                 method: 'GET',
@@ -136,7 +136,7 @@ export const conversationsSlice = apiSlice.injectEndpoints({
         // @method Mutation/DELETE
         // @route /:id
         // @access Private
-        creatNewConversation: builder.mutation({
+        deleteConversation: builder.mutation({
             query: ({ id }) => ({
                 url: `conversations/${id}`,
                 method: 'DELETE',
@@ -150,26 +150,54 @@ export const conversationsSlice = apiSlice.injectEndpoints({
 });
 
 export const {
-    useGetConversationsQuery,
+
+    // Queries
+
+    useGetConversationByQuery,
+    useGetFlameConversationsQuery,
+    useGetUnionConversationsQuery,
+    useGetConversationQuery,
+
+    // Mutations
+
     useCreateConversationMutation,
     useUpdateConversationMutation,
-    conversationDeleteConversationMutation,
+    useDeleteConversationMutation,
+
 } = conversationsSlice;
 
-// returns the query result object
-export const selectConversationsResult = conversationSlice.endpoints.getConversations.select();
+// returns the getFlameConversatios query result object
+export const selectFlameConversationsResult = conversationsSlice.endpoints.getFlameConversations.select();
+
+// returns the getUnionConversatios query result object
+export const selectUnionConversationsResult = conversationsSlice.endpoints.getUnionConversations.select();
 
 // creates memoized selector
-const selectConversationsData = createSelector(
-    selectConversationsResult,
-    conversationsResult => conversationsResult.data // normalized state object with ids and entities
+const selectFlameConversationsData = createSelector(
+    selectFlameConversationsResult,
+    flameConversationsResult => flameConversationsResult.data // normalized state object with ids and entities
+);
+
+// creates memoized selector
+const selectUnionConversationsData = createSelector(
+    selectUnionConversationsResult,
+    unionConversationsResult => unionConversationsResult.data // normalized state object with ids and entities
 );
 
 //getSelectors creates selector
 // renamed destructured selectors with aliases
 export const {
-    selectAll: selectAllConversations,
-    selectById: selectByConversationId,
-    selectIds: selectConversationIds,
+    selectAll: selectAllFlameConversations,
+    selectById: selectFlameConversationById,
+    selectIds: selectFlameConversationIds,
     // Pass in memoized selector that returns conversations slice state
-} = conversationsAdapter.getSelectors(state => selectConversationsData(state) ?? initialState);
+} = conversationsAdapter.getSelectors(state => selectFlameConversationsData(state) ?? initialState);
+
+//getSelectors creates selector
+// renamed destructured selectors with aliases
+export const {
+    selectAll: selectAllUnionConversations,
+    selectById: selectUnionConversationById,
+    selectIds: selectUnionConversationIds,
+    // Pass in memoized selector that returns conversations slice state
+} = conversationsAdapter.getSelectors(state => selectUnionConversationsData(state) ?? initialState);

@@ -11,7 +11,19 @@ export const flagsSlice = apiSlice.injectEndpoints({
 
         // Queries
 
-        // @Server flag route no. 5
+        // @query 1
+        // @server flag route no. 4
+        // @crud r1
+        // @desc Get flag
+        // @method Query/GET
+        // @route /:id
+        // @access Private
+        getFlag: builder.query({
+            query: ({ id }) => `/flags/${id}`,
+        }),
+
+        // @query 2
+        // @server flag route no. 5
         // @crud r2
         // @desc Get all flags
         // @method Query/GET
@@ -39,6 +51,9 @@ export const flagsSlice = apiSlice.injectEndpoints({
             }
         }),
 
+        // Mutations
+
+        // @mutation 1
         // @Server flag route no. 1
         // @crud c1
         // @desc Create flag
@@ -56,32 +71,34 @@ export const flagsSlice = apiSlice.injectEndpoints({
             ]
         }),
 
+        // @mutation 2
         // @Server flag route no. 2
-        // @crud u1
-        // @desc Update flag
-        // @method Mutation/PATCH
+        // @crud d1
+        // @desc Delete flag
+        // @method Mutation/DELETE
         // @route /:id
         // @access Private
-        updateFlag: builder.mutation({
-            query: ({ id, ...patch}) => ({
+        deleteFlag: builder.mutation({
+            query: ({ id }) => ({
                 url: `flags/${id}`,
-                method: 'PATCH',
-                body: patch,
+                method: 'DELETE',
+                body: { id },
             }),
             invalidateTags: (result, error, { id }) => [
                 {type: 'Flag', id: id}
             ]
         }),
 
+        // @mutation 3
         // @Server flag route no. 3
-        // @crud d1
-        // @desc Delete flag
-        // @method Mutation/DELETE
-        // @route /:id
-        // @access Private
-        creatNewFlag: builder.mutation({
+        // @crud d2
+        // @desc Delete flag (verified)
+        // @method DELETE
+        // @route /:id/verified
+        // @access private
+        deleteFlagVerified: builder.mutation({
             query: ({ id }) => ({
-                url: `flags/${id}`,
+                url: `flags/${id}/verified`,
                 method: 'DELETE',
                 body: { id },
             }),
@@ -93,14 +110,22 @@ export const flagsSlice = apiSlice.injectEndpoints({
 });
 
 export const {
+
+    // Queries
+
+    useGetFlagQuery,
     useGetFlagsQuery,
+
+    // Mutations
+
     useCreateFlagMutation,
-    useUpdateFlagMutation,
-    flagDeleteFlagMutation,
+    useDeleteFlagMutation,
+    useDeleteFlagVerifiedMutation,
+
 } = flagsSlice;
 
 // returns the query result object
-export const selectFlagsResult = flagSlice.endpoints.getFlags.select();
+export const selectFlagsResult = flagsSlice.endpoints.getFlags.select();
 
 // creates memoized selector
 const selectFlagsData = createSelector(

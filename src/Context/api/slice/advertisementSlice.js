@@ -120,7 +120,7 @@ export const {
 
     useCreateAdvertisementMutation,
     useUpdateAdvertisementMutation,
-    advertisementDeleteAdvertisementMutation,
+    useDeleteAdvertisementMutation,
 
 } = advertisementsSlice;
 

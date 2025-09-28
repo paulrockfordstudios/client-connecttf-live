@@ -11,14 +11,15 @@ export const flareNotsSlice = apiSlice.injectEndpoints({
 
         // Queries
 
-        // @Server flareNot route no. 5
-        // @crud r2
-        // @desc Get all flareNots
-        // @method Query/GET
-        // @route /all
-        // @access Private
+        // @query 1
+        // @Server flareNot route no. 2
+        // @crud r1
+        // @desc Get all user's flare notifications
+        // @method GET
+        // @route /:flareStarterId
+        // @access private
         getFlareNots: builder.query({
-            query: () => '/flareNots/all',
+            query: ({ flareStarterId }) => `/flareNots/${flareStarterId}`,
             validateStatus: (response, result) => {
                 return response.status === 200 && !result.isError
             },
@@ -39,6 +40,23 @@ export const flareNotsSlice = apiSlice.injectEndpoints({
             }
         }),
 
+        // @query 2
+        // @server flag route no. 3
+        // @crud r2
+        // @desc Query whether there is a unseen flare notification
+        // @method GET
+        // @route /:notType/:flareType/:flareId/:union/:seen
+        // @access private
+        queryFNSeen: builder.query({
+            query: ({ notType, flareType, flareId, union, seen }) => ({
+                url: `/flags/${notType}/${flareType}/${flareId}/${union}/${seen}`,
+                method: 'GET',
+            })
+        }),
+
+        // Mutations
+
+        // @mutation 1
         // @Server flareNot route no. 1
         // @crud c1
         // @desc Create flareNot
@@ -56,15 +74,16 @@ export const flareNotsSlice = apiSlice.injectEndpoints({
             ]
         }),
 
-        // @Server flareNot route no. 2
+        // @mutation 2
+        // @Server flareNot route no. 4
         // @crud u1
         // @desc Update flareNot
         // @method Mutation/PATCH
         // @route /:id
         // @access Private
-        updateFlareNot: builder.mutation({
+        updateFNSeen: builder.mutation({
             query: ({ id, ...patch}) => ({
-                url: `flareNots/${id}`,
+                url: `flareNots/${id}/seen`,
                 method: 'PATCH',
                 body: patch,
             }),
@@ -73,16 +92,17 @@ export const flareNotsSlice = apiSlice.injectEndpoints({
             ]
         }),
 
-        // @Server flareNot route no. 3
-        // @crud d1
-        // @desc Delete flareNot
-        // @method Mutation/DELETE
-        // @route /:id
-        // @access Private
-        creatNewFlareNot: builder.mutation({
+        // Mutation 3
+        // @Server flareNot route no. 5
+        // @crud u2
+        // @desc Add user to an unseen flare notification
+        // @method PATCH
+        // @route /:id/add_user
+        // @access private
+        flareNotAddUser: builder.mutation({
             query: ({ id }) => ({
-                url: `flareNots/${id}`,
-                method: 'DELETE',
+                url: `flareNots/${id}/add_user`,
+                method: 'PATCH',
                 body: { id },
             }),
             invalidateTags: (result, error, { id }) => [
@@ -93,14 +113,22 @@ export const flareNotsSlice = apiSlice.injectEndpoints({
 });
 
 export const {
+
+    // Queries
+
     useGetFlareNotsQuery,
+    useQueryFNSeenQuery,
+
+    // Mutations
+
     useCreateFlareNotMutation,
-    useUpdateFlareNotMutation,
-    flareNotDeleteFlareNotMutation,
+    useUpdateFNSeenMutation,
+    useFlareNotAddUserMutation,
+
 } = flareNotsSlice;
 
 // returns the query result object
-export const selectFlareNotsResult = flareNotSlice.endpoints.getFlareNots.select();
+export const selectFlareNotsResult = flareNotsSlice.endpoints.getFlareNots.select();
 
 // creates memoized selector
 const selectFlareNotsData = createSelector(

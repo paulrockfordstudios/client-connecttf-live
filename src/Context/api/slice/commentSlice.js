@@ -402,7 +402,7 @@ export const {
 } = commentsSlice;
 
 // returns the query result object
-export const selectCommentsResult = commentSlice.endpoints.getComments.select();
+export const selectCommentsResult = commentsSlice.endpoints.getComments.select();
 
 // creates memoized selector
 const selectCommentsData = createSelector(
