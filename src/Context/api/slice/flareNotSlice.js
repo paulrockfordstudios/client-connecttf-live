@@ -49,7 +49,7 @@ export const flareNotsSlice = apiSlice.injectEndpoints({
         // @access private
         queryFNSeen: builder.query({
             query: ({ notType, flareType, flareId, union, seen }) => ({
-                url: `/flags/${notType}/${flareType}/${flareId}/${union}/${seen}`,
+                url: `/flareNots/${notType}/${flareType}/${flareId}/${union}/${seen}`,
                 method: 'GET',
             })
         }),

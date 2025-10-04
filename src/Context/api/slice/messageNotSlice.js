@@ -11,14 +11,15 @@ export const messageNotsSlice = apiSlice.injectEndpoints({
 
         // Queries
 
-        // @Server messageNot route no. 5
-        // @crud r2
-        // @desc Get all messageNots
-        // @method Query/GET
-        // @route /all
-        // @access Private
-        getMessageNots: builder.query({
-            query: () => '/messageNots/all',
+        // @query 1
+        // @Server messageNot route no. 2
+        // @crud r1
+        // @desc Get all user's message notifications
+        // @method GET
+        // @route /:receiverId
+        // @access private
+        getUserMessageNots: builder.query({
+            query: ({ receiverId }) => `/messageNots/${receiverId}`,
             validateStatus: (response, result) => {
                 return response.status === 200 && !result.isError
             },
@@ -32,13 +33,30 @@ export const messageNotsSlice = apiSlice.injectEndpoints({
             providesTags: (result, error, arg) => {
                 if (result?.ids) {
                     return [
-                        { type: 'MessageNot', id: 'LIST' },
-                        ...result.ids.map(id => ({ type: 'MessageNot', id }))
+                        { type: 'UserMessageNot', id: 'LIST' },
+                        ...result.ids.map(id => ({ type: 'UserMessageNot', id }))
                     ]
-                } else return [{ type: 'MessageNot', id: 'LIST' }];
+                } else return [{ type: 'UserMessageNot', id: 'LIST' }];
             }
         }),
 
+        // @query 2
+        // @server flag route no. 3
+        // @crud r2
+        // @desc Query whether there is a unseen Message notification
+        // @method GET
+        // @route /:senderId/:receiverId
+        // @access private
+        queryUnseenMsg: builder.query({
+            query: ({ senderId, receiverId }) => ({
+                url: `/messageNots/${senderId}/${receiverId}`,
+                method: 'GET',
+            })
+        }),
+
+        // Mutations
+
+        // @mutation 1
         // @Server messageNot route no. 1
         // @crud c1
         // @desc Create messageNot
@@ -49,40 +67,59 @@ export const messageNotsSlice = apiSlice.injectEndpoints({
             query: initialMessageNotData => ({
                 url: '/messageNots',
                 method: 'POST',
-                body: {...initialMessageNotData,}
+                body: {...initialMessageNotData}
             }),
             invalidateTags: [
                 {type: 'MessageNot', id: "LIST"}
             ]
         }),
 
-        // @Server messageNot route no. 2
+        // @mutation 2
+        // @Server messageNot route no. 4
         // @crud u1
-        // @desc Update messageNot
+        // @desc Update messageNot notification seen key
         // @method Mutation/PATCH
-        // @route /:id
+        // @route /:id/seen
         // @access Private
-        updateMessageNot: builder.mutation({
-            query: ({ id, ...patch}) => ({
-                url: `messageNots/${id}`,
+        updateMsgSeen: builder.mutation({
+            query: ({ id }) => ({
+                url: `messageNots/${id}/seen`,
                 method: 'PATCH',
-                body: patch,
             }),
             invalidateTags: (result, error, { id }) => [
                 {type: 'MessageNot', id: id}
             ]
         }),
 
-        // @Server messageNot route no. 3
-        // @crud d1
-        // @desc Delete messageNot
-        // @method Mutation/DELETE
-        // @route /:id
-        // @access Private
-        creatNewMessageNot: builder.mutation({
+        // Mutation 3
+        // @Server messageNot route no. 5
+        // @crud u2
+        // @desc Add user to an unseen message notification
+        // @method PATCH
+        // @route /:id/add_message
+        // @access private
+        updateMsgRead: builder.mutation({
             query: ({ id }) => ({
-                url: `messageNots/${id}`,
-                method: 'DELETE',
+                url: `messageNots/${id}/add_message`,
+                method: 'PATCH',
+                body: { id },
+            }),
+            invalidateTags: (result, error, { id }) => [
+                {type: 'MessageNot', id: id}
+            ]
+        }),
+
+        // Mutation 4
+        // @Server messageNot route no. 6
+        // @crud u3
+        // @desc Add message to an unseen message notification
+        // @method PATCH
+        // @route /:id/add_message
+        // @access private
+        addMsg2Not: builder.mutation({
+            query: ({ id }) => ({
+                url: `messageNots/${id}/add_message`,
+                method: 'PATCH',
                 body: { id },
             }),
             invalidateTags: (result, error, { id }) => [
@@ -93,14 +130,23 @@ export const messageNotsSlice = apiSlice.injectEndpoints({
 });
 
 export const {
-    useGetMessageNotsQuery,
+
+    // Queries
+
+    useGetUserMessageNotsQuery,
+    useQueryUnseenMsgQuery,
+
+    // Mutations
+
     useCreateMessageNotMutation,
-    useUpdateMessageNotMutation,
-    messageNotDeleteMessageNotMutation,
+    useUpdateMsgSeenMutation,
+    useUpdateMsgReadMutation,
+    useAddMsg2NotMutation,
+
 } = messageNotsSlice;
 
 // returns the query result object
-export const selectMessageNotsResult = messageNotSlice.endpoints.getMessageNots.select();
+export const selectMessageNotsResult = messageNotsSlice.endpoints.getMessageNots.select();
 
 // creates memoized selector
 const selectMessageNotsData = createSelector(

@@ -11,6 +11,18 @@ export const messagesSlice = apiSlice.injectEndpoints({
 
         // Queries
 
+        // @query 1
+        // @server message route no. 4
+        // @crud r1
+        // @desc Get message
+        // @method Query/GET
+        // @route /:id
+        // @access Private
+        getMessage: builder.query({
+            query: ({ id }) => `/messages/${id}`,
+        }),
+
+        // @query 2
         // @Server message route no. 5
         // @crud r2
         // @desc Get all messages
