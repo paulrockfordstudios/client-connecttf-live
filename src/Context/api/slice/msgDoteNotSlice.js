@@ -11,7 +11,19 @@ export const msgDoteNotsSlice = apiSlice.injectEndpoints({
 
         // Queries
 
-        // @Server msgDoteNot route no. 5
+        // @query 1
+        // @server msgDoteNot route no. 2
+        // @crud r1
+        // @desc Get msgDoteNot
+        // @method Query/GET
+        // @route /:id
+        // @access Private
+        getMsgDoteNot: builder.query({
+            query: ({ id }) => `/msgDoteNots/${id}`,
+        }),
+
+        // @query 2
+        // @Server msgDoteNot route no. 3
         // @crud r2
         // @desc Get all msgDoteNots
         // @method Query/GET
@@ -39,6 +51,9 @@ export const msgDoteNotsSlice = apiSlice.injectEndpoints({
             }
         }),
 
+        // Mutations
+
+        // @mutation 1
         // @Server msgDoteNot route no. 1
         // @crud c1
         // @desc Create msgDoteNot
@@ -56,51 +71,42 @@ export const msgDoteNotsSlice = apiSlice.injectEndpoints({
             ]
         }),
 
-        // @Server msgDoteNot route no. 2
+        // @mutation 2
+        // @Server msgDoteNot route no. 4
         // @crud u1
         // @desc Update msgDoteNot
         // @method Mutation/PATCH
-        // @route /:id
+        // @route /:id/seen
         // @access Private
-        updateMsgDoteNot: builder.mutation({
-            query: ({ id, ...patch}) => ({
-                url: `msgDoteNots/${id}`,
+        updateMsgDoteNotSeen: builder.mutation({
+            query: ({ id }) => ({
+                url: `msgDoteNots/${id}/seen`,
                 method: 'PATCH',
-                body: patch,
             }),
             invalidateTags: (result, error, { id }) => [
                 {type: 'MsgDoteNot', id: id}
             ]
         }),
 
-        // @Server msgDoteNot route no. 3
-        // @crud d1
-        // @desc Delete msgDoteNot
-        // @method Mutation/DELETE
-        // @route /:id
-        // @access Private
-        creatNewMsgDoteNot: builder.mutation({
-            query: ({ id }) => ({
-                url: `msgDoteNots/${id}`,
-                method: 'DELETE',
-                body: { id },
-            }),
-            invalidateTags: (result, error, { id }) => [
-                {type: 'MsgDoteNot', id: id}
-            ]
-        }),
     }),   
 });
 
 export const {
+
+    // Queries
+
+    useGetMsgDoteNotQuery,
     useGetMsgDoteNotsQuery,
+
+    // Mutations
+
     useCreateMsgDoteNotMutation,
-    useUpdateMsgDoteNotMutation,
-    msgDoteNotDeleteMsgDoteNotMutation,
+    useUpdateMsgDoteNotSeenMutation,
+    
 } = msgDoteNotsSlice;
 
 // returns the query result object
-export const selectMsgDoteNotsResult = msgDoteNotSlice.endpoints.getMsgDoteNots.select();
+export const selectMsgDoteNotsResult = msgDoteNotsSlice.endpoints.getMsgDoteNots.select();
 
 // creates memoized selector
 const selectMsgDoteNotsData = createSelector(
