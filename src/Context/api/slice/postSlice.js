@@ -232,6 +232,7 @@ export const postsSlice = apiSlice.injectEndpoints({
 
         // Mutations
 
+        // @mutation 1
         // @Server post route no. 1
         // @crud c1
         // @desc Create post
@@ -249,6 +250,7 @@ export const postsSlice = apiSlice.injectEndpoints({
             ]
         }),
 
+        // @mutation 2
         // @Server post route no. 2
         // @crud u1
         // @desc Update post
@@ -266,13 +268,14 @@ export const postsSlice = apiSlice.injectEndpoints({
             ]
         }),
 
+        // @mutation 3
         // @Server post route no. 3
         // @crud d1
         // @desc Delete post
         // @method Mutation/DELETE
         // @route /:id
         // @access Private
-        creatNewPost: builder.mutation({
+        deletePost: builder.mutation({
             query: ({ id }) => ({
                 url: `posts/${id}`,
                 method: 'DELETE',
@@ -282,18 +285,303 @@ export const postsSlice = apiSlice.injectEndpoints({
                 {type: 'Post', id: id}
             ]
         }),
+
+        // @mutation 4
+        // @Server post route no. 4
+        // @crud d2
+        // @desc Delete post (verified)
+        // @method Mutation/DELETE
+        // @route /:id
+        // @access Private
+        deletePost: builder.mutation({
+            query: ({ id }) => ({
+                url: `posts/${id}/verified`,
+                method: 'DELETE',
+                body: { id },
+            }),
+            invalidateTags: (result, error, { id }) => [
+                {type: 'Post', id: id}
+            ]
+        }),
+
+        // @mutation 5
+        // @Server post route no. 18
+        // @crud u2
+        // @desc Add flame view
+        // @method Mutation/PATCH
+        // @route /:id/flameView
+        // @access Private
+        flameViewPost: builder.mutation({
+            query: ({ id, ...patch}) => ({
+                url: `posts/${id}/flameView`,
+                method: 'PATCH',
+                body: patch,
+            }),
+            invalidateTags: (result, error, { id }) => [
+                {type: 'Post', id: id}
+            ]
+        }),
+
+        // @mutation 6
+        // @Server post route no. 19
+        // @crud u3
+        // @desc Add union views
+        // @method Mutation/PATCH
+        // @route /:id/unionView
+        // @access Private
+        unionViewPost: builder.mutation({
+            query: ({ id, ...patch}) => ({
+                url: `posts/${id}/unionView`,
+                method: 'PATCH',
+                body: patch,
+            }),
+            invalidateTags: (result, error, { id }) => [
+                {type: 'Post', id: id}
+            ]
+        }),
+
+        // @mutation 7
+        // @Server post route no. 20
+        // @crud u4
+        // @desc Add flame Comments
+        // @method Mutation/PATCH
+        // @route /:id/flameComment
+        // @access Private
+        flameCommentPost: builder.mutation({
+            query: ({ id, ...patch}) => ({
+                url: `posts/${id}/flameComment`,
+                method: 'PATCH',
+                body: patch,
+            }),
+            invalidateTags: (result, error, { id }) => [
+                {type: 'Post', id: id}
+            ]
+        }),
+
+        // @mutation 8
+        // @Server post route no. 21
+        // @crud u5
+        // @desc Add union Comments
+        // @method Mutation/PATCH
+        // @route /:id/unionComment
+        // @access Private
+        unionCommentPost: builder.mutation({
+            query: ({ id, ...patch}) => ({
+                url: `posts/${id}/unionComment`,
+                method: 'PATCH',
+                body: patch,
+            }),
+            invalidateTags: (result, error, { id }) => [
+                {type: 'Post', id: id}
+            ]
+        }),
+
+        // @mutation 9
+        // @Server post route no. 22
+        // @crud u6
+        // @desc Add flame shares
+        // @method Mutation/PATCH
+        // @route /:id/flameShare
+        // @access Private
+        flameSharePost: builder.mutation({
+            query: ({ id, ...patch}) => ({
+                url: `posts/${id}/flameShare`,
+                method: 'PATCH',
+                body: patch,
+            }),
+            invalidateTags: (result, error, { id }) => [
+                {type: 'Post', id: id}
+            ]
+        }),
+
+        // @mutation 10
+        // @Server post route no. 23
+        // @crud u7
+        // @desc Add union shares
+        // @method Mutation/PATCH
+        // @route /:id/unionShare
+        // @access Private
+        unionSharePost: builder.mutation({
+            query: ({ id, ...patch}) => ({
+                url: `posts/${id}/unionShare`,
+                method: 'PATCH',
+                body: patch,
+            }),
+            invalidateTags: (result, error, { id }) => [
+                {type: 'Post', id: id}
+            ]
+        }),
+
+        // @mutation 11
+        // @Server post route no. 24
+        // @crud u8
+        // @desc Add flame like/unlike post
+        // @method Mutation/PATCH
+        // @route /:id/flameLike
+        // @access Private
+        flameLikePost: builder.mutation({
+            query: ({ id, ...patch}) => ({
+                url: `posts/${id}/flameLike`,
+                method: 'PATCH',
+                body: patch,
+            }),
+            invalidateTags: (result, error, { id }) => [
+                {type: 'Post', id: id}
+            ]
+        }),
+
+        // @mutation 12
+        // @Server post route no. 25
+        // @crud u9
+        // @desc Add union like/unlike post
+        // @method Mutation/PATCH
+        // @route /:id/unionLike
+        // @access Private
+        unionLikePost: builder.mutation({
+            query: ({ id, ...patch}) => ({
+                url: `posts/${id}/unionLike`,
+                method: 'PATCH',
+                body: patch,
+            }),
+            invalidateTags: (result, error, { id }) => [
+                {type: 'Post', id: id}
+            ]
+        }),
+
+        // @mutation 13
+        // @Server post route no. 26
+        // @crud u10
+        // @desc Add flame love/unlove post
+        // @method Mutation/PATCH
+        // @route /:id/flameLove
+        // @access Private
+        flameLovePost: builder.mutation({
+            query: ({ id, ...patch}) => ({
+                url: `posts/${id}/flameLove`,
+                method: 'PATCH',
+                body: patch,
+            }),
+            invalidateTags: (result, error, { id }) => [
+                {type: 'Post', id: id}
+            ]
+        }),
+
+        // @mutation 13
+        // @Server post route no. 27
+        // @crud u11
+        // @desc Add union love/unlove post
+        // @method Mutation/PATCH
+        // @route /:id/unionLove
+        // @access Private
+        unionLovePost: builder.mutation({
+            query: ({ id, ...patch}) => ({
+                url: `posts/${id}/unionLove`,
+                method: 'PATCH',
+                body: patch,
+            }),
+            invalidateTags: (result, error, { id }) => [
+                {type: 'Post', id: id}
+            ]
+        }),
+
+        // @mutation 14
+        // @Server post route no. 28
+        // @crud u12
+        // @desc Add flame flag/unflag post
+        // @method Mutation/PATCH
+        // @route /:id/flameFlag
+        // @access Private
+        flameFlagPost: builder.mutation({
+            query: ({ id, ...patch}) => ({
+                url: `posts/${id}/flameFlag`,
+                method: 'PATCH',
+                body: patch,
+            }),
+            invalidateTags: (result, error, { id }) => [
+                {type: 'Post', id: id}
+            ]
+        }),
+
+        // @mutation 15
+        // @Server post route no. 29
+        // @crud u13
+        // @desc Add union flag/unflag post
+        // @method Mutation/PATCH
+        // @route /:id/unionFlag
+        // @access Private
+        unionFlagPost: builder.mutation({
+            query: ({ id, ...patch}) => ({
+                url: `posts/${id}/unionFlag`,
+                method: 'PATCH',
+                body: patch,
+            }),
+            invalidateTags: (result, error, { id }) => [
+                {type: 'Post', id: id}
+            ]
+        }),
+
+        // @mutation 16
+        // @Server post route no. 30
+        // @crud u14
+        // @desc report post
+        // @method PATCH
+        // @route /:id/report
+        // @access private
+        reportPost: builder.mutation({
+            query: ({ id, ...patch}) => ({
+                url: `posts/${id}/report`,
+                method: 'PATCH',
+                body: patch,
+            }),
+            invalidateTags: (result, error, { id }) => [
+                {type: 'Post', id: id}
+            ]
+        }),
+
     }),   
 });
 
 export const {
+
+    // Queries
+
+    useGetPostQuery,
     useGetPostsQuery,
+    useGetFlamePostsQuery,
+    useGetUnionPostsQuery,
+    useUserJourneyPostsQuery,
+    useUserGroupPostsQuery,
+    useUserCoachingPostsQuery,
+    useUserFeedPostsQuery,
+    useUnionJourneyPostsQuery,
+    useUnionGroupPostsQuery,
+    useUnionCoachingPostsQuery,
+    useFlameTimelinePostsQuery,
+    useUnionTimelinePostsQuery,
+
+    // Mutations
+
     useCreatePostMutation,
     useUpdatePostMutation,
-    postDeletePostMutation,
+    useDeletePostMutation,
+    useFlameViewMutation,
+    useUnionViewMutation,
+    useFlameCommentMutation,
+    useUnionCommentMutation,
+    useFlameShareMutation,
+    useUnionShareMutation,
+    useFlameLikeMutation,
+    useUnionLikeMutation,
+    useFlameLoveMutation,
+    useUnionLoveMutation,
+    useFlameFlagMutation,
+    useUnionFlagMutation,
+    useReportPostMutation,
+
 } = postsSlice;
 
 // returns the query result object
-export const selectPostsResult = postSlice.endpoints.getPosts.select();
+export const selectPostsResult = postsSlice.endpoints.getPosts.select();
 
 // creates memoized selector
 const selectPostsData = createSelector(
