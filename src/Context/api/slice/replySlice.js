@@ -82,7 +82,7 @@ export const repliesSlice = apiSlice.injectEndpoints({
         // @method GET
         // @route /:flareType/:flareId/count/:userId/:userBlocks/:count
         // @access private
-        getRepliesCnt: builder.query({
+        getInitialReplies: builder.query({
             query: ({ flareType, flareId, userId, userBlocks, count }) => ({
                 url: `/replies/${flareType}/${flareId}/count/${userId}/${userBlocks}/${count}`,
             }),
@@ -95,7 +95,7 @@ export const repliesSlice = apiSlice.injectEndpoints({
         // @method GET
         // @route /:flareType/:flareId/count/:userId/:userBlocks/:count
         // @access private
-        getRepliesCnt: builder.query({
+        getPaginatedReplies: builder.query({
             query: ({ flareType, flareId, pgCnt, userId, userBlocks }) => ({
                 url: `/replies/${flareType}/${flareId}/paginate/${pgCnt}/${userId}/${userBlocks}`
             }),
@@ -103,6 +103,7 @@ export const repliesSlice = apiSlice.injectEndpoints({
 
         // Mutations
 
+        // @mutation 1
         // @Server reply route no. 1
         // @crud c1
         // @desc Create reply
@@ -120,6 +121,7 @@ export const repliesSlice = apiSlice.injectEndpoints({
             ]
         }),
 
+        // @mutation 2
         // @Server reply route no. 2
         // @crud u1
         // @desc Update reply
@@ -137,6 +139,7 @@ export const repliesSlice = apiSlice.injectEndpoints({
             ]
         }),
 
+        // @mutation 3
         // @Server reply route no. 3
         // @crud d1
         // @desc Delete reply
@@ -154,6 +157,7 @@ export const repliesSlice = apiSlice.injectEndpoints({
             ]
         }),
 
+        // @mutation 4
         // @Server reply route no. 3
         // @crud d1
         // @desc Delete reply (verified)
@@ -170,14 +174,199 @@ export const repliesSlice = apiSlice.injectEndpoints({
                 {type: 'Replies', id: id}
             ]
         }),
+
+        // @mutation 5
+        // @Server reply route no. 8
+        // @crud u2
+        // @desc Add flame like/unlike reply
+        // @method Mutation/PATCH
+        // @route /:id/flameLike
+        // @access Private
+        flameLikeReply: builder.mutation({
+            query: ({ id, ...patch}) => ({
+                url: `replies/${id}/flameLike`,
+                method: 'PATCH',
+                body: patch,
+            }),
+            invalidateTags: (result, error, { id }) => [
+                {type: 'Reply', id: id}
+            ]
+        }),
+
+        // @mutation 6
+        // @Server reply route no. 9
+        // @crud u3
+        // @desc Add union like/unlike reply
+        // @method Mutation/PATCH
+        // @route /:id/unionLike
+        // @access Private
+        unionLikeReply: builder.mutation({
+            query: ({ id, ...patch}) => ({
+                url: `replies/${id}/unionLike`,
+                method: 'PATCH',
+                body: patch,
+            }),
+            invalidateTags: (result, error, { id }) => [
+                {type: 'Reply', id: id}
+            ]
+        }),
+
+        // @mutation 7
+        // @Server reply route no. 10
+        // @crud u4
+        // @desc Add flame love/unlove reply
+        // @method Mutation/PATCH
+        // @route /:id/flameLove
+        // @access Private
+        flameLoveReply: builder.mutation({
+            query: ({ id, ...patch}) => ({
+                url: `replies/${id}/flameLove`,
+                method: 'PATCH',
+                body: patch,
+            }),
+            invalidateTags: (result, error, { id }) => [
+                {type: 'Reply', id: id}
+            ]
+        }),
+
+        // @mutation 8
+        // @Server reply route no. 11
+        // @crud u5
+        // @desc Add union love/unlove reply
+        // @method Mutation/PATCH
+        // @route /:id/unionLove
+        // @access Private
+        unionLoveReply: builder.mutation({
+            query: ({ id, ...patch}) => ({
+                url: `replies/${id}/unionLove`,
+                method: 'PATCH',
+                body: patch,
+            }),
+            invalidateTags: (result, error, { id }) => [
+                {type: 'Reply', id: id}
+            ]
+        }),
+
+        // @mutation 9
+        // @Server reply route no. 12
+        // @crud u6
+        // @desc Add flame flag/unflag reply
+        // @method Mutation/PATCH
+        // @route /:id/flameFlag
+        // @access Private
+        flameFlagReply: builder.mutation({
+            query: ({ id, ...patch}) => ({
+                url: `replies/${id}/flameFlag`,
+                method: 'PATCH',
+                body: patch,
+            }),
+            invalidateTags: (result, error, { id }) => [
+                {type: 'Reply', id: id}
+            ]
+        }),
+
+        // @mutation 10
+        // @Server reply route no. 13
+        // @crud u7
+        // @desc Add union flag/unflag reply
+        // @method Mutation/PATCH
+        // @route /:id/unionFlag
+        // @access Private
+        unionFlagReply: builder.mutation({
+            query: ({ id, ...patch}) => ({
+                url: `replies/${id}/unionFlag`,
+                method: 'PATCH',
+                body: patch,
+            }),
+            invalidateTags: (result, error, { id }) => [
+                {type: 'Reply', id: id}
+            ]
+        }),
+
+        // @mutation 11
+        // @Server reply route no. 14
+        // @crud u8
+        // @desc report reply
+        // @method PATCH
+        // @route /:id/report
+        // @access private
+        reportReply: builder.mutation({
+            query: ({ id, ...patch}) => ({
+                url: `replies/${id}/report`,
+                method: 'PATCH',
+                body: patch,
+            }),
+            invalidateTags: (result, error, { id }) => [
+                {type: 'Reply', id: id}
+            ]
+        }),
+
+        // @mutation 12
+        // @Server reply route no. 15
+        // @crud u9
+        // @desc Add flame reply
+        // @method Mutation/PATCH
+        // @route /:id/flameReply
+        // @access Private
+        addFlameReply: builder.mutation({
+            query: ({ id, ...patch}) => ({
+                url: `replies/${id}/flameReply`,
+                method: 'PATCH',
+                body: patch,
+            }),
+            invalidateTags: (result, error, { id }) => [
+                {type: 'Reply', id: id}
+            ]
+        }),
+
+        // @mutation 13
+        // @Server reply route no. 16
+        // @crud u10
+        // @desc Add union reply
+        // @method Mutation/PATCH
+        // @route /:id/unionLike
+        // @access Private
+        addUnionReply: builder.mutation({
+            query: ({ id, ...patch}) => ({
+                url: `replies/${id}/unionReply`,
+                method: 'PATCH',
+                body: patch,
+            }),
+            invalidateTags: (result, error, { id }) => [
+                {type: 'Reply', id: id}
+            ]
+        }),
+
     }),   
 });
 
 export const {
+
+    // Queries
+
+    useGetReplyQuery,
     useGetRepliesQuery,
+    useGetFlareRepliesQuery,
+    useGetRepliesCntQuery,
+    useGetInitialRepliesQuery,
+    useGetPaginatedRepliesQuery,
+
+    // Mutations
+
     useCreateReplyMutation,
     useUpdateReplyMutation,
     replieDeleteReplyMutation,
+    replieDeleteReplyVerifiedMutation,
+    useFlameLikeReplyMutation,
+    useUnionLikeReplyMutation,
+    useFlameLoveReplyMutation,
+    useUnionLoveReplyMutation,
+    useFlameFlagReplyMutation,
+    useUnionFlagReplyMutation,
+    useReportReplyMutation,
+    addFlameReply,
+    addUnionReply,
+
 } = repliesSlice;
 
 // returns the query result object

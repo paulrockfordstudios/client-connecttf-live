@@ -11,6 +11,18 @@ export const reportsSlice = apiSlice.injectEndpoints({
 
         // Queries
 
+        // @query 1
+        // @server report route no. 5
+        // @crud r1
+        // @desc Get report
+        // @method Query/GET
+        // @route /:id
+        // @access Private
+        getReport: builder.query({
+            query: ({ id }) => `/replies/${id}`,
+        }),
+
+        // @query 2
         // @Server report route no. 5
         // @crud r2
         // @desc Get all reports
@@ -39,6 +51,31 @@ export const reportsSlice = apiSlice.injectEndpoints({
             }
         }),
 
+        // @query 3
+        // @server report route no. 7
+        // @crud r3
+        // @desc Get flame's reports
+        // @method GET
+        // @route /flame/:userId
+        // @access private
+        getFlameReports: builder.query({
+            query: ({ userId }) => `/replies/flame/${userId}`,
+        }),
+
+        // @query 4
+        // @server report route no. 8
+        // @crud r4
+        // @desc Get union's reports
+        // @method GET
+        // @route /union/:unionId
+        // @access private
+        getUnionReports: builder.query({
+            query: ({ unionId }) => `/replies/union/${unionId}`,
+        }),
+
+        // Mutations
+
+        // @mutation 1
         // @Server report route no. 1
         // @crud c1
         // @desc Create report
@@ -56,6 +93,7 @@ export const reportsSlice = apiSlice.injectEndpoints({
             ]
         }),
 
+        // @mutation 2
         // @Server report route no. 2
         // @crud u1
         // @desc Update report
@@ -73,13 +111,14 @@ export const reportsSlice = apiSlice.injectEndpoints({
             ]
         }),
 
+        // @mutation 3
         // @Server report route no. 3
         // @crud d1
         // @desc Delete report
         // @method Mutation/DELETE
         // @route /:id
         // @access Private
-        creatNewReport: builder.mutation({
+        deleteReport: builder.mutation({
             query: ({ id }) => ({
                 url: `reports/${id}`,
                 method: 'DELETE',
@@ -89,18 +128,48 @@ export const reportsSlice = apiSlice.injectEndpoints({
                 {type: 'Report', id: id}
             ]
         }),
+
+        // @mutation 4
+        // @Server report route no. 4
+        // @crud d2
+        // @desc Delete report (verified)
+        // @method Mutation/DELETE
+        // @route /:id/verified
+        // @access Private
+        deleteReport: builder.mutation({
+            query: ({ id }) => ({
+                url: `reports/${id}/verified`,
+                method: 'DELETE',
+                body: { id },
+            }),
+            invalidateTags: (result, error, { id }) => [
+                {type: 'Report', id: id}
+            ]
+        }),
+
     }),   
 });
 
 export const {
+
+    // Queries
+
+    useGetReportQuery,
     useGetReportsQuery,
+    useGetFlameReportsQuery,
+    useGetUnionReportsQuery,
+
+    // Mutations
+
     useCreateReportMutation,
     useUpdateReportMutation,
-    reportDeleteReportMutation,
+    useDeleteReportMutation,
+    useDeleteReportVerifiedMutation,
+
 } = reportsSlice;
 
 // returns the query result object
-export const selectReportsResult = reportSlice.endpoints.getReports.select();
+export const selectReportsResult = reportsSlice.endpoints.getReports.select();
 
 // creates memoized selector
 const selectReportsData = createSelector(
