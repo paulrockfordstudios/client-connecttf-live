@@ -291,9 +291,9 @@ export const questionsSlice = apiSlice.injectEndpoints({
         // @crud d2
         // @desc Delete question (verified)
         // @method Mutation/DELETE
-        // @route /:id
+        // @route /:id/verified
         // @access Private
-        deleteQuestion: builder.mutation({
+        deleteQuestionVerified: builder.mutation({
             query: ({ id }) => ({
                 url: `questions/${id}/verified`,
                 method: 'DELETE',
@@ -524,7 +524,7 @@ export const questionsSlice = apiSlice.injectEndpoints({
         // @Server question route no. 30
         // @crud u14
         // @desc report question
-        // @method PATCH
+        // @method Mutation/PATCH
         // @route /:id/report
         // @access private
         reportQuestion: builder.mutation({

@@ -55,7 +55,7 @@ export const repliesSlice = apiSlice.injectEndpoints({
         // @server reply route no. 17
         // @crud r3
         // @desc Get flare replies
-        // @method GET
+        // @method Query/GET
         // @route /:flareType/:flareId
         // @access private
         getFlareReplies: builder.query({
@@ -66,7 +66,7 @@ export const repliesSlice = apiSlice.injectEndpoints({
         // @server reply route no. 18
         // @crud r4
         // @desc Get flare replies count
-        // @method GET
+        // @method Query/GET
         // @route /:flareType/:flareId/count/:userId/:userBlocks
         // @access private
         getRepliesCnt: builder.query({
@@ -79,7 +79,7 @@ export const repliesSlice = apiSlice.injectEndpoints({
         // @server reply route no. 19
         // @crud r5
         // @desc Get first two or three flare replies
-        // @method GET
+        // @method Query/GET
         // @route /:flareType/:flareId/count/:userId/:userBlocks/:count
         // @access private
         getInitialReplies: builder.query({
@@ -92,7 +92,7 @@ export const repliesSlice = apiSlice.injectEndpoints({
         // @server reply route no. 20
         // @crud r6
         // @desc Get first two or three flare replies
-        // @method GET
+        // @method Query/GET
         // @route /:flareType/:flareId/count/:userId/:userBlocks/:count
         // @access private
         getPaginatedReplies: builder.query({
@@ -162,7 +162,7 @@ export const repliesSlice = apiSlice.injectEndpoints({
         // @crud d1
         // @desc Delete reply (verified)
         // @method Mutation/DELETE
-        // @route /:id
+        // @route /:id/verified
         // @access Private
         deleteReplyVerified: builder.mutation({
             query: ({ id }) => ({

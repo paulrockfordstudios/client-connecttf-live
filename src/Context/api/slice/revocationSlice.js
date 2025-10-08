@@ -11,6 +11,18 @@ export const revocationsSlice = apiSlice.injectEndpoints({
 
         // Queries
 
+        // @query 1
+        // @server revocation route no. 5
+        // @crud r1
+        // @desc Get revocation
+        // @method Query/GET
+        // @route /:id
+        // @access Private
+        getRevocation: builder.query({
+            query: ({ id }) => `/revocations/${id}`,
+        }),
+
+        // @query 2
         // @Server revocation route no. 5
         // @crud r2
         // @desc Get all revocations
@@ -39,6 +51,31 @@ export const revocationsSlice = apiSlice.injectEndpoints({
             }
         }),
 
+        // @query 3
+        // @server revocation route no. 7
+        // @crud r3
+        // @desc Get flame user's revocations
+        // @method Query/GET
+        // @route /flame/:userId
+        // @access private
+        getFlameRevocations: builder.query({
+            query: ({ userId }) => `/revocations/flame/${userId}`,
+        }),
+
+        // @query 4
+        // @server revocation route no. 8
+        // @crud r4
+        // @desc Get flame union's revocations
+        // @method Query/GET
+        // @route /union/:unionId
+        // @access private
+        getUnionRevocations: builder.query({
+            query: ({ unionId }) => `/revocations/union/${unionId}`,
+        }),
+
+        // Mutations
+
+        // @mutation 1
         // @Server revocation route no. 1
         // @crud c1
         // @desc Create revocation
@@ -56,6 +93,7 @@ export const revocationsSlice = apiSlice.injectEndpoints({
             ]
         }),
 
+        // @mutation 2
         // @Server revocation route no. 2
         // @crud u1
         // @desc Update revocation
@@ -73,13 +111,14 @@ export const revocationsSlice = apiSlice.injectEndpoints({
             ]
         }),
 
+        // @mutation 3
         // @Server revocation route no. 3
         // @crud d1
         // @desc Delete revocation
         // @method Mutation/DELETE
         // @route /:id
         // @access Private
-        creatNewRevocation: builder.mutation({
+        deleteRevocation: builder.mutation({
             query: ({ id }) => ({
                 url: `revocations/${id}`,
                 method: 'DELETE',
@@ -89,18 +128,48 @@ export const revocationsSlice = apiSlice.injectEndpoints({
                 {type: 'Revocation', id: id}
             ]
         }),
+
+        // @mutation 4
+        // @Server revocation route no. 3
+        // @crud d1
+        // @desc Delete revocation (verified)
+        // @method Mutation/DELETE
+        // @route /:id/verified
+        // @access Private
+        deleteRevocationVerified: builder.mutation({
+            query: ({ id }) => ({
+                url: `revocations/${id}/verified`,
+                method: 'DELETE',
+                body: { id },
+            }),
+            invalidateTags: (result, error, { id }) => [
+                {type: 'Revocation', id: id}
+            ]
+        }),
+
     }),   
 });
 
 export const {
+
+    // Queries
+
+    useGetRevocationQuery,
     useGetRevocationsQuery,
+    useGetFlameRevocationsQuery,
+    useGetUnionRevocationsQuery,
+
+    // Mutations
+
     useCreateRevocationMutation,
     useUpdateRevocationMutation,
-    revocationDeleteRevocationMutation,
+    useDeleteRevocationMutation,
+    useDeleteRevocationVerifiedMutation,
+
 } = revocationsSlice;
 
 // returns the query result object
-export const selectRevocationsResult = revocationSlice.endpoints.getRevocations.select();
+export const selectRevocationsResult = revocationsSlice.endpoints.getRevocations.select();
 
 // creates memoized selector
 const selectRevocationsData = createSelector(

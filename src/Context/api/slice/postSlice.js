@@ -293,7 +293,7 @@ export const postsSlice = apiSlice.injectEndpoints({
         // @method Mutation/DELETE
         // @route /:id
         // @access Private
-        deletePost: builder.mutation({
+        deletePostVerified: builder.mutation({
             query: ({ id }) => ({
                 url: `posts/${id}/verified`,
                 method: 'DELETE',
@@ -564,6 +564,7 @@ export const {
     useCreatePostMutation,
     useUpdatePostMutation,
     useDeletePostMutation,
+    useDeletePostVerifiedMutation,
     useFlameViewPostMutation,
     useUnionViewPostMutation,
     useFlameCommentPostMutation,

@@ -55,7 +55,7 @@ export const reportsSlice = apiSlice.injectEndpoints({
         // @server report route no. 7
         // @crud r3
         // @desc Get flame's reports
-        // @method GET
+        // @method Query/GET
         // @route /flame/:userId
         // @access private
         getFlameReports: builder.query({
@@ -66,7 +66,7 @@ export const reportsSlice = apiSlice.injectEndpoints({
         // @server report route no. 8
         // @crud r4
         // @desc Get union's reports
-        // @method GET
+        // @method Query/GET
         // @route /union/:unionId
         // @access private
         getUnionReports: builder.query({
@@ -136,7 +136,7 @@ export const reportsSlice = apiSlice.injectEndpoints({
         // @method Mutation/DELETE
         // @route /:id/verified
         // @access Private
-        deleteReport: builder.mutation({
+        deleteReportVerified: builder.mutation({
             query: ({ id }) => ({
                 url: `reports/${id}/verified`,
                 method: 'DELETE',

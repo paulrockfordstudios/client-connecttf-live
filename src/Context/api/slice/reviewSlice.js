@@ -19,7 +19,7 @@ export const reviewsSlice = apiSlice.injectEndpoints({
         // @route /:id
         // @access Private
         getReview: builder.query({
-            query: ({ id }) => `/replies/${id}`,
+            query: ({ id }) => `/reviews/${id}`,
         }),
 
         // @query 2
@@ -55,22 +55,22 @@ export const reviewsSlice = apiSlice.injectEndpoints({
         // @server review route no. 7
         // @crud r3
         // @desc Get flame user's reviews
-        // @method GET
+        // @method Query/GET
         // @route /flame/:userId
         // @access private
         getFlameReviews: builder.query({
-            query: ({ userId }) => `/replies/flame/${userId}`,
+            query: ({ userId }) => `/reviews/flame/${userId}`,
         }),
 
         // @query 4
         // @server review route no. 8
         // @crud r4
         // @desc Get flame union's reviews
-        // @method GET
+        // @method Query/GET
         // @route /union/:unionId
         // @access private
         getUnionReviews: builder.query({
-            query: ({ unionId }) => `/replies/union/${userId}`,
+            query: ({ unionId }) => `/reviews/union/${unionId}`,
         }),
 
         // Mutations
@@ -79,13 +79,13 @@ export const reviewsSlice = apiSlice.injectEndpoints({
         // @Server review route no. 1
         // @crud c1
         // @desc Create review
-        // @method Mutation/REVIEW
+        // @method Mutation/POST
         // @route /
         // @access Private
         createReview: builder.mutation({
             query: initialReviewData => ({
                 url: '/reviews',
-                method: 'REVIEW',
+                method: 'POST',
                 body: {...initialReviewData,}
             }),
             invalidateTags: [
@@ -134,7 +134,7 @@ export const reviewsSlice = apiSlice.injectEndpoints({
         // @crud d2
         // @desc Delete review (verified)
         // @method Mutation/DELETE
-        // @route /:id
+        // @route /:id/verified
         // @access Private
         deleteReviewVeridied: builder.mutation({
             query: ({ id }) => ({
@@ -151,7 +151,7 @@ export const reviewsSlice = apiSlice.injectEndpoints({
         // @Server review route no. 9
         // @crud u2
         // @desc Add flame Comment
-        // @method PATCH
+        // @method Mutation/PATCH
         // @route /:id/flameComment
         // @access private
         flameCommentReview: builder.mutation({
