@@ -11,14 +11,15 @@ export const userNotsSlice = apiSlice.injectEndpoints({
 
         // Queries
 
-        // @Server userNot route no. 5
+        // @query 1
+        // @Server userNot route no. 2
         // @crud r2
-        // @desc Get all userNots
+        // @desc Get all user Notifications
         // @method Query/GET
-        // @route /all
+        // @route /:currentUserId
         // @access Private
         getUserNots: builder.query({
-            query: () => '/userNots/all',
+            query: ( currentUserId ) => `/userNots/${currentUserId}`,
             validateStatus: (response, result) => {
                 return response.status === 200 && !result.isError
             },
@@ -39,9 +40,25 @@ export const userNotsSlice = apiSlice.injectEndpoints({
             }
         }),
 
+        // @query 2
+        // @server user route no. 3
+        // @crud r2
+        // @desc Query whether there is a unseen user notification
+        // @method GET
+        // @route /:curentUserType/:currentUserId/:union/:seen
+        // @access private
+        checkUserNotUnseenExists: builder.query({
+            query: ({ currentUserType, currentUserId, union, seen }) => ({
+                url: `/${currentUserType}/${currentUserId}/${union}/${seen}`,
+            }),
+        }),
+
+        // Mutations
+
+        // @mutation 1
         // @Server userNot route no. 1
         // @crud c1
-        // @desc Create userNot
+        // @desc Create user notification
         // @method Mutation/POST
         // @route /
         // @access Private
@@ -56,34 +73,34 @@ export const userNotsSlice = apiSlice.injectEndpoints({
             ]
         }),
 
+        // @mutation 2
         // @Server userNot route no. 2
         // @crud u1
-        // @desc Update userNot
+        // @desc Update user notification seen
         // @method Mutation/PATCH
-        // @route /:id
+        // @route /:id/seen
         // @access Private
-        updateUserNot: builder.mutation({
-            query: ({ id, ...patch}) => ({
-                url: `userNots/${id}`,
+        updateUserNotSeen: builder.mutation({
+            query: ({ id }) => ({
+                url: `userNots/${id}/seen`,
                 method: 'PATCH',
-                body: patch,
             }),
             invalidateTags: (result, error, { id }) => [
                 {type: 'UserNot', id: id}
             ]
         }),
 
-        // @Server userNot route no. 3
-        // @crud d1
-        // @desc Delete userNot
-        // @method Mutation/DELETE
-        // @route /:id
+        // @Server userNot route no. 2
+        // @crud u1
+        // @desc Update user notification seen
+        // @method Mutation/PATCH
+        // @route /:id/add_user
         // @access Private
-        creatNewUserNot: builder.mutation({
-            query: ({ id }) => ({
-                url: `userNots/${id}`,
-                method: 'DELETE',
-                body: { id },
+        updateUserNotAddUser: builder.mutation({
+            query: ({ id, ...patch}) => ({
+                url: `userNots/${id}/Add_user`,
+                method: 'PATCH',
+                body: patch,
             }),
             invalidateTags: (result, error, { id }) => [
                 {type: 'UserNot', id: id}
@@ -93,14 +110,22 @@ export const userNotsSlice = apiSlice.injectEndpoints({
 });
 
 export const {
+
+    // Queries
+
     useGetUserNotsQuery,
+    useCheckUserNotUnseenExists,
+
+    // Mutations
+
     useCreateUserNotMutation,
-    useUpdateUserNotMutation,
-    userNotDeleteUserNotMutation,
+    useUpdateUserNotSeenMutation,
+    useUpdateUserNotAddUserMutation,
+
 } = userNotsSlice;
 
 // returns the query result object
-export const selectUserNotsResult = userNotSlice.endpoints.getUserNots.select();
+export const selectUserNotsResult = userNotsSlice.endpoints.getUserNots.select();
 
 // creates memoized selector
 const selectUserNotsData = createSelector(

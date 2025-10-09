@@ -16,10 +16,10 @@ export const groupReqsSlice = apiSlice.injectEndpoints({
         // @crud r1
         // @desc Get flame user group request
         // @method GET
-        // @route /flame/:userId/begroup
+        // @route /flame/:userId/group
         // @access private
-        getFlameRequestee: builder.query({
-            query: ({ userId }) => `/groupReqs/flame/${userId}/begroup`,
+        getFlameGroupRequestee: builder.query({
+            query: ({ userId }) => `/groupReqs/flame/${userId}/group`,
         }),
 
         // @query 2
@@ -27,10 +27,10 @@ export const groupReqsSlice = apiSlice.injectEndpoints({
         // @crud r2
         // @desc Get union user group request
         // @method GET
-        // @route /union/:unionId/begroup
+        // @route /union/:unionId/group
         // @access private
-        getUnionRequestee: builder.query({
-            query: ({ unionId }) => `/groupReqs/union/${unionId}/begroup`,
+        getUnionGroupRequestee: builder.query({
+            query: ({ unionId }) => `/groupReqs/union/${unionId}/group`,
         }),
 
         // @query 3

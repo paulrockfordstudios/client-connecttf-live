@@ -11,6 +11,17 @@ export const suspensionsSlice = apiSlice.injectEndpoints({
 
         // Queries
 
+        // @query 1
+        // @server suspension route no. 5
+        // @crud r1
+        // @desc Get suspension
+        // @method Query/GET
+        // @route /:id
+        // @access Private
+        getSuspension: builder.query({
+            query: ({ id }) => `/suspensions/${id}`,
+        }),
+
         // @Server suspension route no. 5
         // @crud r2
         // @desc Get all suspensions
@@ -39,6 +50,31 @@ export const suspensionsSlice = apiSlice.injectEndpoints({
             }
         }),
 
+        // @query 3
+        // @server suspension route no. 7
+        // @crud r3
+        // @desc Get flame user's suspensions
+        // @method Query/GET
+        // @route /flame/:userId
+        // @access private
+        getFlameSuspensions: builder.query({
+            query: ({ userId }) => `/suspensions/flame/${userId}`,
+        }),
+
+        // @query 4
+        // @server suspension route no. 8
+        // @crud r4
+        // @desc Get flame union's suspensions
+        // @method Query/GET
+        // @route /union/:unionId
+        // @access private
+        getUnionSuspensions: builder.query({
+            query: ({ unionId }) => `/suspensions/union/${unionId}`,
+        }),
+
+        // Mutations
+
+        // @mutation 1
         // @Server suspension route no. 1
         // @crud c1
         // @desc Create suspension
@@ -56,6 +92,7 @@ export const suspensionsSlice = apiSlice.injectEndpoints({
             ]
         }),
 
+        // @mutation 2
         // @Server suspension route no. 2
         // @crud u1
         // @desc Update suspension
@@ -73,6 +110,7 @@ export const suspensionsSlice = apiSlice.injectEndpoints({
             ]
         }),
 
+        // @mutation 3
         // @Server suspension route no. 3
         // @crud d1
         // @desc Delete suspension
@@ -89,6 +127,25 @@ export const suspensionsSlice = apiSlice.injectEndpoints({
                 {type: 'Suspension', id: id}
             ]
         }),
+
+        // @mutation 4
+        // @Server suspension route no. 4
+        // @crud d2
+        // @desc Delete suspension (verified)
+        // @method Mutation/DELETE
+        // @route /:id
+        // @access Private
+        creatNewSuspension: builder.mutation({
+            query: ({ id }) => ({
+                url: `suspensions/${id}/verified`,
+                method: 'DELETE',
+                body: { id },
+            }),
+            invalidateTags: (result, error, { id }) => [
+                {type: 'Suspension', id: id}
+            ]
+        }),
+
     }),   
 });
 

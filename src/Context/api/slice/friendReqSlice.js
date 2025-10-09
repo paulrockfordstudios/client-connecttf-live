@@ -18,7 +18,7 @@ export const friendReqsSlice = apiSlice.injectEndpoints({
         // @method GET
         // @route /flame/:userId/befriend
         // @access private
-        getFlameRequestee: builder.query({
+        getFlameFriendRequestee: builder.query({
             query: ({ userId }) => `/friendReqs/flame/${userId}/befriend`,
         }),
 
@@ -29,7 +29,7 @@ export const friendReqsSlice = apiSlice.injectEndpoints({
         // @method GET
         // @route /union/:unionId/befriend
         // @access private
-        getUnionRequestee: builder.query({
+        getUnionFriendRequestee: builder.query({
             query: ({ unionId }) => `/friendReqs/union/${unionId}/befriend`,
         }),
 

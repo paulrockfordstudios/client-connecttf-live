@@ -95,7 +95,7 @@ export const sharesSlice = apiSlice.injectEndpoints({
         }),
 
         // @query 4
-        // @server share route no. 18
+        // @server share route no. 22
         // @crud r4
         // @desc Get flare shares count
         // @method Query/GET
@@ -108,7 +108,7 @@ export const sharesSlice = apiSlice.injectEndpoints({
         }),
 
         // @query 6
-        // @server share route no. 20
+        // @server share route no. 23
         // @crud r6
         // @desc Get flare shares paginated
         // @method Query/GET
