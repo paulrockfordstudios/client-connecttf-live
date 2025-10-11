@@ -332,11 +332,11 @@ export const unionsSlice = apiSlice.injectEndpoints({
         // @crud u5
         // @desc Union follow union
         // @method PATCH
-        // @route /:id/union-union/follow
+        // @route /:id/u-union/follow
         // Access private
-        unionFollowUnion: builder.mutation({
+        uFollowUnion: builder.mutation({
             query: ({ id, ...patch }) => ({
-                url: `unions/${id}/union-union/follow`,
+                url: `unions/${id}/u-union/follow`,
                 method: 'PATCH',
                 body: patch,
             }),
@@ -350,11 +350,11 @@ export const unionsSlice = apiSlice.injectEndpoints({
         // @crud u6
         // @desc Union unfollow union
         // @method PATCH
-        // @route /:id/union-union/unfollow
+        // @route /:id/u-union/unfollow
         // Access private
-        unionUnfollowUnion: builder.mutation({
+        uUnfollowUnion: builder.mutation({
             query: ({ id, ...patch }) => ({
-                url: `unions/${id}/union-union/unfollow`,
+                url: `unions/${id}/u-union/unfollow`,
                 method: 'PATCH',
                 body: patch,
             }),
@@ -368,11 +368,11 @@ export const unionsSlice = apiSlice.injectEndpoints({
         // @crud u7
         // @desc flame follow union
         // @method Mutation/PATCH
-        // @route /:id/flame-union/follow
+        // @route /:id/f-union/follow
         // @access private
-        flameFollowUnion: builder.mutation({
+        fFollowUnion: builder.mutation({
             query: ({ id, ...patch }) => ({
-                url: `unions/${id}/flame-union/follow`,
+                url: `unions/${id}/f-union/follow`,
                 method: 'PATCH',
                 body: patch,
             }),
@@ -386,11 +386,11 @@ export const unionsSlice = apiSlice.injectEndpoints({
         // @crud u8
         // @desc flame unfollow union
         // @method Mutation/PATCH
-        // @route /:id/flame-union/unfollow
+        // @route /:id/f-union/unfollow
         // @access private
-        flameUnfollowUnion: builder.mutation({
+        fUnfollowUnion: builder.mutation({
             query: ({ id, ...patch }) => ({
-                url: `unions/${id}/flame-union/unfollow`,
+                url: `unions/${id}/f-union/unfollow`,
                 method: 'PATCH',
                 body: patch,
             }),
@@ -404,11 +404,11 @@ export const unionsSlice = apiSlice.injectEndpoints({
         // @crud u9
         // @desc union request to follow union
         // @method Mutation/PATCH
-        // @route /:id/union-union/requestFollow
+        // @route /:id/u-union/requestFollow
         // @access private
-        unionReqFollowunion: builder.mutation({
+        uReqFollowunion: builder.mutation({
             query: ({ id, ...patch }) => ({
-                url: `unions/${id}/union-union/requestFollow`,
+                url: `unions/${id}/u-union/requestFollow`,
                 method: 'PATCH',
                 body: patch,
             }),
@@ -422,11 +422,11 @@ export const unionsSlice = apiSlice.injectEndpoints({
         // @crud u10
         // @desc union remove request to follow union
         // @method Mutation/PATCH
-        // @route /:id/union-union/unrequestFollow
+        // @route /:id/u-union/unrequestFollow
         // @access private
-        unionUnreqFollowUnion: builder.mutation({
+        uUnreqFollowUnion: builder.mutation({
             query: ({ id, ...patch }) => ({
-                url: `unions/${id}/union-union/unrequestFollow`,
+                url: `unions/${id}/u-union/unrequestFollow`,
                 method: 'PATCH',
                 body: patch,
             }),
@@ -440,11 +440,11 @@ export const unionsSlice = apiSlice.injectEndpoints({
         // @crud u11
         // @desc flame request to follow union
         // @method Mutation/PATCH
-        // @route /:id/flame-union/requestFollow
+        // @route /:id/f-union/requestFollow
         // @access private
-        flameReqFollowUnion: builder.mutation({
+        fReqFollowUnion: builder.mutation({
             query: ({ id, ...patch }) => ({
-                url: `unions/${id}/flame-union/requestFollow`,
+                url: `unions/${id}/f-union/requestFollow`,
                 method: 'PATCH',
                 body: patch,
             }),
@@ -458,11 +458,11 @@ export const unionsSlice = apiSlice.injectEndpoints({
         // @crud u12
         // @desc flame remove request to follow union
         // @method Mutation/PATCH
-        // @route /:id/flame-union/unrequestFollow
+        // @route /:id/f-union/unrequestFollow
         // @access private
-        flameUnreqFollowUnion: builder.mutation({
+        fUnreqFollowUnion: builder.mutation({
             query: ({ id, ...patch }) => ({
-                url: `unions/${id}/flame-union/unrequestFollow`,
+                url: `unions/${id}/f-union/unrequestFollow`,
                 method: 'PATCH',
                 body: patch,
             }),
@@ -476,11 +476,11 @@ export const unionsSlice = apiSlice.injectEndpoints({
         // @crud u13
         // @desc union block union
         // @method Mutation/PATCH
-        // @route /:id/union-union/block
+        // @route /:id/u-union/block
         // @access private
-        unionBlockunion: builder.mutation({
+        uBlockunion: builder.mutation({
             query: ({ id, ...patch }) => ({
-                url: `unions/${id}/union-union/block`,
+                url: `unions/${id}/u-union/block`,
                 method: 'PATCH',
                 body: patch,
             }),
@@ -494,11 +494,11 @@ export const unionsSlice = apiSlice.injectEndpoints({
         // @crud u14
         // @desc union unblock union
         // @method Mutation/PATCH
-        // @route /:id/union-union/unblock
+        // @route /:id/u-union/unblock
         // @access private
-        unionUnblockUnion: builder.mutation({
+        uUnblockUnion: builder.mutation({
             query: ({ id, ...patch }) => ({
-                url: `unions/${id}/union-union/unblock`,
+                url: `unions/${id}/u-union/unblock`,
                 method: 'PATCH',
                 body: patch,
             }),
@@ -512,11 +512,11 @@ export const unionsSlice = apiSlice.injectEndpoints({
         // @crud 15
         // @desc flame block union
         // @method Mutation/PATCH
-        // @route /:id/flame-union/block
+        // @route /:id/f-union/block
         // @access private
-        flameBlockUnion: builder.mutation({
+        fBlockUnion: builder.mutation({
             query: ({ id, ...patch }) => ({
-                url: `unions/${id}/flame-union/block`,
+                url: `unions/${id}/f-union/block`,
                 method: 'PATCH',
                 body: patch,
             }),
@@ -530,11 +530,11 @@ export const unionsSlice = apiSlice.injectEndpoints({
         // @crud 16
         // @desc flame unblock flame
         // @method Mutation/PATCH
-        // @route /:id/flame-union/unblock
+        // @route /:id/f-union/unblock
         // @access private
-        FlameUnblockUnion: builder.mutation({
+        fUnblockUnion: builder.mutation({
             query: ({ id, ...patch }) => ({
-                url: `unions/${id}/flame-union/unblock`,
+                url: `unions/${id}/f-union/unblock`,
                 method: 'PATCH',
                 body: patch,
             }),
@@ -548,11 +548,11 @@ export const unionsSlice = apiSlice.injectEndpoints({
         // @crud u17
         // @desc union subscribe union
         // @method Mutation/PATCH
-        // @route /:id/union-union/subscribe
+        // @route /:id/u-union/subscribe
         // @access private
-        unionSubscribeUnion: builder.mutation({
+        uSubscribeUnion: builder.mutation({
             query: ({ id, ...patch }) => ({
-                url: `unions/${id}/union-union/subscribe`,
+                url: `unions/${id}/u-union/subscribe`,
                 method: 'PATCH',
                 body: patch,
             }),
@@ -566,11 +566,11 @@ export const unionsSlice = apiSlice.injectEndpoints({
         // @crud u18
         // @desc Union unsubscribe union
         // @method Mutation/PATCH
-        // @route /:id/union-union/unsubscribe
+        // @route /:id/u-union/unsubscribe
         // @access private
-        unionUnsubscribeUnion: builder.mutation({
+        uUnsubscribeUnion: builder.mutation({
             query: ({ id, ...patch }) => ({
-                url: `unions/${id}/union-union/unsubscribe`,
+                url: `unions/${id}/u-union/unsubscribe`,
                 method: 'PATCH',
                 body: patch,
             }),
@@ -584,11 +584,11 @@ export const unionsSlice = apiSlice.injectEndpoints({
         // @crud u19
         // @desc flame subscribe union
         // @method Mutation/PATCH
-        // @route /:id/flame-union/subscribe
+        // @route /:id/f-union/subscribe
         // @access private
-        flameSubscribeUnion: builder.mutation({
+        fSubscribeUnion: builder.mutation({
             query: ({ id, ...patch }) => ({
-                url: `unions/${id}/flame-union/subscribe`,
+                url: `unions/${id}/f-union/subscribe`,
                 method: 'PATCH',
                 body: patch,
             }),
@@ -602,11 +602,11 @@ export const unionsSlice = apiSlice.injectEndpoints({
         // @crud u20
         // @desc flame unsubscribe union
         // @method Mutation/PATCH
-        // @route /:id/flame-union/unsubscribe
+        // @route /:id/f-union/unsubscribe
         // @access private
-        flameUnsubscribeUnion: builder.mutation({
+        fUnsubscribeUnion: builder.mutation({
             query: ({ id, ...patch }) => ({
-                url: `unions/${id}/flame-union/unsubscribe`,
+                url: `unions/${id}/f-union/unsubscribe`,
                 method: 'PATCH',
                 body: patch,
             }),
@@ -620,11 +620,11 @@ export const unionsSlice = apiSlice.injectEndpoints({
         // @crud u21
         // @desc Union request to subscribe union
         // @method Mutation/PATCH
-        // @route /:id/union-union/requestSubscribe
+        // @route /:id/u-union/requestSubscribe
         // @access private
-        unionReqSubscribeUnion: builder.mutation({
+        uReqSubscribeUnion: builder.mutation({
             query: ({ id, ...patch }) => ({
-                url: `unions/${id}/union-union/requestSubscribe`,
+                url: `unions/${id}/u-union/requestSubscribe`,
                 method: 'PATCH',
                 body: patch,
             }),
@@ -638,11 +638,11 @@ export const unionsSlice = apiSlice.injectEndpoints({
         // @crud u22
         // @desc Union  remove request to subscribe union
         // @method Mutation/PATCH
-        // @route /:id/union-union/unrequestSubscribe
+        // @route /:id/u-union/unrequestSubscribe
         // @access private
-        unionUnreqSubscribeUnion: builder.mutation({
+        uUnreqSubscribeUnion: builder.mutation({
             query: ({ id, ...patch }) => ({
-                url: `unions/${id}/union-union/unrequestSubscribe`,
+                url: `unions/${id}/u-union/unrequestSubscribe`,
                 method: 'PATCH',
                 body: patch,
             }),
@@ -656,11 +656,11 @@ export const unionsSlice = apiSlice.injectEndpoints({
         // @crud u23
         // @desc flame request to subscribe union
         // @method Mutation/PATCH
-        // @route /:id/flame-union/requestSubscribe
+        // @route /:id/f-union/requestSubscribe
         // @access private
-        flameReqSubscribeUnion: builder.mutation({
+        fReqSubscribeUnion: builder.mutation({
             query: ({ id, ...patch }) => ({
-                url: `unions/${id}/flame-union/requestSubscribe`,
+                url: `unions/${id}/f-union/requestSubscribe`,
                 method: 'PATCH',
                 body: patch,
             }),
@@ -674,11 +674,11 @@ export const unionsSlice = apiSlice.injectEndpoints({
         // @crud u24
         // @desc flame request to subscribe union
         // @method Mutation/PATCH
-        // @route /:id/flame-union/unrequestSubscribe
+        // @route /:id/f-union/unrequestSubscribe
         // @access private
-        flameUnreqSubscribeUnion: builder.mutation({
+        fUnreqSubscribeUnion: builder.mutation({
             query: ({ id, ...patch }) => ({
-                url: `unions/${id}/flame-union/unrequestSubscribe`,
+                url: `unions/${id}/f-union/unrequestSubscribe`,
                 method: 'PATCH',
                 body: patch,
             }),
@@ -724,31 +724,31 @@ export const {
     useSuspendUnionMutation,
     useBlacklistUnionMutation,
     useTfClaimRequestMutation,
-    useFFollowFMutation,
-    useFUnfollowFMutation,
-    useUFollowFMutation,
-    useUUnfollowFMutation,
-    useFReqFollowFMutation,
-    useFUnreqFollowFMutation,
-    useUReqFollowFMutation,
-    useUUnreqFollowFMutation,
-    useFBlockFMutation,
-    useFUnblockFMutation,
-    useUBlockFMutation,
-    useUUnblockFMutation,
-    useFSubscribeFMutation,
-    useFUnsubscribeFMutation,
-    useUSubscribeFMutation,
-    useUUnsubscribeFMutation,
-    useFReqSubscribeFMutation,
-    useFUnreqSubscribeFMutation,
-    useUReqSubscribeFMutation,
-    useUUnreqSubscribeFMutation,
+    useUFollowUnionMutation,
+    useUUnfollowUnionMutation,
+    useFFollowUnionMutation,
+    useFUnfollowUnionMutation,
+    useUReqFollowUnionMutation,
+    useUUnreqFollowUnionMutation,
+    useFReqFollowUnionMutation,
+    useFUnreqFollowUnionMutation,
+    useUBlockUnionMutation,
+    useUUnblockUnionMutation,
+    useFBlockUnionMutation,
+    useFUnblockUnionMutation,  
+    useUSubscribeUnionMutation,
+    useUUnsubscribeUnionMutation,
+    useFSubscribeUnionMutation,
+    useFUnsubscribeUnionMutation,
+    useUReqSubscribeUnionMutation,
+    useUUnreqSubscribeUnionMutation,
+    useFReqSubscribeUnionMutation,
+    useFUnreqSubscribeUnionMutation, 
 
 } = unionsSlice;
 
 // returns the query result object
-export const selectUnionsResult = unionSlice.endpoints.getUnions.select();
+export const selectUnionsResult = unionsSlice.endpoints.getUnions.select();
 
 // creates memoized selector
 const selectUnionsData = createSelector(

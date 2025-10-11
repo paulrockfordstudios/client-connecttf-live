@@ -93,7 +93,7 @@ export const repliesSlice = apiSlice.injectEndpoints({
         // @crud r6
         // @desc Get first two or three flare replies
         // @method Query/GET
-        // @route /:flareType/:flareId/count/:userId/:userBlocks/:count
+        // @route /:flareType/:flareId/paginate/:pgCnt/:userId/:userBlocks
         // @access private
         getPaginatedReplies: builder.query({
             query: ({ flareType, flareId, pgCnt, userId, userBlocks }) => ({
